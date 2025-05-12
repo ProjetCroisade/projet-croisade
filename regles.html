@@ -2,13 +2,21 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Règles de jeu - Projet Croisade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lexique et Règles de jeu – Projet Croisade</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+  #lexique-effets-etats dt {
+    font-weight: bold;
+  }
+  #lexique-effets-etats dd {
+    margin-left: 20px;
+  }
+</style>
 </head>
 <body>
   <header>
-    <h1>Règles de Jeu</h1>
+    <h1>Lexique et règles de jeu</h1>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
@@ -19,65 +27,185 @@
       </ul>
     </nav>
   </header>
+<body>
   <main>
-    <h2>Principales limitations du système</h2>
-    <ul>
-      <li><strong>PV permanents :</strong> 20 MAX</li>
-      <li><strong>PV temporaires :</strong> 5 MAX</li>
-      <li><strong>Armure physique :</strong> 8 MAX</li>
-      <li><strong>Armure temporaire :</strong> 5 MAX</li>
-      <li><strong>Dégâts de base :</strong> 4 MAX (hors compétences)</li>
-    </ul>
+    <!-- Règles de jeu -->
+    <section>
+      <h2>Règles de jeu</h2>
 
-    <h2>Armes et Boucliers</h2>
-    <p><strong>Types et tailles :</strong></p>
-    <ul>
-      <li>Arme courte : 10-80 cm</li>
-      <li>Arme longue : 80-120 cm</li>
-      <li>Arme d’hast : 120 cm+</li>
-      <li>Arc : max 25 lbs</li>
-      <li>Armes de jet : sans tige solide</li>
-    </ul>
-    <p><strong>Dégâts standards :</strong> arme à deux mains (2), une main (1), arc/arbalète (2), jet (1).</p>
+      <h3>Limitations générales :</h3>
+      <p>Ces limites ne peuvent pas être dépassées, peu importe les objets ou compétences possédées :</p>
+      <ul>
+        <li><strong>Points de vie permanents (PV)</strong> : 20 MAXIMUM</li>
+        <li><strong>Points de vie temporaires</strong> : 5 MAXIMUM</li>
+        <li><strong>Armure physique</strong> : 8 MAXIMUM</li>
+        <li><strong>Armure temporaire (naturelle)</strong> : 5 MAXIMUM</li>
+        <li><strong>Dégâts de base maximum</strong> : 4 dégâts MAXIMUM</li>
+        <li><strong>Dégâts par compétence unitaire</strong> (ex. : Coup puissant, coup précis) : Aucune limite</li>
+      </ul>
+      <p>Pour résumé, vos dégâts de base ne peuvent pas dépasser 4. Les attaques issues d’une compétence unitaire ne sont pas limitées et incluent les dégâts de trop (dégâts supplémentaires générés par des objets ou compétences exclusives).</p>
+      <p><em>Exemple de scénario :</em><br>
+      Vous possédez une épée magique qui inflige 5 dégâts de base, mais la limite est à 4. Vous frappez donc à 4. Cependant, si vous utilisez la compétence « Coup puissant » (+1 dégât), votre attaque « de trop » devient :<br>
+      5 (dégâts de base de l’arme) + 1 (compétence) = <strong>6</strong>.</p>
 
-    <h2>Règles de combat</h2>
-    <ul>
-      <li>Les dégâts passent d’abord sur les PV temporaires ou armures naturelles.</li>
-      <li>Ensuite sur les PV permanents et armures physiques.</li>
-      <li>Les compétences peuvent dépasser les limites standards (ex. : Coup puissant +2).</li>
-      <li>Esquives : doivent être annoncées sur le coup.</li>
-      <li>Mort/coma : à 0 PV → coma 15 min. Puis 1 PV et état affaibli.</li>
-    </ul>
+      <h3>Réglementation des armes et boucliers</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>TYPE</th>
+            <th>CÔTÉ LE PLUS LONG</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Arme courte</td><td>10 cm à 80 cm</td></tr>
+          <tr><td>Arme longue</td><td>80 cm à 120 cm</td></tr>
+          <tr><td>Arme d’hast</td><td>120 cm et plus</td></tr>
+          <tr><td>Arc</td><td>25 lbs de pression MAX</td></tr>
+          <tr><td>Arme de jet</td><td>Aucune tige solide à l’intérieur</td></tr>
+          <tr><td>Petit bouclier</td><td>10–30 cm</td></tr>
+          <tr><td>Moyen bouclier</td><td>30–60 cm</td></tr>
+          <tr><td>Grand bouclier</td><td>60–100 cm</td></tr>
+          <tr><td>Très grand bouclier</td><td>100 cm et plus</td></tr>
+        </tbody>
+      </table>
+      <p><em>*Toute arme ne respectant pas ces règlements sera considérée comme une arme exotique et devra être validée par l’équipe d’animation. De plus, toutes armes ou boucliers fabriqués maison devront également être vérifiés et validés par l’équipe d’animation*</em></p>
 
-    <h2>Lexique des effets</h2>
-    <ul>
-      <li><strong>Paralysie :</strong> immobile jusqu’à un dégât.</li>
-      <li><strong>Sommeil :</strong> se réveille par dégât/secousse/eau/dissipation.</li>
-      <li><strong>Charme :</strong> obéit à l’ennemi sauf suicide.</li>
-      <li><strong>Assommé :</strong> inactif, réveil avec secousse ou purification.</li>
-      <li><strong>Rage :</strong> attaque tout le monde.</li>
-      <li><strong>Peur :</strong> ne peut approcher la source.</li>
-      <li><strong>Désarmement :</strong> 2 frappes successives sur arme.</li>
-      <li><strong>Empoisonné :</strong> bloque la guérison jusqu’à antidote/purification.</li>
-      <li><strong>Fracture :</strong> membre inutilisable, torse sans armure = coma.</li>
-    </ul>
+      <h3>Dégâts de base des armes :</h3>
+      <ul>
+        <li>Arme à deux mains : 2 dégâts</li>
+        <li>Arme à une main : 1 dégât</li>
+        <li>Arme de jet : 1 dégât</li>
+        <li>Arc et arbalète : 2 dégâts</li>
+      </ul>
 
-    <h2>Magie et incantation</h2>
-    <ul>
-      <li>Sort arcanique : commence par "ARCANE OSTIUM OPERTUM".</li>
-      <li>Magie divine : commence par une prière de 10 mots min.</li>
-      <li>Lancers avec balle en mousse obligatoire sauf mention contraire.</li>
-      <li>Interruption = sort annulé et perte du coût.</li>
-    </ul>
+      <h3>Symboles en jeu :</h3>
+      <p>(à insérer selon votre charte graphique)</p>
 
-    <h2>Compagnons</h2>
-    <ul>
-      <li>Doivent toujours avoir un maître (ou être PNJ).</li>
-      <li>Évoluent avec des objets magiques consommables.</li>
-      <li>Peuvent choisir classe ou métier au niveau 5.</li>
-      <li>Pas jouables seuls. Doivent avoir un déguisement.</li>
-    </ul>
+      <h3>Ordre de perte des protections, points de vie, armures :</h3>
+      <ol>
+        <li>PV temporaires, bonus d’armure (naturelle et temporaire)</li>
+        <li>PV permanents et armure physique (portée sur le corps)</li>
+      </ol>
 
+      <h3>Résistances élémentaires :</h3>
+      <p>Vous pouvez avoir au maximum 2 résistances élémentaires en même temps (3 pour les Drakéides, incluant leur résistance naturelle de lignée).</p>
+
+      <h3>Esquives :</h3>
+      <p>Les esquives doivent être « callées » au moment où l’attaque vous touche ou touche votre équipement (sans attente ni délai).</p>
+
+      <h3>Mort et coma :</h3>
+      <p>Lorsque vos points de vie atteignent zéro, votre personnage tombe dans le coma et reste immobile comme un cadavre pendant 15 minutes. Après 15 minutes, vous regagnez 1 PV. Vous êtes alors en état <em>Lenteur/Affaibli</em> jusqu’à guérison complète (voir Lexique des effets).</p>
+      <p><em>Note :</em> si vous êtes égorgé (compétence Égorgement), demandez le numéro du joueur qui vous a égorgé, puis allez voir la Mort à l’Auberge Principale.</p>
+
+      <h3>Types de dégâts :</h3>
+      <ul>
+        <li>Dégâts élémentaires : Feu, Eau, Glace, Électrique, Acide, etc.</li>
+        <li>Dégâts divins, spectraux, obscurs, argent, magiques</li>
+        <li>Dégâts de type « Passe-armure » : ignorent l’armure et touchent directement les PV</li>
+      </ul>
+
+      <h3>Type de Résistances et Défenses :</h3>
+      <dl>
+        <dt>Mineure</dt>
+        <dd>Résiste à un effet mineur correspondant.</dd>
+        <dt>Majeure</dt>
+        <dd>Résiste aux effets mineurs et majeurs.</dd>
+        <dt>Légendaire</dt>
+        <dd>Résiste aux effets mineurs, majeurs et légendaires.</dd>
+        <dt>Divine</dt>
+        <dd>Résiste à tous les niveaux (mineur, majeur, légendaire et divin).</dd>
+      </dl>
+      <p><em>Exemple :</em> Joueur 1 lance « Projection » sur Joueur 2 qui a <strong>Stabilité</strong> (résistance mineure aux projections). L’effet est donc résisté ; Joueur 1 perd sa mana.</p>
+      <p><em>Note :</em> si un effet ne précise pas son niveau, il est automatiquement considéré comme <strong>mineur</strong>.</p>
+    </section>
+
+    <!-- Lexique des termes communs -->
+    <section>
+      <h2>Lexique des termes communs</h2>
+      <ul>
+        <li><strong>PV (Points de vie)</strong> : santé de votre personnage.</li>
+        <li><strong>Mana / Ferveur</strong> : points pour lancer les sorts (régénération +1 par court repos).</li>
+        <li><strong>Catalyseur</strong> : balle de mousse lancée sur la cible pour activer un sort.</li>
+        <li><strong>Valeur de soins</strong> : +1 aux soins donnés (ne fonctionne pas sur les soins reçus).</li>
+        <li><strong>VDC (Valeur du Constructeur)</strong> : réduit le temps de construction des bâtiments.</li>
+        <li><strong>VDS (Valeur de Sort)</strong> : +1 dégât à tous les sorts ou +1 à toute « stat » de sort.</li>
+        <li><strong>Court repos</strong> : 15 minutes.</li>
+        <li><strong>Long repos</strong> : 1 heure.</li>
+        <li><strong>Cycle</strong> : 8 heures.</li>
+        <li><strong>Journée</strong> : 12 heures.</li>
+        <li><strong>Scène</strong> : suite d’actions de jeu de rôle (ex. : un combat, un discours). Durée décidée « on the spot ».</li>
+      </ul>
+    </section>
+
+    <!-- Système de compagnons -->
+    <section>
+      <h2>Système de compagnons</h2>
+      <p>Projet Croisade comporte un système de compagnons pouvant vous accompagner dans vos aventures.</p>
+      <h3>Quelques règles essentielles :</h3>
+      <ul>
+        <li>Les compagnons doivent être joués par un autre joueur/PNJ ou par vous-même.</li>
+        <li>Un compagnon doit toujours suivre un maître (temporaire ou permanent).</li>
+        <li>Si un compagnon est seul, des braconniers pourront le traquer et utiliser l’effet Domptage pour le capturer.</li>
+        <li>Il est impossible de jouer un compagnon seul.</li>
+        <li>Seuls les joueurs de 12 ans et plus peuvent commencer leur aventure avec la classe Compagnon.</li>
+        <li>Certains compagnons ne sont jouables qu’en géopolitique.</li>
+        <li>Un déguisement est requis pour jouer un compagnon.</li>
+        <li>Les compagnons montent aussi de niveau et acquièrent des compétences via la consommation d’objets magiques (qui sont ensuite détruits).</li>
+        <li>Au niveau 5, un compagnon évolue et choisit soit un métier, soit une classe pour progresser.</li>
+        <li>Si votre compagnon meurt, vous devez aller voir la Mort à l’Auberge Principale.</li>
+      </ul>
+    </section>
+
+    <!-- Lexique des effets et états -->
+    <section id="lexique-effets-etats">
+      <h2>Lexique des effets et États</h2>
+      <dl>
+        <dt>Paralysie normale</dt>
+        <dd>Le personnage est immobile comme une statue jusqu’au premier dégât reçu. Toute paralysie avec suffixe rend invulnérable jusqu’à la fin de l’effet.</dd>
+        <dt>Sommeil</dt>
+        <dd>Le personnage dort et peut être réveillé par : une source de dégât, une secousse de 1 minute, de l’eau lancée au visage ou une dissipation (si magique).</dd>
+        <dt>Charme / Séduction / Manipulation</dt>
+        <dd>Le personnage obéit aux ordres (sauf suicidaires) du lanceur jusqu’à la fin de l’effet. Dissipable comme le sommeil.</dd>
+        <dt>Assommé</dt>
+        <dd>Toucher la tête de la cible avec le pommeau d’arme. La cible est assommée et ne peut être réveillée que par une secousse de 2 minutes ou une purification.</dd>
+        <dt>Rage</dt>
+        <dd>La cible est enragée et attaque tout le monde (alliés compris).</dd>
+        <dt>Peur / Intimidation</dt>
+        <dd>Le personnage ne peut s’approcher ou attaquer la source de peur.</dd>
+        <dt>Désarmement</dt>
+        <dd>Frapper deux fois l’arme de l’adversaire et dire « Désarmement » pour la lui faire lâcher.</dd>
+        <dt>Enchevêtrement</dt>
+        <dd>Les pieds sont bloqués au sol. Pied Forestier permet d’ignorer cet effet.</dd>
+        <dt>Aveuglement</dt>
+        <dd>Fermer les yeux pendant la durée indiquée.</dd>
+        <dt>Soûl</dt>
+        <dd>Le personnage devient désorienté et inefficace au combat.</dd>
+        <dt>Étourdi</dt>
+        <dd>Le personnage tombe à genoux mais peut se défendre.</dd>
+        <dt>Lenteur / Affaibli</dt>
+        <dd>Impossible de courir ou faire un élan de 3 pas sans grande fatigue.</dd>
+        <dt>Empoisonné</dt>
+        <dd>Empêche la guérison par soins classiques (nécessite antidote ou purification). À 0 PV, aller voir la Mort.</dd>
+        <dt>Fracture / Démembrement</dt>
+        <dd>Le membre touché est inutilisable jusqu’à guérison. Coup au torse sans armure → coma.</dd>
+        <dt>Saignement</dt>
+        <dd>Le personnage saigne et meurt après 15 minutes, sauf si soigné par un médecin.</dd>
+        <dt>Attaché</dt>
+        <dd>Le personnage est lié. Nécessite lame ou compétence pour se détacher.</dd>
+        <dt>Brise-Bouclier</dt>
+        <dd>L’attaque brise le bouclier touché.</dd>
+        <dt>Provocation</dt>
+        <dd>Provoque une rage dirigée uniquement contre le provocateur.</dd>
+        <dt>Domptage</dt>
+        <dd>Ajoute le préfixe Domptage aux dégâts. Si un Compagnon meurt sous Domptage, les deux joueurs doivent aller voir la Mort.</dd>
+        <dt>Égorgement</dt>
+        <dd>Permet d’achever un joueur en coma (risque de perte définitive). Protégé par un gorget. (1×/cycle de 8 h)</dd>
+        <dt>Corruption</dt>
+        <dd>Force un joueur/PNJ à prendre une décision contre son intérêt.</dd>
+        <dt>Purification</dt>
+        <dd>Retire certains effets néfastes sans soigner le personnage.</dd>
+      </dl>
+    </section>
   </main>
   <footer>
     <p>&copy; Projet Croisade</p>

@@ -16,6 +16,31 @@ header {
   }
 }
 
+aside nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+aside nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+aside nav ul li a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
 nav ul {
   list-style: none;
   padding: 0;

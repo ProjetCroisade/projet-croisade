@@ -19,10 +19,26 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main style="display: flex;">
+      <aside style="width: 150px; padding: 10px; background-color: #2e2e2e; color: white; position: sticky; top: 0; height: 100vh;">
+      <nav>
+    <h3 style="color: #ffe48a; text-align: center;">Navigation</h3>
+        <ul>
+          <li><a href="#mage">Mage</a></li>
+          <li><a href="#guerrier">Guerrier</a></li>
+          <li><a href="#druide">Druide</a></li>
+          <li><a href="#archer">Archer</a></li>
+          <li><a href="#assassin">Assassin</a></li>
+          <li><a href="#pretre">Prêtre</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <div style="flex: 1;">
+<div style="flex: 1; margin-left: 30px;">
     <h2>Liste des classes disponibles</h2>
+<div style="flex: 1; margin-left: 30px;">
 
-    <section>
+    <section id="mage">
       <h3>Mage</h3>
       <p><strong>Mana de base :</strong> 3 (ajout de +1 par niveau, +2 supplémentaires au niveau 5)</p>
       <h4>Spécialisation Vent</h4>
@@ -59,7 +75,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="guerrier">
       <h3>Guerrier</h3>
       <h4>Niveau 1</h4>
       <ul>
@@ -98,8 +114,165 @@
       </ul>
     </section>
 
-    <!-- Les classes suivantes seront intégrées ensuite -->
+    <section id="druide">
+      <h3>Druide</h3>
+      <p><strong>Ferveur de base :</strong> 3 (ajout de +1 par niveau, +3 au niveau 5)</p>
+      <h4>Niveau 1</h4>
+      <ul>
+        <li>Aura de peur : Affecte 3 cibles pendant 15 minutes.</li>
+        <li>Racines paralysantes : Paralyse un ennemi pendant 10 secondes avec un catalyseur.</li>
+        <li>Mère Nature : Danse de 15 minutes octroyant +4 PV à toi et 3 alliés.</li>
+        <li>Langue universelle : Permet de parler toutes les langues.</li>
+      </ul>
+      <h4>Niveau 2</h4>
+      <ul>
+        <li>Apaisement : Calme une cible agressive.</li>
+        <li>Restauration druidique : Danse de 15 minutes restaurant 5 armures.</li>
+        <li>Rituel de la nature : Fait pousser une plante aléatoire, une fois par GN.</li>
+        <li>Pied forestier I : Évite les pièges et racines.</li>
+      </ul>
+      <h4>Niveau 3</h4>
+      <ul>
+        <li>Alchimiste : Débloque le métier d'alchimiste.</li>
+        <li>Purification naturelle : Retire les poisons et maladies non magiques.</li>
+        <li>Métamorphe : Permet de se transformer en une race déjà rencontrée en jeu.</li>
+        <li>Pied forestier II : Évite les pièges de niveau majeur.</li>
+      </ul>
+      <h4>Niveau 4</h4>
+      <ul>
+        <li>Prière de la nature : Régénère 3 ferveurs après une prière de 15 minutes.</li>
+        <li>Double récolte : Double les récoltes.</li>
+        <li>Drain d’énergie vitale : Régénère un montant de PV égal aux dégâts de ton arme, une fois par combat.</li>
+        <li>Projection : Repousse de 3 mètres, illimité pendant 15 minutes.</li>
+      </ul>
+      <h4>Niveau 5</h4>
+      <ul>
+        <li>Aura de peur II : Affecte 5 personnes.</li>
+        <li>Racines paralysantes II : Paralyse pendant 25 secondes et inflige 2 dégâts.</li>
+        <li>Peau d’écorce : Octroie 5 armures temporaires.</li>
+        <li>Coup précis : +4 dégâts.</li>
+      </ul>
+    </section>
 
+    <section id="archer">
+      <h3>Archer</h3>
+      <h4>Niveau 1</h4>
+      <ul>
+        <li>Esquive : Une fois par combat.</li>
+        <li>Soins artisanaux : Guérit 2 PV en appliquant une feuille pendant 15 minutes.</li>
+        <li>Armure légère : Port d’armures légères sans malus.</li>
+        <li>Peau dure : +2 PV permanents.</li>
+      </ul>
+      <h4>Niveau 2</h4>
+      <ul>
+        <li>Adrénaline : +2 PV temporaires en combat, suivi de « fatigue ».</li>
+        <li>Brise bouclier : Permet de briser un bouclier, une fois par combat.</li>
+        <li>Pied forestier I : Immunité aux pièges et racines.</li>
+        <li>Détection de pièges : En géopolitique et en donjon.</li>
+      </ul>
+      <h4>Niveau 3</h4>
+      <ul>
+        <li>Précision supérieure : +1 dégât permanent sur les flèches.</li>
+        <li>Armures moyennes : Permet de porter des armures moyennes sans malus.</li>
+        <li>Tir puissant : Une flèche infligeant +2 dégâts, une fois par combat.</li>
+        <li>Esquives magiques : Une fois par combat.</li>
+      </ul>
+      <h4>Niveau 4</h4>
+      <ul>
+        <li>Tir discret : +2 dégâts par flèche si la cible est prise par surprise.</li>
+        <li>Perce armure : Octroie un tir « perce armure », une fois par combat.</li>
+        <li>Désamorçage de pièges : Permet de désamorcer un piège en 15 minutes.</li>
+        <li>Herboriste : Débloque le métier d'herboriste.</li>
+      </ul>
+      <h4>Niveau 5</h4>
+      <ul>
+        <li>Libre d’action : Immunité à l’effet Enchevêtrement.</li>
+        <li>Tir triple : Trois flèches en rafale (1 dégât chacune), une fois par combat.</li>
+        <li>Tir de dissuasion : Fait reculer l’adversaire de 3 mètres, une fois par combat.</li>
+        <li>Pièges de zone : Place un piège déclenchant 2 dégâts sur plusieurs ennemis (1x par GN).</li>
+      </ul>
+    </section>
+
+    <section id="assassin">
+      <h3>Assassin</h3>
+      <h4>Niveau 1</h4>
+      <ul>
+        <li>Furtivité : Vous pouvez avancer sans être vu si vous ne parlez pas et portez une cape noire.</li>
+        <li>Attaque sournoise : +3 dégâts sur un ennemi pris par surprise, une fois par combat.</li>
+        <li>Dissimulation : Cache un objet ou une arme sur vous (illimité hors combat).</li>
+        <li>Poison I : Empoisonne une arme pour infliger l’effet Empoisonné (1 fois par GN).</li>
+      </ul>
+      <h4>Niveau 2</h4>
+      <ul>
+        <li>Esquive : Une fois par combat.</li>
+        <li>Poison II : Inflige 2 dégâts + empoisonné sur une attaque surprise (1x par long repos).</li>
+        <li>Perce-armure : Ignore l’armure sur une attaque sournoise (1 fois par combat).</li>
+        <li>Langue des ombres : Peut communiquer en langage codé incompréhensible par les autres.</li>
+      </ul>
+      <h4>Niveau 3</h4>
+      <ul>
+        <li>Égorgement : Permet de tuer un ennemi en coma (1x par cycle de 8h).</li>
+        <li>Disparition : Devient invisible pendant 15 secondes (1x par combat).</li>
+        <li>Attaque jumelée : Frappe deux cibles à la fois si elles sont proches (1x par combat).</li>
+        <li>Poison III : Poison incurable sans antidote ou purification (1x par GN).</li>
+      </ul>
+      <h4>Niveau 4</h4>
+      <ul>
+        <li>Double esquive : Deux esquives supplémentaires (par combat).</li>
+        <li>Attaque silencieuse : Frappe sans déclencher d’effets magiques ou alertes.</li>
+        <li>Pièges explosifs : Peut poser un piège infligeant 4 dégâts en zone.</li>
+        <li>Reflexes surnaturels : Peut annuler une compétence ciblée sur lui (1x par combat).</li>
+      </ul>
+      <h4>Niveau 5</h4>
+      <ul>
+        <li>Maître empoisonneur : Peut fabriquer un poison mythique RP.</li>
+        <li>Coup fatal : Toute attaque surprise inflige +5 dégâts.</li>
+        <li>Camouflage parfait : Devient invisible jusqu'à ce qu’il attaque.</li>
+        <li>Égorgement amélioré : Peut égorger deux cibles d’un coup (1x par GN).</li>
+      </ul>
+    </section>
+
+    <section id="pretre">
+      <h3>Prêtre</h3>
+      <p><strong>Ferveur de base :</strong> 3 (ajout de +1 par niveau, +2 au niveau 5)</p>
+      <h4>Niveau 1</h4>
+      <ul>
+        <li>Prière de soin : Soigne 2 PV avec une prière de 10 mots.</li>
+        <li>Bouclier divin : Donne +2 armures temporaires (1 fois par combat).</li>
+        <li>Chant sacré : Dissipe un effet négatif mineur (1x par combat).</li>
+        <li>Ferveur : +1 ferveur après chaque scène de prière complète.</li>
+      </ul>
+      <h4>Niveau 2</h4>
+      <ul>
+        <li>Purification : Retire poison, corruption ou malédiction (1x par combat).</li>
+        <li>Résistance divine : +1 résistance aux effets magiques.</li>
+        <li>Main de lumière : Soigne une cible inconsciente sans passer par le coma.</li>
+        <li>Invocation bénie : Invoque un serviteur sacré pendant 15 minutes (RP).</li>
+      </ul>
+      <h4>Niveau 3</h4>
+      <ul>
+        <li>Prière de groupe : Soigne 2 PV à 3 alliés (1x par long repos).</li>
+        <li>Barrière divine : Donne +3 armures temporaires à un allié (1x par combat).</li>
+        <li>Voix du ciel : Augmente l’efficacité de toutes vos prières.</li>
+        <li>Résurrection mineure : Réanime une cible tombée (1x par GN).</li>
+      </ul>
+      <h4>Niveau 4</h4>
+      <ul>
+        <li>Chant de guerre sacré : Tous les alliés gagnent +1 dégât pour 1 combat.</li>
+        <li>Aura protectrice : Tous les alliés à 3m gagnent +2 armures pendant 15 minutes.</li>
+        <li>Invocation majeure : Invoque un protecteur sacré avec 10 PV (RP).</li>
+        <li>Bénédiction du cycle : Restaure 3 ferveurs après une prière de 15 minutes.</li>
+      </ul>
+      <h4>Niveau 5</h4>
+      <ul>
+        <li>Résurrection divine : Réanime un joueur mort (1x par GN avec animation).</li>
+        <li>Bouclier mythique : Immunité à un effet de zone (1x par combat).</li>
+        <li>Bénédiction suprême : Tous les soins augmentés de +2 pour 1 scène.</li>
+        <li>Invocation céleste : Invoque une entité divine (RP avec effet mythique).</li>
+      </ul>
+    </section>
+
+      </div>
   </main>
   <footer>
     <p>&copy; Projet Croisade</p>
