@@ -21,16 +21,159 @@
   </header>
   <main>
     <h2>Liste des races disponibles</h2>
+
     <section>
       <h3>Humains</h3>
-      <img src="images/race_humain.jpg" alt="Humain" style="width:100%;max-width:300px;">
-      <p><strong>PV :</strong> 4<br><strong>Atouts :</strong> Immunité mineure aux désarmements, bonus d’armure +1 (par set porté en pair).</p>
+      <p>Les humains sont connus pour leur grande capacité d'adaptation, mais aussi pour leur cruauté, aussi bien sur le champ de bataille qu’en tant qu’individus. Leur espérance de vie varie de 60 à 100 ans.</p>
+      <p><strong>Points de vie :</strong> 4</p>
+      <ul>
+        <li>Immunité mineure aux désarmements</li>
+        <li>Bonus d’armure + 1 (par set porté en pair)</li>
+      </ul>
+      <p><strong>Traits spécifiques :</strong> Aucun</p>
+      <div style="text-align:center;"><img src="images/race_humain.png" alt="Humain" style="max-width:300px;width:100%;"></div></section>
     </section>
+
+    <section>
+      <h3>Gobelins</h3>
+      <p>Les goblins sont perçus comme de vils voleurs, petits, faibles et souvent en groupe pour semer le chaos. Malgré leur apparence misérable, ils sont rusés et peuvent rapidement devenir une menace si sous-estimés.</p>
+      <p><strong>Points de vie :</strong> 3</p>
+      <ul>
+        <li>Rapaces : +2 à chaque récolte ou butin (Géo)</li>
+        <li>Maîtrise des armes de jet : +2 dégâts par lancer</li>
+        <li>Agilité : 1 esquive gratuite contre une attaque physique (Par combat)</li>
+        <li>Évolution : Peut devenir un Haut Gobelin, débloquant la classe Shaman (Prêtre) et +2 PV permanent (Voir animation)</li>
+      </ul>
+      <p><strong>Traits spécifiques :</strong></p>
+      <ul>
+        <li>Masque de Gobelin (ou maquillage vert)</li>
+        <li>Nez pointu / écrasé (pas obligatoire si vous portez un masque)</li>
+        <li>Maquillage vert sur toutes les parties visibles du corps (cou, mains, etc.)</li>
+        <div style="text-align:center;"><img src="images/race_goblin.png" alt="Gobelins" style="max-width:300px;width:100%;"></div></section>
+      </ul>
+    </section>
+
     <section>
       <h3>Orcs</h3>
-      <img src="images/race_orc.jpg" alt="Orc" style="width:100%;max-width:300px;">
-      <p><strong>PV :</strong> 7<br><strong>Atouts :</strong> Coup puissant (+2 dégâts), Intimidation (empêche un ennemi d’attaquer pendant 3 minutes).</p>
+      <p>Les Orcs sont des colosses brutaux qui ne reculent jamais devant un combat. Ils règlent leurs conflits par des duels honorables, cherchant toujours à asseoir leur dominance.</p>
+      <p><strong>Points de vie :</strong> 7</p>
+      <ul>
+        <li>Coup puissant : +2 dégâts, 1 coup par court repos (15 mins)</li>
+        <li>Intimidation : L’orc lâche un cri de guerre ; empêche un ennemi de vous attaquer pendant 3 minutes (1 fois par court repos)</li>
+      </ul>
+      <p><strong>Traits spécifiques :</strong> Masque d’orc (ou maquillage brun / vert / autres teintes) sur toutes les parties visibles du corps</p>
+      <div style="text-align:center;"><img src="images/race_orc.png" alt="Orcs" style="max-width:300px;width:100%;"></div></section>
     </section>
+
+    <section>
+      <h3>Nains</h3>
+      <p>Petits mais costauds, les nains sont d’excellents artisans et travailleurs acharnés. Ils sont réputés pour leur ingéniosité, leur bravoure et leur amour de la bière.</p>
+      <p><strong>Points de vie :</strong> 6</p>
+      <ul>
+        <li>Mains enflammées : Réduit de moitié le temps de forge et minage</li>
+        <li>Stabilité : Résistance majeure aux chutes et secousses</li>
+      </ul>
+      <p><strong>Traits spécifiques :</strong> Barbe imposante (pour tous les sexes)</p>
+      <div style="text-align:center;"><img src="images/race_dwarf.png" alt="Nains" style="max-width:300px;width:100%;"></div></section>
+    </section>
+
+    <section>
+      <h3>Drakéides (Drakes)</h3>
+      <p>Autrefois dragons, les Drakéides ont abandonné leur forme originelle pour adopter une apparence humanoïde, poursuivant ainsi sagesse et prospérité.</p>
+      <p><strong>Points de vie :</strong> 5</p>
+      <ul>
+        <li>Armure naturelle : +2 PV temporaires (se régénère à chaque scène)</li>
+        <li>Souffle élémentaire : Attaque élémentaire selon la lignée du Drake (1x par combat)</li>
+        <li>Feu (Rouge / Orange) : 2 dégâts de feu</li>
+        <li>Acide (Vert) : 1 dégât perce-armure</li>
+        <li>Électricité (Bleu) : 2 dégâts électriques (+1 si la cible porte une armure métallique)</li>
+        <li>Glace (Blanc) : soigne +2 PV avec catalyseur / touché (1 fois par scène)</li>
+        <li>Résistance mineure à leur propre élément</li>
+      </ul>
+      <p><strong>Traits spécifiques :</strong> Masque ou maquillage de dragon, traits de dragon (ailes, queue, griffes)</p>
+      <div style="text-align:center;"><img src="images/race_drake.png" alt="Drakéides" style="max-width:300px;width:100%;"></div></section>
+    </section>
+
+    <section>
+      <h3>Aïsha</h3>
+      <p>Les Aïsha sont une espèce aquatique séduisante. Elles ont la peau écailleuse de couleur distincte. Certaines ont des branchies visibles et d’autres des oreilles palmées et autres caractéristiques aquatiques.</p>
+      <p><strong>Points de vie :</strong> 2 PV de jour et 6 PV de nuit</p>
+      <ul>
+        <li>Cri des Aïsha : Étourdit jusqu’à 3 cibles (1 fois par combat)</li>
+        <li>Séduction majeure : Charme jusqu’à 2 cibles (1 fois par scène)</li>
+        <li>Résistance mineure à l’eau</li>
+        <li>Faiblesse au feu : +2 dégâts sur les attaques enflammées subies</li>
+        <li>Adaptation à la pluie : 6 PV maximum jour et nuit en temps de pluie</li>
+      </ul>
+      <p><strong>Traits spécifiques :</strong> Branchies, teintes de peau grise, bleue, noire, traits aquatiques (doigts/oreilles palmés, etc.)</p>
+      <div style="text-align:center;"><img src="images/race_aisha.png" alt="Aïsha" style="max-width:300px;width:100%;"></div></section>
+    </section>
+
+    <section>
+      <h3>Elfes de l’Arbre Monde</h3>
+      <p>Les elfes de l’Arbre Monde sont en harmonie avec la nature et manient la magie avec une aisance incomparable.</p>
+      <p><strong>Points de vie :</strong> 5</p>
+      <ul>
+        <li>Magie Elfique : +2 mana ou ferveur de base</li>
+        <li>Bouclier de l’Arbre Monde : +3 armure temporaire pendant 1h (-2 mana ou ferveur, se recharge après court repos)</li>
+      </ul>
+      <p><strong>Traits spécifiques :</strong> Oreilles d’Elfe, vêtements nobles et/ou elfiques</p>
+      <div style="text-align:center;"><img src="images/race_elf.png" alt="Elfes de l’Arbre Monde" style="max-width:300px;width:100%;"></div></section>
+    </section>
+
+    <section>
+      <h3>Elfes des Ténèbres</h3>
+      <p>Séparés de leurs cousins de l’Arbre Monde, ces elfes se sont adaptés aux bois obscurs, développant une méfiance et un narcissisme prononcés.</p>
+      <p><strong>Points de vie :</strong> 5</p>
+      <ul>
+        <li>Évasion nocturne : +2 esquives attaques physiques (1x par combat)</li>
+        <li>Égorgement : Peut tuer un joueur en coma (1x par cycle, voir règles)</li>
+        <li>Magie Elfique ténébreuse : +1 mana ou ferveur maximum</li>
+      </ul>
+      <p><strong>Traits spécifiques :</strong> Visage blanc et cernes noirs, vêtements sombres</p>
+      <div style="text-align:center;"><img src="images/race_darkelf.png" alt="Elfes des Ténèbres" style="max-width:300px;width:100%;"></div></section>
+    </section>
+
+    <section>
+      <h3>Demi-Elfes</h3>
+      <p>Les enfants d’une union entre Humain et Elfe, possédant des traits des deux races.</p>
+      <p><strong>Points de vie :</strong> 6</p>
+      <ul>
+        <li>Désarmement : Peut désarmer un ennemi (2x par court repos)</li>
+        <li>Bonus d’armure + 1 (par set porté en pair)</li>
+      </ul>
+      <p><strong>Traits spécifiques :</strong> Oreilles d’Elfes (optionnel), vêtements humains ou nobles</p>
+      <div style="text-align:center;"><img src="images/race_darkelf2.png" alt="Demi-Elfes" style="max-width:300px;width:100%;"></div></section>
+    </section>
+
+    <section>
+      <h3>Loups-Garous</h3>
+      <p>Des êtres maudits alternant entre forme humaine et bête sanguinaire.</p>
+      <p><strong>Points de vie :</strong> 4 / 6 (forme lycanthrope)</p>
+      <ul>
+        <li>Faiblesse à l’argent : dégâts subis x2 si arme en argent</li>
+        <li>Rage incontrôlable : pendant 15 min ou jusqu’à coma/mort</li>
+        <li>Régénération : +2 PV toutes les 15 minutes en forme lycanthrope</li>
+        <li>Morsure : Peut transformer une personne en loup-garou (voir conditions)</li>
+      </ul>
+      <p><strong>Traits spécifiques :</strong> Forme humaine : Aucun. Forme de loup : fourrure/griffes ou masque de loup</p>
+      <div style="text-align:center;"><img src="images/race_ww.png" alt="Loups-Garous" style="max-width:300px;width:100%;"></div></section>
+    </section>
+
+    <section>
+      <h3>Hybrides</h3>
+      <p>Humanoïde mélangé avec une autre race (Animaux, créatures, plantes). Choisissez une seule spécialisation.</p>
+      <p><strong>Points de vie :</strong> Selon la spécialisation</p>
+      <p><strong>Spécialisations :</strong></p>
+      <ul>
+        <li><strong>Combattant (4 PV) :</strong> Pied Forestier, Coup précis (+4 dégâts, 1x par court repos)</li>
+        <li><strong>Support (4 PV) :</strong> Nature Sauvage (+3 PV temporaire par long repos), Soins improvisés (+1 PV après 5 min avec feuille)</li>
+        <li><strong>Défenseur (5 PV) :</strong> Peau renforcée : +3 armure naturelle (se régénère à chaque scène), Résistance à Brise-Bouclier (1x cycle)</li>
+      </ul>
+      <p><strong>Traits spécifiques :</strong> Selon la spécialisation (forme animale, végétale, etc.)</p>
+      <div style="text-align:center;"><img src="images/race_demi.png" alt="Hybrides" style="max-width:300px;width:100%;"></div></section>
+    </section>
+
   </main>
   <footer>
     <p>&copy; Projet Croisade</p>

@@ -11,6 +11,9 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
+  h1 {
+    color: #fff;
+  }
 }
 
 nav ul {
