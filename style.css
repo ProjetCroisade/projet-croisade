@@ -222,3 +222,10 @@ main h3 {
 #btnTop:hover {
   background-color: #fff3c1;
 }
+
+@media screen and (max-width: 768px) {
+  body.page-races aside,
+  body.page-classes aside {
+    display: none;
+  }
+}
