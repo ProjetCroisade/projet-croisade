@@ -229,3 +229,26 @@ main h3 {
     display: none;
   }
 }
+
+.metiers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .btn-metier {
+    background-color: #e7ba79;
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background-color 0.2s;
+  }
+
+  .btn-metier:hover {
+    background-color: #d6a861;
+    transform: scale(1.05);
+  }
