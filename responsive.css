@@ -1,0 +1,29 @@
+
+/* responsive.css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container, main, section {
+  width: 100%;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+}
