@@ -1,9 +1,13 @@
 
 /* responsive.css */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: inherit;
 }
 
 img {
@@ -11,19 +15,51 @@ img {
   height: auto;
 }
 
-.container, main, section {
+.container, main, section, .content, .main-container {
   width: 100%;
   padding: 1rem;
 }
 
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
 @media (max-width: 768px) {
   nav ul {
-    display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
   }
 
-  .content {
-    flex-direction: column;
+  .content,
+  .flex,
+  .columns,
+  .main-container {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .navigation,
+  .sidebar,
+  .left,
+  .right,
+  .panel {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .class-list, .class-info {
+    width: 100% !important;
+    padding: 0.5rem;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
   }
 }
