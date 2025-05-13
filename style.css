@@ -123,3 +123,82 @@ ul {
 }
 
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Merriweather&display=swap');
+
+body {
+  font-family: 'Merriweather', serif;
+  background: url('background.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f5f0e6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 2px solid #e7ba79;
+}
+
+header h1 {
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 3em;
+  color: #e7ba79;
+  margin: 0;
+  text-shadow: 2px 2px #000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #e7ba79;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #e7ba79;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: rgb(20, 20, 20);
+  padding: 40px;
+  border: 1px solid #e7ba79;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+
+main h2 {
+  font-family: 'Uncial Antiqua', cursive;
+  color: #e7ba79;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+main h3 {
+  color:#e7ba79
+}
