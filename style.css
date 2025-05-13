@@ -202,3 +202,23 @@ main p {
 main h3 {
   color:#e7ba79
 }
+
+#btnTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  background-color: #e7ba79;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #000;
+  transition: background-color 0.3s;
+}
+
+#btnTop:hover {
+  background-color: #fff3c1;
+}
