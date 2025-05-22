@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Uncial+Antiqua&display=swap');
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -253,3 +255,5 @@ main h3 {
     background-color: #d6a861;
     transform: scale(1.05);
   }
+
+  
