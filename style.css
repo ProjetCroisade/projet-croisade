@@ -297,13 +297,13 @@ main h3 {
   }
   .liste-specialisations li {
     display: inline-block;
-    background-color: #d6a861;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     margin: 0.2em 0.4em;
     padding: 5px 12px;
     border-radius: 6px;
     font-weight: 500;
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
   }  
 /** Fiche de classe : Warrior **/
    .fiche-warrior {
@@ -371,3 +371,19 @@ main h3 {
     letter-spacing: 1px;
     margin-top: 1.5em;
   }
+.has-submenu > .submenu {
+  margin-left: 15px;
+  padding-left: 10px;
+  border-left: 2px solid #555;
+  list-style-type: none;
+}
+
+.submenu a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.submenu a:hover {
+  color: #ffe48a;
+}

@@ -26,23 +26,59 @@
     </nav>
   </header>
   <main style="display: flex;">
-      <aside style="width: 150px; padding: 10px; background-color: #2e2e2e; color: white; position: sticky; top: 0; height: 100vh;">
-      <nav>
+<aside style="width: 200px; padding: 1px; background-color: #2e2e2e; color: white; position: sticky; top: 0; height: 100vh;">
+  <nav>
     <h3 style="color: #ffe48a; text-align: center;">Navigation</h3>
-        <ul>
-          <li><a href="#arcanistes">Arcanistes</a></li>
-          <li><a href="#combattants">Combattants</a></li>
-          <li><a href="#fourbes">Fourbes</a></li>
-          <li><a href="#spiritualistes">Spiritualistes</a></li>
+    <ul>
+      <li class="has-submenu">
+        <a href="#arcanistes">Arcanistes</a>
+        <ul class="submenu">
+          <li><a href="#elementaliste">Élémentaliste</a></li>
+          <li><a href="#enchanteur">Enchanteur</a></li>
+          <li><a href="#magedesang">Mage de Sang</a></li>
+          <li><a href="#sorcier">Sorcier</a></li>
+          <li><a href="#warlock">Warlock</a></li>
         </ul>
-      </nav>
-    </aside>
+      </li>
+      <li class="has-submenu">
+        <a href="#combattants">Combattants</a>
+        <ul class="submenu">
+          <li><a href="#barbare">Barbare</a></li>
+          <li><a href="#guerrier">Guerrier</a></li>
+          <li><a href="#maitredubouclier">Maître du bouclier</a></li>
+          <li><a href="#moine">Moine</a></li>
+          <li><a href="#paladin">Paladin</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#fourbes">Fourbes</a>
+        <ul class="submenu">
+          <li><a href="#archer">Archer</a></li>
+          <li><a href="#assassin">Assassin</a></li>
+          <li><a href="#barde">Barde</a></li>
+          <li><a href="#pistolero">Pistolero</a></li>
+          <li><a href="#voleur">Voleur</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#spiritualistes">Spiritualistes</a>
+        <ul class="submenu">
+          <li><a href="#cultiste">Cultiste</a></li>
+          <li><a href="#druide">Druide</a></li>
+          <li><a href="#necromancien">Nécromancien</a></li>
+          <li><a href="#pretre">Prêtre</a></li>
+          <li><a href="#shaman">Shaman</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</aside>
     <div style="flex: 1;">
 <div style="flex: 1; margin-left: 30px;">
     <h2>Liste des classes disponibles</h2>
   <p style="text-align: justify;">Chaque personnage commence en choisissant une classe de base dans laquelle il souhaite généralement s’aligner, soit Arcaniste, Combattant, Fourbe ou Spiritualiste. Il a ensuite accès aux compétences de niveau 1 et 2 de cette classe. Une fois le niveau 3 atteint, il doit choisir l’une des spécialisations de sa classe de base, ce qui lui débloquera l’accès aux compétences de cette spécialisation précise. À chaque nouveau niveau, il est permis de choisir l’une des 3 compétences offertes dans ce niveau, vous pouvez sinon décider de choisir l’une des compétences d’un des niveaux inférieurs.</p>
 <div style="flex: 1; margin-left: 30px;">
-
+<!--Arcanistes-->
 <section id="arcanistes" class="mage">
   <h2 class="titre-mage">Arcanistes</h2>
 
@@ -81,8 +117,8 @@
     <li>Sorcier</li>
     <li>Warlock</li>
   </ul>
-
-  <h3 class="sous-titre">Élémentaliste</h3>
+<!--Élémentaliste-->
+  <h2 id="elementaliste" class="sous-titre">Élémentaliste</h2>
 
   <h3 class="niveau">Niveau 3</h4>
   <table class="fiche-mage">
@@ -110,10 +146,120 @@
       <tr><td>3. Sort : Tempête déchaînée</td></tr>
     </tbody>
   </table>
+<!--Enchanteur-->
+  <h2 id="enchanteur" class="sous-titre">Enchanteur</h2>
+
+  <h3 class="niveau">Niveau 3</h4>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="niveau">Niveau 4</h4>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="niveau">Niveau 5</h4>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
+<!--Mage de Sang-->
+  <h2 id="magedesang" class="sous-titre">Mage de Sang</h2>
+
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
+<!--Sorcier-->
+  <h2 id="sorcier" class="sous-titre">Sorcier</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h4>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
+<!--Warlock-->
+  <h2 id="warlock" class="sous-titre">Warlock</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-mage">
+    <tbody>
+      <tr><td>1. Sort : </td></tr>
+      <tr><td>2. Sort : </td></tr>
+      <tr><td>3. Sort : </td></tr>
+    </tbody>
+  </table>
 </section>
+<!--Combattants-->
 <section id="combattants" class="warrior">
   <h2 class="titre-warrior">Combattants</h2>
-
   <table class="fiche-warrior">
     <tbody>
       <tr>
@@ -131,10 +277,157 @@
       <tr><td>3. Comp : Cri de guerre</td></tr>
     </tbody>
   </table>
+
+  <h3 class="sous-titre">Niveau 2</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : Attaque puissante</td></tr>
+      <tr><td>2. Comp : Parade</td></tr>
+      <tr><td>3. Comp : Cri de guerre</td></tr>
+    </tbody>
+  </table>
+    <h3 class="sous-titre">Choix de spécialisation</h3>
+  <ul class="liste-specialisations">
+    <li>Barbare</li>
+    <li>Guerrier</li>
+    <li>Maître du bouclier</li>
+    <li>Moine</li>
+    <li>Paladin</li>
+  </ul>
+<!--Barbare-->
+  <h2 id="barbare" class="sous-titre">Barbare</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Guerrier-->
+  <h2 id="guerrier" class="sous-titre">Guerrier</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Maître du bouclier-->
+  <h2 id="maitredubouclier" class="sous-titre">Maître du bouclier</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Moine-->
+  <h2 id="moine" class="sous-titre">Moine</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Paladin-->
+  <h2 id="paladin" class="sous-titre">Paladin</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-warrior">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
 </section>
+<!--Fourbes-->
 <section id="fourbes" class="rogue">
   <h2 class="titre-rogue">Fourbes</h2>
-
   <table class="fiche-rogue">
     <tbody>
       <tr>
@@ -152,10 +445,157 @@
       <tr><td>3. Comp : Fuite rapide</td></tr>
     </tbody>
   </table>
+
+  <h3 class="sous-titre">Niveau 2</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : Attaque sournoise améliorée</td></tr>
+      <tr><td>2. Comp : Crochetage avancé</td></tr>
+      <tr><td>3. Comp : Camouflage</td></tr>
+    </tbody>
+  </table>
+    <h3 class="sous-titre">Choix de spécialisation</h3>
+  <ul class="liste-specialisations">
+    <li>Archer</li>
+    <li>Assassin</li>
+    <li>Barde</li>
+    <li>Pistolero</li>
+    <li>Voleur</li>
+  </ul>
+<!--Archer-->
+  <h2 id="archer" class="sous-titre">Archer</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Assassin-->
+  <h2 id="assassin" class="sous-titre">Assassin</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Barde-->
+  <h2 id="barde" class="sous-titre">Barde</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Pistolero-->
+  <h2 id="pistolero" class="sous-titre">Pistolero</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Voleur-->
+  <h2 id="voleur" class="sous-titre">Voleur</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-rogue">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
 </section>
+<!--Spiritualistes-->
 <section id="spiritualistes" class="spiritualist">
   <h2 class="titre-spiritualist">Spiritualistes</h2>
-
   <table class="fiche-spiritualist">
     <tbody>
       <tr>
@@ -164,7 +604,6 @@
       </tr>
     </tbody>
   </table>
-
   <h3 class="sous-titre">Niveau 1</h3>
   <table class="fiche-spiritualist">
     <tbody>
@@ -173,6 +612,153 @@
       <tr><td>3. Comp : Protection divine</td></tr>
     </tbody>
   </table>
+  <h3 class="sous-titre">Niveau 2</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Sort : Bénédiction majeure</td></tr>
+      <tr><td>2. Sort : Soin modéré</td></tr>
+      <tr><td>3. Comp : Aura sacrée</td></tr>
+    </tbody>
+  </table>
+  <h3 class="sous-titre">Choix de spécialisation</h3>
+  <ul class="liste-specialisations">
+    <li>Cultiste</li>
+    <li>Druire</li>
+    <li>Nécromancien</li>
+    <li>Prêtre</li>
+    <li>Shaman</li>
+  </ul>
+<!--Cultiste-->
+  <h2 id="cultiste" class="sous-titre">Cultiste</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Druide-->
+  <h2 id="druide" class="sous-titre">Druide</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Nécromancien-->
+  <h2 id="necromancien" class="sous-titre">Nécromancien</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Prêtre-->
+  <h2 id="pretre" class="sous-titre">Prêtre</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+<!--Shaman-->
+  <h2 id="shaman" class="sous-titre">Shaman</h2>
+  <h3 class="niveau">Niveau 3</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 4</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+  <h3 class="niveau">Niveau 5</h3>
+  <table class="fiche-spiritualist">
+    <tbody>
+      <tr><td>1. Comp : </td></tr>
+      <tr><td>2. Comp : </td></tr>
+      <tr><td>3. Comp : </td></tr>
+    </tbody>
+  </table>
+</section>
 </div>
   </main>
   <footer>
