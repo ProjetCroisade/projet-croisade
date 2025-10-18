@@ -256,4 +256,53 @@ main h3 {
     transform: scale(1.05);
   }
 
-  
+  .fiche-classe {
+    width: 100%;
+    max-width: 750px;
+    margin: 1em auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+    background-color: #1a1a1a;
+    color: #ddd;
+    border: 1px solid #333;
+  }
+  .fiche-classe td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+  }
+  .titre-classe {
+    text-align: center;
+    color: #c06cf9;
+    font-family: "Cinzel", serif;
+    letter-spacing: 1px;
+    margin-top: 1.5em;
+  }
+  .sous-titre {
+    text-align: center;
+    color: #b18de8;
+    margin-top: 1.2em;
+    font-family: "Cinzel", serif;
+  }
+  .niveau {
+    text-align: center;
+    color: #9e75db;
+    margin-top: 1em;
+    font-weight: normal;
+    font-style: italic;
+  }
+  .liste-specialisations {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0.5em auto 1em;
+  }
+  .liste-specialisations li {
+    display: inline-block;
+    background-color: #2b1840;
+    color: #e1d3ff;
+    margin: 0.2em 0.4em;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+    border: 1px solid #5a2f7a;
+  }  

@@ -30,12 +30,10 @@
       <nav>
     <h3 style="color: #ffe48a; text-align: center;">Navigation</h3>
         <ul>
-          <li><a href="#mage">Mage</a></li>
-          <li><a href="#guerrier">Guerrier</a></li>
-          <li><a href="#druide">Druide</a></li>
-          <li><a href="#archer">Archer</a></li>
-          <li><a href="#assassin">Assassin</a></li>
-          <li><a href="#pretre">Prêtre</a></li>
+          <li><a href="#arcanistes">Arcanistes</a></li>
+          <li><a href="#combattants">Combattants</a></li>
+          <li><a href="#fourbes">Fourbes</a></li>
+          <li><a href="#spiritualistes">Spiritualistes</a></li>
         </ul>
       </nav>
     </aside>
@@ -44,248 +42,75 @@
     <h2>Liste des classes disponibles</h2>
 <div style="flex: 1; margin-left: 30px;">
 
-    <section id="mage">
-      <h3>Mage</h3>
-      <p>Compétence de base : Méditation (permet de regénérer +1 point de mana de plus par court repos)</p>
-      <p><strong>Mana de base :</strong> 3 (ajout de +1 par niveau, +2 supplémentaires au niveau 5)</p>
-      <h4>Spécialisation Vent</h4>
-      <ul>
-        <li><strong>Niveau 1. </strong>Souffle de vent : Projection de 3 mètres.</li>
-        <li><strong>Niveau 2. </strong>Lames de vent : Trois projectiles infligeant 1 dégât chacun.</li>
-        <li><strong>Niveau 3. </strong>Mur de vent : Bloque les projectiles dans un rayon de 3 mètres.</li>
-        <li><strong>Niveau 4. </strong>Aveuglement : Aveugle la cible pendant 15 secondes.</li>
-        <li><strong>Niveau 5. </strong>Choix d’un autre élément ou spécialisation.</li>
-      </ul>
-      <h4>Spécialisation Eau</h4>
-      <ul>
-        <li><strong>Niveau 1. </strong>Guérison aquatique : Soigne 2 PV.</li>
-        <li><strong>Niveau 2. </strong>Résistance au feu.</li>
-        <li><strong>Niveau 3. </strong>Eau arcanique : Inflige 3 dégâts.</li>
-        <li><strong>Niveau 4. </strong>Concentration arcanique : Augmente la valeur de sort de +1.</li>
-        <li><strong>Niveau 5. </strong>Choix d’un autre élément ou spécialisation.</li>
-      </ul>
-      <h4>Spécialisation Terre</h4>
-      <ul>
-        <li><strong>Niveau 1. </strong>Armure terrestre I : Octroie 2 armures temporaires.</li>
-        <li><strong>Niveau 2. </strong>Boue arcanique : Paralyse un ennemi pendant 20 secondes.</li>
-        <li><strong>Niveau 3. </strong>Armure terrestre II : Ajoute 2 armures temporaires supplémentaires.</li>
-        <li><strong>Niveau 4. </strong>Pierre volante : Inflige 6 dégâts.</li>
-        <li><strong>Niveau 5. </strong>Choix d’un autre élément ou spécialisation.</li>
-      </ul>
-      <h4>Spécialisation Feu</h4>
-      <ul>
-        <li><strong>Niveau 1. </strong>Boule de feu : Inflige 2 dégâts.</li>
-        <li><strong>Niveau 2. </strong>Armes de feu : Enchante les armes pendant 15 minutes.</li>
-        <li><strong>Niveau 3. </strong>Résistance à l’eau et au froid.</li>
-        <li><strong>Niveau 4. </strong>Flamme arcanique : Inflige 6 dégâts.</li>
-        <li><strong>Niveau 5. </strong>Choix d’un autre élément ou spécialisation.</li>
+<section id="arcanistes" class="classe">
+  <h2 class="titre-classe">Arcanistes</h2>
 
-      </ul>
-    </section>
+  <table class="fiche-classe">
+    <tbody>
+      <tr>
+        <td><strong>Compétences de base</strong></td>
+        <td>Méditation, Lecture et Écriture (langue de base), Mana +1</td>
+      </tr>
+    </tbody>
+  </table>
 
-    <section id="guerrier">
-      <h3>Guerrier</h3>
-      <p>Compétence de base : Port de tout type d'armure (sans malus)</p>
-      <h4>Niveau 1</h4>
-      <ul>
-        <li>Frappe assommante : Assomme un ennemi pendant 5 minutes, une fois par combat.</li>
-        <li>+1 PV permanent.</li>
-        <li>Coup puissant : +1 dégât, une fois par combat.</li>
-        <li>Rage : +3 PV temporaires, une fois par combat.</li>
-      </ul>
-      <h4>Niveau 2</h4>
-      <ul>
-        <li>Désarmement : Frappe deux fois l’arme de l’adversaire pour le désarmer, une fois par combat.</li>
-        <li>+1 PV permanent.</li>
-        <li>Rage améliorée : +1 dégât supplémentaire pendant la rage, une fois par combat.</li>
-        <li>Armes exotiques : Permet l'utilisation d'armes hors normes (voir réglementation).</li>
-      </ul>
-      <h4>Niveau 3</h4>
-      <ul>
-        <li>Brise bouclier : Détruit les boucliers standards, deux fois par combat.</li>
-        <li>+1 PV permanent.</li>
-        <li>Rage consciente : Permet de choisir ses cibles pendant la rage.</li>
-        <li>Ralliement I : Toi et 3 alliés gagnent +3 PV temporaires, une fois par long repos.</li>
-      </ul>
-      <h4>Niveau 4</h4>
-      <ul>
-        <li>Esquives de coups normaux : Deux fois par combat.</li>
-        <li>+1 PV permanent.</li>
-        <li>Démembrement : Rend inutilisable le membre touché, une fois par combat.</li>
-        <li>Ralliement II : Ajoute +1 dégât jusqu'à la fin du combat au bonus de Ralliement I.</li>
-      </ul>
-      <h4>Niveau 5</h4>
-      <ul>
-        <li>Esquives magiques : Deux fois par combat.</li>
-        <li>+1 PV permanent.</li>
-        <li>Second souffle : +3 PV temporaires après activation.</li>
-        <li>Ralliement III : Ajoute +1 dégât supplémentaire jusqu'à la fin du combat au bonus de Ralliement II.</li>
-      </ul>
-    </section>
+  <h3 class="sous-titre">Niveau 1</h3>
+  <table class="fiche-classe">
+    <tbody>
+      <tr><td>1. Sort : Flèche arcanique</td></tr>
+      <tr><td>2. Sort : Langue temporaire</td></tr>
+      <tr><td>3. Sort : Frappe magique</td></tr>
+    </tbody>
+  </table>
 
-    <section id="druide">
-      <h3>Druide</h3>
-      <p>Compétence de base : Prière (permet de regénérer +1 point de ferveur de plus par court repos)</p>
-      <p><strong>Ferveur de base :</strong> 3 (ajout de +1 par niveau, +3 au niveau 5)</p>
-      <h4>Niveau 1</h4>
-      <ul>
-        <li>Aura de peur : Affecte 3 cibles pendant 15 minutes.</li>
-        <li>Racines paralysantes : Paralyse un ennemi pendant 10 secondes avec un catalyseur.</li>
-        <li>Mère Nature : Rituel de 15 minutes octroyant +4 PV à toi et 3 alliés.</li>
-        <li>Langue universelle : Permet de parler toutes les langues.</li>
-      </ul>
-      <h4>Niveau 2</h4>
-      <ul>
-        <li>Apaisement : Calme une cible agressive.</li>
-        <li>Restauration druidique : Rituel de 15 minutes restaurant 5 armures.</li>
-        <li>Rituel de la nature : Fait pousser une plante aléatoire, une fois par GN.</li>
-        <li>Pied forestier I : Évite les pièges et racines.</li>
-      </ul>
-      <h4>Niveau 3</h4>
-      <ul>
-        <li>Alchimiste : Débloque le métier d'alchimiste.</li>
-        <li>Purification naturelle : Retire les poisons et maladies non magiques.</li>
-        <li>Métamorphe : Permet de se transformer en une race déjà rencontrée en jeu.</li>
-        <li>Pied forestier II : Évite les pièges de niveau majeur.</li>
-      </ul>
-      <h4>Niveau 4</h4>
-      <ul>
-        <li>Prière de la nature : Régénère 3 ferveurs après une prière de 15 minutes.</li>
-        <li>Double récolte : Double les récoltes.</li>
-        <li>Drain d’énergie vitale : Régénère un montant de PV égal aux dégâts de ton arme, une fois par combat.</li>
-        <li>Projection : Repousse de 3 mètres, illimité pendant 15 minutes.</li>
-      </ul>
-      <h4>Niveau 5</h4>
-      <ul>
-        <li>Aura de peur II : Affecte 5 personnes.</li>
-        <li>Racines paralysantes II : Paralyse pendant 25 secondes et inflige 2 dégâts.</li>
-        <li>Peau d’écorce : Octroie 5 armures temporaires.</li>
-        <li>Coup précis : +4 dégâts.</li>
-      </ul>
-    </section>
+  <h3 class="sous-titre">Niveau 2</h3>
+  <table class="fiche-classe">
+    <tbody>
+      <tr><td>1. Sort : Flèche arcanique majeure</td></tr>
+      <tr><td>2. Sort : Bouclier arcanique</td></tr>
+      <tr><td>3. Comp : Transfert de mana</td></tr>
+    </tbody>
+  </table>
 
-    <section id="archer">
-      <h3>Archer</h3>
-      <p>Compétence de base : Détection de piège (1x par cycle)</p>
-      <h4>Niveau 1</h4>
-      <ul>
-        <li>Esquive : Une fois par combat.</li>
-        <li>Soins artisanaux : Guérit 2 PV en appliquant une feuille pendant 15 minutes.</li>
-        <li>Armure légère : Port d’armures légères sans malus.</li>
-        <li>Peau dure : +2 PV permanents.</li>
-      </ul>
-      <h4>Niveau 2</h4>
-      <ul>
-        <li>Adrénaline : +2 PV temporaires en combat, suivi de « fatigue ».</li>
-        <li>Brise bouclier : Permet de briser un bouclier, une fois par combat.</li>
-        <li>Pied forestier I : Immunité aux pièges et racines.</li>
-        <li>Détection de pièges : En géopolitique et en donjon.</li>
-      </ul>
-      <h4>Niveau 3</h4>
-      <ul>
-        <li>Précision supérieure : +1 dégât permanent sur les flèches.</li>
-        <li>Armures moyennes : Permet de porter des armures moyennes sans malus.</li>
-        <li>Tir puissant : Une flèche infligeant +2 dégâts, une fois par combat.</li>
-        <li>Esquives magiques : Une fois par combat.</li>
-      </ul>
-      <h4>Niveau 4</h4>
-      <ul>
-        <li>Tir discret : +2 dégâts par flèche si la cible est prise par surprise.</li>
-        <li>Perce armure : Octroie un tir « perce armure », une fois par combat.</li>
-        <li>Désamorçage de pièges : Permet de désamorcer un piège en 15 minutes.</li>
-        <li>Herboriste : Débloque le métier d'herboriste.</li>
-      </ul>
-      <h4>Niveau 5</h4>
-      <ul>
-        <li>Libre d’action : Immunité à l’effet Enchevêtrement.</li>
-        <li>Tir triple : Trois flèches en rafale (1 dégât chacune), une fois par combat.</li>
-        <li>Tir de dissuasion : Fait reculer l’adversaire de 3 mètres, une fois par combat.</li>
-        <li>Pièges de zone : Place un piège déclenchant 2 dégâts sur plusieurs ennemis (1x par GN).</li>
-      </ul>
-    </section>
+  <h3 class="sous-titre">Choix de spécialisation</h3>
+  <ul class="liste-specialisations">
+    <li>Élémentaliste</li>
+    <li>Enchanteur</li>
+    <li>Mage de Sang</li>
+    <li>Sorcier</li>
+    <li>Warlock</li>
+  </ul>
 
-    <section id="assassin">
-      <h3>Assassin</h3>
-      <p>Compétence de base : Esquive (1x par combat)</p>
-      <h4>Niveau 1</h4>
-      <ul>
-        <li>Furtivité : Vous pouvez avancer sans être vu si vous ne parlez pas et portez une cape noire.</li>
-        <li>Attaque sournoise : +3 dégâts sur un ennemi pris par surprise, une fois par combat.</li>
-        <li>Dissimulation : Cache un objet ou une arme sur vous (illimité hors combat).</li>
-        <li>Poison I : Empoisonne une arme pour infliger l’effet Empoisonné (1 fois par GN).</li>
-      </ul>
-      <h4>Niveau 2</h4>
-      <ul>
-        <li>Esquive : Une fois par combat.</li>
-        <li>Poison II : Inflige 2 dégâts + empoisonné sur une attaque surprise (1x par long repos).</li>
-        <li>Perce-armure : Ignore l’armure sur une attaque sournoise (1 fois par combat).</li>
-        <li>Langue des ombres : Peut communiquer en langage codé incompréhensible par les autres.</li>
-      </ul>
-      <h4>Niveau 3</h4>
-      <ul>
-        <li>Égorgement : Permet de tuer un ennemi en coma (1x par cycle de 8h).</li>
-        <li>Disparition : Devient invisible pendant 15 secondes (1x par combat).</li>
-        <li>Attaque jumelée : Frappe deux cibles à la fois si elles sont proches (1x par combat).</li>
-        <li>Poison III : Poison incurable sans antidote ou purification (1x par GN).</li>
-      </ul>
-      <h4>Niveau 4</h4>
-      <ul>
-        <li>Double esquive : Deux esquives supplémentaires (par combat).</li>
-        <li>Attaque silencieuse : Frappe sans déclencher d’effets magiques ou alertes.</li>
-        <li>Pièges explosifs : Peut poser un piège infligeant 4 dégâts en zone.</li>
-        <li>Reflexes surnaturels : Peut annuler une compétence ciblée sur lui (1x par combat).</li>
-      </ul>
-      <h4>Niveau 5</h4>
-      <ul>
-        <li>Maître empoisonneur : Peut fabriquer un poison mythique RP.</li>
-        <li>Coup fatal : Toute attaque surprise inflige +5 dégâts.</li>
-        <li>Camouflage parfait : Devient invisible jusqu'à ce qu’il attaque.</li>
-        <li>Égorgement amélioré : Peut égorger deux cibles d’un coup (1x par GN).</li>
-      </ul>
-    </section>
+  <h3 class="sous-titre">Élémentaliste</h3>
 
-    <section id="pretre">
-      <h3>Prêtre</h3>
-      <p>Compétence de base : Prière (permet de regénérer +1 point de ferveur de plus par court repos)</p>
-      <p><strong>Ferveur de base :</strong> 3 (ajout de +1 par niveau, +2 au niveau 5)</p>
-      <h4>Niveau 1</h4>
-      <ul>
-        <li>Prière de soin : Soigne 2 PV avec une prière de 10 mots.</li>
-        <li>Bouclier divin : Donne +2 armures temporaires (1 fois par combat).</li>
-        <li>Chant sacré : Dissipe un effet négatif mineur (1x par combat).</li>
-        <li>Ferveur : +1 ferveur après chaque scène de prière complète.</li>
-      </ul>
-      <h4>Niveau 2</h4>
-      <ul>
-        <li>Purification : Retire poison, corruption ou malédiction (1x par combat).</li>
-        <li>Résistance divine : +1 résistance aux effets magiques.</li>
-        <li>Main de lumière : Soigne une cible inconsciente sans passer par le coma.</li>
-        <li>Invocation bénie : Invoque un serviteur sacré pendant 15 minutes (RP).</li>
-      </ul>
-      <h4>Niveau 3</h4>
-      <ul>
-        <li>Prière de groupe : Soigne 2 PV à 3 alliés (1x par long repos).</li>
-        <li>Barrière divine : Donne +3 armures temporaires à un allié (1x par combat).</li>
-        <li>Voix du ciel : Augmente l’efficacité de toutes vos prières.</li>
-        <li>Résurrection mineure : Réanime une cible tombée (1x par GN).</li>
-      </ul>
-      <h4>Niveau 4</h4>
-      <ul>
-        <li>Chant de guerre sacré : Tous les alliés gagnent +1 dégât pour 1 combat.</li>
-        <li>Aura protectrice : Tous les alliés à 3m gagnent +2 armures pendant 15 minutes.</li>
-        <li>Invocation majeure : Invoque un protecteur sacré avec 10 PV (RP).</li>
-        <li>Bénédiction du cycle : Restaure 3 ferveurs après une prière de 15 minutes.</li>
-      </ul>
-      <h4>Niveau 5</h4>
-      <ul>
-        <li>Résurrection divine : Réanime un joueur mort (1x par GN avec animation).</li>
-        <li>Bouclier mythique : Immunité à un effet de zone (1x par combat).</li>
-        <li>Bénédiction suprême : Tous les soins augmentés de +2 pour 1 scène.</li>
-        <li>Invocation céleste : Invoque une entité divine (RP avec effet mythique).</li>
-      </ul>
-    </section>
+  <h4 class="niveau">Niveau 3</h4>
+  <table class="fiche-classe">
+    <tbody>
+      <tr><td>1. Sort : Invocation de feu</td></tr>
+      <tr><td>2. Sort : Invocation de glace</td></tr>
+      <tr><td>3. Sort : Invocation de foudre</td></tr>
+    </tbody>
+  </table>
 
-      </div>
+  <h4 class="niveau">Niveau 4</h4>
+  <table class="fiche-classe">
+    <tbody>
+      <tr><td>1. Sort : Fonte rapide</td></tr>
+      <tr><td>2. Sort : Régénération aquatique</td></tr>
+      <tr><td>3. Sort : Chaîne d’éclairs</td></tr>
+    </tbody>
+  </table>
+
+  <h4 class="niveau">Niveau 5</h4>
+  <table class="fiche-classe">
+    <tbody>
+      <tr><td>1. Sort : Renaissance du Phoenix</td></tr>
+      <tr><td>2. Sort : Prison de glace éternelle</td></tr>
+      <tr><td>3. Sort : Tempête déchaînée</td></tr>
+    </tbody>
+  </table>
+</section>
+</div>
   </main>
   <footer>
     <p>&copy; Projet Croisade - Tous droits réservés</p>
