@@ -5,20 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Magie – Projet Croisade</title>
   <link rel="stylesheet" href="style.css">
-<style>
-.btn-download {
-  background-color: #e7ba79;
-  color: #000;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-.btn-download:hover {
-  background-color: #fff3c1;
-}
-</style>
   <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
@@ -29,6 +15,7 @@
         <li><a href="index.html">Accueil</a></li>
         <li><a href="races.html">Races</a></li>
         <li><a href="classes.html">Classes</a></li>
+        <li><a href="competences.html">Compétences</a></li>
         <li><a href="metiers.html">Métiers</a></li>
         <li><a href="regles.html">Règles de jeu</a></li>
         <li><a href="infos.html">Informations</a></li>
@@ -78,6 +65,7 @@
     </section>
   <section class="codex-sorts">
     <h2>Les Sorts</h2>
+    <!--Niveau 1-->
       <section id="niveau1" class="sorts">
       <h2>Niveau 1</h2>
       <h3>Flèche Arcanique</h3>
@@ -104,7 +92,7 @@
       <br><strong>Effet</strong> : L’Arcaniste enchante une arme pour infliger 1 coup magique (dégât de l’arme).
       </p>
       </section>
-
+      <!--Niveau 2-->
       <section id="niveau2" class="sorts">
       <h2>Niveau 2</h2>
       <h3>Flèche arcanique majeure</h3>
@@ -123,7 +111,7 @@
       <br><strong>Effet</strong> : Permet d’enchanter un bouclier pour qu’il puisse dévier 1 catalyseur (1 sort / une fois).
       </p>
       </section>
-
+      <!--Niveau 3-->
       <section id="niveau3" class="sorts">
       <h2>Niveau 3</h2>
       <h3>Invocation de feu</h3>
@@ -149,8 +137,33 @@
       <br><strong>Durée</strong> : Instantané
       <br><strong>Effet</strong> : L’Arcaniste lance un catalyseur électrifié qui inflige 2 dégâts de foudre à la cible touchée.
       </p>
-      </section>
 
+      <h3>Tir Sanglant</h3>
+      <p><strong>Niveau</strong> : 3
+      <br><strong>Incantation</strong> : Arcane Ostium Opertum Sanguis Trio
+      <br><strong>Coût</strong> : 3 Mana / 1 point de vie
+      <br><strong>Durée</strong> : Instantané
+      <br><strong>Effet</strong> : Le Mage de Sang lance un catalyseur sanguin qui inflige 3 dégâts physiques et soigne l’Arcaniste de 1 point de vie.
+      </p>
+
+      <h3>Aura de peur</h3>
+      <p><strong>Niveau</strong> : 3
+      <br><strong>Incantation</strong> : Arcane Ostium Opertum Sanguis Trio
+      <br><strong>Coût</strong> : 3 Mana / 1 point de vie
+      <br><strong>Durée</strong> : 15 minute
+      <br><strong>Effet</strong> : Le Mage de Sang dégage une aura terrifiante. Toutes les cibles hostiles dans un rayon de 3 mètres doivent être effrayées pendant la durée.
+      </p>
+
+      <h3>Guérison sombre</h3>
+      <p><strong>Niveau</strong> : 3
+      <br><strong>Incantation</strong> : Arcane Ostium Opertum Sanguis Trio
+      <br><strong>Coût</strong> : 3 Mana / 1 point de vie
+      <br><strong>Durée</strong> : Instantané
+      <br><strong>Effet</strong> : Permet de soigner 3 points de vie à une cible.
+      </p>
+
+      </section>
+      <!--Niveau 4-->
       <section id="niveau4" class="sorts">
       <h2>Niveau 4</h2>
       <h3>Fonte rapide</h3>
@@ -179,8 +192,31 @@
       <br><strong>Requis</strong> : Sort : Invocation de foudre
       <br><strong>Effet</strong> : Lance un catalyseur électrique qui inflige 3 dégâts de foudre à la première cible, puis rebondit vers une deuxième cible à proximité pour infliger 2 dégâts, puis une troisième cible pour 1 dégât.
       </p>
-      </section>
 
+      <h3>Soif de sang</h3>
+      <p><strong>Niveau</strong> : 4
+      <br><strong>Incantation</strong> : Arcane Ostium Opertum Sanguis Tetra
+      <br><strong>Coût</strong> : 4 Mana / 2 points de vie
+      <br><strong>Durée</strong> : Instantané
+      <br><strong>Effet</strong> : Une fois par heure, le Mage de Sang peut achever une cible dans le coma pour récupérer 7 points de vie.
+      </p>
+      <h3>Artefact Maudit</h3>
+      <p><strong>Niveau</strong> : 4
+      <br><strong>Incantation</strong> : Arcane Ostium Opertum Sanguis Tetra
+      <br><strong>Coût</strong> : 4 Mana / 2 points de vie
+      <br><strong>Durée</strong> : 15 minutes de travail / Permanent 
+      <br><strong>Effet</strong> : Le Mage de Sang peut maudir un objet, le rendant instable. Transforme les pouvoirs de l'artéfact en son opposé (ex : soin en dégât, protection en vulnérabilité, etc.) de façon permanente après 15 minutes de travail.
+      </p>
+      <h3>Sacrifice communautaire</h3>
+      <p><strong>Niveau</strong> : 4
+      <br><strong>Incantation</strong> : Arcane Ostium Opertum Sanguis Tetra
+      <br><strong>Coût</strong> : 4 Mana / 2 points de vie
+      <br><strong>Durée</strong> : Instantané
+      <br><strong>Effet</strong> : Le Mage de Sang peut sacrifier tous ses points de vie pour soigner des alliés. Pour chaque point de vie sacrifié, il soigne 2 points de vie répartis entre les alliés à portée.
+      </p>
+
+      </section>
+      <!--Niveau 5-->
       <section id="niveau5" class="sorts">
       <h2>Niveau 5</h2>
       <h3>Renaissance du Phoenix</h3>
@@ -208,6 +244,29 @@
       <br><strong>Durée</strong> : Instantané
       <br><strong>Requis</strong> : Sort : Invocation de foudre
       <br><strong>Effet</strong> : L’Arcaniste invoque une violente tempête qui frappe toutes les cibles dans une zone de 5 mètres, infligeant 4 dégâts de foudre à chaque cible touchée.
+      </p>
+
+      <h3>Annulation</h3>
+      <p><strong>Niveau</strong> : 5
+      <br><strong>Incantation</strong> : Arcane Ostium Opertum Sanguis Penta
+      <br><strong>Coût</strong> : 5 Mana / 3 points de vie
+      <br><strong>Durée</strong> : Instantané
+      <br><strong>Effet</strong> : Permet d'annuler un sort ou un effet magique en cours sur une cible.
+      </p>
+
+      <h3>Rage de sang</h3>
+      <p><strong>Niveau</strong> : 5
+      <br><strong>Incantation</strong> : Arcane Ostium Opertum Sanguis Penta
+      <br><strong>Coût</strong> : 5 Mana / 3 points de vie
+      <br><strong>Durée</strong> : 15 minutes
+      <br><strong>Effet</strong> : Le Mage de Sang entre dans une rage berserk, augmentant ses dégâts physiques de 4 points pendant la durée.
+      </p>
+      <h3>Apprentissage Magie Noire</h3>
+      <p><strong>Niveau</strong> : 5
+      <br><strong>Incantation</strong> : Arcane Ostium Opertum Sanguis Penta
+      <br><strong>Coût</strong> : 5 Mana / 3 points de vie
+      <br><strong>Durée</strong> : Permanent
+      <br><strong>Effet</strong> : Permet au Mage de Sang d'apprendre un sort de Magie Noire en géopolitique et de l'utiliser 1 fois par géopolitique.
       </p>
       </section>
   </section>
