@@ -1,0 +1,226 @@
+[
+  {
+    "name": "Baragouinage",
+    "level": 1,
+    "duree": "1 fois par heure",
+    "portee": "1 cible à portée de voix",
+    "requis": "",
+    "effet": "Permet d'inventer une histoire sans queue ni tête qui embrouillera la cible pendant 5 minutes, la rendant incapable de se concentrer sur autre chose."
+  },
+  {
+    "name": "Coup puissant",
+    "level": 1,
+    "duree": "1 fois par combat",
+    "portee": "1 cible",
+    "requis": "",
+    "effet": "Inflige +1 dégât supplémentaire lors de votre prochaine attaque physique."
+  },
+  {
+    "name": "Désarmement",
+    "level": 1,
+    "duree": "1 fois par combat",
+    "portee": "1 cible à portée d'arme",
+    "requis": "",
+    "effet": "Taper 2 fois l'arme de votre adversaire puis lui dire \"désarmement\", celui-ci devra alors laisser tomber son arme sur le sol à 1 m devant lui."
+  },
+  {
+    "name": "Dévotion I",
+    "level": 1,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Augmente la ferveur de +1 point."
+  },
+  {
+    "name": "Endurance I",
+    "level": 1,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Confère +1 point de vie supplémentaire."
+  },
+  {
+    "name": "Force",
+    "level": 1,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Augmente la force physique, permet de transporter un corps ou un objet lourd seul."
+  },
+  {
+    "name": "Fuite rapide",
+    "level": 1,
+    "duree": "15 secondes",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Permet au lanceur de s'enfuir et de ne pas être suivi pendant 15 secondes."
+  },
+  {
+    "name": "Lumière",
+    "level": 1,
+    "duree": "Jusqu'à extinction volontaire",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Permet de créer une source de lumière brillante (Lampe de poche cachée dans une manche)."
+  },
+  {
+    "name": "Mensonge",
+    "level": 1,
+    "duree": "1 fois par conversation",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Permet de mentir de manière convaincante lors d'une conversation (Permet de résister à une détection de mensonge)."
+  },
+  {
+    "name": "Résistance à la peur (Mineure / Majeure)",
+    "level": 1,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Confère une résistance (mineure ou majeure selon l'indication) aux effets de peur."
+  },
+  {
+    "name": "Soin divin léger",
+    "level": 1,
+    "duree": "Instantané / 1 fois par heure",
+    "portee": "Soi-même ou 1 cible à portée de main",
+    "requis": "",
+    "effet": "Permet de soigner 1 point de vie à soi-même ou à une autre personne en invoquant une énergie divine."
+  },
+  {
+    "name": "Transfer de Mana",
+    "level": 1,
+    "duree": "Instantané",
+    "portee": "Toucher",
+    "requis": "",
+    "effet": "Permet de transférer du mana à une autre personne (autant de mana que possible) en la touchant avec la paume de la main. La cible qui reçoit le mana ne peut pas dépasser son maximum de mana."
+  },
+  {
+    "name": "Camouflage",
+    "level": 2,
+    "duree": "Tant que le lanceur reste immobile",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Permet au lanceur de se fondre dans son environnement immédiat, le rendant difficile à détecter tant qu'il reste immobile."
+  },
+  {
+    "name": "Corruption",
+    "level": 2,
+    "duree": "Une seule conversation",
+    "portee": "1 cible à portée de voix",
+    "requis": "",
+    "effet": "Permet de corrompre une personne en lui offrant un objet de valeur (réel ou symbolique). La cible doit simuler un changement d'attitude envers le lanceur, devenant plus encline à coopérer ou à suivre ses suggestions pendant une seule conversation."
+  },
+  {
+    "name": "Coup assomant",
+    "level": 2,
+    "duree": "1 fois par combat",
+    "portee": "1 cible à portée d'arme",
+    "requis": "",
+    "effet": "Permet au combattant d'utiliser le pommeau de son arme pour assommer un adversaire. L'adversaire touché doit simuler un état d'inconscience temporaire pendant 5 minutes. S'il subit des dégâts ou si il est secoué, il se réveille immédiatement."
+  },
+  {
+    "name": "Cérémonie",
+    "level": 2,
+    "duree": "Variable selon la cérémonie",
+    "portee": "Groupe à portée de voix",
+    "requis": "",
+    "effet": "Permet de réaliser une cérémonie religieuse spécifique (mariage, exorcisme, etc.). Le lanceur doit suivre les rituels appropriés et peut bénéficier de l'aide de sa divinité pour renforcer l'effet de la cérémonie."
+  },
+  {
+    "name": "Dévotion II",
+    "level": 2,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Augmente la ferveur de +1 point."
+  },
+  {
+    "name": "Endurance II",
+    "level": 2,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Confère +1 point de vie supplémentaire."
+  },
+  {
+    "name": "Esquive",
+    "level": 2,
+    "duree": "1 fois par combat",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Permet d'obtenir une esquive supplémentaire."
+  },
+  {
+    "name": "Premiers soins",
+    "level": 2,
+    "duree": "Instantané",
+    "portee": "Soi-même ou 1 cible à portée de main",
+    "requis": "",
+    "effet": "Permet de soigner 1 point de vie à soi-même ou à une autre personne en appliquant un bandage sur la blessure pendant 1 minute."
+  },
+  {
+    "name": "Savoir Religieux",
+    "level": 2,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Confère des connaissances supplémentaires sur les rites et les traditions religieuses de sa divinité (Voir Animation)."
+  },
+  {
+    "name": "Apprentissage d'Enchantement",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Concentration Arcanique",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Destruction d'Artefacts",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Agilité Arcanique",
+    "level": 4,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Compétence à venir 1",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": "À venir."
+  },
+  {
+    "name": "Compétence à venir 2",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": "À venir."
+  },
+  {
+    "name": "Compétence à venir 3",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": "À venir."
+  }
+]

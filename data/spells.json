@@ -1,0 +1,335 @@
+[
+  {
+    "name": "Flèche Arcanique",
+    "level": 1,
+    "incantation": "Arcane Ostium Opertum Luminaria Prio Sagitta",
+    "cout": "1 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "L’Arcaniste lance un catalyseur qui inflige 1 dégât magique à la cible touchée."
+  },
+  {
+    "name": "Frappe magique",
+    "level": 1,
+    "incantation": "Arcane Ostium Opertum Terra Prio",
+    "cout": "1 Mana",
+    "duree": "Jusqu’à utilisation",
+    "requis": "",
+    "effet": "L’Arcaniste enchante une arme pour infliger 1 coup magique (dégât de l’arme)."
+  },
+  {
+    "name": "Langue Temporaire",
+    "level": 1,
+    "incantation": "Arcane Ostium Opertum Ventis Prio",
+    "cout": "1 Mana",
+    "duree": "15 minutes",
+    "requis": "",
+    "effet": "Permet à l’Arcaniste de parler une langue qui lui est inconnue."
+  },
+  {
+    "name": "Bouclier arcanique",
+    "level": 2,
+    "incantation": "Arcane Ostium Opertum Terra Duo",
+    "cout": "2 Mana",
+    "duree": "Jusqu’à utilisation",
+    "requis": "",
+    "effet": "Permet d’enchanter un bouclier pour qu’il puisse dévier 1 catalyseur (1 sort / une fois)."
+  },
+  {
+    "name": "Flèche arcanique majeure",
+    "level": 2,
+    "incantation": "Arcane Ostium Opertum Luminaria Duo",
+    "cout": "2 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Lance 3 catalyseurs qui infligent chacun 1 dégât magique à la cible."
+  },
+  {
+    "name": "Aura de peur",
+    "level": 3,
+    "incantation": "Arcane Ostium Opertum Sanguis Trio",
+    "cout": "3 Mana / 1 point de vie",
+    "duree": "15 minutes",
+    "requis": "",
+    "effet": "Le Mage de Sang dégage une aura terrifiante. Toutes les cibles hostiles dans un rayon de 3 mètres doivent être effrayées (Effet Peur mineure) pendant la durée."
+  },
+  {
+    "name": "Flèche Arcanique Multiple",
+    "level": 3,
+    "incantation": "Arcane Ostium Opertum Luminaria Trio",
+    "cout": "3 Mana",
+    "duree": "1 minute",
+    "requis": "",
+    "effet": "Invoque 4 projectiles autour du lanceur du sort pour la durée du sort. Permet de lancer 4 catalyseurs qui infligent 2 dégâts magiques chaque."
+  },
+  {
+    "name": "Guérison sombre",
+    "level": 3,
+    "incantation": "Arcane Ostium Opertum Sanguis Trio",
+    "cout": "3 Mana / 1 point de vie",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Permet de soigner 3 points de vie à une cible."
+  },
+  {
+    "name": "Invocation de feu",
+    "level": 3,
+    "incantation": "Arcane Ostium Opertum Ignis Trio",
+    "cout": "3 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "L’Arcaniste lance un catalyseur enflammé qui inflige 2 dégâts de feu à la cible touchée."
+  },
+  {
+    "name": "Invocation de foudre",
+    "level": 3,
+    "incantation": "Arcane Ostium Opertum Ventis Trio",
+    "cout": "3 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "L’Arcaniste lance un catalyseur électrifié qui inflige 2 dégâts de foudre à la cible touchée."
+  },
+  {
+    "name": "Invocation de glace",
+    "level": 3,
+    "incantation": "Arcane Ostium Opertum Aqua Trio",
+    "cout": "3 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "L’Arcaniste lance un catalyseur glacé qui inflige 2 dégâts de froid à la cible touchée."
+  },
+  {
+    "name": "Lame Enchantée",
+    "level": 3,
+    "incantation": "Arcane Ostium Opertum Encantis Trio",
+    "cout": "3 Mana",
+    "duree": "30 minutes",
+    "requis": "",
+    "effet": "Enchante la lame d’une arme avec un sort ou un enchantement connu pour la durée du sort. Pour ce faire toucher la lame pendant 15 min et réciter d’abord l’incantation du sort puis l'incantation de l’enchantement/sort que vous souhaitez mettre sur la lame. L’enchanteur doit absolument connaître le sort qu’il souhaite mettre sur la lame."
+  },
+  {
+    "name": "Renforcement I",
+    "level": 3,
+    "incantation": "Arcane Ostium Opertum Encantis Trio",
+    "cout": "3 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Renforce un bâtiment ou un objet lui ajoutant 1 de résistance temporaire."
+  },
+  {
+    "name": "Scellement d'Artéfacts",
+    "level": 3,
+    "incantation": "Arcane Ostium Opertum Encantis Trio",
+    "cout": "3 Mana",
+    "duree": "15 minutes",
+    "requis": "",
+    "effet": "Permet de sceller temporairement les pouvoirs d'un artéfact magique pendant la durée. Toucher l'artéfact et réciter l'incantation."
+  },
+  {
+    "name": "Tir Sanglant",
+    "level": 3,
+    "incantation": "Arcane Ostium Opertum Sanguis Trio",
+    "cout": "3 Mana / 1 point de vie",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Le Mage de Sang lance un catalyseur sanguin qui inflige 3 dégâts physiques et soigne l’Arcaniste de 1 point de vie."
+  },
+  {
+    "name": "Artefact Maudit",
+    "level": 4,
+    "incantation": "Arcane Ostium Opertum Sanguis Tetra",
+    "cout": "4 Mana / 2 points de vie",
+    "duree": "15 minutes de travail / Permanent",
+    "requis": "",
+    "effet": "Le Mage de Sang peut maudir un objet, le rendant instable. Transforme les pouvoirs de l'artéfact en son opposé (ex soin en dégât, protection en vulnérabilité, etc.) de façon permanente après 15 minutes de travail."
+  },
+  {
+    "name": "Chaîne d'éclairs",
+    "level": 4,
+    "incantation": "Arcane Ostium Opertum Ventis Tetra",
+    "cout": "4 Mana",
+    "duree": "Instantané",
+    "requis": "Sort Invocation de foudre",
+    "effet": "Lance un catalyseur électrique qui inflige 3 dégâts de foudre à la première cible, puis rebondit vers une deuxième cible à proximité pour infliger 2 dégâts, puis une troisième cible pour 1 dégât."
+  },
+  {
+    "name": "Entrave Arcanique",
+    "level": 4,
+    "incantation": "Arcane Ostium Opertum Terra Tetra",
+    "cout": "4 Mana",
+    "duree": "5 minutes",
+    "requis": "",
+    "effet": "Invoque des chaînes arcaniques qui entravent les bras et les jambes d’une cible, touché par un catalyseur, pendant la durée du sort. La cible ne peut plus bouger ou attaquer pendant la durée du sort."
+  },
+  {
+    "name": "Extortion Arcanique I",
+    "level": 4,
+    "incantation": "Arcane Ostium Opertum Terra Tetra",
+    "cout": "4 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Vole 1 Mana par cible dans un rayon de 5 mètres. Toutes les cibles perdent 1 Mana temporairement, même si elle n’en possède pas, et le Sorcier récupère le Mana qu’il vole. Le Sorcier ne peut pas dépasser son maximum de Mana."
+  },
+  {
+    "name": "Fonte rapide",
+    "level": 4,
+    "incantation": "Arcane Ostium Opertum Ignis Tetra",
+    "cout": "4 Mana",
+    "duree": "Le temps de forge de l'objet",
+    "requis": "Sort Invocation de feu",
+    "effet": "Permet de fondre rapidement des métaux pour forger des objets simples (armes, armures légères, outils). Le temps de forge est divisé par deux."
+  },
+  {
+    "name": "Renforcement d'armure I",
+    "level": 4,
+    "incantation": "Arcane Ostium Opertum Encantis Tetra",
+    "cout": "4 Mana",
+    "duree": "30 minutes",
+    "requis": "",
+    "effet": "Octroie 2 résistances mineures temporaires à la cible de votre choix."
+  },
+  {
+    "name": "Renforcement II",
+    "level": 4,
+    "incantation": "Arcane Ostium Opertum Encantis Tetra",
+    "cout": "4 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Renforce un bâtiment ou un objet lui ajoutant 2 de résistance temporaire."
+  },
+  {
+    "name": "Régénération aquatique",
+    "level": 4,
+    "incantation": "Arcane Ostium Opertum Aqua Tetra",
+    "cout": "4 Mana",
+    "duree": "Instantané",
+    "requis": "Sort Invocation de glace",
+    "effet": "Permet de soigner 4 points de vie à une cible en utilisant l'eau comme vecteur (boisson, bain, objet mouillé, etc.)."
+  },
+  {
+    "name": "Sacrifice communautaire",
+    "level": 4,
+    "incantation": "Arcane Ostium Opertum Sanguis Tetra",
+    "cout": "4 Mana / 2 points de vie",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Le Mage de Sang peut sacrifier tous ses points de vie pour soigner des alliés. Pour chaque point de vie sacrifié, il soigne 2 points de vie répartis entre les alliés à portée."
+  },
+  {
+    "name": "Soif de sang",
+    "level": 4,
+    "incantation": "Arcane Ostium Opertum Sanguis Tetra",
+    "cout": "4 Mana / 2 points de vie",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Une fois par heure, le Mage de Sang peut achever une cible dans le coma pour récupérer 7 points de vie."
+  },
+  {
+    "name": "Animation d'objet",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Encantis Penta",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Permet d'animer un objet inanimé, lui donnant vie et la capacité d'effectuer des tâches simples. Sort exclusif aux géopolitiques."
+  },
+  {
+    "name": "Annulation",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Sanguis Penta",
+    "cout": "5 Mana / 3 points de vie",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Permet d'annuler un sort ou un effet magique en cours sur une cible."
+  },
+  {
+    "name": "Apprentissage Magie Noire",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Sanguis Penta",
+    "cout": "5 Mana / 3 points de vie",
+    "duree": "Permanent",
+    "requis": "",
+    "effet": "Permet au Mage de Sang d'apprendre un sort de Magie Noire en géopolitique et de l'utiliser 1 fois par géopolitique."
+  },
+  {
+    "name": "Brise Illusions",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Terra Penta",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Permet de briser une illusion au choix. Le Sorcier doit être conscient que l’illusion existe et le lieu exact d’où elle se trouve."
+  },
+  {
+    "name": "Chaînes Arcaniques",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Terra Penta",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Invoques des chaînes qui viennent s'enrouler autour d’une cible au choix se trouvant à 1 mètre de distance du Sorcier. La cible est ensuite attirée jusqu’au Sorcier."
+  },
+  {
+    "name": "Extortion Arcanique II",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Terra Penta",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Vole 2 Mana par cible dans un rayon de 5 mètres. Toutes les cibles perdent 1 Mana temporairement, même si elle n’en possède pas, et le Sorcier récupère le Mana qu’il vole. Si le Sorcier dépasse son maximum de Mana, le reste est stocké en Mana temporaire."
+  },
+  {
+    "name": "Prison de glace éternelle",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Aqua Penta",
+    "cout": "5 Mana",
+    "duree": "30 secondes",
+    "requis": "Sort Invocation de glace",
+    "effet": "L'Élémentaliste lance un catalyseur sur la cible, celle-ci est emprisonnée dans une cage de glace impénétrable, la rendant incapable d'agir ou de se déplacer. (Paralysie magique)"
+  },
+  {
+    "name": "Rage de sang",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Sanguis Penta",
+    "cout": "5 Mana / 3 points de vie",
+    "duree": "15 minutes",
+    "requis": "",
+    "effet": "Le Mage de Sang entre dans une rage berserk, augmentant ses dégâts physiques de 4 points pendant la durée."
+  },
+  {
+    "name": "Renaissance du Phoenix",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Ignis Penta",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "Sort Invocation de feu",
+    "effet": "Permet de ressusciter une cible morte depuis moins de 5 minutes, lui rendant 10 points de vie. Ne fonctionne qu'une fois par événement."
+  },
+  {
+    "name": "Renforcement d'armure II",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Encantis Penta",
+    "cout": "5 Mana",
+    "duree": "1 heure",
+    "requis": "",
+    "effet": "Octroie 3 résistances mineures temporaires à la cible de votre choix."
+  },
+  {
+    "name": "Renforcement III",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Encantis Penta",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Renforce un bâtiment ou un objet lui ajoutant 3 de résistance temporaire."
+  },
+  {
+    "name": "Tempête déchaînée",
+    "level": 5,
+    "incantation": "Arcane Ostium Opertum Ventis Penta",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "Sort Invocation de foudre",
+    "effet": "L’Arcaniste invoque une violente tempête qui frappe toutes les cibles dans une zone de 5 mètres, infligeant 4 dégâts de foudre à chaque cible touchée."
+  }
+]

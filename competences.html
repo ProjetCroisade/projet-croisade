@@ -9,17 +9,17 @@
 </head>
 <body>
   <header>
-    <h1>Magie</h1>
+    <h1>Compétences</h1>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="races.html">Races</a></li>
         <li><a href="classes.html">Classes</a></li>
-        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="competences.html" class="active">Compétences</a></li>
         <li><a href="metiers.html">Métiers</a></li>
         <li><a href="regles.html">Règles de jeu</a></li>
         <li><a href="infos.html">Informations</a></li>
-        <li><a href="magie.html" class="active">Magie</a></li>
+        <li><a href="magie.html">Magie</a></li>
         <li><a href="divinites.html">Divinités</a></li>
         <li><a href="documents.html">Documents</a></li>
         <li><a href="fiche.html">Fiche de personnage</a></li>
@@ -28,9 +28,9 @@
   </header>
 
   <main style="display: flex;">
-      <aside style="width: 150px; padding: 10px; background-color: #2e2e2e; color: white; position: sticky; top: 0; height: 100vh;">
+    <aside style="width: 150px; padding: 10px; background-color: #2e2e2e; color: white; position: sticky; top: 0; height: 100vh;">
       <nav>
-    <h3 style="color: #ffe48a; text-align: center;">Navigation</h3>
+        <h3 style="color: #ffe48a; text-align: center;">Navigation</h3>
         <ul>
           <li><a href="#niveau1">Niveau 1</a></li>
           <li><a href="#niveau2">Niveau 2</a></li>
@@ -40,222 +40,48 @@
         </ul>
       </nav>
     </aside>
-    <article style="flex: 1; margin-left: 30px;">
-    <section class="competences">
-    <h2>Compétences</h2>
-    <p>Les compétences représentent des aptitudes spéciales que les personnages peuvent acquérir et utiliser dans le jeu. Les compétences ont des niveaux de maîtrise allant de 1 à 5, chaque niveau offrant des avantages supplémentaires ou des capacités accrues. Les compétences sont divisées en différentes catégories, telles que le combat, la magie, la furtivité, etc. Les personnages peuvent choisir des compétences en fonction de leur classe et de leur style de jeu.</p>
-    </section>
-    <section class="competences-liste">
-    <!--Niveau 1-->
-      <section id="niveau1" class="competences">
-      <h2>Niveau 1</h2>
-        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;">
-            <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Transfer de Mana</h3>
-            <strong>Durée</strong> : Instantané<br>
-            <strong>Portée</strong> : Toucher<br>
-            <strong>Effet</strong> : Permet de transférer du mana à une autre personne (autant de mana que possible) en la touchant avec la paume de la main. La cible qui reçoit le mana ne peut pas dépasser son maximum de mana.
-            </div>
-
-            <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Force</h3>
-            <strong>Durée</strong> : Permanent / Passif<br>
-            <strong>Portée</strong> : Soi-même<br>
-            <strong>Effet</strong> : Augmente la force physique, permet de transporter un corps ou un objet lourd seul.
-            </div>
-
-            <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Résistance à la peur (Mineure / Majeure)</h3>
-            <strong>Durée</strong> : Permanent / Passif<br>
-            <strong>Portée</strong> : Soi-même<br>
-            <strong>Effet</strong> : Confère une résistance (mineure ou majeure selon l'indication) aux effets de peur.
-            </div>
-
-            <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Désarmement</h3>
-            <strong>Durée</strong> : 1 fois par combat<br>
-            <strong>Portée</strong> : 1 cible à portée d'arme<br>
-            <strong>Effet</strong> : Taper 2 fois l'arme de votre adversaire puis lui dire "désarmement", celui-ci devra alors laisser tomber son arme sur le sol à 1 m devant lui.
-            </div>
-
-            <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Endurance I</h3>
-            <strong>Durée</strong> : Permanent / Passif<br>
-            <strong>Portée</strong> : Soi-même<br>
-            <strong>Effet</strong> : Confère +1 point de vie supplémentaire.
-            </div>
-
-            <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Coup puissant</h3>
-            <strong>Durée</strong> : 1 fois par combat<br>
-            <strong>Portée</strong> : 1 cible<br>
-            <strong>Effet</strong> : Inflige +1 dégât supplémentaire lors de votre prochaine attaque physique.
-            </div>
-
-            <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Mensonge</h3>
-            <strong>Durée</strong> : 1 fois par conversation<br>
-            <strong>Portée</strong> : Soi-même<br>
-            <strong>Effet</strong> : Permet de mentir de manière convaincante lors d'une conversation (Permet de résister à une détection de mensonge).
-            </div>
-
-            <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Baragouinage</h3>
-            <strong>Durée</strong> : 1 fois par heure<br>
-            <strong>Portée</strong> : 1 cible à portée de voix<br>
-            <strong>Effet</strong> : Permet d'inventer une histoire sans queue ni tête qui embrouillera la cible pendant 5 minutes, la rendant incapable de se concentrer sur autre chose.
-            </div>
-
-            <div style="flex:1 1 300px;border:1px solid#444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Fuite rapide</h3>
-            <strong>Durée</strong> : 15 secondes<br>
-            <strong>Portée</strong> : Soi-même<br>
-            <strong>Effet</strong> : Permet au lanceur de s'enfuir et de ne pas être suivi pendant 15 secondes.</p>
-            </div>
-
-            <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Dévotion I</h3>
-            <strong>Durée</strong> : Permanent / Passif<br>
-            <strong>Portée</strong> : Soi-même<br>
-            <strong>Effet</strong> : Augmente la ferveur de +1 point.</p>
-            </div>
-
-            <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Soin divin léger</h3>
-            <strong>Durée</strong> : Instantané / 1 fois par heure<br>
-            <strong>Portée</strong> : Soi-même ou 1 cible à portée de main<br>
-            <strong>Effet</strong> : Permet de soigner 1 point de vie à soi-même ou à une autre personne en invoquant une énergie divine.</p>
-            </div>
-
-            <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-            <h3>Lumière</h3>
-            <strong>Durée</strong> : Jusqu'à extinction volontaire<br>
-            <strong>Portée</strong> : Soi-même<br>
-            <strong>Effet</strong> : Permet de créer une source de lumière brillante (Lampe de poche cachée dans une manche).</p>
-            </div>
-        </div>
-
+    <div style="flex: 1; margin-left: 30px;">
+      <section class="competences">
+        <h2>Compétences</h2>
+        <section id="niveau1" class="competences"><h2>Niveau 1</h2><div id="level-1" class="spell-list"></div></section><section id="niveau2" class="competences"><h2>Niveau 2</h2><div id="level-2" class="spell-list"></div></section><section id="niveau3" class="competences"><h2>Niveau 3</h2><div id="level-3" class="spell-list"></div></section><section id="niveau4" class="competences"><h2>Niveau 4</h2><div id="level-4" class="spell-list"></div></section><section id="niveau5" class="competences"><h2>Niveau 5</h2><div id="level-5" class="spell-list"></div></section>
       </section>
-    <!--Niveau 2-->
-    <section id="niveau2" class="competences">
-    <h2>Niveau 2</h2>
-    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:8px;">
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Coup assomant</h3>
-        <br><strong>Durée</strong> : 1 fois par combat
-        <br><strong>Portée</strong> : 1 cible à portée d'arme
-        <br><strong>Effet</strong> : Permet au combattant d'utiliser le pommeau de son arme pour assommer un adversaire. L'adversaire touché doit simuler un état d'inconscience temporaire pendant 5 minutes. S'il subit des dégâts ou si il est secoué, il se réveille immédiatement.
-        </div>
-
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Endurance II</h3>
-        <br><strong>Durée</strong> : Permanent / Passif
-        <br><strong>Portée</strong> : Soi-même
-        <br><strong>Effet</strong> : Confère +1 point de vie supplémentaire.
-        </div>
-
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Premiers soins</h3>
-        <br><strong>Durée</strong> : Instantané
-        <br><strong>Portée</strong> : Soi-même ou 1 cible à portée de main
-        <br><strong>Effet</strong> : Permet de soigner 1 point de vie à soi-même ou à une autre personne en appliquant un bandage sur la blessure pendant 1 minute.
-        </div>
-
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Camouflage</h3>
-        <br><strong>Durée</strong> : Tant que le lanceur reste immobile
-        <br><strong>Portée</strong> : Soi-même
-        <br><strong>Effet</strong> : Permet au lanceur de se fondre dans son environnement immédiat, le rendant difficile à détecter tant qu'il reste immobile.
-        </div>
-
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Esquive</h3>
-        <br><strong>Durée</strong> : 1 fois par combat
-        <br><strong>Portée</strong> : Soi-même
-        <br><strong>Effet</strong> : Permet d'obtenir une esquive supplémentaire.
-        </div>
-
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Corruption</h3>
-        <br><strong>Durée</strong> : Une seule conversation
-        <br><strong>Portée</strong> : 1 cible à portée de voix
-        <br><strong>Effet</strong> : Permet de corrompre une personne en lui offrant un objet de valeur (réel ou symbolique). La cible doit simuler un changement d'attitude envers le lanceur, devenant plus encline à coopérer ou à suivre ses suggestions pendant une seule conversation.
-        </div>
-
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Dévotion II</h3>
-        <br><strong>Durée</strong> : Permanent / Passif
-        <br><strong>Portée</strong> : Soi-même
-        <br><strong>Effet</strong> : Augmente la ferveur de +1 point.
-        </div>
-
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Savoir Religieux</h3>
-        <br><strong>Durée</strong> : Permanent / Passif
-        <br><strong>Portée</strong> : Soi-même
-        <br><strong>Effet</strong> : Confère des connaissances supplémentaires sur les rites et les traditions religieuses de sa divinité (Voir Animation).
-        </div>
-
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Cérémonie</h3>
-        <br><strong>Durée</strong> : Variable selon la cérémonie
-        <br><strong>Portée</strong> : Groupe à portée de voix
-        <br><strong>Effet</strong> : Permet de réaliser une cérémonie religieuse spécifique (mariage, exorcisme, etc.). Le lanceur doit suivre les rituels appropriés et peut bénéficier de l'aide de sa divinité pour renforcer l'effet de la cérémonie.
-        </div>
-
     </div>
-      </section>
-    <!--Niveau 3-->
-      <section id="niveau3" class="competences">
-        <h2>Niveau 3</h2>
+  </main>
 
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Apprentissage d'Enchantement</h3>
-        <br><strong>Durée</strong> :
-        <br><strong>Portée</strong> :
-        <br><strong>Effet</strong> :
-        </div>
+  <footer>
+    <p>&copy; Projet Croisade - Tous droits réservés</p>
+  </footer>
 
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Destruction d'Artefacts</h3>
-        <br><strong>Durée</strong> :
-        <br><strong>Portée</strong> :
-        <br><strong>Effet</strong> :
-        </div>
-
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Concentration Arcanique</h3>
-        <br><strong>Durée</strong> :
-        <br><strong>Portée</strong> :
-        <br><strong>Effet</strong> :
-        </div>
-
-        </section>
-    <!--Niveau 4-->
-      <section id="niveau4" class="competences">
-      <h2>Niveau 4</h2>
-
-        <div style="flex:1 1 300px;border:1px solid #444;padding:12px;border-radius:6px;background:#2f2f2f;color:#fff;">
-        <h3>Agilité Arcanique</h3>
-        <br><strong>Durée</strong> :
-        <br><strong>Portée</strong> :
-        <br><strong>Effet</strong> :
-        </div>
-
-      </section>
-    <!--Niveau 5-->
-      <section id="niveau5" class="competences">
-      <h2>Niveau 5</h2>
-      </section>
-    </section>
-    </article>
-</main>
-<footer>
-  <p>&copy; Projet Croisade - Tous droits réservés</p>
   <button onclick="scrollToTop()" id="btnTop" title="Retour en haut">⬆ Haut</button>
+
   <script>
-  function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
+
+  async function renderSkillsByLevel() {
+    const response = await fetch('data/skills.json');
+    const skills = await response.json();
+    skills.sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+
+    for (let level = 1; level <= 5; level++) {
+      const list = document.getElementById(`level-${level}`);
+      if (!list) continue;
+      const filtered = skills.filter(s => s.level === level);
+      if (filtered.length === 0) {
+        list.innerHTML = '<p class="empty">Aucune compétence à ce niveau.</p>';
+        continue;
+      }
+      list.innerHTML = filtered.map(skill => `
+        <article class="spell">
+          <h3>${skill.name}</h3>
+          <p><strong>Durée :</strong> ${skill.duree}</p>
+          <p><strong>Portée :</strong> ${skill.portee}</p>
+          ${skill.requis ? `<p><strong>Requis :</strong> ${skill.requis}</p>` : ''}
+          <p><strong>Effet :</strong> ${skill.effet}</p>
+        </article>
+      `).join('');
+    }
   }
+  renderSkillsByLevel();
   </script>
-</footer>
+</body>
+</html>

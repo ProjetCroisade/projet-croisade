@@ -387,3 +387,27 @@ main h3 {
 .submenu a:hover {
   color: #ffe48a;
 }
+.spell-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.spell {
+  background: linear-gradient(180deg, #2b2b2b, #1b1b1b);
+  border: 3px solid #ffe48a;
+  border-radius: 8px;
+  padding: 16px;
+  color: #fff;
+  box-sizing: border-box;
+  flex: 1 1 300px;
+  min-width: 260px;
+}
+.spell h3 {
+  color: #ffe48a;
+  margin: 0 0 10px;
+}
+.spell p {
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
