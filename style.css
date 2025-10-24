@@ -411,3 +411,14 @@ main h3 {
   margin: 0.25rem 0;
   line-height: 1.4;
 }
+.lexique-effets-etats dl {
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+.lexique-effets-etats dt {
+  font-weight: bold;
+  color: #e7ba79;
+  margin-top: 15px;
+}

@@ -8,36 +8,36 @@
     "effet": "Permet d'inventer une histoire sans queue ni tête qui embrouillera la cible pendant 5 minutes, la rendant incapable de se concentrer sur autre chose."
   },
   {
-    "name": "Coup puissant",
+    "name": "Coup puissant I, II, III",
     "level": 1,
     "duree": "1 fois par combat",
     "portee": "1 cible",
     "requis": "",
-    "effet": "Inflige +1 dégât supplémentaire lors de votre prochaine attaque physique."
+    "effet": "Inflige +1 dégât supplémentaire lors de votre prochaine attaque physique. Chaque niveau de Coup puissant ajoute +1 dégât supplémentaire (ex : Coup puissant II = +2 dégâts) et une utilisation de plus par combat"
   },
   {
-    "name": "Désarmement",
+    "name": "Désarmement (Mineur / Majeur)",
     "level": 1,
     "duree": "1 fois par combat",
     "portee": "1 cible à portée d'arme",
-    "requis": "",
+    "requis": "Désarmement Mineur",
     "effet": "Taper 2 fois l'arme de votre adversaire puis lui dire \"désarmement\", celui-ci devra alors laisser tomber son arme sur le sol à 1 m devant lui."
   },
   {
-    "name": "Dévotion I",
+    "name": "Dévotion I, II, III, IV, V",
     "level": 1,
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Augmente la ferveur de +1 point."
+    "effet": "Augmente la ferveur de +1 point par niveau de Dévotion."
   },
   {
-    "name": "Endurance I",
+    "name": "Endurance I, II, II, III, IV, V",
     "level": 1,
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Confère +1 point de vie supplémentaire."
+    "effet": "Confère +1 point de vie supplémentaire par niveau d'Endurance."
   },
   {
     "name": "Force",
@@ -128,28 +128,12 @@
     "effet": "Permet de réaliser une cérémonie religieuse spécifique (mariage, exorcisme, etc.). Le lanceur doit suivre les rituels appropriés et peut bénéficier de l'aide de sa divinité pour renforcer l'effet de la cérémonie."
   },
   {
-    "name": "Dévotion II",
-    "level": 2,
-    "duree": "Permanent / Passif",
-    "portee": "Soi-même",
-    "requis": "",
-    "effet": "Augmente la ferveur de +1 point."
-  },
-  {
-    "name": "Endurance II",
-    "level": 2,
-    "duree": "Permanent / Passif",
-    "portee": "Soi-même",
-    "requis": "",
-    "effet": "Confère +1 point de vie supplémentaire."
-  },
-  {
-    "name": "Esquive",
+    "name": "Esquive I, II, III, IV, V",
     "level": 2,
     "duree": "1 fois par combat",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet d'obtenir une esquive supplémentaire."
+    "effet": "Permet d'obtenir une esquive supplémentaire par niveau d'Esquive lors d'un combat."
   },
   {
     "name": "Premiers soins",
@@ -200,27 +184,107 @@
     "effet": ""
   },
   {
-    "name": "Compétence à venir 1",
+    "name": "Rage Mortelle",
     "level": 5,
-    "duree": "",
-    "portee": "",
-    "requis": "",
-    "effet": "À venir."
+    "duree": "Jusqu'à la mort / 1 fois par jour / 1 minute",
+    "portee": "Soi-même",
+    "requis": "Rage",
+    "effet": "Le barbare entre dans une rage si intense qu'il devient presque instoppable. Pendant 1 minute, il gagne +5 dégâts sur toutes ses attaques physiques et ignore toutes les blessures, même mortelles. Cependant, à la fin de cette minute, le barbare s'effondre, mort, achevé par sa propre fureur."
   },
   {
-    "name": "Compétence à venir 2",
+    "name": "Rage Consciente",
     "level": 5,
-    "duree": "",
-    "portee": "",
-    "requis": "",
-    "effet": "À venir."
+    "duree": "Même durée que la Rage",
+    "portee": "Soi-même",
+    "requis": "Rage",
+    "effet": "Pendant que le barbare est en état de Rage, il conserve pleinement son esprit et sa capacité à distinguer amis et ennemis. Il peut ainsi coordonner ses attaques avec ses alliés tout en bénéficiant des bonus de la Rage."
   },
   {
-    "name": "Compétence à venir 3",
+    "name": "Coup destructeur",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "Instantané / 1 fois par jour",
+    "portee": "1 cible à portée d'arme",
     "requis": "",
-    "effet": "À venir."
+    "effet": "Le barbare donne un coup destructeur qui brise n'importe quel objet devant lui (Toujours valider avec l'équipe d'animation), mais brise également son arme dans le processus. L'arme doit être réparée après l'utilisation de ce pouvoir."
+  },
+  {
+    "name": "Rage",
+    "level": 3,
+    "duree": "15 minutes / 1 fois par heure",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Le barbare entre dans une folie furieuse (Rage) et attaque tout le monde à vue. Il gagne +2 dégâts sur toutes ses attaques physiques, mais ne peut pas distinguer amis et ennemis."
+  },
+  {
+    "name": "Projection",
+    "level": 3,
+    "duree": "1 fois par combat",
+    "portee": "1 cible à portée d'arme",
+    "requis": "",
+    "effet": "Le barbare donne un coup violent qui projette son adversaire en arrière de 2 mètres. La cible doit simuler une chute au sol à 2 mètres derrière elle."
+  },
+  {
+    "name": "Rage Endurante",
+    "level": 4,
+    "duree": "Sur déclenchement de Rage / Passif",
+    "portee": "Groupe à portée de voix",
+    "requis": "Rage",
+    "effet": "Lorsque le barbare est en état de Rage, il gagne +3 points de vie temporaires et ignore la douleur des blessures légères (ne pas simuler les blessures qui ne sont pas mortelles)."
+  },
+  {
+    "name": "Empathie du Barbare",
+    "level": 4,
+    "duree": "1 fois par heure",
+    "portee": "Un allié proche",
+    "requis": "Rage",
+    "effet": "Permet au Barbare de partager une partie de sa rage avec un allié proche (à moins de 2 mètres). L'allié tombe lui aussi en rage de 5 minutes et gagne +1 dégât sur ses attaques physiques pendant ces 5 minutes."
+  },
+  {
+    "name": "Brise Membre",
+    "level": 4,
+    "duree": "Instantané / 1 fois par heure",
+    "portee": "Une cible à portée d'arme",
+    "requis": "Coup Puissant",
+    "effet": "Le barbare donne un coup puissant qui brise un membre de son adversaire (bras ou jambe), mais ne fait aucuns dégâts. La cible doit simuler une incapacité à utiliser ce membre jusqu'à la fin du combat."
+  },
+  {
+    "name": "Déséquilibre",
+    "level": 3,
+    "duree": "Instantané / 1 fois par combat",
+    "portee": "1 cible à portée d'arme",
+    "requis": "",
+    "effet": "Le combattant utilise son arme pour frapper les jambes de son adversaire, le forçant à perdre l'équilibre. La cible doit mettre un genou à terre et simuler une perte d'équilibre pendant 10 secondes."
+  }, 
+  {
+    "name": "Ralliement",
+    "level": 4,
+    "duree": "Instantané / 1 fois par jour",
+    "portee": "Groupe à portée de voix",
+    "requis": "",
+    "effet": "Le guerrier lance un cri de guerre inspirant qui redonne du courage à ses alliés. Tous les alliés à portée de voix regagnent 2 points de vie et gagnent +1 dégât sur leurs attaques physiques pendant le prochain combat."
+  },
+  {
+    "name": "Brise Arme",
+    "level": 4,
+    "duree": "Instantané / 1 fois par heure",
+    "portee": "1 cible à portée d'arme",
+    "requis": "",
+    "effet": "Le guerrier donne un coup puissant qui brise l'arme de son adversaire. La cible doit simuler la perte de son arme, qui doit être réparée après l'utilisation de ce pouvoir."
+  },
+  {
+    "name": "Force surhumaine",
+    "level": 5,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Le guerrier puise dans une force surhumaine, lui permettant de soulever et de porter des objets extrêmement lourds (jusqu'à 500 kg). Il peut également briser des chaînes ou des menottes avec une facilité déconcertante."
+  },
+  {
+    "name": "Renommée",
+    "level": 5,
+    "duree": "1 fois par jour",
+    "portee": "1 cible à portée de voix",
+    "requis": "",
+    "effet": "Le guerrier gagne une renommée légendaire, ce qui lui confère le respect et l'admiration de ses pairs. Une fois par jour, il peut invoquer cette renommée pour forcer une cible à obéir à ses ordres pendant 10 minutes. (Charme majeur)"
   }
 ]
