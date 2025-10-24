@@ -286,5 +286,109 @@
     "portee": "1 cible à portée de voix",
     "requis": "",
     "effet": "Le guerrier gagne une renommée légendaire, ce qui lui confère le respect et l'admiration de ses pairs. Une fois par jour, il peut invoquer cette renommée pour forcer une cible à obéir à ses ordres pendant 10 minutes. (Charme majeur)"
+  },
+  {
+    "name": "Brise Bouclier",
+    "level": 4,
+    "duree": "Instantané / 1 fois par heure",
+    "portee": "1 cible à portée d'arme",
+    "requis": "",
+    "effet": "Le guerrier donne un coup puissant qui brise le bouclier de son adversaire. La cible doit simuler la perte de son bouclier, qui doit être réparé après l'utilisation de ce pouvoir."
+  }, 
+  {
+    "name": "Bouclier Solide I, II, III",
+    "level": 3,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Chaque niveau permet de résister à un Brise Bouclier de plus (ex : Bouclier Solide II permet de résister à 2 Brise Bouclier). Au niveau 3, le Maître du Bouclier est immunisé contre les effets de Brise Bouclier."
+  },
+  {
+    "name": "Ancrage",
+    "level": 3,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Le guerrier devient extrêmement stable, ce qui lui permet de résister aux tentatives de le projeter ou de le déséquilibrer."
+  },
+  {
+    "name": "Déflexion",
+    "level": 4,
+    "duree": "1 fois par combat",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Le maître du bouclier utilise son bouclier pour dévier un sort lancé contre lui. Le sort est annulé et n'a aucun effet sur le maître du bouclier."
+  },
+  {
+    "name": "Guardien",
+    "level": 5,
+    "duree": "1 fois par jour",
+    "portee": "Un allié proche",
+    "requis": "",
+    "effet": "Le maître du bouclier se place proche d'un allié (à moins de 2 mètres), jusqu'à la fin du combat le maître du bouclier intercepte tous les dégâts dirigés contre cet allié."
+  },
+  {
+    "name": "Méditation du Ki",
+    "level": 3,
+    "duree": "10 minutes",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Permet au moine de se concentrer et de régénérer son énergie intérieure (Ki). Pendant la méditation, le moine regagne 3 points de vie après avoir médité pendant 10 minutes."
+  },
+  {
+    "name": "Frappe du Ki",
+    "level": 3,
+    "duree": "1 fois par combat",
+    "portee": "1 cible à portée d'arme",
+    "requis": "",
+    "effet": "Le moine canalise son Ki dans une attaque puissante. La cible subit des dégâts spectraux lors de la prochaine attaque physique du moine."
+  },
+  {
+    "name": "Aura Protectrice",
+    "level": 4,
+    "duree": "Jusqu'à utilisation / 1 fois par heure",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Le moine émet une aura protectrice, la prochaine attaque physique portée contre lui engendrera un effet de désarmement mineur sur l'attaquant (voir Désarmement Mineur)."
+  },
+  {
+    "name": "Résistance au charme / séduction / manipulation (Mineure / Majeure)",
+    "level": 4,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Le moine développe une forte résistance mentale contre les tentatives de charme, de séduction ou de manipulation."
+  },
+  {
+    "name": "Détection du Mal / Bien",
+    "level": 4,
+    "duree": "1 minute / 1 fois par heure",
+    "portee": "1 cible",
+    "requis": "",
+    "effet": "En se concentrant 1 minute, le moine peut détecter les intentions malveillantes ou bienveillantes d'une cible à proximité (jusqu'à 10 mètres). Il ressent une sensation de malaise ou de confort en présence de la cible."
+  },
+  {
+    "name": "Frappe Suprême",
+    "level": 5,
+    "duree": "1 fois par jour",
+    "portee": "1 cible à portée d'arme",
+    "requis": "",
+    "effet": "Le moine canalise toute son énergie intérieure dans une attaque dévastatrice. La cible subit +5 dégâts supplémentaires lors de la prochaine attaque physique du moine."
+  },
+  {
+    "name": "Sagesse du Moine",
+    "level": 5,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "Méditation du Ki",
+    "effet": "Le moine atteint un niveau de sagesse et de compréhension spirituelle exceptionnel. Chaque fois qu'il médite pendant 10 minutes, il regagne 5 points de vie au lieu de 3."
+  },
+  {
+    "name": "Protection du Ki",
+    "level": 5,
+    "duree": "1 fois par jour",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Le moine utilise son Ki pour créer une barrière protectrice autour de lui. Pendant 1 minute, il ignore tous les dégâts physiques et magiques tant qu'il maintient sa concentration (Il ne peut pas attaquer ou bouger pendant ce temps)."
   }
 ]
