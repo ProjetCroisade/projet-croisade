@@ -390,5 +390,157 @@
     "portee": "Soi-même",
     "requis": "",
     "effet": "Le moine utilise son Ki pour créer une barrière protectrice autour de lui. Pendant 1 minute, il ignore tous les dégâts physiques et magiques tant qu'il maintient sa concentration (Il ne peut pas attaquer ou bouger pendant ce temps)."
+  },
+  {
+    "name": "Coup divin",
+    "level": 3,
+    "duree": "1 fois par combat",
+    "portee": "1 cible à portée d'arme",
+    "requis": "",
+    "effet": "Le priant canalise l'énergie divine dans une attaque puissante. La cible subit des dégâts divins lors de la prochaine attaque physique du prêtre."
+  },
+  {
+    "name": "Cible préférée : Spectres & fantômes",
+    "level": 3,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Le prêtre a une affinité particulière pour combattre les spectres et les fantômes. Il inflige +1 dégât supplémentaire à ces créatures lors de ses attaques physiques."
+  },
+  {
+    "name": "Cruauté du Paladin",
+    "level": 4,
+    "duree": "1 fois par jour",
+    "portee": "1 cible à portée d'arme",
+    "requis": "",
+    "effet": "Le paladin canalise sa colère divine dans une attaque brutale, son prochain coup infligera Brise-Membre à la cible (voir Brise-Membre)."
+  },
+  {
+    "name": "Santé de fer",
+    "level": 4,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Le paladin développe une immunité exceptionnelle aux maladies."
+  },
+  {
+    "name": "Requête divine / spirituelle",
+    "level": 4,
+    "duree": "1 fois par GN",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Le prêtre ou spiritualiste peut faire une requête à sa divinité ou aux esprits pour obtenir une aide divine ou spirituelle dans une situation critique. La nature de l'aide est laissée à la discrétion de l'équipe d'animation, mais elle doit être significative et appropriée au contexte."
+  },
+  {
+    "name": "Cible préférée : Démons",
+    "level": 5,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Le priant a une affinité particulière pour combattre les démons. Il inflige +1 dégât supplémentaire à ces créatures lors de ses attaques physiques."
+  },
+  {
+    "name": "Pied Forestier",
+    "level": 3,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Tir Puissant I, II, III",
+    "level": 3,
+    "duree": "1 fois par combat",
+    "portee": "1 cible à distance",
+    "requis": "",
+    "effet": "Inflige +1 dégât supplémentaire lors de votre prochaine attaque à distance. Chaque niveau de Tir puissant ajoute +1 dégât supplémentaire (ex : Tir puissant II = +2 dégâts) et une utilisation de plus par combat"
+  },
+  {
+    "name": "Acrobate",
+    "level": 4,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Stabilité",
+    "level": 4,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Flèche magique",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Rafale de flèches",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Analyse des points faibles",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Coup précis I, II, III",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "",
+    "level": 1,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "",
+    "level": 2,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "",
+    "level": 4,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
   }
 ]
