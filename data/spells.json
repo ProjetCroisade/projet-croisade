@@ -331,5 +331,230 @@
     "duree": "Instantané",
     "requis": "Sort Invocation de foudre",
     "effet": "L’Arcaniste invoque une violente tempête qui frappe toutes les cibles dans une zone de 5 mètres, infligeant 4 dégâts de foudre à chaque cible touchée."
+  },
+  {
+    "name": "Renforcement divin d'objet (Mineur / Majeur)",
+    "level": 3,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Boule divine",
+    "level": 1,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Réveil",
+    "level": 3,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Boule divine multiple",
+    "level": 4,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Prière de guérison",
+    "level": 4,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Renforcement divin de bâtiment (Mineur / Majeur)",
+    "level": 5,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Touché divin",
+    "level": 5,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Bouclier divin",
+    "level": 5,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Ronces",
+    "level": 3,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Guérison druidique",
+    "level": 4,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Boule sombre",
+    "level": 3,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Réanimation Temporaire",
+    "level": 3,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Animation des morts (Mineur / Majeur)",
+    "level": 3,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Boule sombre multiple",
+    "level": 4,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Animation de Goliath",
+    "level": 5,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Purification (Mineur / Majeur)",
+    "level": 3,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Banissement d'artéfacts",
+    "level": 4,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Réanimation",
+    "level": 4,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Enchainement divin",
+    "level": 5,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Cercle de protection contre le mal",
+    "level": 5,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Parler avec les morts",
+    "level": 3,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Danse du feu",
+    "level": 3,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Extraction d'âme",
+    "level": 4,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Drain de mana",
+    "level": 4,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Matérialisation spirituelle",
+    "level": 5,
+    "incantation": "",
+    "cout": "",
+    "duree": "",
+    "requis": "",
+    "effet": ""
   }
 ]

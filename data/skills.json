@@ -520,24 +520,200 @@
     "effet": ""
   },
   {
-    "name": "",
-    "level": 1,
+    "name": "Chant de joie",
+    "level": 3,
     "duree": "",
     "portee": "",
     "requis": "",
     "effet": ""
   },
   {
-    "name": "",
-    "level": 1,
+    "name": "Chant de désespoir",
+    "level": 3,
     "duree": "",
     "portee": "",
     "requis": "",
     "effet": ""
   },
   {
-    "name": "",
-    "level": 1,
+    "name": "Chant de guérison",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Chant de guérison",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Détection des mensonges (Mineur / Majeur)",
+    "level": 4,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Spectacle",
+    "level": 4,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Éloquence",
+    "level": 4,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Charme",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Réflexion de charme",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Vol-à-la-tire I, II, III",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Diversion",
+    "level": 4,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Falsification de documents",
+    "level": 4,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Provocation",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Duel",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Ritualiste",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Communication avec les animaux",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Herboriste amateur",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+    {
+    "name": "Communication avec les êtres végétaux",
+    "level": 3,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+    {
+    "name": "Ritualiste aguérri",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+    {
+    "name": "Métier Bonus",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Rituels de l'obscur (Mineur / Majeur)",
+    "level": 4,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Esclave mort-vivant (Géopolitique)",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Communication avec les esprits",
+    "level": 4,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Rituels des esprits",
+    "level": 5,
+    "duree": "",
+    "portee": "",
+    "requis": "",
+    "effet": ""
+  },
+  {
+    "name": "Création de totems",
+    "level": 5,
     "duree": "",
     "portee": "",
     "requis": "",
