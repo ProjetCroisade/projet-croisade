@@ -335,7 +335,7 @@
   {
     "name": "Renforcement divin d'objet (Mineur / Majeur)",
     "level": 3,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -344,7 +344,7 @@
   {
     "name": "Boule divine",
     "level": 1,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -353,7 +353,7 @@
   {
     "name": "Réveil",
     "level": 3,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -362,7 +362,7 @@
   {
     "name": "Boule divine multiple",
     "level": 4,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -371,7 +371,7 @@
   {
     "name": "Prière de guérison",
     "level": 4,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -380,7 +380,7 @@
   {
     "name": "Renforcement divin de bâtiment (Mineur / Majeur)",
     "level": 5,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -389,7 +389,7 @@
   {
     "name": "Touché divin",
     "level": 5,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -398,7 +398,7 @@
   {
     "name": "Bouclier divin",
     "level": 5,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -407,7 +407,7 @@
   {
     "name": "Ronces",
     "level": 3,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -416,7 +416,7 @@
   {
     "name": "Guérison druidique",
     "level": 4,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -425,7 +425,7 @@
   {
     "name": "Boule sombre",
     "level": 3,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -434,7 +434,7 @@
   {
     "name": "Réanimation Temporaire",
     "level": 3,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -443,7 +443,7 @@
   {
     "name": "Animation des morts (Mineur / Majeur)",
     "level": 3,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -452,7 +452,7 @@
   {
     "name": "Boule sombre multiple",
     "level": 4,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -461,7 +461,7 @@
   {
     "name": "Animation de Goliath",
     "level": 5,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -470,7 +470,7 @@
   {
     "name": "Purification (Mineur / Majeur)",
     "level": 3,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -479,7 +479,7 @@
   {
     "name": "Banissement d'artéfacts",
     "level": 4,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -488,7 +488,7 @@
   {
     "name": "Réanimation",
     "level": 4,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -497,7 +497,7 @@
   {
     "name": "Enchainement divin",
     "level": 5,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -506,7 +506,7 @@
   {
     "name": "Cercle de protection contre le mal",
     "level": 5,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -515,7 +515,7 @@
   {
     "name": "Parler avec les morts",
     "level": 3,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -524,7 +524,7 @@
   {
     "name": "Danse du feu",
     "level": 3,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -533,7 +533,7 @@
   {
     "name": "Extraction d'âme",
     "level": 4,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -542,7 +542,7 @@
   {
     "name": "Drain de mana",
     "level": 4,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",
@@ -551,7 +551,7 @@
   {
     "name": "Matérialisation spirituelle",
     "level": 5,
-    "incantation": "",
+    "incantation": "Prière",
     "cout": "",
     "duree": "",
     "requis": "",

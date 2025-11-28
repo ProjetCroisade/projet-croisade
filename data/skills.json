@@ -445,7 +445,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet d'éviter les pièges, les racines et les effets d'enchevêtrement dans les environnements forestiers."
   },
   {
     "name": "Tir Puissant I, II, III",
@@ -457,266 +457,258 @@
   },
   {
     "name": "Acrobate",
-    "level": 4,
-    "duree": "",
-    "portee": "",
+    "level": 5,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet de ne pas tenir compte des effets de chute."
   },
   {
     "name": "Stabilité",
     "level": 4,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet de résister aux projections, à la lenteur et à la chaîne arcanique."
   },
   {
     "name": "Flèche magique",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par combat",
+    "portee": "Une cible touchée à distance",
     "requis": "",
-    "effet": ""
+    "effet": "Permet à l'Archer de tirer une flèche enchantée qui inflige +3 dégâts magiques en plus des dégâts physiques normaux."
   },
   {
     "name": "Rafale de flèches",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par jour",
+    "portee": "Une cible touchée à distance avec un catalyseur",
     "requis": "",
-    "effet": ""
+    "effet": "Une fois par jour, vous pouvez lancer un catalyseur pour infliger 6 dégâts à votre cible (équivalent à une rafale de flèches)."
   },
   {
     "name": "Analyse des points faibles",
     "level": 3,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par heure",
+    "portee": "Une cible",
     "requis": "",
-    "effet": ""
+    "effet": "Oblige l'adversaire à révéler un de ses points faibles (ex : faiblesse à un type de magie, incapacité à esquiver, etc.)."
   },
   {
     "name": "Coup précis I, II, III",
     "level": 3,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par combat",
+    "portee": "Une cible à portée d'arme",
     "requis": "",
-    "effet": ""
+    "effet": "Chaque niveau donne +1 dégât supplémentaire lors de votre prochaine attaque physique (ex : Coup précis II = +2 dégâts) et une utilisation de plus par combat."
   },
   {
     "name": "Égorgement",
     "level": 4,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par jour",
+    "portee": "1 cible prise par surprise",
     "requis": "",
-    "effet": ""
+    "effet": "L'Assassin peut tenter d'égorger une cible prise par surprise. Si l'attaque réussit, la cible doit simuler un coma instantanée (le joueur doit coopérer)."
   },
   {
     "name": "Furtivité majeure (géopolitique)",
     "level": 4,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet d'obtenir un bonus de furtivité dans les géopolitiques et dans les zones de Donjons en jeu."
   },
   {
     "name": "Chant de joie",
     "level": 3,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par jour / 15 minutes",
+    "portee": "Cibles à portée de voix",
     "requis": "",
-    "effet": ""
+    "effet": "Le Barde joue une mélodie joyeuse qui insprire paix et sereinité. Toutes les cibles à portée de voix sont pacifiées tant que le chant dure (15 minutes). L'effet prend fin si le Barde cesse de chanter ou si une cible subit des dégâts."
   },
   {
     "name": "Chant de désespoir",
     "level": 3,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par jour / 15 minutes",
+    "portee": "Cibles à portée de voix",
     "requis": "",
-    "effet": ""
+    "effet": "Le Barde joue une mélodie triste qui insprire mélancholie et lourdeur. Toutes les cibles à portée de voix sont démotivées de faire quoi que ce soit tant que le chant dure (15 minutes). L'effet prend fin si le Barde cesse de chanter ou si une cible subit des dégâts."
   },
   {
     "name": "Chant de guérison",
     "level": 3,
-    "duree": "",
-    "portee": "",
+    "duree": "Après 15 minutes de chant",
+    "portee": "Cibles à portée de voix",
     "requis": "",
-    "effet": ""
-  },
-  {
-    "name": "Chant de guérison",
-    "level": 3,
-    "duree": "",
-    "portee": "",
-    "requis": "",
-    "effet": ""
+    "effet": "Après 15 minutes de chant, le Barde peut soigner 2 points de vie à toutes les cibles à portée de voix."
   },
   {
     "name": "Détection des mensonges (Mineur / Majeur)",
     "level": 4,
-    "duree": "",
-    "portee": "",
+    "duree": "Instantané",
+    "portee": "Une cible",
     "requis": "",
-    "effet": ""
+    "effet": "Permet de détecter si une cible ment ou dit la vérité lors d'une conversation."
   },
   {
     "name": "Spectacle",
     "level": 4,
-    "duree": "",
-    "portee": "",
+    "duree": "Après 15 minutes de performance",
+    "portee": "Cibles à portée de voix",
     "requis": "",
-    "effet": ""
+    "effet": "Après 15 minutes de performance (chant, danse, musique, etc.), le Barde peut demander à toutes les cibles qui l'ont écouté de lui donner une pièce."
   },
   {
     "name": "Éloquence",
     "level": 4,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par heure",
+    "portee": "1 cible",
     "requis": "",
-    "effet": ""
+    "effet": "Permet de persuader une cible de faire quelque chose qu'elle ne ferait pas normalement. La cible doit simuler un changement d'attitude envers le lanceur, devenant plus encline à coopérer ou à suivre ses suggestions pendant une seule conversation."
   },
   {
     "name": "Charme",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par heure / 15 minutes",
+    "portee": "1 cible",
     "requis": "",
-    "effet": ""
+    "effet": "Permet de charmer une cible pendant 15 minutes. La cible est affectée par l'effet de Charme majeur."
   },
   {
     "name": "Réflexion de charme",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par heure",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet de renvoyer un sort de charme, de séduction ou de manipulation lancé contre soi-même à son lanceur."
   },
   {
     "name": "Vol-à-la-tire I, II, III",
     "level": 3,
-    "duree": "",
-    "portee": "",
-    "requis": "",
-    "effet": ""
+    "duree": "Une fois par cible par heure",
+    "portee": "Une cible à portée de main",
+    "requis": "Chaque niveau requiert le niveau précédent.",
+    "effet": "Permet au voleur de subtiliser un petit objet (qui tient dans la main) à une cible sans se faire remarquer. Chaque niveau permet de voler des objets de plus en plus gros (ex : Vol-à-la-tire II permet de voler des objets pouvant tenir dans deux mains). Vol-à-la-tire III permet de voler des objets pouvant être portés sur soi (sac, bourse, arme, etc.)."
   },
   {
     "name": "Diversion",
     "level": 4,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par minute",
+    "portee": "1 cible",
     "requis": "",
-    "effet": ""
+    "effet": "La personne crée une diversion pour détourner l'attention d'une cible. La cible doit simuler une distraction pendant 5 secondes."
   },
   {
     "name": "Falsification de documents",
     "level": 4,
-    "duree": "",
-    "portee": "",
-    "requis": "",
-    "effet": ""
+    "duree": "Le temps de création du document / Permanent",
+    "portee": "1 document",
+    "requis": "Doit avoir vu et lu le document original au moins une fois.",
+    "effet": "Permet de créer une contrefaçon d'un document officiel (lettre, parchemin, carte d'identité, etc.). Le document doit être créé en jeu et validé par l'équipe d'animation avant utilisation. Le document falsifié est permanent et peut être utilisé en jeu."
   },
   {
     "name": "Provocation",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par heure / 15 minutes",
+    "portee": "1 cible",
     "requis": "",
-    "effet": ""
+    "effet": "Le voleur insulte sa cible de manière si virulente qu'elle ne peut s'empêcher de réagir. La cible est affligée par l'effet Provocation pendant 15 minutes."
   },
   {
     "name": "Duel",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "1 fois par jour",
+    "portee": "1 cible",
     "requis": "",
-    "effet": ""
+    "effet": "Oblige la cible à accepter un duel. La cible doit simuler l'acceptation du duel et ne peut pas refuser."
   },
   {
     "name": "Ritualiste",
     "level": 3,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet l'apprentissage et l'exécution de rituels mineurs. Voir avec l'équipe d'animation pour les rituels disponibles."
   },
   {
     "name": "Communication avec les animaux",
     "level": 3,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet de communiquer avec les animaux de manière basique (simuler des sons, des gestes, etc.)."
   },
   {
     "name": "Herboriste amateur",
     "level": 3,
-    "duree": "",
+    "duree": "1 fois par événement",
     "portee": "",
     "requis": "",
-    "effet": ""
+    "effet": "Le Druide reçoit des plantes mystères aléatoires lors des événements (Voir avec l'équipe d'animation)."
   },
     {
     "name": "Communication avec les êtres végétaux",
     "level": 3,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet de communiquer avec les êtres végétaux de manière basique (simuler des sons, des gestes, etc.)."
   },
     {
     "name": "Ritualiste aguérri",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet l'apprentissage et l'exécution de rituels majeurs. Voir avec l'équipe d'animation pour les rituels disponibles."
   },
     {
     "name": "Métier Bonus",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Donne le métier bonus indiqué dans la compétence (Ex : Herboriste, Alchimiste, etc.)."
   },
   {
     "name": "Rituels de l'obscur (Mineur / Majeur)",
     "level": 4,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet l'apprentissage et l'exécution de rituels de l'obscur mineurs / majeurs. Voir avec l'équipe d'animation pour les rituels disponibles."
   },
   {
     "name": "Esclave mort-vivant (Géopolitique)",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet d'utiliser un mort-vivant esclave lors des géopolitiques (Voir avec l'équipe d'animation)."
   },
   {
     "name": "Communication avec les esprits",
     "level": 4,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet de communiquer avec les esprits de manière basique (simuler des sons, des gestes, etc.)."
   },
   {
     "name": "Rituels des esprits",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet l'apprentissage et l'exécution de rituels des esprits. Voir avec l'équipe d'animation pour les rituels disponibles."
   },
   {
     "name": "Création de totems",
     "level": 5,
-    "duree": "",
-    "portee": "",
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet la création et l'utilisation de totems (Comme réceptacles d'âme). Voir avec l'équipe d'animation pour les totems disponibles et leur temps de création."
   }
 ]
