@@ -461,7 +461,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet de ne pas tenir compte des effets de chute."
+    "effet": "Immunité totale aux effets de chute, de renversement, de projections et de déséquilibre."
   },
   {
     "name": "Stabilité",
@@ -710,5 +710,13 @@
     "portee": "Soi-même",
     "requis": "",
     "effet": "Permet la création et l'utilisation de totems (Comme réceptacles d'âme). Voir avec l'équipe d'animation pour les totems disponibles et leur temps de création."
+  },
+  {
+    "name": "Torture",
+    "level": 5,
+    "duree": "5 minutes de torture pour une question",
+    "portee": "1 cible",
+    "requis": "",
+    "effet": "Permet d'obtenir des informations précises d'une cible en la torturant physiquement ou mentalement. La cible doit coopérer et fournir l'information demandée après 2 minutes de torture par phrase."
   }
 ]
