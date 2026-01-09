@@ -153,35 +153,35 @@
   },
   {
     "name": "Apprentissage d'Enchantement",
-    "level": 3,
-    "duree": "",
-    "portee": "",
+    "level": 4,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet d'apprendre 1 enchantement bonus par géopolitique (Voir avec l'équipe d'animation pour les enchantements disponibles)."
   },
   {
     "name": "Concentration Arcanique",
-    "level": 3,
-    "duree": "",
-    "portee": "",
+    "level": 4,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet de récupérer de la mana deux fois plus rapidement lors de la méditation."
   },
   {
     "name": "Destruction d'Artefacts",
     "level": 3,
-    "duree": "",
-    "portee": "",
+    "duree": "Instantané / 1 fois par GN",
+    "portee": "1 artefact à portée de main",
     "requis": "",
-    "effet": ""
+    "effet": "Permet de détruire un artefact magique en le touchant et après 15 minutes de travail. L'artefact est détruit et ne peut plus être utilisé. Il doit être emmené à l'équipe d'animation pour validation."
   },
   {
     "name": "Agilité Arcanique",
     "level": 4,
-    "duree": "",
-    "portee": "",
+    "duree": "15 minutes / 1 fois par heure",
+    "portee": "Soi-même",
     "requis": "",
-    "effet": ""
+    "effet": "Permet d'esquiver tous les pièges et être immunisé aux dégâts et effets de chute pendant 15 minutes."
   },
   {
     "name": "Rage Mortelle",
