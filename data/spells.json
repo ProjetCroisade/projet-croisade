@@ -345,37 +345,37 @@
     "name": "Boule divine",
     "level": 1,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "1 Ferveur",
+    "duree": "Instantané",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste lance une boule (catalyseur) d'énergie divine qui inflige 1 dégât divin à la cible touchée."
   },
   {
     "name": "Réveil",
     "level": 3,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "3 Ferveur",
+    "duree": "Instantané",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste ramène une cible dans le coma à la vie avec 1 point de vie."
   },
   {
     "name": "Boule divine multiple",
     "level": 4,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
-    "requis": "",
-    "effet": ""
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
+    "requis": "Boule divine",
+    "effet": "Après incantation, le spiritualiste lance jusqu'à 3 boules (catalyseurs) d'énergie divine qui infligent 1 dégât divin chaque à la cible touchée."
   },
   {
     "name": "Prière de guérison",
     "level": 4,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "4 Ferveur",
+    "duree": "1 fois par 15 minutes",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui soigne la cible de 3 point de vie au toucher."
   },
   {
     "name": "Renforcement divin de bâtiment (Mineur / Majeur)",
@@ -390,118 +390,118 @@
     "name": "Touché divin",
     "level": 5,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "5 Ferveur",
+    "duree": "Instantané",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui inflige 5 dégâts divins ou maudits à la cible touchée."
   },
   {
     "name": "Bouclier divin",
     "level": 5,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "5 Ferveur",
+    "duree": "Instantané / Jusqu’à utilisation des points d'armure",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui donne 5 points d'armure temporaire à la cible touchée."
   },
   {
     "name": "Ronces",
     "level": 3,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "3 Ferveur",
+    "duree": "Instantané / 15 secondes",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste lance un catalyseur qui invoque des ronces autour de la cible touchée. La cible ne peut plus se déplacer pendant 15 secondes."
   },
   {
     "name": "Guérison druidique",
     "level": 4,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui soigne la cible de 3 points de vie au toucher."
   },
   {
     "name": "Boule sombre",
     "level": 3,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "3 Ferveur",
+    "duree": "Instantané",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste lance une boule (catalyseur) d'énergie sombre qui inflige 1 dégât maudit à la cible touchée."
   },
   {
     "name": "Réanimation Temporaire",
     "level": 3,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "3 Ferveur",
+    "duree": "Instantané / Jusqu’à utilisation des points de vie",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui ramène une cible dans le coma à la vie avec 2 points de vie temporaires non-guérissables tant qu'il n'aura pas été voir la Mort."
   },
   {
     "name": "Animation des morts (Mineur / Majeur)",
     "level": 3,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "3 Ferveur",
+    "duree": "15 minutes ou jusqu'à la mort",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste transforme un cadavre en serviteur mort-vivant sous son contrôle pour la durée du sort. Le serviteur obéit aux ordres simples donnés par le spiritualiste, mais il n'a que 4 points de vie, est très lent et très con."
   },
   {
     "name": "Boule sombre multiple",
     "level": 4,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
-    "requis": "",
-    "effet": ""
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
+    "requis": "Boule sombre",
+    "effet": "Après incantation, le spiritualiste lance jusqu'à 3 boules (catalyseurs) d'énergie sombre qui infligent 1 dégât maudit chaque à la cible touchée."
   },
   {
     "name": "Animation de Goliath",
     "level": 5,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "5 Ferveur",
+    "duree": "15 minutes ou jusqu'à la mort",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste transforme un cadavre en serviteur mort-vivant supérieur sous son contrôle pour la durée du sort. Le serviteur obéit aux ordres simples donnés par le spiritualiste et possède 20 points de vie et toutes ses facultés mentales."
   },
   {
     "name": "Purification (Mineur / Majeur)",
     "level": 3,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "3 Ferveur",
+    "duree": "Instantané",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui purifie la cible de tous les effets négatifs (poison, maladie, malédiction, etc.) selon le niveau de purification choisi (Mineur ou Majeur)."
   },
   {
     "name": "Banissement d'artéfacts",
     "level": 4,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "4 Ferveur",
+    "duree": "15 minutes de travail",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui banit un artéfact magique de l'existence. Le spiritualiste doit toucher l'artéfact pendant 15 minutes de travail pour réussir le banissement. L'artéfact peut être récupéré par le biais d'une quête (Voir avec l'Animation)."
   },
   {
     "name": "Réanimation",
     "level": 4,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui ramène une cible morte depuis moins de 2 minutes à la vie avec 1 point de vie."
   },
   {
     "name": "Enchainement divin",
     "level": 5,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "5 Ferveur",
+    "duree": "Instantané / 15 secondes",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui paralyse (divin - majeur) la cible touchée pendant 15 secondes."
   },
   {
     "name": "Cercle de protection contre le mal",
@@ -516,28 +516,28 @@
     "name": "Parler avec les morts",
     "level": 3,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "3 Ferveur",
+    "duree": "3 questions / 10 minutes",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui permet de communiquer avec les morts. Le spiritualiste peut poser jusqu'à 3 questions à un mort pendant 10 minutes. Le mort doit dire la vérité, mais il peut choisir de ne pas répondre à certaines questions."
   },
   {
     "name": "Danse du feu",
     "level": 3,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "3 Ferveur",
+    "duree": "Instantané / Danse de 3 minutes",
     "requis": "",
-    "effet": ""
+    "effet": "Après une danse de 3 minutes, le spiritualiste invoque un esprit du feu qui soigne 3 cibles de 1 point de vie chacune."
   },
   {
     "name": "Extraction d'âme",
     "level": 4,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui extrait l'âme d'une cible morte et la transfère dans un objet (Réceptacle d'âme Niveau 5) pour la conserver."
   },
   {
     "name": "Drain de mana",
@@ -552,9 +552,9 @@
     "name": "Matérialisation spirituelle",
     "level": 5,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "5 Ferveur",
+    "duree": "15 minutes ou jusqu'à la dissipation",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui matérialise trois esprits vengeurs de 3 points de vie pour la durée du sort. Les esprits vengeurs obéissent aux ordres simples donnés par le spiritualiste, frappent de 1 point de dégâts et doivent être joués par des cadavres ou des volontaires."
   }
 ]
