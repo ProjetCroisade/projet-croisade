@@ -507,10 +507,10 @@
     "name": "Cercle de protection contre le mal",
     "level": 5,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "5 Ferveur",
+    "duree": "15 minutes",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui crée un cercle de protection contre le mal autour de lui (Rayon de 5m). Ce cercle empêche les créatures maléfiques d'approcher pendant la durée du sort."
   },
   {
     "name": "Parler avec les morts",
@@ -543,10 +543,10 @@
     "name": "Drain de mana",
     "level": 4,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
     "requis": "",
-    "effet": ""
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui drain le mana / la ferveur d'une cible touchée avec son catalyseur. La cible perd 2 points de mana / ferveur temporairement, même si elle n’en possède pas, et le spiritualiste récupère le mana / la ferveur qu’il absorbe. Ces points sont stockés en mana / ferveur temporaire et ne peuvent pas être récupérés après utilisation."
   },
   {
     "name": "Matérialisation spirituelle",
