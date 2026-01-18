@@ -1,137 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Uncial+Antiqua&display=swap');
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fdfbf7;
-  color: #2e2e2e;
-}
-
-header {
-  background-color: #1c1c1c;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  h1 {
-    color: #fff;
-  }
-}
-
-aside nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-aside nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-aside nav ul li a:hover {
-  background-color: #333;
-  border-radius: 5px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #e7ba79;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-main {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h1, h2, h3 {
-  color: #4a3c1a;
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-footer {
-  background-color: #1c1c1c;
-  color: #ccc;
-  text-align: center;
-  padding: 15px;
-  margin-top: 40px;
-}
-
-ul {
-  line-height: 1.6;
-}
-
-.map-container {
-  width: 100%;
-  max-width: 800px;   /* ajustez selon votre mise en page */
-  margin: 1em auto;   /* centrage horizontal et marge verticale */
-  height: 450px;      /* hauteur fixe, modifiable */
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.codex-magie figure {
-  /* Bordure autour du bloc figure */
-  border: 2px solid #666;      /* épaisseur, style et couleur de la bordure */
-  border-radius: 8px;          /* bords légèrement arrondis */
-  padding: 0.5rem;             /* un peu d’espace entre l’image et la bordure */
-  margin: 0 auto 2rem;
-  text-align: center;
-  background-color: #f9f9f9;   /* optionnel : fond clair pour détacher */
-}
-
-.codex-magie img {
-  width: 100%;
-  height: auto;
-  display: block;
-  /* Si vous souhaitez aussi une bordure directement sur l’image, décommentez : */
-  /* border: 3px solid #444; */
-  /* border-radius: 4px; */
-}
-
-.divinites-content {
-  text-align: center;
-  text-justify: true;
-}
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Merriweather&display=swap');
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Merriweather', serif;
@@ -142,8 +13,10 @@ body {
   padding: 0;
 }
 
+/* ================= HEADER ================= */
+
 header {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 30px 20px;
   text-align: center;
   border-bottom: 2px solid #e7ba79;
@@ -151,11 +24,13 @@ header {
 
 header h1 {
   font-family: 'Uncial Antiqua', cursive;
-  font-size: 3em;
+  font-size: 3rem;
   color: #e7ba79;
   margin: 0;
   text-shadow: 2px 2px #000;
 }
+
+/* ================= NAV ================= */
 
 nav ul {
   list-style: none;
@@ -164,10 +39,7 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-nav ul li {
-  margin: 0 15px;
+  gap: 1rem;
 }
 
 nav ul li a {
@@ -182,6 +54,8 @@ nav ul li a:hover {
   text-shadow: 0 0 10px #e7ba79;
 }
 
+/* ================= MAIN ================= */
+
 main {
   max-width: 900px;
   margin: 40px auto;
@@ -195,234 +69,222 @@ main {
 main h2 {
   font-family: 'Uncial Antiqua', cursive;
   color: #e7ba79;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
 }
 
-main p {
-  line-height: 1.6;
-  margin-bottom: 15px;
+main h3 {
+  color: #e7ba79;
 }
 
-main h3 {
-  color:#e7ba79
+main p {
+  line-height: 1.6;
 }
+
+/* ================= FOOTER ================= */
+
+footer {
+  background-color: #1c1c1c;
+  color: #ccc;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* ================= MAP ================= */
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  margin: 1em auto;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ================= SPELLS ================= */
+
+.spell-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.spell {
+  flex: 1 1 300px;
+  min-width: 260px;
+  background: linear-gradient(180deg, #2b2b2b, #1b1b1b);
+  border: 3px solid #ffe48a;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/* ================= TABLES ================= */
+
+.fiche-mage,
+.fiche-warrior,
+.fiche-rogue,
+.fiche-spiritualist {
+  width: 100%;
+  max-width: 750px;
+  margin: 1em auto;
+  border-collapse: collapse;
+  background-color: #1a1a1a;
+  color: #ddd;
+  border: 1px solid #333;
+}
+
+.fiche-mage td,
+.fiche-warrior td,
+.fiche-rogue td,
+.fiche-spiritualist td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+/* ================= BUTTON ================= */
 
 #btnTop {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 99;
   background-color: #e7ba79;
   color: black;
   border: none;
   padding: 10px 15px;
   border-radius: 8px;
-  font-size: 16px;
   cursor: pointer;
-  box-shadow: 0 0 10px #000;
-  transition: background-color 0.3s;
 }
 
-#btnTop:hover {
-  background-color: #fff3c1;
+/* ================= CLASSES NAV FIX ================= */
+
+.page-classes aside {
+  width: 240px;
+  background-color: #2e2e2e;
+  padding: 15px 10px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
 }
 
-@media screen and (max-width: 768px) {
-  body.page-races aside,
-  body.page-classes aside {
-    display: none;
-  }
+/* Reset default nav list behavior */
+.page-classes aside nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block; /* IMPORTANT: stop flex chaos */
 }
 
-.metiers-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-    justify-content: center;
-  }
-
-  .btn-metier {
-    background-color: #e7ba79;
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    transition: transform 0.2s, background-color 0.2s;
-  }
-
-  .btn-metier:hover {
-    background-color: #d6a861;
-    transform: scale(1.05);
-  }
-/** Fiche de classe : Mage **/
-  .fiche-mage {
-    width: 100%;
-    max-width: 750px;
-    margin: 1em auto;
-    border-collapse: collapse;
-    font-size: 1rem;
-    background-color: #1a1a1a;
-    color: #ddd;
-    border: 1px solid #333;
-  }
-  .fiche-mage td {
-    padding: 10px;
-    border-bottom: 1px solid #333;
-  }
-  .titre-mage {
-    text-align: center;
-    color: #c06cf9;
-    font-family: "Cinzel", serif;
-    letter-spacing: 1px;
-    margin-top: 1.5em;
-  }
-  .sous-titre {
-    text-align: center;
-    color: #ffffff;
-    margin-top: 1.2em;
-    font-family: "Cinzel", serif;
-  }
-  .niveau {
-    text-align: center;
-    color: #ffffff;
-    margin-top: 1.2em;
-    font-family: "Cinzel", serif;
-  }
-  .liste-specialisations {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0.5em auto 1em;
-  }
-  .liste-specialisations li {
-    display: inline-block;
-    background-color: #ffffff;
-    color: #000000;
-    margin: 0.2em 0.4em;
-    padding: 5px 12px;
-    border-radius: 6px;
-    font-weight: 500;
-    border: 1px solid #000000;
-  }  
-/** Fiche de classe : Warrior **/
-   .fiche-warrior {
-    width: 100%;
-    max-width: 750px;
-    margin: 1em auto;
-    border-collapse: collapse;
-    font-size: 1rem;
-    background-color: #1a1a1a;
-    color: #ddd;
-    border: 1px solid #333;
-  }
-  .fiche-warrior td {
-    padding: 10px;
-    border-bottom: 1px solid #333;
-  }
-  .titre-warrior {
-    text-align: center;
-    color: #5552f7;
-    font-family: "Cinzel", serif;
-    letter-spacing: 1px;
-    margin-top: 1.5em;
-  }   
-/** Fiche de classe : Rogue **/
-   .fiche-rogue {
-    width: 100%;
-    max-width: 750px;
-    margin: 1em auto;
-    border-collapse: collapse;
-    font-size: 1rem;
-    background-color: #1a1a1a;
-    color: #ddd;
-    border: 1px solid #333;
-  }
-  .fiche-rogue td {
-    padding: 10px;
-    border-bottom: 1px solid #333;
-  }
-  .titre-rogue {
-    text-align: center;
-    color: #26f063;
-    font-family: "Cinzel", serif;
-    letter-spacing: 1px;
-    margin-top: 1.5em;
-  }  
-/** Fiche de classe : Spiritualist **/  
-.fiche-spiritualist {
-    width: 100%;
-    max-width: 750px;
-    margin: 1em auto;
-    border-collapse: collapse;
-    font-size: 1rem;
-    background-color: #1a1a1a;
-    color: #ddd;
-    border: 1px solid #333;
-  }
-  .fiche-spiritualist td {
-    padding: 10px;
-    border-bottom: 1px solid #333;
-  }
-  .titre-spiritualist {
-    text-align: center;
-    color: #f7268a;
-    font-family: "Cinzel", serif;
-    letter-spacing: 1px;
-    margin-top: 1.5em;
-  }
-.has-submenu > .submenu {
-  margin-left: 15px;
-  padding-left: 10px;
-  border-left: 2px solid #555;
-  list-style-type: none;
-}
-
-.submenu a {
-  color: #ddd;
-  text-decoration: none;
-  font-size: 0.9em;
-}
-
-.submenu a:hover {
+/* MAIN CATEGORY (Arcanistes, etc.) */
+.page-classes aside .has-submenu > a {
+  display: block;
+  margin: 16px 0 6px;
+  padding: 8px 6px;
+  text-align: center;
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 1.1rem;
   color: #ffe48a;
+  border-bottom: 1px solid #555;
+  text-decoration: none;
 }
-.spell-list {
+
+/* SUBMENU container */
+.page-classes aside .submenu {
+  margin: 6px 0 12px;
+  padding-left: 0;
+  border-left: none;
+}
+
+/* SUB CLASS ITEMS */
+.page-classes aside .submenu li {
+  margin: 4px 0;
+}
+
+/* SUB CLASS LINKS */
+.page-classes aside .submenu a {
+  display: block;
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #e7ba79;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.page-classes aside .submenu a:hover {
+  background-color: #3a3a3a;
+}
+
+/* ================= BUTTON FIX ================= */
+
+/* Force anchor buttons to behave like real buttons */
+a.btn-metier {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #e7ba79;
+  color: #000;
+
+  text-decoration: none;
+  font-weight: bold;
+
+  padding: 10px 20px;
+  border-radius: 8px;
+
+  min-width: 160px;
+  text-align: center;
+
+  box-shadow: 0 2px 5px rgba(0,0,0,0.35);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Hover state */
+a.btn-metier:hover {
+  background-color: #d6a861;
+  transform: translateY(-2px);
+}
+
+/* Active / click */
+a.btn-metier:active {
+  transform: translateY(0);
+}
+
+/* Ensure button containers don’t get broken by nav/list rules */
+.metiers-container,
+.codex-magie {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 24px;
+  gap: 10px;
 }
-.spell {
-  background: linear-gradient(180deg, #2b2b2b, #1b1b1b);
-  border: 3px solid #ffe48a;
-  border-radius: 8px;
-  padding: 16px;
-  color: #fff;
-  box-sizing: border-box;
-  flex: 1 1 300px;
-  min-width: 260px;
+
+/* ================= RACES PAGE LAYOUT ================= */
+
+.page-races main {
+  display: flex;
+  gap: 30px; /* replaces margin-left hack */
 }
-.spell h3 {
-  color: #ffe48a;
-  margin: 0 0 10px;
+
+/* Sidebar */
+.page-races aside {
+  width: 200px;
+  flex-shrink: 0; /* prevents overlap */
+  background-color: #2e2e2e;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
-.spell p {
-  margin: 0.25rem 0;
-  line-height: 1.4;
-}
-.lexique-effets-etats dl {
-  border: 2px solid #555;
-  border-radius: 8px;
-  padding: 20px;
-  background-color: #1a1a1a;
-}
-.lexique-effets-etats dt {
-  font-weight: bold;
-  color: #e7ba79;
-  margin-top: 15px;
+
+/* Main content */
+.page-races .races-content {
+  flex: 1;
+  min-width: 0; /* CRITICAL: prevents overflow in flex */
 }

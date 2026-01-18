@@ -1,65 +1,93 @@
-
-/* responsive.css */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-}
+/* ================= GLOBAL ================= */
 
 img {
   max-width: 100%;
   height: auto;
 }
 
-.container, main, section, .content, .main-container {
-  width: 100%;
-  padding: 1rem;
-}
-
-nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-}
+/* ================= TABLET ================= */
 
 @media (max-width: 768px) {
+
   nav ul {
     flex-direction: column;
     align-items: center;
   }
 
-  .content,
-  .flex,
-  .columns,
-  .main-container {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
+  main {
+    padding: 25px;
+    margin: 20px;
   }
 
-  .navigation,
-  .sidebar,
-  .left,
-  .right,
-  .panel {
-    width: 100% !important;
-    margin: 0 auto;
-  }
-
-  .class-list, .class-info {
-    width: 100% !important;
-    padding: 0.5rem;
+  header h1 {
+    font-size: 2.2rem;
   }
 
   h1, h2, h3 {
     text-align: center;
+  }
+
+  /* hide sidebars */
+  aside {
+    display: none;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+
+  main {
+    padding: 20px 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul li a {
+    font-size: 1.1rem;
+  }
+
+  /* Tables: smaller text */
+  .fiche-mage,
+  .fiche-warrior,
+  .fiche-rogue,
+  .fiche-spiritualist {
+    font-size: 0.9rem;
+  }
+
+  .fiche-mage td,
+  .fiche-warrior td,
+  .fiche-rogue td,
+  .fiche-spiritualist td {
+    padding: 6px;
+  }
+
+  /* Spells stack nicely */
+  .spell {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-classes aside {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  a.btn-metier {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-races main {
+    flex-direction: column;
+  }
+
+  .page-races aside {
+    display: none;
   }
 }
