@@ -11,7 +11,7 @@
   {
     "name": "Frappe magique",
     "level": 1,
-    "incantation": "Arcane Ostium Opertum Terra Prio",
+    "incantation": "Arcane Ostium Opertum Terra Prio Percutio",
     "cout": "1 Mana",
     "duree": "Jusqu’à utilisation",
     "requis": "",
@@ -20,7 +20,7 @@
   {
     "name": "Langue Temporaire",
     "level": 1,
-    "incantation": "Arcane Ostium Opertum Ventis Prio",
+    "incantation": "Arcane Ostium Opertum Ventis Prio Lingua",
     "cout": "1 Mana",
     "duree": "15 minutes",
     "requis": "",
@@ -29,7 +29,7 @@
   {
     "name": "Bouclier arcanique",
     "level": 2,
-    "incantation": "Arcane Ostium Opertum Terra Duo",
+    "incantation": "Arcane Ostium Opertum Terra Duo Scutum",
     "cout": "2 Mana",
     "duree": "Jusqu’à utilisation",
     "requis": "",
@@ -38,7 +38,7 @@
   {
     "name": "Flèche arcanique majeure",
     "level": 2,
-    "incantation": "Arcane Ostium Opertum Luminaria Duo",
+    "incantation": "Arcane Ostium Opertum Luminaria Duo Sagitta Majora",
     "cout": "2 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -47,7 +47,7 @@
   {
     "name": "Aura de peur",
     "level": 3,
-    "incantation": "Arcane Ostium Opertum Sanguis Trio",
+    "incantation": "Arcane Ostium Opertum Sanguis Trio Aura Timoris",
     "cout": "3 Mana / 1 point de vie",
     "duree": "15 minutes",
     "requis": "",
@@ -56,7 +56,7 @@
   {
     "name": "Flèche Arcanique Multiple",
     "level": 3,
-    "incantation": "Arcane Ostium Opertum Luminaria Trio",
+    "incantation": "Arcane Ostium Opertum Luminaria Trio Sagitta Multipla",
     "cout": "3 Mana",
     "duree": "1 minute",
     "requis": "",
@@ -65,7 +65,7 @@
   {
     "name": "Guérison sombre",
     "level": 3,
-    "incantation": "Arcane Ostium Opertum Sanguis Trio",
+    "incantation": "Arcane Ostium Opertum Sanguis Trio Sanare",
     "cout": "3 Mana / 1 point de vie",
     "duree": "Instantané",
     "requis": "",
@@ -74,7 +74,7 @@
   {
     "name": "Invocation de feu",
     "level": 3,
-    "incantation": "Arcane Ostium Opertum Ignis Trio",
+    "incantation": "Arcane Ostium Opertum Ignis Trio Invocatum",
     "cout": "3 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -83,7 +83,7 @@
   {
     "name": "Invocation de foudre",
     "level": 3,
-    "incantation": "Arcane Ostium Opertum Ventis Trio",
+    "incantation": "Arcane Ostium Opertum Ventis Trio Invocatum",
     "cout": "3 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -92,7 +92,7 @@
   {
     "name": "Invocation de glace",
     "level": 3,
-    "incantation": "Arcane Ostium Opertum Aqua Trio",
+    "incantation": "Arcane Ostium Opertum Aqua Trio Invocatum",
     "cout": "3 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -101,7 +101,7 @@
   {
     "name": "Lame Enchantée",
     "level": 3,
-    "incantation": "Arcane Ostium Opertum Encantis Trio",
+    "incantation": "Arcane Ostium Opertum Encantis Trio Lamina Incantata",
     "cout": "3 Mana",
     "duree": "30 minutes",
     "requis": "",
@@ -110,7 +110,7 @@
   {
     "name": "Renforcement I",
     "level": 3,
-    "incantation": "Arcane Ostium Opertum Encantis Trio",
+    "incantation": "Arcane Ostium Opertum Encantis Trio Robur",
     "cout": "3 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -119,7 +119,7 @@
   {
     "name": "Scellement d'Artéfacts",
     "level": 3,
-    "incantation": "Arcane Ostium Opertum Encantis Trio",
+    "incantation": "Arcane Ostium Opertum Encantis Trio Sigillum Artefactum",
     "cout": "3 Mana",
     "duree": "15 minutes",
     "requis": "",
@@ -128,7 +128,7 @@
   {
     "name": "Tir Sanglant",
     "level": 3,
-    "incantation": "Arcane Ostium Opertum Sanguis Trio",
+    "incantation": "Arcane Ostium Opertum Sanguis Trio Sagitta Sanguinaria",
     "cout": "3 Mana / 1 point de vie",
     "duree": "Instantané",
     "requis": "",
@@ -137,7 +137,7 @@
   {
     "name": "Artefact Maudit",
     "level": 4,
-    "incantation": "Arcane Ostium Opertum Sanguis Tetra",
+    "incantation": "Arcane Ostium Opertum Sanguis Tetra Artefactum Maledictum",
     "cout": "4 Mana / 2 points de vie",
     "duree": "15 minutes de travail / Permanent",
     "requis": "",
@@ -146,7 +146,7 @@
   {
     "name": "Chaîne d'éclairs",
     "level": 4,
-    "incantation": "Arcane Ostium Opertum Ventis Tetra",
+    "incantation": "Arcane Ostium Opertum Ventis Tetra Catena Fulminis",
     "cout": "4 Mana",
     "duree": "Instantané",
     "requis": "Sort Invocation de foudre",
@@ -155,7 +155,7 @@
   {
     "name": "Entrave Arcanique",
     "level": 4,
-    "incantation": "Arcane Ostium Opertum Terra Tetra",
+    "incantation": "Arcane Ostium Opertum Terra Tetra Inhibere",
     "cout": "4 Mana",
     "duree": "5 minutes",
     "requis": "",
@@ -164,7 +164,7 @@
   {
     "name": "Extortion Arcanique I",
     "level": 4,
-    "incantation": "Arcane Ostium Opertum Terra Tetra",
+    "incantation": "Arcane Ostium Opertum Terra Tetra Extorsio",
     "cout": "4 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -173,7 +173,7 @@
   {
     "name": "Fonte rapide",
     "level": 4,
-    "incantation": "Arcane Ostium Opertum Ignis Tetra",
+    "incantation": "Arcane Ostium Opertum Ignis Tetra Rapidae Fusio",
     "cout": "4 Mana",
     "duree": "Le temps de forge de l'objet",
     "requis": "Sort Invocation de feu",
@@ -182,7 +182,7 @@
   {
     "name": "Renforcement d'armure I",
     "level": 4,
-    "incantation": "Arcane Ostium Opertum Encantis Tetra",
+    "incantation": "Arcane Ostium Opertum Encantis Tetra Robur Armatura",
     "cout": "4 Mana",
     "duree": "30 minutes",
     "requis": "",
@@ -191,7 +191,7 @@
   {
     "name": "Renforcement II",
     "level": 4,
-    "incantation": "Arcane Ostium Opertum Encantis Tetra",
+    "incantation": "Arcane Ostium Opertum Encantis Tetra Robur Duo",
     "cout": "4 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -200,7 +200,7 @@
   {
     "name": "Régénération aquatique",
     "level": 4,
-    "incantation": "Arcane Ostium Opertum Aqua Tetra",
+    "incantation": "Arcane Ostium Opertum Aqua Tetra Regeneratio",
     "cout": "4 Mana",
     "duree": "Instantané",
     "requis": "Sort Invocation de glace",
@@ -209,7 +209,7 @@
   {
     "name": "Sacrifice communautaire",
     "level": 4,
-    "incantation": "Arcane Ostium Opertum Sanguis Tetra",
+    "incantation": "Arcane Ostium Opertum Sanguis Tetra Sacrificium Communitatis",
     "cout": "4 Mana / 2 points de vie",
     "duree": "Instantané",
     "requis": "",
@@ -218,7 +218,7 @@
   {
     "name": "Soif de sang",
     "level": 4,
-    "incantation": "Arcane Ostium Opertum Sanguis Tetra",
+    "incantation": "Arcane Ostium Opertum Sanguis Tetra Sitis Sanguinis",
     "cout": "4 Mana / 2 points de vie",
     "duree": "Instantané",
     "requis": "",
@@ -227,7 +227,7 @@
   {
     "name": "Animation d'objet",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Encantis Penta",
+    "incantation": "Arcane Ostium Opertum Encantis Penta Animare Obiectum",
     "cout": "5 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -236,7 +236,7 @@
   {
     "name": "Annulation",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Sanguis Penta",
+    "incantation": "Arcane Ostium Opertum Sanguis Penta Annulatio",
     "cout": "5 Mana / 3 points de vie",
     "duree": "Instantané",
     "requis": "",
@@ -245,7 +245,7 @@
   {
     "name": "Apprentissage Magie Noire",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Sanguis Penta",
+    "incantation": "Arcane Ostium Opertum Sanguis Penta Discere Mag",
     "cout": "5 Mana / 3 points de vie",
     "duree": "Permanent",
     "requis": "",
@@ -254,7 +254,7 @@
   {
     "name": "Brise Illusions",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Terra Penta",
+    "incantation": "Arcane Ostium Opertum Terra Penta Frangere Illusio",
     "cout": "5 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -263,7 +263,7 @@
   {
     "name": "Chaînes Arcaniques",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Terra Penta",
+    "incantation": "Arcane Ostium Opertum Terra Penta Catenae Arcanae",
     "cout": "5 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -272,7 +272,7 @@
   {
     "name": "Extortion Arcanique II",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Terra Penta",
+    "incantation": "Arcane Ostium Opertum Terra Penta Extorsio Duo",
     "cout": "5 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -281,7 +281,7 @@
   {
     "name": "Prison de glace éternelle",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Aqua Penta",
+    "incantation": "Arcane Ostium Opertum Aqua Penta Glacies Aeterna Carcer",
     "cout": "5 Mana",
     "duree": "30 secondes",
     "requis": "Sort Invocation de glace",
@@ -290,7 +290,7 @@
   {
     "name": "Rage de sang",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Sanguis Penta",
+    "incantation": "Arcane Ostium Opertum Sanguis Penta Ira Sanguinis",
     "cout": "5 Mana / 3 points de vie",
     "duree": "15 minutes",
     "requis": "",
@@ -299,7 +299,7 @@
   {
     "name": "Renaissance du Phoenix",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Ignis Penta",
+    "incantation": "Arcane Ostium Opertum Ignis Penta Renascor Phoenix",
     "cout": "5 Mana",
     "duree": "Instantané",
     "requis": "Sort Invocation de feu",
@@ -308,7 +308,7 @@
   {
     "name": "Renforcement d'armure II",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Encantis Penta",
+    "incantation": "Arcane Ostium Opertum Encantis Penta Robur Armatura Duo",
     "cout": "5 Mana",
     "duree": "1 heure",
     "requis": "",
@@ -317,7 +317,7 @@
   {
     "name": "Renforcement III",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Encantis Penta",
+    "incantation": "Arcane Ostium Opertum Encantis Penta Robur Tres",
     "cout": "5 Mana",
     "duree": "Instantané",
     "requis": "",
@@ -326,7 +326,7 @@
   {
     "name": "Tempête déchaînée",
     "level": 5,
-    "incantation": "Arcane Ostium Opertum Ventis Penta",
+    "incantation": "Arcane Ostium Opertum Ventis Penta Tempestas Exasperata",
     "cout": "5 Mana",
     "duree": "Instantané",
     "requis": "Sort Invocation de foudre",
@@ -336,10 +336,10 @@
     "name": "Renforcement divin d'objet (Mineur / Majeur)",
     "level": 3,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "3 Ferveur (mineur) / 5 Ferveur (majeur)",
+    "duree": "Instantané / Permanent",
     "requis": "",
-    "effet": ""
+    "effet": "Renforce un objet lui ajoutant 2 (mineur) ou 3 (majeur) de résistance temporaire."
   },
   {
     "name": "Boule divine",
@@ -381,10 +381,10 @@
     "name": "Renforcement divin de bâtiment (Mineur / Majeur)",
     "level": 5,
     "incantation": "Prière",
-    "cout": "",
-    "duree": "",
+    "cout": "3 Ferveur (mineur) / 5 Ferveur (majeur)",
+    "duree": "Instantané / Permanent",
     "requis": "",
-    "effet": ""
+    "effet": "Renforce un bâtiment lui ajoutant 2 (mineur) ou 3 (majeur) de résistance temporaire."
   },
   {
     "name": "Touché divin",
