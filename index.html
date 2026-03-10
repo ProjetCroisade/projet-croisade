@@ -7,9 +7,20 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/pagefind/pagefind-ui.js"></script>
 </head>
 <body>
   <header>
+    <div id="search"></div>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+      new PagefindUI({
+        element: "#search",
+        showSubResults: true
+       });
+      });
+    </script>
     <h1>PROJET CROISADE</h1>
     <nav>
       <ul>

@@ -288,3 +288,9 @@ a.btn-metier:active {
   flex: 1;
   min-width: 0; /* CRITICAL: prevents overflow in flex */
 }
+
+#search {
+  max-width: 400px;
+  margin-left: auto;
+  background-color: #ccc;
+}
