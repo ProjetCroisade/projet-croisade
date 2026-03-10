@@ -44,6 +44,26 @@
     <div style="flex: 1; margin-left: 30px;">
       <section class="competences">
         <h2>Compétences</h2>
+        <div class="search-container">
+
+  <div class="search-box">
+    <span class="search-icon">🔎</span>
+    <input
+      type="text"
+      id="searchBox"
+      placeholder="Rechercher un sort ou une compétence..."
+    >
+  </div>
+
+  <div class="search-filters">
+    <button class="filter active" data-filter="all">Tous</button>
+    <button class="filter" data-filter="sort">Sorts</button>
+    <button class="filter" data-filter="skill">Compétences</button>
+  </div>
+
+</div>
+
+<div id="search-results"></div>
         <section id="niveau1" class="competences"><h2>Niveau 1</h2><div id="level-1" class="spell-list"></div></section>
         <section id="niveau2" class="competences"><h2>Niveau 2</h2><div id="level-2" class="spell-list"></div></section>
         <section id="niveau3" class="competences"><h2>Niveau 3</h2><div id="level-3" class="spell-list"></div></section>
@@ -88,5 +108,110 @@
   }
   renderSkillsByLevel();
   </script>
+
+<script>
+
+let allData = [];
+let currentFilter = "all";
+
+async function loadData(){
+
+  const spells = await fetch("data/spells.json").then(r => r.json());
+  const skills = await fetch("data/skills.json").then(r => r.json());
+
+  const spellsTagged = spells.map(s => ({...s, type:"sort"}));
+  const skillsTagged = skills.map(s => ({...s, type:"skill"}));
+
+  allData = [...spellsTagged, ...skillsTagged];
+
+}
+
+function performSearch(){
+
+  const query = document.getElementById("searchBox").value.toLowerCase();
+
+  if(query.length < 2){
+    document.getElementById("search-results").innerHTML = "";
+    return;
+  }
+
+  const results = allData.filter(item => {
+
+    const matchesText =
+      item.name?.toLowerCase().includes(query) ||
+      item.effet?.toLowerCase().includes(query) ||
+      item.incantation?.toLowerCase().includes(query) ||
+      item.requis?.toLowerCase().includes(query);
+
+    const matchesType =
+      currentFilter === "all" || item.type === currentFilter;
+
+    return matchesText && matchesType;
+
+  });
+
+  renderResults(results);
+
+}
+
+function renderResults(results){
+
+  const container = document.getElementById("search-results");
+
+  if(results.length === 0){
+    container.innerHTML = "<p>Aucun résultat.</p>";
+    return;
+  }
+
+  container.innerHTML = results.map(item => `
+
+    <article class="search-result">
+
+      <span class="type ${item.type}">
+        ${item.type === "sort" ? "Sort" : "Compétence"}
+      </span>
+
+      <h3>${item.name}</h3>
+
+      <p><strong>Niveau :</strong> ${item.level}</p>
+
+      ${item.incantation ? `<p><strong>Incantation :</strong> ${item.incantation}</p>` : ""}
+
+      ${item.cout ? `<p><strong>Coût :</strong> ${item.cout}</p>` : ""}
+
+      ${item.requis ? `<p><strong>Requis :</strong> ${item.requis}</p>` : ""}
+
+      ${item.duree ? `<p><strong>Durée :</strong> ${item.duree}</p>` : ""}
+
+      ${item.effet ? `<p>${item.effet}</p>` : ""}
+
+    </article>
+
+  `).join("");
+
+}
+
+document.getElementById("searchBox").addEventListener("input", performSearch);
+
+document.querySelectorAll(".filter").forEach(button => {
+
+  button.addEventListener("click", () => {
+
+    document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
+
+    button.classList.add("active");
+
+    currentFilter = button.dataset.filter;
+
+    performSearch();
+
+  });
+
+});
+
+loadData();
+
+</script>
+
 </body>
 </html>
