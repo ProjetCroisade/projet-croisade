@@ -369,3 +369,8 @@ a.btn-metier:active {
   background:#6b1fb1;
   color:white;
 }
+#search {
+  max-width: 200px;
+  margin-left: auto;
+  background-color: #ccc;
+}
