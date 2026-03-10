@@ -8,6 +8,14 @@
     "effet": "Permet d'inventer une histoire sans queue ni tête qui embrouillera la cible pendant 5 minutes, la rendant incapable de se concentrer sur autre chose."
   },
   {
+    "name": "Prière / Méditation",
+    "level": 1,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Permet au personnage de récupérer de la mana / ferveur deux fois plus vite en priant ou en méditant. Le personnage regagne 1 point de mana/ferveur de plus après 15 minutes de prière ou de méditation. (Donc +2 / 15 minutes au lieu de +1 / 15 minutes)"
+  },
+  {
     "name": "Coup puissant I, II, III",
     "level": 1,
     "duree": "1 fois par combat",
