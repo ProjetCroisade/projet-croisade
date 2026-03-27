@@ -1,33 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Classes - Projet Croisade</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
-  <link rel="icon" href="favicon.png" type="image/x-icon">
-</head>
+<div id="header"></div>
+<script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => document.getElementById('header').innerHTML = html);
+</script>
+
 <body class="page-classes">
-  <header>
-    <h1>Classes</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="races.html">Races</a></li>
-        <li><a href="classes.html">Classes</a></li>
-        <li><a href="competences.html">Compétences</a></li>
-        <li><a href="metiers.html">Métiers</a></li>
-        <li><a href="regles.html">Règles de jeu</a></li>
-        <li><a href="infos.html">Informations</a></li>
-        <li><a href="magie.html">Magie</a></li>
-        <li><a href="divinites.html">Divinités</a></li>
-        <li><a href="documents.html">Documents</a></li>
-        <li><a href="fiche.html">Fiche de personnage</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main style="display: flex;">
+<main style="display: flex;">
 <aside class="class-nav">
   <nav>
     <h3 style="color: #ffe48a; text-align: center;">Navigation</h3>
