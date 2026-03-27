@@ -2,9 +2,16 @@
 <html lang="fr">
 <div id="header"></div>
 <script>
-  fetch('header.html')
-    .then(res => res.text())
-    .then(html => document.getElementById('header').innerHTML = html);
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+
+    // Manually re-run the script
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
 </script>
 
   <main>
