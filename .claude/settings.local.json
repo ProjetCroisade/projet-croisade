@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"responsive.css\" c:/Users/Julien/Documents/GitHub/projet-croisade/metiers/*.html)"
+    ]
+  }
+}
