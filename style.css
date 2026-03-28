@@ -79,6 +79,12 @@ nav ul li a:hover {
   text-shadow: 0 0 10px #e7ba79;
 }
 
+nav ul li a.active {
+  color: #fff;
+  text-shadow: 0 0 10px #e7ba79;
+  border-bottom: 1px solid #e7ba79;
+}
+
 /* ================= MAIN ================= */
 
 main {
@@ -410,10 +416,23 @@ a.btn-metier:active {
   position: sticky;
   top: 0;
   height: 100vh;
+  color: #f5f0e6;
+}
+
+.page-races aside h3 {
+  color: #ffe48a;
+  text-align: center;
+}
+
+.page-races aside nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
 }
 
 /* Main content */
-.page-races .races-content {
+.page-races main > div {
   flex: 1;
   min-width: 0; /* CRITICAL: prevents overflow in flex */
 }

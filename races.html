@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projet Croisade</title>
+  <title>Races | Projet Croisade</title>
+  <meta name="description" content="Explorez les races jouables de Projet Croisade : Humains, Gobelins, Orcs, Nains, Drakéides, Elfes et bien d'autres encore.">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <link rel="icon" href="favicon.png" type="image/x-icon">
 <link href="pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="pagefind/pagefind-ui.js"></script>
 </head>
+<body class="page-races">
 <div id="header"></div>
 <script>
 fetch('header.html')
@@ -23,11 +25,10 @@ fetch('header.html')
   });
 </script>
 
-<body class="page-races">
-<main style="display: flex;">
-<aside style="width: 200px; padding: 10px; background-color: #2e2e2e; color: white; position: sticky; top: 0; height: 100vh;">
+<main>
+<aside>
   <nav>
-    <h3 style="color: #ffe48a; text-align: center;">Navigation</h3>
+    <h3>Navigation</h3>
     <ul>
       <li><a href="#humain">Humains</a></li>
       <li><a href="#gobelin">Gobelins</a></li>
@@ -43,7 +44,7 @@ fetch('header.html')
     </ul>
   </nav>
 </aside>
-    <div style="flex: 1;">
+    <div>
     <div class="content">
     <div class="races-content">
     <h2>Liste des races disponibles</h2>

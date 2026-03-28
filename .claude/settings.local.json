@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep -n \"responsive.css\" c:/Users/Julien/Documents/GitHub/projet-croisade/metiers/*.html)"
+      "Bash(grep -n \"responsive.css\" c:/Users/Julien/Documents/GitHub/projet-croisade/metiers/*.html)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/Julien/Documents/GitHub/projet-croisade/**)",
+      "Bash(done)"
     ]
   }
 }
