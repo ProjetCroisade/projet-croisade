@@ -91,3 +91,28 @@ img {
     display: none;
   }
 }
+
+@media (max-width: 768px) {
+  .page-classes main,
+  .page-competences main,
+  .page-magie main {
+    flex-direction: column;
+  }
+
+  .page-competences aside,
+  .page-magie aside {
+    display: none;
+  }
+
+  /* Neutralize leftover inline margin-left on nested divs */
+  .page-classes main > div > div {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-box {
+    width: 100%;
+    max-width: 100%;
+  }
+}

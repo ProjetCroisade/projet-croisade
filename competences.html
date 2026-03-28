@@ -11,7 +11,7 @@
 <link href="pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="pagefind/pagefind-ui.js"></script>
 </head>
-<body>
+<body class="page-competences">
 <div id="header"></div>
 <script>
 fetch('header.html')
@@ -25,10 +25,10 @@ fetch('header.html')
   });
 </script>
 
-  <main style="display: flex;">
-    <aside style="width: 150px; padding: 10px; background-color: #2e2e2e; color: white; position: sticky; top: 0; height: 100vh;">
+  <main>
+    <aside>
       <nav>
-        <h3 style="color: #ffe48a; text-align: center;">Navigation</h3>
+        <h3>Navigation</h3>
         <ul>
           <li><a href="#niveau1">Niveau 1</a></li>
           <li><a href="#niveau2">Niveau 2</a></li>
@@ -38,7 +38,7 @@ fetch('header.html')
         </ul>
       </nav>
     </aside>
-    <div style="flex: 1; margin-left: 30px;">
+    <div>
       <section class="competences">
         <h2>Compétences</h2>
         <div class="search-container">
@@ -74,7 +74,7 @@ fetch('header.html')
     <p>&copy; Projet Croisade - Tous droits réservés</p>
   </footer>
 
-  <button onclick="scrollToTop()" id="btnTop" title="Retour en haut">⬆ Haut</button>
+  <button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
 
   <script>
   function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
