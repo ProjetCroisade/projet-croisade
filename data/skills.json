@@ -726,5 +726,13 @@
     "portee": "1 cible",
     "requis": "",
     "effet": "Permet d'obtenir des informations précises d'une cible en la torturant physiquement ou mentalement. La cible doit coopérer et fournir l'information demandée après 2 minutes de torture par phrase."
+  },
+  {
+    "name": "Discrétion",
+    "level": 1,
+    "duree": "Permanent / Passif",
+    "portee": "Soi-même",
+    "requis": "",
+    "effet": "Permet au fourbe de se cacher dans l’ombre en restant sur place, il devient alors invisible (bras croisés)."
   }
 ]
