@@ -43,6 +43,20 @@ fetch('header.html')
   function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  const konamiCode = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+  let konamiIndex = 0;
+  document.addEventListener('keydown', function(e) {
+    if (e.key === konamiCode[konamiIndex]) {
+      konamiIndex++;
+      if (konamiIndex === konamiCode.length) {
+        window.location.href = 'feet.html';
+      }
+    } else {
+      konamiIndex = 0;
+      if (e.key === konamiCode[0]) konamiIndex = 1;
+    }
+  });
 </script>
 </body>
 </html>
