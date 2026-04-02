@@ -595,7 +595,7 @@
     "name": "Vol-à-la-tire I, II, III",
     "level": 3,
     "duree": "Une fois par cible par heure",
-    "portee": "Une cible à portée de main",
+    "portee": "Toucher la bourse pendant 10 secondes / Une cible à portée de main",
     "requis": "Chaque niveau requiert le niveau précédent.",
     "effet": "Permet au voleur de subtiliser un petit objet (qui tient dans la main) à une cible sans se faire remarquer. Chaque niveau permet de voler des objets de plus en plus gros (ex : Vol-à-la-tire II permet de voler des objets pouvant tenir dans deux mains). Vol-à-la-tire III permet de voler des objets pouvant être portés sur soi (sac, bourse, arme, etc.)."
   },
