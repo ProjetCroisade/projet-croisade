@@ -8,29 +8,44 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <link rel="icon" href="favicon.png" type="image/x-icon">
-<link href="pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="pagefind/pagefind-ui.js"></script>
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
 </head>
-<body>
+<body class="page-regles">
 <div id="header"></div>
 <script>
 fetch('header.html')
   .then(res => res.text())
   .then(html => {
     document.getElementById('header').innerHTML = html;
-
     const script = document.createElement('script');
     script.src = 'data/js/search.js';
     document.body.appendChild(script);
   });
 </script>
-  <main>
-    <div class="content">
-    <!-- Règles de jeu -->
-    <section>
+
+<main>
+  <aside>
+    <nav>
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#regles-jeu">Règles de jeu</a></li>
+        <li><a href="#lexique-termes">Lexique des termes</a></li>
+        <li><a href="#compagnons">Compagnons</a></li>
+        <li><a href="#lexique-effets">Effets et états</a></li>
+        <li><a href="#regles-generales">Règles générales</a></li>
+        <li><a href="#regles-principales">Règles principales</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="regles-content">
+
+    <!-- ======== RÈGLES DE JEU ======== -->
+    <section id="regles-jeu">
       <h2>Règles de jeu</h2>
 
-      <h3>Limitations générales :</h3>
+      <h3>Limitations générales</h3>
       <p>Ces limites ne peuvent pas être dépassées, peu importe les objets ou compétences possédées :</p>
       <ul>
         <li><strong>Points de vie permanents (PV)</strong> : 20 MAXIMUM</li>
@@ -38,92 +53,96 @@ fetch('header.html')
         <li><strong>Armure physique</strong> : 8 MAXIMUM</li>
         <li><strong>Armure temporaire (naturelle)</strong> : 5 MAXIMUM</li>
         <li><strong>Dégâts de base maximum</strong> : 4 dégâts MAXIMUM</li>
-        <li><strong>Dégâts par compétence unitaire</strong> (ex. : Coup puissant, coup précis) : Aucune limite</li>
+        <li><strong>Dégâts par compétence unitaire</strong> (ex. : Coup puissant, Coup précis) : Aucune limite</li>
       </ul>
-      <p>Pour résumer, vos dégâts de base ne peuvent pas dépasser 4. Les attaques issues d’une compétence unitaire ne sont pas limitées et incluent les dégâts de trop (dégâts supplémentaires générés par des objets ou compétences exclusives).</p>
-      <p><em>Exemple de scénario :</em><br>
-      Vous possédez une épée magique qui inflige 5 dégâts de base, mais la limite est à 4. Vous frappez donc à 4. Cependant, si vous utilisez la compétence « Coup puissant » (+1 dégât), votre attaque « de trop » devient :<br>
-      5 (dégâts de base de l’arme) + 1 (compétence) = <strong>6</strong>.</p>
+      <p>Pour résumer, vos dégâts de base ne peuvent pas dépasser 4. Les attaques issues d'une compétence unitaire ne sont pas limitées et incluent les dégâts de trop (dégâts supplémentaires générés par des objets ou compétences exclusives).</p>
+      <p class="exemple"><em>Exemple :</em> Vous possédez une épée magique qui inflige 5 dégâts de base, mais la limite est à 4. Vous frappez donc à 4. Cependant, si vous utilisez la compétence « Coup puissant » (+1 dégât), votre attaque « de trop » devient :<br>
+      5 (dégâts de base de l'arme) + 1 (compétence) = <strong>6</strong>.</p>
 
       <h3>Réglementation des armes et boucliers</h3>
-      <table>
+      <table class="table-regles">
         <thead>
-          <tr>
-            <th>TYPE</th>
-            <th>CÔTÉ LE PLUS LONG</th>
-          </tr>
+          <tr><th>Type</th><th>Côté le plus long</th></tr>
         </thead>
         <tbody>
           <tr><td>Arme courte</td><td>10 cm à 80 cm</td></tr>
           <tr><td>Arme longue</td><td>80 cm à 120 cm</td></tr>
-          <tr><td>Arme d’hast</td><td>120 cm et plus</td></tr>
+          <tr><td>Arme d'hast</td><td>120 cm et plus</td></tr>
           <tr><td>Arc</td><td>10 lbs de pression MAX</td></tr>
-          <tr><td>Arme de jet</td><td>Aucune tige solide à l’intérieur</td></tr>
+          <tr><td>Arme de jet</td><td>Aucune tige solide à l'intérieur</td></tr>
           <tr><td>Petit bouclier</td><td>10–30 cm</td></tr>
           <tr><td>Moyen bouclier</td><td>30–60 cm</td></tr>
           <tr><td>Grand bouclier</td><td>60–100 cm</td></tr>
           <tr><td>Très grand bouclier</td><td>100 cm et plus</td></tr>
         </tbody>
       </table>
-      <p><em>*Toute arme ne respectant pas ces règlements sera considérée comme une arme exotique et devra être validée par l’équipe d’animation. De plus, toutes armes ou boucliers fabriqués maison devront également être vérifiés et validés par l’équipe d’animation*</em></p>
+      <p><em>Toute arme ne respectant pas ces règlements sera considérée comme une arme exotique et devra être validée par l'équipe d'animation. Toutes armes ou boucliers fabriqués maison devront également être vérifiés et validés par l'équipe d'animation.</em></p>
 
-      <h3>Dégâts de base des armes :</h3>
-      <ul>
-        <li>Arme à deux mains : 2 dégâts</li>
-        <li>Arme à une main : 1 dégât</li>
-        <li>Arme de jet : 1 dégât</li>
-        <li>Arc et arbalète : 2 dégâts</li>
-      </ul>
+      <h3>Dégâts de base des armes</h3>
+      <table class="table-regles">
+        <thead>
+          <tr><th>Type d'arme</th><th>Dégâts de base</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Arme à deux mains</td><td>2 dégâts</td></tr>
+          <tr><td>Arme à une main</td><td>1 dégât</td></tr>
+          <tr><td>Arme de jet</td><td>1 dégât</td></tr>
+          <tr><td>Arc et arbalète</td><td>2 dégâts</td></tr>
+        </tbody>
+      </table>
 
       <h3>Calcul des points d'armure</h3>
-      <ul>
-        <div style="text-align:left;"><img src="images/armure.png" alt="Armure" style="max-width:50%;width:100%;"></div>
-      </ul>
+      <div class="img-regles">
+        <img src="images/armure.png" alt="Calcul des points d'armure" style="max-width:50%;">
+      </div>
 
-      <h3>Symboles en jeu :</h3>
-      <div style="text-align:left;"><img src="images/symboles.png" alt="Symboles" style="max-width:300px;width:100%;"></div>
+      <h3>Symboles en jeu</h3>
+      <div class="img-regles">
+        <img src="images/symboles.png" alt="Symboles en jeu" style="max-width:300px;">
+      </div>
 
-      <h3>Ordre de perte des protections, points de vie, armures :</h3>
+      <h3>Ordre de perte des protections</h3>
       <ol>
-        <li>PV temporaires, bonus d’armure (naturelle et temporaire)</li>
+        <li>PV temporaires, bonus d'armure (naturelle et temporaire)</li>
         <li>PV permanents et armure physique (portée sur le corps)</li>
       </ol>
 
-      <h3>Résistances élémentaires :</h3>
+      <h3>Résistances élémentaires</h3>
       <p>Vous pouvez avoir au maximum 2 résistances élémentaires en même temps (3 pour les Drakéides, incluant leur résistance naturelle de lignée).</p>
 
-      <h3>Esquives :</h3>
-      <p>Les esquives doivent être « callées » au moment où l’attaque vous touche ou touche votre équipement (sans attente ni délai).</p>
+      <h3>Esquives</h3>
+      <p>Les esquives doivent être « callées » au moment où l'attaque vous touche ou touche votre équipement (sans attente ni délai).</p>
 
-      <h3>Mort et coma :</h3>
-      <p>Lorsque vos points de vie atteignent zéro, votre personnage tombe dans le coma et reste immobile comme un cadavre pendant 15 minutes. Après 15 minutes, vous regagnez 1 PV. Vous êtes alors en état <em>Lenteur/Affaibli</em> jusqu’à guérison complète (voir Lexique des effets).</p>
-      <p><em>Note :</em> si vous êtes égorgé (compétence Égorgement), demandez le numéro du joueur qui vous a égorgé, puis allez voir la Mort à l’Auberge Principale.</p>
-      <p>En tout temps, si vous êtes par terre dans le coma, un joueur ou pnj peut vous achever, à ce moment, demandez le numéro du joueur ou le nom du PNJ, puis dirigez vous vers la Mort.</p>
+      <h3>Mort et coma</h3>
+      <p>Lorsque vos points de vie atteignent zéro, votre personnage tombe dans le coma et reste immobile comme un cadavre pendant 15 minutes. Après 15 minutes, vous regagnez 1 PV. Vous êtes alors en état <em>Lenteur/Affaibli</em> jusqu'à guérison complète (voir Lexique des effets).</p>
+      <p><em>Note :</em> si vous êtes égorgé (compétence Égorgement), demandez le numéro du joueur qui vous a égorgé, puis allez voir la Mort à l'Auberge Principale.</p>
+      <p>En tout temps, si vous êtes par terre dans le coma, un joueur ou PNJ peut vous achever. Demandez alors le numéro du joueur ou le nom du PNJ, puis dirigez-vous vers la Mort.</p>
 
-      <h3>Types de dégâts :</h3>
+      <h3>Types de dégâts</h3>
       <ul>
         <li>Dégâts élémentaires : Feu, Eau, Glace, Électrique, Acide, etc.</li>
         <li>Dégâts divins, spectraux, obscurs, argent, magiques</li>
-        <li>Dégâts de type « Passe-armure » : ignorent l’armure et touchent directement les PV</li>
+        <li>Dégâts de type « Passe-armure » : ignorent l'armure et touchent directement les PV</li>
       </ul>
 
-      <h3>Type de Résistances et Défenses :</h3>
-      <dl>
-        <dt>Mineure</dt>
-        <dd>Résiste à un effet mineur correspondant.</dd>
-        <dt>Majeure</dt>
-        <dd>Résiste aux effets mineurs et majeurs.</dd>
-        <dt>Légendaire</dt>
-        <dd>Résiste aux effets mineurs, majeurs et légendaires.</dd>
-        <dt>Divine</dt>
-        <dd>Résiste à tous les niveaux (mineur, majeur, légendaire et divin).</dd>
-      </dl>
-      <p><em>Exemple :</em> Joueur 1 lance « Projection » sur Joueur 2 qui a <strong>Stabilité</strong> (résistance mineure aux projections). L’effet est donc résisté ; Joueur 1 perd sa mana.</p>
+      <h3>Types de résistances et défenses</h3>
+      <table class="table-regles">
+        <thead>
+          <tr><th>Niveau</th><th>Effets résistés</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Mineure</td><td>Résiste à un effet mineur correspondant.</td></tr>
+          <tr><td>Majeure</td><td>Résiste aux effets mineurs et majeurs.</td></tr>
+          <tr><td>Légendaire</td><td>Résiste aux effets mineurs, majeurs et légendaires.</td></tr>
+          <tr><td>Divine</td><td>Résiste à tous les niveaux (mineur, majeur, légendaire et divin).</td></tr>
+        </tbody>
+      </table>
+      <p><em>Exemple :</em> Joueur 1 lance « Projection » sur Joueur 2 qui a <strong>Stabilité</strong> (résistance mineure aux projections). L'effet est donc résisté ; Joueur 1 perd sa mana.</p>
       <p><em>Note :</em> si un effet ne précise pas son niveau, il est automatiquement considéré comme <strong>mineur</strong>.</p>
     </section>
 
-    <!-- Lexique des termes communs -->
-    <section>
+    <!-- ======== LEXIQUE DES TERMES ======== -->
+    <section id="lexique-termes">
       <h2>Lexique des termes communs</h2>
       <ul>
         <li><strong>PV (Points de vie)</strong> : santé de votre personnage.</li>
@@ -136,154 +155,209 @@ fetch('header.html')
         <li><strong>Long repos</strong> : 1 heure.</li>
         <li><strong>Cycle</strong> : 8 heures.</li>
         <li><strong>Journée</strong> : 12 heures.</li>
-        <li><strong>Scène</strong> : suite d’actions de jeu de rôle (ex. : un combat, un discours). Durée décidée « on the spot ».</li>
+        <li><strong>Scène</strong> : suite d'actions de jeu de rôle (ex. : un combat, un discours). Durée décidée « on the spot ».</li>
       </ul>
     </section>
 
-    <!-- Système de compagnons -->
-    <section>
+    <!-- ======== COMPAGNONS ======== -->
+    <section id="compagnons">
       <h2>Système de compagnons</h2>
       <p>Projet Croisade comporte un système de compagnons pouvant vous accompagner dans vos aventures.</p>
-      <h3>Quelques règles essentielles :</h3>
+      <h3>Quelques règles essentielles</h3>
       <ul>
         <li>Les compagnons doivent être joués par un autre joueur/PNJ ou par vous-même.</li>
         <li>Un compagnon doit toujours suivre un maître (temporaire ou permanent).</li>
-        <li>Si un compagnon est seul, des braconniers pourront le traquer et utiliser l’effet Domptage pour le capturer.</li>
+        <li>Si un compagnon est seul, des braconniers pourront le traquer et utiliser l'effet Domptage pour le capturer.</li>
         <li>Il est impossible de jouer un compagnon seul.</li>
         <li>Seuls les joueurs de 16 ans et plus peuvent commencer leur aventure avec la classe Compagnon.</li>
-        <li>Certains compagnons ne sont jouables qu’en géopolitique.</li>
+        <li>Certains compagnons ne sont jouables qu'en géopolitique.</li>
         <li>Un déguisement est requis pour jouer un compagnon.</li>
-        <li>Les compagnons montent aussi de niveau et acquièrent des compétences via la consommation d’objets magiques (qui sont ensuite détruits).</li>
+        <li>Les compagnons montent aussi de niveau et acquièrent des compétences via la consommation d'objets magiques (qui sont ensuite détruits).</li>
         <li>Au niveau 5, un compagnon évolue et choisit soit un métier, soit une classe pour progresser.</li>
-        <li>Si votre compagnon meurt, vous devez aller voir la Mort à l’Auberge Principale.</li>
+        <li>Si votre compagnon meurt, vous devez aller voir la Mort à l'Auberge Principale.</li>
       </ul>
     </section>
 
-    <!-- Lexique des effets et états -->
-    <section class="lexique-effets-etats">
-      <h2>Lexique des effets et États</h2>
+    <!-- ======== LEXIQUE DES EFFETS ======== -->
+    <section id="lexique-effets">
+      <h2>Lexique des effets et états</h2>
+      <p>Voici la liste des effets et états les plus courants dans le jeu. Chaque effet doit être joué de manière immersive pour une meilleure expérience de jeu. Il n'est pas requis de retenir tous les effets — le lanceur a la responsabilité d'expliquer l'effet si demandé par la cible.</p>
 
-      <p>Voici la liste des effets et états les plus courants dans le jeu. Chaque effet doit être joué de manière immersive pour une meilleure expérience de jeu. Il n'est pas requis de retenir tous les effets, le lanceur de l'effet a la responsabilité d'expliquer les détails de l'effet si demandé par la cible touchée.</p>
-
-      <dl>
-        <dt>Paralysie</dt>
-        <dd>Le personnage est immobile comme une statue jusqu’au premier dégât reçu.</dd>
-        <dt>Sommeil</dt>
-        <dd>Le personnage dort et peut être réveillé par : une source de dégât, une secousse de 1 minute, de l’eau lancée au visage ou une dissipation (si magique).</dd>
-        <dt>Charme / Séduction / Manipulation</dt>
-        <dd>Le personnage obéit aux ordres (sauf suicidaires) du lanceur jusqu’à la fin de l’effet. Dissipable comme le sommeil.</dd>
-        <dt>Assommé</dt>
-        <dd>La cible doit simuler un état d'inconscience temporaire pendant 5 minutes. S'il subit des dégâts ou s'il est secoué 1 minute, il se réveille immédiatement.</dd>
-        <dt>Rage</dt>
-        <dd>La cible est enragée et attaque tout le monde (alliés compris).</dd>
-        <dt>Peur / Intimidation</dt>
-        <dd>Le personnage ne peut s’approcher ou attaquer la source de peur.</dd>
-        <dt>Désarmement</dt>
-        <dd>L'arme de la cible est projetée à 1m devant elle.</dd>
-        <dt>Enchevêtrement</dt>
-        <dd>Les pieds sont bloqués au sol. Pied Forestier permet d’ignorer cet effet.</dd>
-        <dt>Aveuglement</dt>
-        <dd>Fermer les yeux pendant la durée indiquée.</dd>
-        <dt>Soûl</dt>
-        <dd>Le personnage devient désorienté et inefficace au combat.</dd>
-        <dt>Étourdi</dt>
-        <dd>Le personnage tombe à genoux mais peut se défendre.</dd>
-        <dt>Lenteur / Affaibli</dt>
-        <dd>Impossible de courir ou faire un élan de 3 pas sans grande fatigue.</dd>
-        <dt>Empoisonné</dt>
-        <dd>Empêche la guérison par soins classiques (nécessite antidote ou purification). À 0 PV, aller voir la Mort.</dd>
-        <dt>Fracture / Démembrement</dt>
-        <dd>Le membre touché est inutilisable jusqu’à guérison. Coup au torse sans armure → coma.</dd>
-        <dt>Saignement</dt>
-        <dd>Le personnage saigne et meurt après 15 minutes, sauf si soigné par un médecin.</dd>
-        <dt>Attaché</dt>
-        <dd>Le personnage est lié. Nécessite lame ou compétence pour se détacher.</dd>
-        <dt>Brise-Bouclier</dt>
-        <dd>L’attaque brise le bouclier touché.</dd>
-        <dt>Brise Arme</dt>
-        <dd>L’attaque brise l'arme touchée.</dd>
-        <dt>Projection</dt>
-        <dd>La cible est projetée au sol et doit simuler une chute.</dd>
-        <dt>Stabilité</dt>
-        <dd>Résistance mineure/majeure aux projections, Déséquilibre, et autres effets de mouvement.</dd>
-        <dt>Silence</dt>
-        <dd>Empêche de lancer des sorts ou utiliser des compétences verbales.</dd>
-        <dt>Malédiction</dt>
-        <dd>Inflige un effet négatif spécifique précisé par la source de la malédiction.</dd>
-        <dt>Bénédiction</dt>
-        <dd>Inflige un effet positif spécifique précisé par la source de la bénédiction.</dd>
-        <dt>Brise Membre</dt>
-        <dd>Le membre touché est brisé et inutilisable pendant un laps de temps.</dd>
-        <dt>Provocation</dt>
-        <dd>Provoque une rage dirigée uniquement contre le provocateur.</dd>
-        <dt>Domptage</dt>
-        <dd>Ajoute le préfixe Domptage aux dégâts. Si un Compagnon meurt sous Domptage, les deux joueurs doivent aller voir la Mort.</dd>
-        <dt>Égorgement</dt>
-        <dd>Permet d’achever un joueur en lui tranchant la gorge (risque de perte définitive). Protégé par un gorget. (1×/cycle de 8 h)</dd>
-        <dt>Corruption</dt>
-        <dd>Force un joueur/PNJ à prendre une décision contre son intérêt.</dd>
-        <dt>Purification</dt>
-        <dd>Retire tous les effets néfastes temporaires sans soigner le personnage.</dd>
-        <dt>Invisibilité</dt>
-        <dd>La cible est invisible à l'oeil (Peut être entendue et/ou vue à l'aide de compétences / potions).</dd>
-        <dt>Téléportation</dt>
-        <dd>La cible est téléporté vers un autre endroit. La cible doit marcher jusqu'à l'endroit avec le poing levé (hors-jeu).</dd>
-        <dt>Régénération</dt>
-        <dd>La cible récupère des PV au fil du temps selon les consignes de la source de l'effet.</dd>
-        <dt>Chance</dt>
-        <dd>Permet de relancer une deuxième fois un dé et garder le meilleur des jets.</dd>
-        <dt> Folie / Oubli / Amnésie</dt>
-        <dd>La cible oublie les X dernières minutes (Précisé par la source de l'effet).</dd>
-      </dl>
-    </section>
+      <div class="effets-grid">
+        <div class="effet-card"><h4>Paralysie</h4><p>Le personnage est immobile comme une statue jusqu'au premier dégât reçu.</p></div>
+        <div class="effet-card"><h4>Sommeil</h4><p>Le personnage dort et peut être réveillé par : une source de dégât, une secousse de 1 minute, de l'eau lancée au visage ou une dissipation (si magique).</p></div>
+        <div class="effet-card"><h4>Charme / Séduction / Manipulation</h4><p>Le personnage obéit aux ordres (sauf suicidaires) du lanceur jusqu'à la fin de l'effet. Dissipable comme le sommeil.</p></div>
+        <div class="effet-card"><h4>Assommé</h4><p>La cible simule une inconscience de 5 minutes. Elle se réveille si elle subit des dégâts ou est secouée pendant 1 minute.</p></div>
+        <div class="effet-card"><h4>Rage</h4><p>La cible est enragée et attaque tout le monde (alliés compris).</p></div>
+        <div class="effet-card"><h4>Peur / Intimidation</h4><p>Le personnage ne peut s'approcher ou attaquer la source de peur.</p></div>
+        <div class="effet-card"><h4>Désarmement</h4><p>L'arme de la cible est projetée à 1 m devant elle.</p></div>
+        <div class="effet-card"><h4>Enchevêtrement</h4><p>Les pieds sont bloqués au sol. Pied Forestier permet d'ignorer cet effet.</p></div>
+        <div class="effet-card"><h4>Aveuglement</h4><p>Fermer les yeux pendant la durée indiquée.</p></div>
+        <div class="effet-card"><h4>Soûl</h4><p>Le personnage devient désorienté et inefficace au combat.</p></div>
+        <div class="effet-card"><h4>Étourdi</h4><p>Le personnage tombe à genoux mais peut se défendre.</p></div>
+        <div class="effet-card"><h4>Lenteur / Affaibli</h4><p>Impossible de courir ou de faire un élan de 3 pas sans grande fatigue.</p></div>
+        <div class="effet-card"><h4>Empoisonné</h4><p>Empêche la guérison par soins classiques (nécessite antidote ou purification). À 0 PV, aller voir la Mort.</p></div>
+        <div class="effet-card"><h4>Fracture / Démembrement</h4><p>Le membre touché est inutilisable jusqu'à guérison. Coup au torse sans armure → coma.</p></div>
+        <div class="effet-card"><h4>Saignement</h4><p>Le personnage meurt après 15 minutes, sauf si soigné par un médecin.</p></div>
+        <div class="effet-card"><h4>Attaché</h4><p>Le personnage est lié. Nécessite une lame ou une compétence pour se détacher.</p></div>
+        <div class="effet-card"><h4>Brise-Bouclier</h4><p>L'attaque brise le bouclier touché.</p></div>
+        <div class="effet-card"><h4>Brise Arme</h4><p>L'attaque brise l'arme touchée.</p></div>
+        <div class="effet-card"><h4>Brise Membre</h4><p>Le membre touché est brisé et inutilisable pendant un laps de temps.</p></div>
+        <div class="effet-card"><h4>Projection</h4><p>La cible est projetée au sol et doit simuler une chute.</p></div>
+        <div class="effet-card"><h4>Stabilité</h4><p>Résistance mineure/majeure aux projections, Déséquilibre et autres effets de mouvement.</p></div>
+        <div class="effet-card"><h4>Silence</h4><p>Empêche de lancer des sorts ou d'utiliser des compétences verbales.</p></div>
+        <div class="effet-card"><h4>Malédiction</h4><p>Inflige un effet négatif spécifique précisé par la source de la malédiction.</p></div>
+        <div class="effet-card"><h4>Bénédiction</h4><p>Inflige un effet positif spécifique précisé par la source de la bénédiction.</p></div>
+        <div class="effet-card"><h4>Provocation</h4><p>Provoque une rage dirigée uniquement contre le provocateur.</p></div>
+        <div class="effet-card"><h4>Domptage</h4><p>Ajoute le préfixe Domptage aux dégâts. Si un Compagnon meurt sous Domptage, les deux joueurs doivent aller voir la Mort.</p></div>
+        <div class="effet-card"><h4>Égorgement</h4><p>Permet d'achever un joueur en lui tranchant la gorge (risque de perte définitive). Protégé par un gorget. (1×/cycle de 8 h)</p></div>
+        <div class="effet-card"><h4>Corruption</h4><p>Force un joueur/PNJ à prendre une décision contre son intérêt.</p></div>
+        <div class="effet-card"><h4>Purification</h4><p>Retire tous les effets néfastes temporaires sans soigner le personnage.</p></div>
+        <div class="effet-card"><h4>Invisibilité</h4><p>La cible est invisible à l'œil. Peut être entendue et/ou vue à l'aide de compétences ou potions.</p></div>
+        <div class="effet-card"><h4>Téléportation</h4><p>La cible est téléportée vers un autre endroit. Elle doit marcher jusqu'à destination avec le poing levé (hors-jeu).</p></div>
+        <div class="effet-card"><h4>Régénération</h4><p>La cible récupère des PV au fil du temps selon les consignes de la source de l'effet.</p></div>
+        <div class="effet-card"><h4>Chance</h4><p>Permet de relancer un dé une deuxième fois et de garder le meilleur résultat.</p></div>
+        <div class="effet-card"><h4>Folie / Oubli / Amnésie</h4><p>La cible oublie les X dernières minutes (précisé par la source de l'effet).</p></div>
       </div>
-  
-<section>
-  <h2>RÈGLES GÉNÉRALES</h2>
-  <ul>
-    <li>Aucun coup à la tête.</li>
-    <li>Restez dans votre personnage: ce n’est pas le moment de parler de votre voiture ou de votre téléphone.</li>
-    <li>Respectez le décor médiéval-fantastique: évitez tout élément anachronique (ex. : un casque VR).</li>
-    <li>Ne volez pas d'objets personnels: si ce n’est pas à vous, ne le touchez pas.</li>
-    <li>Attaques interdites entre 1 h et 6 h du matin: sauf si les joueurs sont réveillés et actifs autour d’un feu.</li>
-    <li>Interdiction du méta-jeu, de l’anti-jeu et de la tricherie.</li>
-    <li>Jouez les effets négatifs: douleur, peur, blessures, etc. doivent être incarnés pour une meilleure immersion.</li>
-    <li>Perte de mémoire après un coma: au réveil, votre personnage oublie la cause de son coma et les 15 minutes précédentes.</li>
-  </ul>
+    </section>
 
-  <h3>RÈGLES PRINCIPALES</h3>
-  <ul>
-    <li><strong>Âge minimum:</strong> 16 ans et plus.</li>
-    <li><strong>1 - Respect du règlement:</strong> Les notions mentionnées plus haut doivent être respectées en tout temps.</li>
-    <li><strong>2 - Respect des joueurs et animateurs:</strong> Votre jeu de rôle ne doit pas nuire personnellement aux autres joueurs ou animateurs. Si une scène vous met vraiment mal à l’aise, utilisez le code "Tramway" et essayez de régler la situation calmement. Certaines scènes peuvent être dérangeantes, mais elles servent à renforcer l’ambiance du jeu.</li>
-    <li><strong>3 - Gestion de votre personnage:</strong> Vous êtes responsable du suivi de vos points de vie, mana et effets en cours. Si vous trichez volontairement sur ces statistiques, des sanctions seront appliquées.</li>
-    <li><strong>4 - État de coma et mort:</strong> À 0 PV, votre personnage tombe dans un coma: restez allongé 15 minutes ou jusqu’à la fin de la scène. Vous regagnez 1 PV mais êtes affecté par l'effet "Faiblesse" tant que vous n’êtes pas soigné. Vous oubliez la cause de votre coma et les événements des 15 dernières minutes. Si vous êtes achevé, vous devez vous rendre à l’auberge, poing levé, et donner le numéro du joueur qui vous a tué.</li>
-    <li><strong>5 - Objets en jeu:</strong> Les objets trouvés appartiennent à votre personnage et peuvent être utilisés en jeu et hors jeu. Les objets doivent être rendus à la fin du GN pour inventaire. Les objets personnels introduits par un joueur sont considérés comme inexistants et ne peuvent pas être utilisés en jeu. La monnaie non officielle est autorisée si elle respecte le décor, mais sa valeur est fixée à 1/10e d’une pièce de bronze.</li>
-    <li><strong>6 - Vol et restitution d’objets:</strong> Logiquement, il est interdit de voler des objets hors-jeu à un autre joueur (Cela inclut son équipement : armes, armures, etc.). Tout objet non rendu à la fin du GN est considéré comme volé et ne pourra plus être utilisé. La monnaie personnelle est une exception : si elle est volée en jeu, il est possible qu’elle ne vous soit pas rendue.</li>
-    <li><strong>7 - Poids et réalisme des équipements:</strong> Chaque objet et équipement a un poids: une armure lourde limite l’agilité. Une arme longue ne peut pas être maniée aussi vite qu’un couteau. Sanctions possibles en cas d’abus d’armes trop légères.</li>
-    <li><strong>8 - Inspection des armes:</strong> L’inspection n’est pas obligatoire, mais un joueur peut demander à faire vérifier une arme auprès de l’équipe. Si vous doutez de la conformité de votre arme, faites-la inspecter.</li>
-    <li><strong>9 - Poing levé = hors jeu:</strong> Un joueur poing levé est hors jeu ou effectue une action spéciale (ex. : téléportation, invisibilité). Interdiction d’interagir avec lui sauf si votre personnage peut communiquer avec les morts.</li>
-    <li><strong>10 - Alcool et tabac:</strong> La consommation d'alcool est strictement interdite et sévèrement sanctionnée. Les cigarettes doivent être fumées à l'écart du jeu et les butts doivent être jetés sécuritairement dans les cendriers ou pit à feu disponibles sur le terrain.</li>
-    <li><strong>11 - Drogue interdite:</strong> La consommation de drogues est strictement interdite et sévèrement sanctionnée.</li>
-  </ul>
+    <!-- ======== RÈGLES GÉNÉRALES ======== -->
+    <section id="regles-generales">
+      <h2>Règles générales</h2>
+      <ul>
+        <li>Aucun coup à la tête.</li>
+        <li>Restez dans votre personnage : ce n'est pas le moment de parler de votre voiture ou de votre téléphone.</li>
+        <li>Respectez le décor médiéval-fantastique : évitez tout élément anachronique (ex. : un casque VR).</li>
+        <li>Ne volez pas d'objets personnels : si ce n'est pas à vous, ne le touchez pas.</li>
+        <li>Attaques interdites entre 1 h et 6 h du matin : sauf si les joueurs sont réveillés et actifs autour d'un feu.</li>
+        <li>Interdiction du méta-jeu, de l'anti-jeu et de la tricherie.</li>
+        <li>Jouez les effets négatifs : douleur, peur, blessures, etc. doivent être incarnés pour une meilleure immersion.</li>
+        <li>Perte de mémoire après un coma : au réveil, votre personnage oublie la cause de son coma et les 15 minutes précédentes.</li>
+      </ul>
+    </section>
 
-  <h4>Conséquences en cas de non-respect des règles :</h4>
-  <ul>
-    <li><strong>Première infraction:</strong> Avertissement + retrait temporaire du jeu (passage en état de coma automatique).</li>
-    <li><strong>Deuxième infraction:</strong> Suspension pour un événement + suppression du personnage.</li>
-    <li><strong>Troisième infraction:</strong> Bannissement définitif du joueur</li>
-  </ul>
-</section>
+    <!-- ======== RÈGLES PRINCIPALES ======== -->
+    <section id="regles-principales">
+      <h2>Règles principales</h2>
+      <p><strong>Âge minimum :</strong> 16 ans et plus.</p>
 
-  </main>
-  <footer>
-    <p>&copy; Projet Croisade - Tous droits réservés</p>
-  </footer>
-  <button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
-  <script>
-  function scrollToTop() {
+      <div class="regles-cards">
+
+        <div class="regle-card">
+          <div class="regle-num">1</div>
+          <div class="regle-body">
+            <strong>Respect du règlement</strong>
+            <p>Les notions mentionnées plus haut doivent être respectées en tout temps.</p>
+          </div>
+        </div>
+
+        <div class="regle-card">
+          <div class="regle-num">2</div>
+          <div class="regle-body">
+            <strong>Respect des joueurs et animateurs</strong>
+            <p>Votre jeu de rôle ne doit pas nuire personnellement aux autres joueurs ou animateurs. Si une scène vous met vraiment mal à l'aise, utilisez le code <strong>« Tramway »</strong> et essayez de régler la situation calmement. Certaines scènes peuvent être dérangeantes, mais elles servent à renforcer l'ambiance du jeu.</p>
+          </div>
+        </div>
+
+        <div class="regle-card">
+          <div class="regle-num">3</div>
+          <div class="regle-body">
+            <strong>Gestion de votre personnage</strong>
+            <p>Vous êtes responsable du suivi de vos points de vie, mana et effets en cours. Si vous trichez volontairement sur ces statistiques, des sanctions seront appliquées.</p>
+          </div>
+        </div>
+
+        <div class="regle-card">
+          <div class="regle-num">4</div>
+          <div class="regle-body">
+            <strong>État de coma et mort</strong>
+            <p>À 0 PV, votre personnage tombe dans un coma : restez allongé 15 minutes ou jusqu'à la fin de la scène. Vous regagnez 1 PV mais êtes affecté par l'effet <em>Lenteur/Affaibli</em> tant que vous n'êtes pas soigné. Vous oubliez la cause de votre coma et les événements des 15 dernières minutes. Si vous êtes achevé, rendez-vous à l'auberge poing levé et donnez le numéro du joueur qui vous a tué.</p>
+          </div>
+        </div>
+
+        <div class="regle-card">
+          <div class="regle-num">5</div>
+          <div class="regle-body">
+            <strong>Objets en jeu</strong>
+            <p>Les objets trouvés appartiennent à votre personnage et peuvent être utilisés en jeu et hors jeu. Les objets doivent être rendus à la fin du GN pour inventaire. Les objets personnels introduits par un joueur sont considérés comme inexistants et ne peuvent pas être utilisés en jeu. La monnaie non officielle est autorisée si elle respecte le décor, mais sa valeur est fixée à 1/10e d'une pièce de bronze.</p>
+          </div>
+        </div>
+
+        <div class="regle-card">
+          <div class="regle-num">6</div>
+          <div class="regle-body">
+            <strong>Vol et restitution d'objets</strong>
+            <p>Il est interdit de voler des objets hors-jeu à un autre joueur (cela inclut son équipement : armes, armures, etc.). Tout objet non rendu à la fin du GN est considéré comme volé et ne pourra plus être utilisé. La monnaie personnelle est une exception : si elle est volée en jeu, il est possible qu'elle ne vous soit pas rendue.</p>
+          </div>
+        </div>
+
+        <div class="regle-card">
+          <div class="regle-num">7</div>
+          <div class="regle-body">
+            <strong>Poids et réalisme des équipements</strong>
+            <p>Chaque objet et équipement a un poids : une armure lourde limite l'agilité. Une arme longue ne peut pas être maniée aussi vite qu'un couteau. Sanctions possibles en cas d'abus d'armes trop légères.</p>
+          </div>
+        </div>
+
+        <div class="regle-card">
+          <div class="regle-num">8</div>
+          <div class="regle-body">
+            <strong>Inspection des armes</strong>
+            <p>L'inspection n'est pas obligatoire, mais un joueur peut demander à faire vérifier une arme auprès de l'équipe. Si vous doutez de la conformité de votre arme, faites-la inspecter.</p>
+          </div>
+        </div>
+
+        <div class="regle-card">
+          <div class="regle-num">9</div>
+          <div class="regle-body">
+            <strong>Poing levé = hors jeu</strong>
+            <p>Un joueur poing levé est hors jeu ou effectue une action spéciale (ex. : téléportation, invisibilité). Interdiction d'interagir avec lui sauf si votre personnage peut communiquer avec les morts.</p>
+          </div>
+        </div>
+
+        <div class="regle-card">
+          <div class="regle-num">10</div>
+          <div class="regle-body">
+            <strong>Alcool et tabac</strong>
+            <p>La consommation d'alcool est strictement interdite et sévèrement sanctionnée. Les cigarettes doivent être fumées à l'écart du jeu et les butts doivent être jetés sécuritairement dans les cendriers ou pit à feu disponibles sur le terrain.</p>
+          </div>
+        </div>
+
+        <div class="regle-card">
+          <div class="regle-num">11</div>
+          <div class="regle-body">
+            <strong>Drogue interdite</strong>
+            <p>La consommation de drogues est strictement interdite et sévèrement sanctionnée.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <h3>Conséquences en cas de non-respect</h3>
+      <table class="table-regles">
+        <thead>
+          <tr><th>Infraction</th><th>Conséquence</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1re infraction</td><td>Avertissement + retrait temporaire du jeu (coma automatique)</td></tr>
+          <tr><td>2e infraction</td><td>Suspension pour un événement + suppression du personnage</td></tr>
+          <tr><td>3e infraction</td><td>Bannissement définitif</td></tr>
+        </tbody>
+      </table>
+
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; Projet Croisade - Tous droits réservés</p>
+</footer>
+<button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+<script>
+function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+}
 </script>
 </body>
 </html>

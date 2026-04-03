@@ -126,3 +126,21 @@ img {
     max-width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .page-regles main {
+    flex-direction: column;
+  }
+
+  .page-regles aside {
+    display: none;
+  }
+
+  .regles-content {
+    padding: 15px;
+  }
+
+  .effets-grid {
+    grid-template-columns: 1fr;
+  }
+}
