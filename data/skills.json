@@ -96,7 +96,7 @@
     "effet": "Permet de soigner 1 point de vie à soi-même ou à une autre personne en invoquant une énergie divine."
   },
   {
-    "name": "Transfer de Mana",
+    "name": "Transfert de mana",
     "level": 1,
     "duree": "Instantané",
     "portee": "Toucher",
@@ -120,7 +120,7 @@
     "effet": "Permet de corrompre une personne en lui offrant un objet de valeur (réel ou symbolique). La cible doit simuler un changement d'attitude envers le lanceur, devenant plus encline à coopérer ou à suivre ses suggestions pendant une seule conversation."
   },
   {
-    "name": "Coup assomant",
+    "name": "Coup assommant",
     "level": 2,
     "duree": "1 fois par combat",
     "portee": "1 cible à portée d'arme",
@@ -262,7 +262,7 @@
     "portee": "1 cible à portée d'arme",
     "requis": "",
     "effet": "Le combattant utilise son arme pour frapper les jambes de son adversaire, le forçant à perdre l'équilibre. La cible doit mettre un genou à terre et simuler une perte d'équilibre pendant 10 secondes."
-  }, 
+  },
   {
     "name": "Ralliement",
     "level": 4,
@@ -302,7 +302,7 @@
     "portee": "1 cible à portée d'arme",
     "requis": "",
     "effet": "Le guerrier donne un coup puissant qui brise le bouclier de son adversaire. La cible doit simuler la perte de son bouclier, qui doit être réparé après l'utilisation de ce pouvoir."
-  }, 
+  },
   {
     "name": "Bouclier Solide I, II, III",
     "level": 3,
@@ -328,7 +328,7 @@
     "effet": "Le maître du bouclier utilise son bouclier pour dévier un sort lancé contre lui. Le sort est annulé et n'a aucun effet sur le maître du bouclier."
   },
   {
-    "name": "Guardien",
+    "name": "Gardien",
     "level": 5,
     "duree": "1 fois par jour",
     "portee": "Un allié proche",
@@ -655,7 +655,7 @@
     "requis": "",
     "effet": "Le Druide reçoit des plantes mystères aléatoires lors des événements (Voir avec l'équipe d'animation)."
   },
-    {
+  {
     "name": "Communication avec les êtres végétaux",
     "level": 3,
     "duree": "Permanent / Passif",
@@ -663,15 +663,15 @@
     "requis": "",
     "effet": "Permet de communiquer avec les êtres végétaux de manière basique (simuler des sons, des gestes, etc.)."
   },
-    {
-    "name": "Ritualiste aguérri",
+  {
+    "name": "Ritualiste aguerri",
     "level": 5,
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
     "effet": "Permet l'apprentissage et l'exécution de rituels majeurs. Voir avec l'équipe d'animation pour les rituels disponibles."
   },
-    {
+  {
     "name": "Métier Bonus",
     "level": 5,
     "duree": "Permanent / Passif",

@@ -10,7 +10,9 @@
       "Bash(\"\\\\|•\\\\|·\\\\|×\\\\|÷\\\\|½\\\\|¼\\\\|¾\\\\|Æ\\\\|Œ\\\\|á\\\\|í\\\\|ó\\\\|ú\\\\|ñ\\\\|€\")",
       "Bash(grep -rPn \"[\\\\x{1F000}-\\\\x{1FFFF}\\\\x{2600}-\\\\x{27FF}\\\\x{2B00}-\\\\x{2BFF}⬆]\" c:/Users/Julien/Documents/GitHub/projet-croisade/*.html c:/Users/Julien/Documents/GitHub/projet-croisade/data/js/*.js)",
       "Bash(python3 -c \":*)",
-      "Bash(node -e \":*)"
+      "Bash(node -e \":*)",
+      "Bash(python -c \"import json,sys; data=json.load\\(sys.stdin\\); [print\\(d['name']\\) for d in data]\")",
+      "Bash(python -c ':*)"
     ]
   }
 }

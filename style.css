@@ -266,6 +266,83 @@ footer {
   background-color: rgba(231, 186, 121, 0.05);
 }
 
+.table-xp {
+  width: 100%;
+  max-width: 750px;
+  border-collapse: collapse;
+}
+
+.table-xp th {
+  background-color: #2e2210;
+  color: #e7ba79;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-xp td {
+  padding: 10px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.table-xp tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.table-xp tbody tr:hover {
+  background-color: rgba(231, 186, 121, 0.08);
+}
+
+/* ================= SKILL TOOLTIP ================= */
+
+#skill-tooltip {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  background: #130f08;
+  border: 1px solid #e7ba79;
+  border-radius: 6px;
+  padding: 12px 16px;
+  max-width: 320px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.85);
+  pointer-events: none;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #f5f0e6;
+}
+
+#skill-tooltip .tooltip-name {
+  font-weight: bold;
+  color: #ffe48a;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+#skill-tooltip .tooltip-label {
+  color: #e7ba79;
+  font-weight: bold;
+}
+
+#skill-tooltip .tooltip-row {
+  margin-bottom: 3px;
+}
+
+#skill-tooltip .tooltip-effet {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #2e2210;
+  font-style: italic;
+  color: #d4c9b0;
+}
+
+.has-tooltip {
+  cursor: help;
+  transition: background-color 0.15s;
+}
+
+.has-tooltip:hover {
+  background-color: rgba(231, 186, 121, 0.1) !important;
+}
+
 /* ================= BUTTON (scroll to top) ================= */
 
 #btnTop {
@@ -444,6 +521,65 @@ a.btn-metier:active {
 .page-races main > div {
   flex: 1;
   min-width: 0; /* CRITICAL: prevents overflow in flex */
+}
+
+/* Race text colors */
+.race-info h3 {
+  color: #ffe48a;
+  font-size: 1.4rem;
+}
+
+.race-info p strong,
+.race-info li strong {
+  color: #e7ba79;
+}
+
+.race-pv {
+  color: #c87070;
+  font-weight: bold;
+}
+
+.race-bonus {
+  color: #7eba8a;
+  font-weight: bold;
+}
+
+.race-weakness {
+  color: #c87070;
+  font-style: italic;
+}
+
+/* Race sections */
+.races-content section {
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 28px;
+  margin-bottom: 28px;
+}
+
+.races-content section:last-child {
+  border-bottom: none;
+}
+
+.race-layout {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.race-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.race-image {
+  flex-shrink: 0;
+  width: 220px;
+}
+
+.race-image img {
+  width: 100%;
+  border-radius: 6px;
+  opacity: 0.9;
 }
 
 /* ================= SEARCH ================= */

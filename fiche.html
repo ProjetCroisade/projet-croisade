@@ -39,7 +39,23 @@ fetch('header.html')
 
       <h2>PROGRESSION & EXPÉRIENCE (XP)</h2>
       <p>1 GN = 1 XP pour la classe, 1 XP pour le métier de base et 1 XP pour un arbre supplémentaire (SI LE JOUEUR EN POSSÈDE UN, sinon le point est perdu)</p>
-      <img src="images/experience.png" alt="XP progression" style="max-width:100%;height:auto;">
+      <p><em>Les arbres supplémentaires sont obtenus en jeu comme récompense de quêtes.</em></p>
+      <table class="table-xp">
+        <thead>
+          <tr>
+            <th>Niveau</th>
+            <th>Points d'expérience requis</th>
+            <th>Actions à accomplir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>0</td><td>Aucune</td></tr>
+          <tr><td>2</td><td>1</td><td>Aucune</td></tr>
+          <tr><td>3</td><td>2</td><td>Quête perso.</td></tr>
+          <tr><td>4</td><td>6</td><td>Quête perso. + Excursion rare</td></tr>
+          <tr><td>5</td><td>8</td><td>Quête perso. + Excursion lég.</td></tr>
+        </tbody>
+      </table>
       <p>Votre classe et votre métier de base évoluent en même temps, donc lorsque vous atteignez le niveau 5, votre classe et votre métier de base seront tous deux au même niveau (5), et vous aurez dépensé 14 EXP dans leurs arbres.</p>
       <p>Les arbres supplémentaires, quant à eux, évoluent de manière individuelle à partir du moment où ils sont acquis.</p>
       <p>Donc, lorsqu'un joueur gagne de l'expérience, sa classe et son métier de base recoivent tous deux l'expérience acquise, et ensuite le joueur peut décider lequel de ses arbres de compétences supplémentaires recevra l'expérience.</p>
@@ -54,10 +70,31 @@ fetch('header.html')
         <li>Au niveau 5, un compagnon évolue et peut choisir soit un métier, soit une classe.</li>
         <li>Il pourra ensuite utiliser l’XP accumulé pour progresser dans son nouvel arbre de compétences.</li>
       </ul>
-      <img src="images/compagnon.png" alt="Évolution compagnon" style="max-width:100%;height:auto;">
+      <table class="table-xp">
+        <thead>
+          <tr>
+            <th>Niveau</th>
+            <th>Nombre d'objets à sacrifier</th>
+            <th>Actions à accomplir</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>0</td><td>Aucune</td></tr>
+          <tr><td>2</td><td>10</td><td>Aucune</td></tr>
+          <tr><td>3</td><td>15</td><td>Aucune</td></tr>
+          <tr><td>4</td><td>20</td><td>Rituel de renforcement</td></tr>
+          <tr><td>5</td><td>25</td><td>Rituel de renforcement</td></tr>
+        </tbody>
+      </table>
 
       <h2>Prêt à entrer dans l’aventure ?</h2>
-      <p>Personnalisez votre personnage et découvrez toutes les possibilités qui s’offrent à vous !</p>
+      <p>Consultez les pages suivantes pour construire votre personnage :</p>
+      <ul>
+        <li><a href="races.html">Races</a> — Choisissez votre race et découvrez ses capacités.</li>
+        <li><a href="classes.html">Classes</a> — Choisissez votre classe de base et votre spécialisation.</li>
+        <li><a href="metiers.html">Métiers</a> — Choisissez votre métier de récolte ou d’artisanat.</li>
+        <li><a href="documents/fiche_de_personnage_2026.xlsx">Télécharger la fiche de personnage</a> — À remplir et à envoyer lors de votre inscription.</li>
+      </ul>
 
     </div>
   </main>

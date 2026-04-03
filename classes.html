@@ -121,7 +121,7 @@ fetch('header.html')
 <!--Élémentaliste-->
   <h2 id="elementaliste" class="sous-titre">Élémentaliste</h2>
 
-  <h3 class="niveau">Niveau 3</h4>
+  <h3 class="niveau">Niveau 3</h3>
   <table class="fiche-mage">
     <tbody>
       <tr><td>1. Sort : Invocation de feu</td></tr>
@@ -130,7 +130,7 @@ fetch('header.html')
     </tbody>
   </table>
 
-  <h3 class="niveau">Niveau 4</h4>
+  <h3 class="niveau">Niveau 4</h3>
   <table class="fiche-mage">
     <tbody>
       <tr><td>1. Sort : Fonte rapide</td></tr>
@@ -139,7 +139,7 @@ fetch('header.html')
     </tbody>
   </table>
 
-  <h3 class="niveau">Niveau 5</h4>
+  <h3 class="niveau">Niveau 5</h3>
   <table class="fiche-mage">
     <tbody>
       <tr><td>1. Sort : Renaissance du Phoenix</td></tr>
@@ -150,7 +150,7 @@ fetch('header.html')
 <!--Enchanteur-->
   <h2 id="enchanteur" class="sous-titre">Enchanteur</h2>
 
-  <h3 class="niveau">Niveau 3</h4>
+  <h3 class="niveau">Niveau 3</h3>
   <table class="fiche-mage">
     <tbody>
       <tr><td>1. Sort : Renforcement I</td></tr>
@@ -159,7 +159,7 @@ fetch('header.html')
     </tbody>
   </table>
 
-  <h3 class="niveau">Niveau 4</h4>
+  <h3 class="niveau">Niveau 4</h3>
   <table class="fiche-mage">
     <tbody>
       <tr><td>1. Sort : Renforcement II</td></tr>
@@ -168,7 +168,7 @@ fetch('header.html')
     </tbody>
   </table>
 
-  <h3 class="niveau">Niveau 5</h4>
+  <h3 class="niveau">Niveau 5</h3>
   <table class="fiche-mage">
     <tbody>
       <tr><td>1. Sort : Renforcement III</td></tr>
@@ -223,7 +223,7 @@ fetch('header.html')
       <tr><td>3. Sort : Extortion Arcanique I</td></tr>
     </tbody>
   </table>
-  <h3 class="niveau">Niveau 5</h4>
+  <h3 class="niveau">Niveau 5</h3>
   <table class="fiche-mage">
     <tbody>
       <tr><td>1. Sort : Extortion Arcanique II</td></tr>
@@ -245,7 +245,7 @@ fetch('header.html')
   <table class="fiche-mage">
     <tbody>
       <tr><td>1. Pacte : Précision de Vyldra</td></tr>
-      <tr><td>2. Pacte : Force de Dravak</td></tr>
+      <tr><td>2. Pacte : Force de Draavak</td></tr>
       <tr><td>3. Pacte : Ange Gardien</td></tr>
     </tbody>
   </table>
@@ -282,7 +282,7 @@ fetch('header.html')
   <h3 class="sous-titre">Niveau 2</h3>
   <table class="fiche-warrior">
     <tbody>
-      <tr><td>1. Comp : Coup assomant</td></tr>
+      <tr><td>1. Comp : Coup assommant</td></tr>
       <tr><td>2. Comp : Endurance II</td></tr>
       <tr><td>3. Comp : Premiers soins</td></tr>
     </tbody>
@@ -370,7 +370,7 @@ fetch('header.html')
     <tbody>
       <tr><td>1. Comp : Bouclier Solide III</td></tr>
       <tr><td>2. Comp : Endurance V</td></tr>
-      <tr><td>3. Comp : Guardien</td></tr>
+      <tr><td>3. Comp : Gardien</td></tr>
     </tbody>
   </table>
 <!--Moine-->
@@ -679,7 +679,7 @@ fetch('header.html')
   <h3 class="niveau">Niveau 5</h3>
   <table class="fiche-spiritualist">
     <tbody>
-      <tr><td>1. Comp : Ritualiste aguérri</td></tr>
+      <tr><td>1. Comp : Ritualiste aguerri</td></tr>
       <tr><td>2. Comp : Métier bonus (Alchimiste)</td></tr>
       <tr><td>3. Comp : Pied forestier</td></tr>
     </tbody>
@@ -773,6 +773,113 @@ fetch('header.html')
   function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+</script>
+
+<div id="skill-tooltip"></div>
+<script>
+(async function () {
+  const [spells, skills] = await Promise.all([
+    fetch('data/spells.json').then(r => r.json()),
+    fetch('data/skills.json').then(r => r.json())
+  ]);
+
+  // Build lookup: lowercase name → data object
+  const lookup = {};
+
+  // Normalize curly apostrophes to straight ones before any comparison
+  function normalize(str) {
+    return str.replace(/[\u2018\u2019]/g, "'").trim().toLowerCase();
+  }
+
+  function addKey(key, data) {
+    const k = normalize(key);
+    if (k && !/^[ivx]+$/i.test(k)) lookup[k] = data; // skip isolated Roman numerals
+  }
+
+  function register(item, type) {
+    const obj = { ...item, type };
+    // Some names are "Coup puissant I, II, III" — split and register each part
+    const parts = item.name.split(',').map(s => s.trim());
+    for (const part of parts) {
+      addKey(part, obj);
+      // Without trailing Roman numeral: "Coup puissant I" → "Coup puissant"
+      const noRoman = part.replace(/\s+[IVX]+$/i, '').trim();
+      addKey(noRoman, obj);
+      // Without parentheticals: "Désarmement (Mineur / Majeur)" → "Désarmement"
+      const noParens = part.replace(/\s*\(.*?\)\s*/g, '').trim();
+      addKey(noParens, obj);
+      // Without parentheticals AND Roman: combo
+      addKey(noParens.replace(/\s+[IVX]+$/i, '').trim(), obj);
+      // Both parts around " / ": register each, plus prefix-swap variants
+      // "Requête divine / spirituelle" → "Requête divine", "Requête spirituelle", "spirituelle"
+      const slashParts = part.split(' / ');
+      for (const sp of slashParts) {
+        addKey(sp.trim(), obj);
+        addKey(sp.replace(/\s*\(.*?\)\s*/g, '').trim(), obj);
+      }
+      if (slashParts.length > 1) {
+        const baseWords = slashParts[0].trim().split(' ');
+        const prefix = baseWords.slice(0, -1).join(' '); // "Requête divine" → "Requête"
+        for (let i = 1; i < slashParts.length; i++) {
+          if (prefix) addKey(prefix + ' ' + slashParts[i].trim(), obj); // "Requête spirituelle"
+        }
+      }
+    }
+  }
+
+  for (const s of spells) register(s, 'sort');
+  for (const s of skills) register(s, 'skill');
+
+  // Tooltip element
+  const tooltip = document.getElementById('skill-tooltip');
+
+  function showTooltip(e, data) {
+    let html = `<div class="tooltip-name">${data.name}</div>`;
+    if (data.incantation) html += `<div class="tooltip-row"><span class="tooltip-label">Incantation :</span> ${data.incantation}</div>`;
+    if (data.cout)        html += `<div class="tooltip-row"><span class="tooltip-label">Coût :</span> ${data.cout}</div>`;
+    if (data.duree)       html += `<div class="tooltip-row"><span class="tooltip-label">Durée :</span> ${data.duree}</div>`;
+    if (data.portee)      html += `<div class="tooltip-row"><span class="tooltip-label">Portée :</span> ${data.portee}</div>`;
+    if (data.requis)      html += `<div class="tooltip-row"><span class="tooltip-label">Requis :</span> ${data.requis}</div>`;
+    if (data.effet)       html += `<div class="tooltip-effet">${data.effet}</div>`;
+    tooltip.innerHTML = html;
+    tooltip.style.display = 'block';
+    positionTooltip(e);
+  }
+
+  function positionTooltip(e) {
+    const tw = tooltip.offsetWidth;
+    const th = tooltip.offsetHeight;
+    let x = e.clientX + 18;
+    let y = e.clientY + 18;
+    if (x + tw > window.innerWidth - 12) x = e.clientX - tw - 18;
+    if (y + th > window.innerHeight - 12) y = e.clientY - th - 18;
+    tooltip.style.left  = (x + window.scrollX) + 'px';
+    tooltip.style.top   = (y + window.scrollY) + 'px';
+  }
+
+  // Attach to all matching cells
+  const cells = document.querySelectorAll(
+    '.fiche-mage td, .fiche-warrior td, .fiche-rogue td, .fiche-spiritualist td'
+  );
+
+  for (const cell of cells) {
+    const text = cell.textContent.trim();
+    // Match "1. Sort : Flèche arcanique" or "Sort : Flèche arcanique"
+    const match = text.match(/^(?:\d+\.\s+)?(?:Sort|Comp|Pacte)\s*:\s*(.+)$/);
+    if (!match) continue;
+
+    // Strip parenthetical annotations like "(Voir Désarmement niveau 1)"
+    let name = normalize(match[1].replace(/\s*\(.*?\)\s*/g, ''));
+    // Fallback: remove last word ("Détection des mensonges mineure" → "Détection des mensonges")
+    const data = lookup[name] || lookup[name.replace(/\s+\S+$/, '').trim()];
+    if (!data) continue;
+
+    cell.classList.add('has-tooltip');
+    cell.addEventListener('mouseenter', e => showTooltip(e, data));
+    cell.addEventListener('mousemove',  e => positionTooltip(e));
+    cell.addEventListener('mouseleave', () => { tooltip.style.display = 'none'; });
+  }
+})();
 </script>
 </body>
 </html>

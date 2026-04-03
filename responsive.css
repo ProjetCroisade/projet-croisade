@@ -90,6 +90,16 @@ img {
   .page-races aside {
     display: none;
   }
+
+  .race-layout {
+    flex-direction: column;
+  }
+
+  .race-image {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {

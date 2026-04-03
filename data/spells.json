@@ -117,7 +117,7 @@
     "effet": "Renforce un bâtiment ou un objet lui ajoutant 1 de résistance temporaire."
   },
   {
-    "name": "Scellement d'Artéfacts",
+    "name": "Scellement d'Artefacts",
     "level": 3,
     "incantation": "Arcane Ostium Opertum Encantis Trio Sigillum Artefactum",
     "cout": "3 Mana",
@@ -495,7 +495,7 @@
     "effet": "Après incantation, le spiritualiste invoque une force divine qui ramène une cible morte depuis moins de 2 minutes à la vie avec 1 point de vie."
   },
   {
-    "name": "Enchainement divin",
+    "name": "Enchaînement divin",
     "level": 5,
     "incantation": "Prière",
     "cout": "5 Ferveur",
@@ -556,5 +556,25 @@
     "duree": "15 minutes ou jusqu'à la dissipation",
     "requis": "",
     "effet": "Après incantation, le spiritualiste invoque une force divine qui matérialise trois esprits vengeurs de 3 points de vie pour la durée du sort. Les esprits vengeurs obéissent aux ordres simples donnés par le spiritualiste, frappent de 1 point de dégâts et doivent être joués par des cadavres ou des volontaires."
+  },
+  {
+    "name": "Invocation divine de soins",
+    "level": 3,
+    "incantation": "",
+    "cout": "3 Ferveur",
+    "duree": "Instantané",
+    "portee": "Zone de 3m",
+    "requis": "",
+    "effet": "Soigne +1 PV à toutes les cibles alliées dans une zone de 3 mètres autour du lanceur."
+  },
+  {
+    "name": "Protection divine",
+    "level": 4,
+    "incantation": "",
+    "cout": "4 Ferveur",
+    "duree": "Jusqu’à perte",
+    "portee": "1 cible",
+    "requis": "",
+    "effet": "Confère +3 PV temporaires à la cible. Ces PV temporaires ne se régénèrent pas une fois perdus."
   }
 ]
