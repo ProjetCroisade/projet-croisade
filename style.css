@@ -582,6 +582,17 @@ a.btn-metier:active {
   opacity: 0.9;
 }
 
+/* ================= DIVINITÉS ================= */
+
+.divinites-etats {
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px 0 0;
+}
+
+.divinites-content section {
+  padding-bottom: 10px;
+}
+
 /* ================= SEARCH ================= */
 
 .search-container {
