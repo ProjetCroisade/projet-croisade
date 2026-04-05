@@ -1006,6 +1006,9 @@ a.btn-metier:active {
 
 .timeline li {
   position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
   padding: 10px 0 10px 8px;
   border-bottom: 1px solid rgba(58, 46, 26, 0.5);
   color: #e0d8cc;
@@ -1031,10 +1034,10 @@ a.btn-metier:active {
 }
 
 .timeline-time {
-  display: inline-block;
   font-weight: bold;
   color: #e7ba79;
-  min-width: 200px;
+  flex-shrink: 0;
+  width: 210px;
 }
 
 .timeline-couvrefeu {
