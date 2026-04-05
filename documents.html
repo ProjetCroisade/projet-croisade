@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documents | Projet Croisade</title>
+  <meta name="description" content="Accédez aux documents officiels et ressources téléchargeables de Projet Croisade.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+<link href="pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="pagefind/pagefind-ui.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
+
+  <main>
+    <div class="content">
+    <h2>Documents disponibles</h2>
+    <ul class="metiers-container">
+      <p><a class="btn-metier" href="documents/craftsmetiers.xlsx" download>Créations et récoltes pour les métiers</a></p>
+      <p><a class="btn-metier" href="documents/decharge2026.pdf" download>Décharge de responsabilité et autorisation d'utilisation d'images</a></p>
+      <p><a class="btn-metier" href="documents/fiche_de_personnage_2026.xlsx" download>Fiche de personnage 2026</a></p>
+    </ul>
+      </div>
+  </main>
+
+  <footer>
+    <p>&copy; Projet Croisade - Tous droits réservés</p>
+  </footer>
+  <button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+  <script>
+  function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
