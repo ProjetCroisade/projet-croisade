@@ -2,42 +2,47 @@
   {
     "name": "Flèche Arcanique",
     "level": 1,
+    "classe": ["Arcaniste"],
     "incantation": "Arcane Ostium Opertum Luminaria Prio Sagitta",
     "cout": "1 Mana",
     "duree": "Instantané",
     "requis": "",
-    "effet": "L’Arcaniste lance un catalyseur qui inflige 1 dégât magique à la cible touchée."
+    "effet": "L'Arcaniste lance un catalyseur qui inflige 1 dégât magique à la cible touchée."
   },
   {
     "name": "Frappe magique",
     "level": 1,
+    "classe": ["Arcaniste"],
     "incantation": "Arcane Ostium Opertum Terra Prio Percutio",
     "cout": "1 Mana",
-    "duree": "Jusqu’à utilisation",
+    "duree": "Jusqu'à utilisation",
     "requis": "",
-    "effet": "L’Arcaniste enchante une arme pour infliger 1 coup magique (dégât de l’arme)."
+    "effet": "L'Arcaniste enchante une arme pour infliger 1 coup magique (dégât de l'arme)."
   },
   {
     "name": "Langue Temporaire",
     "level": 1,
+    "classe": ["Arcaniste"],
     "incantation": "Arcane Ostium Opertum Ventis Prio Lingua",
     "cout": "1 Mana",
     "duree": "15 minutes",
     "requis": "",
-    "effet": "Permet à l’Arcaniste de parler une langue qui lui est inconnue."
+    "effet": "Permet à l'Arcaniste de parler une langue qui lui est inconnue."
   },
   {
     "name": "Bouclier arcanique",
     "level": 2,
+    "classe": ["Arcaniste"],
     "incantation": "Arcane Ostium Opertum Terra Duo Scutum",
     "cout": "2 Mana",
-    "duree": "Jusqu’à utilisation",
+    "duree": "Jusqu'à utilisation",
     "requis": "",
-    "effet": "Permet d’enchanter un bouclier pour qu’il puisse dévier 1 catalyseur (1 sort / une fois)."
+    "effet": "Permet d'enchanter un bouclier pour qu'il puisse dévier 1 catalyseur (1 sort / une fois)."
   },
   {
     "name": "Flèche arcanique majeure",
     "level": 2,
+    "classe": ["Arcaniste"],
     "incantation": "Arcane Ostium Opertum Luminaria Duo Sagitta Majora",
     "cout": "2 Mana",
     "duree": "Instantané",
@@ -47,6 +52,7 @@
   {
     "name": "Aura de peur",
     "level": 3,
+    "classe": ["Mage de Sang"],
     "incantation": "Arcane Ostium Opertum Sanguis Trio Aura Timoris",
     "cout": "3 Mana / 1 point de vie",
     "duree": "15 minutes",
@@ -56,6 +62,7 @@
   {
     "name": "Flèche Arcanique Multiple",
     "level": 3,
+    "classe": ["Sorcier"],
     "incantation": "Arcane Ostium Opertum Luminaria Trio Sagitta Multipla",
     "cout": "3 Mana",
     "duree": "1 minute",
@@ -65,6 +72,7 @@
   {
     "name": "Guérison sombre",
     "level": 3,
+    "classe": ["Mage de Sang"],
     "incantation": "Arcane Ostium Opertum Sanguis Trio Sanare",
     "cout": "3 Mana / 1 point de vie",
     "duree": "Instantané",
@@ -74,42 +82,47 @@
   {
     "name": "Invocation de feu",
     "level": 3,
+    "classe": ["Élémentaliste"],
     "incantation": "Arcane Ostium Opertum Ignis Trio Invocatum",
     "cout": "3 Mana",
     "duree": "Instantané",
     "requis": "",
-    "effet": "L’Arcaniste lance un catalyseur enflammé qui inflige 2 dégâts de feu à la cible touchée."
+    "effet": "L'Arcaniste lance un catalyseur enflammé qui inflige 2 dégâts de feu à la cible touchée."
   },
   {
     "name": "Invocation de foudre",
     "level": 3,
+    "classe": ["Élémentaliste"],
     "incantation": "Arcane Ostium Opertum Ventis Trio Invocatum",
     "cout": "3 Mana",
     "duree": "Instantané",
     "requis": "",
-    "effet": "L’Arcaniste lance un catalyseur électrifié qui inflige 2 dégâts de foudre à la cible touchée."
+    "effet": "L'Arcaniste lance un catalyseur électrifié qui inflige 2 dégâts de foudre à la cible touchée."
   },
   {
     "name": "Invocation de glace",
     "level": 3,
+    "classe": ["Élémentaliste"],
     "incantation": "Arcane Ostium Opertum Aqua Trio Invocatum",
     "cout": "3 Mana",
     "duree": "Instantané",
     "requis": "",
-    "effet": "L’Arcaniste lance un catalyseur glacé qui inflige 2 dégâts de froid à la cible touchée."
+    "effet": "L'Arcaniste lance un catalyseur glacé qui inflige 2 dégâts de froid à la cible touchée."
   },
   {
     "name": "Lame Enchantée",
     "level": 3,
+    "classe": ["Enchanteur"],
     "incantation": "Arcane Ostium Opertum Encantis Trio Lamina Incantata",
     "cout": "3 Mana",
     "duree": "30 minutes",
     "requis": "",
-    "effet": "Enchante la lame d’une arme avec un sort ou un enchantement connu pour la durée du sort. Pour ce faire toucher la lame pendant 15 min et réciter d’abord l’incantation du sort puis l'incantation de l’enchantement/sort que vous souhaitez mettre sur la lame. L’enchanteur doit absolument connaître le sort qu’il souhaite mettre sur la lame."
+    "effet": "Enchante la lame d'une arme avec un sort ou un enchantement connu pour la durée du sort. Pour ce faire toucher la lame pendant 15 min et réciter d'abord l'incantation du sort puis l'incantation de l'enchantement/sort que vous souhaitez mettre sur la lame. L'enchanteur doit absolument connaître le sort qu'il souhaite mettre sur la lame."
   },
   {
     "name": "Renforcement I",
     "level": 3,
+    "classe": ["Enchanteur"],
     "incantation": "Arcane Ostium Opertum Encantis Trio Robur",
     "cout": "3 Mana",
     "duree": "Instantané",
@@ -119,6 +132,7 @@
   {
     "name": "Scellement d'Artefacts",
     "level": 3,
+    "classe": ["Enchanteur"],
     "incantation": "Arcane Ostium Opertum Encantis Trio Sigillum Artefactum",
     "cout": "3 Mana",
     "duree": "15 minutes",
@@ -128,222 +142,17 @@
   {
     "name": "Tir Sanglant",
     "level": 3,
+    "classe": ["Mage de Sang"],
     "incantation": "Arcane Ostium Opertum Sanguis Trio Sagitta Sanguinaria",
     "cout": "3 Mana / 1 point de vie",
     "duree": "Instantané",
     "requis": "",
-    "effet": "Le Mage de Sang lance un catalyseur sanguin qui inflige 3 dégâts physiques et soigne l’Arcaniste de 1 point de vie."
-  },
-  {
-    "name": "Artefact Maudit",
-    "level": 4,
-    "incantation": "Arcane Ostium Opertum Sanguis Tetra Artefactum Maledictum",
-    "cout": "4 Mana / 2 points de vie",
-    "duree": "15 minutes de travail / Permanent",
-    "requis": "",
-    "effet": "Le Mage de Sang peut maudir un objet, le rendant instable. Transforme les pouvoirs de l'artéfact en son opposé (ex soin en dégât, protection en vulnérabilité, etc.) de façon permanente après 15 minutes de travail."
-  },
-  {
-    "name": "Chaîne d'éclairs",
-    "level": 4,
-    "incantation": "Arcane Ostium Opertum Ventis Tetra Catena Fulminis",
-    "cout": "4 Mana",
-    "duree": "Instantané",
-    "requis": "Sort Invocation de foudre",
-    "effet": "Lance un catalyseur électrique qui inflige 3 dégâts de foudre à la première cible, puis rebondit vers une deuxième cible à proximité pour infliger 2 dégâts, puis une troisième cible pour 1 dégât."
-  },
-  {
-    "name": "Entrave Arcanique",
-    "level": 4,
-    "incantation": "Arcane Ostium Opertum Terra Tetra Inhibere",
-    "cout": "4 Mana",
-    "duree": "5 minutes",
-    "requis": "",
-    "effet": "Invoque des chaînes arcaniques qui entravent les bras et les jambes d’une cible, touché par un catalyseur, pendant la durée du sort. La cible ne peut plus bouger ou attaquer pendant la durée du sort."
-  },
-  {
-    "name": "Extortion Arcanique I",
-    "level": 4,
-    "incantation": "Arcane Ostium Opertum Terra Tetra Extorsio",
-    "cout": "4 Mana",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Vole 1 Mana par cible dans un rayon de 5 mètres. Toutes les cibles perdent 1 Mana temporairement, même si elle n’en possède pas, et le Sorcier récupère le Mana qu’il vole. Le Sorcier ne peut pas dépasser son maximum de Mana."
-  },
-  {
-    "name": "Fonte rapide",
-    "level": 4,
-    "incantation": "Arcane Ostium Opertum Ignis Tetra Rapidae Fusio",
-    "cout": "4 Mana",
-    "duree": "Le temps de forge de l'objet",
-    "requis": "Sort Invocation de feu",
-    "effet": "Permet de fondre rapidement des métaux pour forger des objets simples (armes, armures légères, outils). Le temps de forge est divisé par deux."
-  },
-  {
-    "name": "Renforcement d'armure I",
-    "level": 4,
-    "incantation": "Arcane Ostium Opertum Encantis Tetra Robur Armatura",
-    "cout": "4 Mana",
-    "duree": "30 minutes",
-    "requis": "",
-    "effet": "Octroie 2 résistances mineures temporaires à la cible de votre choix."
-  },
-  {
-    "name": "Renforcement II",
-    "level": 4,
-    "incantation": "Arcane Ostium Opertum Encantis Tetra Robur Duo",
-    "cout": "4 Mana",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Renforce un bâtiment ou un objet lui ajoutant 2 de résistance temporaire."
-  },
-  {
-    "name": "Régénération aquatique",
-    "level": 4,
-    "incantation": "Arcane Ostium Opertum Aqua Tetra Regeneratio",
-    "cout": "4 Mana",
-    "duree": "Instantané",
-    "requis": "Sort Invocation de glace",
-    "effet": "Permet de soigner 4 points de vie à une cible en utilisant l'eau comme vecteur (boisson, bain, objet mouillé, etc.)."
-  },
-  {
-    "name": "Sacrifice communautaire",
-    "level": 4,
-    "incantation": "Arcane Ostium Opertum Sanguis Tetra Sacrificium Communitatis",
-    "cout": "4 Mana / 2 points de vie",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Le Mage de Sang peut sacrifier tous ses points de vie pour soigner des alliés. Pour chaque point de vie sacrifié, il soigne 2 points de vie répartis entre les alliés à portée."
-  },
-  {
-    "name": "Soif de sang",
-    "level": 4,
-    "incantation": "Arcane Ostium Opertum Sanguis Tetra Sitis Sanguinis",
-    "cout": "4 Mana / 2 points de vie",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Une fois par heure, le Mage de Sang peut achever une cible dans le coma pour récupérer 7 points de vie."
-  },
-  {
-    "name": "Animation d'objet",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Encantis Penta Animare Obiectum",
-    "cout": "5 Mana",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Permet d'animer un objet inanimé, lui donnant vie et la capacité d'effectuer des tâches simples. Sort exclusif aux géopolitiques."
-  },
-  {
-    "name": "Annulation",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Sanguis Penta Annulatio",
-    "cout": "5 Mana / 3 points de vie",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Permet d'annuler un sort ou un effet magique en cours sur une cible."
-  },
-  {
-    "name": "Apprentissage Magie Noire",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Sanguis Penta Discere Mag",
-    "cout": "5 Mana / 3 points de vie",
-    "duree": "Permanent",
-    "requis": "",
-    "effet": "Permet au Mage de Sang d'apprendre un sort de Magie Noire en géopolitique et de l'utiliser 1 fois par géopolitique."
-  },
-  {
-    "name": "Brise Illusions",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Terra Penta Frangere Illusio",
-    "cout": "5 Mana",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Permet de briser une illusion au choix. Le Sorcier doit être conscient que l’illusion existe et le lieu exact d’où elle se trouve."
-  },
-  {
-    "name": "Chaînes Arcaniques",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Terra Penta Catenae Arcanae",
-    "cout": "5 Mana",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Invoques des chaînes qui viennent s'enrouler autour d’une cible au choix se trouvant à 1 mètre de distance du Sorcier. La cible est ensuite attirée jusqu’au Sorcier."
-  },
-  {
-    "name": "Extortion Arcanique II",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Terra Penta Extorsio Duo",
-    "cout": "5 Mana",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Vole 2 Mana par cible dans un rayon de 5 mètres. Toutes les cibles perdent 1 Mana temporairement, même si elle n’en possède pas, et le Sorcier récupère le Mana qu’il vole. Si le Sorcier dépasse son maximum de Mana, le reste est stocké en Mana temporaire."
-  },
-  {
-    "name": "Prison de glace éternelle",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Aqua Penta Glacies Aeterna Carcer",
-    "cout": "5 Mana",
-    "duree": "30 secondes",
-    "requis": "Sort Invocation de glace",
-    "effet": "L'Élémentaliste lance un catalyseur sur la cible, celle-ci est emprisonnée dans une cage de glace impénétrable, la rendant incapable d'agir ou de se déplacer. (Paralysie magique)"
-  },
-  {
-    "name": "Rage de sang",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Sanguis Penta Ira Sanguinis",
-    "cout": "5 Mana / 3 points de vie",
-    "duree": "15 minutes",
-    "requis": "",
-    "effet": "Le Mage de Sang entre dans une rage berserk, augmentant ses dégâts physiques de 4 points pendant la durée."
-  },
-  {
-    "name": "Renaissance du Phoenix",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Ignis Penta Renascor Phoenix",
-    "cout": "5 Mana",
-    "duree": "Instantané",
-    "requis": "Sort Invocation de feu",
-    "effet": "Permet de ressusciter une cible morte depuis moins de 5 minutes, lui rendant 10 points de vie. Ne fonctionne qu'une fois par événement."
-  },
-  {
-    "name": "Renforcement d'armure II",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Encantis Penta Robur Armatura Duo",
-    "cout": "5 Mana",
-    "duree": "1 heure",
-    "requis": "",
-    "effet": "Octroie 3 résistances mineures temporaires à la cible de votre choix."
-  },
-  {
-    "name": "Renforcement III",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Encantis Penta Robur Tres",
-    "cout": "5 Mana",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Renforce un bâtiment ou un objet lui ajoutant 3 de résistance temporaire."
-  },
-  {
-    "name": "Tempête déchaînée",
-    "level": 5,
-    "incantation": "Arcane Ostium Opertum Ventis Penta Tempestas Exasperata",
-    "cout": "5 Mana",
-    "duree": "Instantané",
-    "requis": "Sort Invocation de foudre",
-    "effet": "L’Arcaniste invoque une violente tempête qui frappe toutes les cibles dans une zone de 5 mètres, infligeant 4 dégâts de foudre à chaque cible touchée."
-  },
-  {
-    "name": "Renforcement divin d'objet (Mineur / Majeur)",
-    "level": 3,
-    "incantation": "Prière",
-    "cout": "3 Ferveur (mineur) / 5 Ferveur (majeur)",
-    "duree": "Instantané / Permanent",
-    "requis": "",
-    "effet": "Renforce un objet lui ajoutant 2 (mineur) ou 3 (majeur) de résistance temporaire."
+    "effet": "Le Mage de Sang lance un catalyseur sanguin qui inflige 3 dégâts physiques et soigne l'Arcaniste de 1 point de vie."
   },
   {
     "name": "Boule divine",
-    "level": 1,
+    "level": 3,
+    "classe": ["Cultiste"],
     "incantation": "Prière",
     "cout": "1 Ferveur",
     "duree": "Instantané",
@@ -351,8 +160,19 @@
     "effet": "Après incantation, le spiritualiste lance une boule (catalyseur) d'énergie divine qui inflige 1 dégât divin à la cible touchée."
   },
   {
+    "name": "Renforcement divin d'objet (Mineur / Majeur)",
+    "level": 3,
+    "classe": ["Cultiste"],
+    "incantation": "Prière",
+    "cout": "3 Ferveur (mineur) / 5 Ferveur (majeur)",
+    "duree": "Instantané / Permanent",
+    "requis": "",
+    "effet": "Renforce un objet lui ajoutant 2 (mineur) ou 3 (majeur) de résistance temporaire."
+  },
+  {
     "name": "Réveil",
     "level": 3,
+    "classe": ["Cultiste"],
     "incantation": "Prière",
     "cout": "3 Ferveur",
     "duree": "Instantané",
@@ -360,53 +180,9 @@
     "effet": "Après incantation, le spiritualiste ramène une cible dans le coma à la vie avec 1 point de vie."
   },
   {
-    "name": "Boule divine multiple",
-    "level": 4,
-    "incantation": "Prière",
-    "cout": "4 Ferveur",
-    "duree": "Instantané",
-    "requis": "Boule divine",
-    "effet": "Après incantation, le spiritualiste lance jusqu'à 3 boules (catalyseurs) d'énergie divine qui infligent 1 dégât divin chaque à la cible touchée."
-  },
-  {
-    "name": "Prière de guérison",
-    "level": 4,
-    "incantation": "Prière",
-    "cout": "4 Ferveur",
-    "duree": "1 fois par 15 minutes",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste invoque une force divine qui soigne la cible de 3 point de vie au toucher."
-  },
-  {
-    "name": "Renforcement divin de bâtiment (Mineur / Majeur)",
-    "level": 5,
-    "incantation": "Prière",
-    "cout": "3 Ferveur (mineur) / 5 Ferveur (majeur)",
-    "duree": "Instantané / Permanent",
-    "requis": "",
-    "effet": "Renforce un bâtiment lui ajoutant 2 (mineur) ou 3 (majeur) de résistance temporaire."
-  },
-  {
-    "name": "Touché divin",
-    "level": 5,
-    "incantation": "Prière",
-    "cout": "5 Ferveur",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste invoque une force divine qui inflige 5 dégâts divins ou maudits à la cible touchée."
-  },
-  {
-    "name": "Bouclier divin",
-    "level": 5,
-    "incantation": "Prière",
-    "cout": "5 Ferveur",
-    "duree": "Instantané / Jusqu’à utilisation des points d'armure",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste invoque une force divine qui donne 5 points d'armure temporaire à la cible touchée."
-  },
-  {
     "name": "Ronces",
     "level": 3,
+    "classe": ["Druide"],
     "incantation": "Prière",
     "cout": "3 Ferveur",
     "duree": "Instantané / 15 secondes",
@@ -414,17 +190,19 @@
     "effet": "Après incantation, le spiritualiste lance un catalyseur qui invoque des ronces autour de la cible touchée. La cible ne peut plus se déplacer pendant 15 secondes."
   },
   {
-    "name": "Guérison druidique",
-    "level": 4,
+    "name": "Animation des morts (Mineur / Majeur)",
+    "level": 3,
+    "classe": ["Nécromancien"],
     "incantation": "Prière",
-    "cout": "4 Ferveur",
-    "duree": "Instantané",
+    "cout": "3 Ferveur",
+    "duree": "15 minutes ou jusqu'à la mort",
     "requis": "",
-    "effet": "Après incantation, le spiritualiste invoque une force divine qui soigne la cible de 3 points de vie au toucher."
+    "effet": "Après incantation, le spiritualiste transforme un cadavre en serviteur mort-vivant sous son contrôle pour la durée du sort. Le serviteur obéit aux ordres simples donnés par le spiritualiste, mais il n'a que 4 points de vie, est très lent et très con."
   },
   {
     "name": "Boule sombre",
     "level": 3,
+    "classe": ["Nécromancien"],
     "incantation": "Prière",
     "cout": "3 Ferveur",
     "duree": "Instantané",
@@ -434,42 +212,17 @@
   {
     "name": "Réanimation Temporaire",
     "level": 3,
+    "classe": ["Nécromancien"],
     "incantation": "Prière",
     "cout": "3 Ferveur",
-    "duree": "Instantané / Jusqu’à utilisation des points de vie",
+    "duree": "Instantané / Jusqu'à utilisation des points de vie",
     "requis": "",
     "effet": "Après incantation, le spiritualiste invoque une force divine qui ramène une cible dans le coma à la vie avec 2 points de vie temporaires non-guérissables tant qu'il n'aura pas été voir la Mort."
   },
   {
-    "name": "Animation des morts (Mineur / Majeur)",
-    "level": 3,
-    "incantation": "Prière",
-    "cout": "3 Ferveur",
-    "duree": "15 minutes ou jusqu'à la mort",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste transforme un cadavre en serviteur mort-vivant sous son contrôle pour la durée du sort. Le serviteur obéit aux ordres simples donnés par le spiritualiste, mais il n'a que 4 points de vie, est très lent et très con."
-  },
-  {
-    "name": "Boule sombre multiple",
-    "level": 4,
-    "incantation": "Prière",
-    "cout": "4 Ferveur",
-    "duree": "Instantané",
-    "requis": "Boule sombre",
-    "effet": "Après incantation, le spiritualiste lance jusqu'à 3 boules (catalyseurs) d'énergie sombre qui infligent 1 dégât maudit chaque à la cible touchée."
-  },
-  {
-    "name": "Animation de Goliath",
-    "level": 5,
-    "incantation": "Prière",
-    "cout": "5 Ferveur",
-    "duree": "15 minutes ou jusqu'à la mort",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste transforme un cadavre en serviteur mort-vivant supérieur sous son contrôle pour la durée du sort. Le serviteur obéit aux ordres simples donnés par le spiritualiste et possède 20 points de vie et toutes ses facultés mentales."
-  },
-  {
     "name": "Purification (Mineur / Majeur)",
     "level": 3,
+    "classe": ["Prêtre"],
     "incantation": "Prière",
     "cout": "3 Ferveur",
     "duree": "Instantané",
@@ -477,44 +230,9 @@
     "effet": "Après incantation, le spiritualiste invoque une force divine qui purifie la cible de tous les effets négatifs (poison, maladie, malédiction, etc.) selon le niveau de purification choisi (Mineur ou Majeur)."
   },
   {
-    "name": "Banissement d'artéfacts",
-    "level": 4,
-    "incantation": "Prière",
-    "cout": "4 Ferveur",
-    "duree": "15 minutes de travail",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste invoque une force divine qui banit un artéfact magique de l'existence. Le spiritualiste doit toucher l'artéfact pendant 15 minutes de travail pour réussir le banissement. L'artéfact peut être récupéré par le biais d'une quête (Voir avec l'Animation)."
-  },
-  {
-    "name": "Réanimation",
-    "level": 4,
-    "incantation": "Prière",
-    "cout": "4 Ferveur",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste invoque une force divine qui ramène une cible morte depuis moins de 2 minutes à la vie avec 1 point de vie."
-  },
-  {
-    "name": "Enchaînement divin",
-    "level": 5,
-    "incantation": "Prière",
-    "cout": "5 Ferveur",
-    "duree": "Instantané / 15 secondes",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste invoque une force divine qui paralyse (divin - majeur) la cible touchée pendant 15 secondes."
-  },
-  {
-    "name": "Cercle de protection contre le mal",
-    "level": 5,
-    "incantation": "Prière",
-    "cout": "5 Ferveur",
-    "duree": "15 minutes",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste invoque une force divine qui crée un cercle de protection contre le mal autour de lui (Rayon de 5m). Ce cercle empêche les créatures maléfiques d'approcher pendant la durée du sort."
-  },
-  {
     "name": "Parler avec les morts",
     "level": 3,
+    "classe": ["Shaman"],
     "incantation": "Prière",
     "cout": "3 Ferveur",
     "duree": "3 questions / 10 minutes",
@@ -524,6 +242,7 @@
   {
     "name": "Danse du feu",
     "level": 3,
+    "classe": ["Shaman"],
     "incantation": "Prière",
     "cout": "3 Ferveur",
     "duree": "Instantané / Danse de 3 minutes",
@@ -531,35 +250,9 @@
     "effet": "Après une danse de 3 minutes, le spiritualiste invoque un esprit du feu qui soigne 3 cibles de 1 point de vie chacune."
   },
   {
-    "name": "Extraction d'âme",
-    "level": 4,
-    "incantation": "Prière",
-    "cout": "4 Ferveur",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste invoque une force divine qui extrait l'âme d'une cible morte et la transfère dans un objet (Réceptacle d'âme Niveau 5) pour la conserver."
-  },
-  {
-    "name": "Drain de mana",
-    "level": 4,
-    "incantation": "Prière",
-    "cout": "4 Ferveur",
-    "duree": "Instantané",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste invoque une force divine qui drain le mana / la ferveur d'une cible touchée avec son catalyseur. La cible perd 2 points de mana / ferveur temporairement, même si elle n’en possède pas, et le spiritualiste récupère le mana / la ferveur qu’il absorbe. Ces points sont stockés en mana / ferveur temporaire et ne peuvent pas être récupérés après utilisation."
-  },
-  {
-    "name": "Matérialisation spirituelle",
-    "level": 5,
-    "incantation": "Prière",
-    "cout": "5 Ferveur",
-    "duree": "15 minutes ou jusqu'à la dissipation",
-    "requis": "",
-    "effet": "Après incantation, le spiritualiste invoque une force divine qui matérialise trois esprits vengeurs de 3 points de vie pour la durée du sort. Les esprits vengeurs obéissent aux ordres simples donnés par le spiritualiste, frappent de 1 point de dégâts et doivent être joués par des cadavres ou des volontaires."
-  },
-  {
     "name": "Invocation divine de soins",
     "level": 3,
+    "classe": ["Paladin"],
     "incantation": "",
     "cout": "3 Ferveur",
     "duree": "Instantané",
@@ -568,13 +261,384 @@
     "effet": "Soigne +1 PV à toutes les cibles alliées dans une zone de 3 mètres autour du lanceur."
   },
   {
+    "name": "Artefact Maudit",
+    "level": 4,
+    "classe": ["Mage de Sang"],
+    "incantation": "Arcane Ostium Opertum Sanguis Tetra Artefactum Maledictum",
+    "cout": "4 Mana / 2 points de vie",
+    "duree": "15 minutes de travail / Permanent",
+    "requis": "",
+    "effet": "Le Mage de Sang peut maudir un objet, le rendant instable. Transforme les pouvoirs de l'artéfact en son opposé (ex soin en dégât, protection en vulnérabilité, etc.) de façon permanente après 15 minutes de travail."
+  },
+  {
+    "name": "Chaîne d'éclairs",
+    "level": 4,
+    "classe": ["Élémentaliste"],
+    "incantation": "Arcane Ostium Opertum Ventis Tetra Catena Fulminis",
+    "cout": "4 Mana",
+    "duree": "Instantané",
+    "requis": "Sort Invocation de foudre",
+    "effet": "Lance un catalyseur électrique qui inflige 3 dégâts de foudre à la première cible, puis rebondit vers une deuxième cible à proximité pour infliger 2 dégâts, puis une troisième cible pour 1 dégât."
+  },
+  {
+    "name": "Entrave Arcanique",
+    "level": 4,
+    "classe": ["Sorcier"],
+    "incantation": "Arcane Ostium Opertum Terra Tetra Inhibere",
+    "cout": "4 Mana",
+    "duree": "5 minutes",
+    "requis": "",
+    "effet": "Invoque des chaînes arcaniques qui entravent les bras et les jambes d'une cible, touché par un catalyseur, pendant la durée du sort. La cible ne peut plus bouger ou attaquer pendant la durée du sort."
+  },
+  {
+    "name": "Extortion Arcanique I",
+    "level": 4,
+    "classe": ["Sorcier"],
+    "incantation": "Arcane Ostium Opertum Terra Tetra Extorsio",
+    "cout": "4 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Vole 1 Mana par cible dans un rayon de 5 mètres. Toutes les cibles perdent 1 Mana temporairement, même si elle n'en possède pas, et le Sorcier récupère le Mana qu'il vole. Le Sorcier ne peut pas dépasser son maximum de Mana."
+  },
+  {
+    "name": "Fonte rapide",
+    "level": 4,
+    "classe": ["Élémentaliste"],
+    "incantation": "Arcane Ostium Opertum Ignis Tetra Rapidae Fusio",
+    "cout": "4 Mana",
+    "duree": "Le temps de forge de l'objet",
+    "requis": "Sort Invocation de feu",
+    "effet": "Permet de fondre rapidement des métaux pour forger des objets simples (armes, armures légères, outils). Le temps de forge est divisé par deux."
+  },
+  {
+    "name": "Renforcement d'armure I",
+    "level": 4,
+    "classe": ["Enchanteur"],
+    "incantation": "Arcane Ostium Opertum Encantis Tetra Robur Armatura",
+    "cout": "4 Mana",
+    "duree": "30 minutes",
+    "requis": "",
+    "effet": "Octroie 2 résistances mineures temporaires à la cible de votre choix."
+  },
+  {
+    "name": "Renforcement II",
+    "level": 4,
+    "classe": ["Enchanteur"],
+    "incantation": "Arcane Ostium Opertum Encantis Tetra Robur Duo",
+    "cout": "4 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Renforce un bâtiment ou un objet lui ajoutant 2 de résistance temporaire."
+  },
+  {
+    "name": "Régénération aquatique",
+    "level": 4,
+    "classe": ["Élémentaliste"],
+    "incantation": "Arcane Ostium Opertum Aqua Tetra Regeneratio",
+    "cout": "4 Mana",
+    "duree": "Instantané",
+    "requis": "Sort Invocation de glace",
+    "effet": "Permet de soigner 4 points de vie à une cible en utilisant l'eau comme vecteur (boisson, bain, objet mouillé, etc.)."
+  },
+  {
+    "name": "Sacrifice communautaire",
+    "level": 4,
+    "classe": ["Mage de Sang"],
+    "incantation": "Arcane Ostium Opertum Sanguis Tetra Sacrificium Communitatis",
+    "cout": "4 Mana / 2 points de vie",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Le Mage de Sang peut sacrifier tous ses points de vie pour soigner des alliés. Pour chaque point de vie sacrifié, il soigne 2 points de vie répartis entre les alliés à portée."
+  },
+  {
+    "name": "Soif de sang",
+    "level": 4,
+    "classe": ["Mage de Sang"],
+    "incantation": "Arcane Ostium Opertum Sanguis Tetra Sitis Sanguinis",
+    "cout": "4 Mana / 2 points de vie",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Une fois par heure, le Mage de Sang peut achever une cible dans le coma pour récupérer 7 points de vie."
+  },
+  {
+    "name": "Boule divine multiple",
+    "level": 4,
+    "classe": ["Cultiste"],
+    "incantation": "Prière",
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
+    "requis": "Boule divine",
+    "effet": "Après incantation, le spiritualiste lance jusqu'à 3 boules (catalyseurs) d'énergie divine qui infligent 1 dégât divin chaque à la cible touchée."
+  },
+  {
+    "name": "Prière de guérison",
+    "level": 4,
+    "classe": ["Cultiste"],
+    "incantation": "Prière",
+    "cout": "4 Ferveur",
+    "duree": "1 fois par 15 minutes",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui soigne la cible de 3 point de vie au toucher."
+  },
+  {
+    "name": "Guérison druidique",
+    "level": 4,
+    "classe": ["Druide"],
+    "incantation": "Prière",
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui soigne la cible de 3 points de vie au toucher."
+  },
+  {
+    "name": "Boule sombre multiple",
+    "level": 4,
+    "classe": ["Nécromancien"],
+    "incantation": "Prière",
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
+    "requis": "Boule sombre",
+    "effet": "Après incantation, le spiritualiste lance jusqu'à 3 boules (catalyseurs) d'énergie sombre qui infligent 1 dégât maudit chaque à la cible touchée."
+  },
+  {
+    "name": "Banissement d'artéfacts",
+    "level": 4,
+    "classe": ["Prêtre"],
+    "incantation": "Prière",
+    "cout": "4 Ferveur",
+    "duree": "15 minutes de travail",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui banit un artéfact magique de l'existence. Le spiritualiste doit toucher l'artéfact pendant 15 minutes de travail pour réussir le banissement. L'artéfact peut être récupéré par le biais d'une quête (Voir avec l'Animation)."
+  },
+  {
+    "name": "Réanimation",
+    "level": 4,
+    "classe": ["Prêtre"],
+    "incantation": "Prière",
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui ramène une cible morte depuis moins de 2 minutes à la vie avec 1 point de vie."
+  },
+  {
+    "name": "Drain de mana",
+    "level": 4,
+    "classe": ["Shaman"],
+    "incantation": "Prière",
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui drain le mana / la ferveur d'une cible touchée avec son catalyseur. La cible perd 2 points de mana / ferveur temporairement, même si elle n'en possède pas, et le spiritualiste récupère le mana / la ferveur qu'il absorbe. Ces points sont stockés en mana / ferveur temporaire et ne peuvent pas être récupérés après utilisation."
+  },
+  {
+    "name": "Extraction d'âme",
+    "level": 4,
+    "classe": ["Shaman"],
+    "incantation": "Prière",
+    "cout": "4 Ferveur",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui extrait l'âme d'une cible morte et la transfère dans un objet (Réceptacle d'âme Niveau 5) pour la conserver."
+  },
+  {
     "name": "Protection divine",
     "level": 4,
+    "classe": ["Paladin"],
     "incantation": "",
     "cout": "4 Ferveur",
-    "duree": "Jusqu’à perte",
+    "duree": "Jusqu'à perte",
     "portee": "1 cible",
     "requis": "",
     "effet": "Confère +3 PV temporaires à la cible. Ces PV temporaires ne se régénèrent pas une fois perdus."
+  },
+  {
+    "name": "Animation d'objet",
+    "level": 5,
+    "classe": ["Enchanteur"],
+    "incantation": "Arcane Ostium Opertum Encantis Penta Animare Obiectum",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Permet d'animer un objet inanimé, lui donnant vie et la capacité d'effectuer des tâches simples. Sort exclusif aux géopolitiques."
+  },
+  {
+    "name": "Annulation",
+    "level": 5,
+    "classe": ["Mage de Sang"],
+    "incantation": "Arcane Ostium Opertum Sanguis Penta Annulatio",
+    "cout": "5 Mana / 3 points de vie",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Permet d'annuler un sort ou un effet magique en cours sur une cible."
+  },
+  {
+    "name": "Apprentissage Magie Noire",
+    "level": 5,
+    "classe": ["Mage de Sang"],
+    "incantation": "Arcane Ostium Opertum Sanguis Penta Discere Mag",
+    "cout": "5 Mana / 3 points de vie",
+    "duree": "Permanent",
+    "requis": "",
+    "effet": "Permet au Mage de Sang d'apprendre un sort de Magie Noire en géopolitique et de l'utiliser 1 fois par géopolitique."
+  },
+  {
+    "name": "Brise Illusions",
+    "level": 5,
+    "classe": ["Sorcier"],
+    "incantation": "Arcane Ostium Opertum Terra Penta Frangere Illusio",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Permet de briser une illusion au choix. Le Sorcier doit être conscient que l'illusion existe et le lieu exact d'où elle se trouve."
+  },
+  {
+    "name": "Chaînes Arcaniques",
+    "level": 5,
+    "classe": ["Sorcier"],
+    "incantation": "Arcane Ostium Opertum Terra Penta Catenae Arcanae",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Invoques des chaînes qui viennent s'enrouler autour d'une cible au choix se trouvant à 1 mètre de distance du Sorcier. La cible est ensuite attirée jusqu'au Sorcier."
+  },
+  {
+    "name": "Extortion Arcanique II",
+    "level": 5,
+    "classe": ["Sorcier"],
+    "incantation": "Arcane Ostium Opertum Terra Penta Extorsio Duo",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Vole 2 Mana par cible dans un rayon de 5 mètres. Toutes les cibles perdent 1 Mana temporairement, même si elle n'en possède pas, et le Sorcier récupère le Mana qu'il vole. Si le Sorcier dépasse son maximum de Mana, le reste est stocké en Mana temporaire."
+  },
+  {
+    "name": "Prison de glace éternelle",
+    "level": 5,
+    "classe": ["Élémentaliste"],
+    "incantation": "Arcane Ostium Opertum Aqua Penta Glacies Aeterna Carcer",
+    "cout": "5 Mana",
+    "duree": "30 secondes",
+    "requis": "Sort Invocation de glace",
+    "effet": "L'Élémentaliste lance un catalyseur sur la cible, celle-ci est emprisonnée dans une cage de glace impénétrable, la rendant incapable d'agir ou de se déplacer. (Paralysie magique)"
+  },
+  {
+    "name": "Rage de sang",
+    "level": 5,
+    "classe": ["Mage de Sang"],
+    "incantation": "Arcane Ostium Opertum Sanguis Penta Ira Sanguinis",
+    "cout": "5 Mana / 3 points de vie",
+    "duree": "15 minutes",
+    "requis": "",
+    "effet": "Le Mage de Sang entre dans une rage berserk, augmentant ses dégâts physiques de 4 points pendant la durée."
+  },
+  {
+    "name": "Renaissance du Phoenix",
+    "level": 5,
+    "classe": ["Élémentaliste"],
+    "incantation": "Arcane Ostium Opertum Ignis Penta Renascor Phoenix",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "Sort Invocation de feu",
+    "effet": "Permet de ressusciter une cible morte depuis moins de 5 minutes, lui rendant 10 points de vie. Ne fonctionne qu'une fois par événement."
+  },
+  {
+    "name": "Renforcement d'armure II",
+    "level": 5,
+    "classe": ["Enchanteur"],
+    "incantation": "Arcane Ostium Opertum Encantis Penta Robur Armatura Duo",
+    "cout": "5 Mana",
+    "duree": "1 heure",
+    "requis": "",
+    "effet": "Octroie 3 résistances mineures temporaires à la cible de votre choix."
+  },
+  {
+    "name": "Renforcement III",
+    "level": 5,
+    "classe": ["Enchanteur"],
+    "incantation": "Arcane Ostium Opertum Encantis Penta Robur Tres",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Renforce un bâtiment ou un objet lui ajoutant 3 de résistance temporaire."
+  },
+  {
+    "name": "Tempête déchaînée",
+    "level": 5,
+    "classe": ["Élémentaliste"],
+    "incantation": "Arcane Ostium Opertum Ventis Penta Tempestas Exasperata",
+    "cout": "5 Mana",
+    "duree": "Instantané",
+    "requis": "Sort Invocation de foudre",
+    "effet": "L'Arcaniste invoque une violente tempête qui frappe toutes les cibles dans une zone de 5 mètres, infligeant 4 dégâts de foudre à chaque cible touchée."
+  },
+  {
+    "name": "Bouclier divin",
+    "level": 5,
+    "classe": ["Cultiste"],
+    "incantation": "Prière",
+    "cout": "5 Ferveur",
+    "duree": "Instantané / Jusqu'à utilisation des points d'armure",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui donne 5 points d'armure temporaire à la cible touchée."
+  },
+  {
+    "name": "Renforcement divin de bâtiment (Mineur / Majeur)",
+    "level": 5,
+    "classe": ["Cultiste"],
+    "incantation": "Prière",
+    "cout": "3 Ferveur (mineur) / 5 Ferveur (majeur)",
+    "duree": "Instantané / Permanent",
+    "requis": "",
+    "effet": "Renforce un bâtiment lui ajoutant 2 (mineur) ou 3 (majeur) de résistance temporaire."
+  },
+  {
+    "name": "Touché divin",
+    "level": 5,
+    "classe": ["Cultiste"],
+    "incantation": "Prière",
+    "cout": "5 Ferveur",
+    "duree": "Instantané",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui inflige 5 dégâts divins ou maudits à la cible touchée."
+  },
+  {
+    "name": "Animation de Goliath",
+    "level": 5,
+    "classe": ["Nécromancien"],
+    "incantation": "Prière",
+    "cout": "5 Ferveur",
+    "duree": "15 minutes ou jusqu'à la mort",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste transforme un cadavre en serviteur mort-vivant supérieur sous son contrôle pour la durée du sort. Le serviteur obéit aux ordres simples donnés par le spiritualiste et possède 20 points de vie et toutes ses facultés mentales."
+  },
+  {
+    "name": "Cercle de protection contre le mal",
+    "level": 5,
+    "classe": ["Prêtre"],
+    "incantation": "Prière",
+    "cout": "5 Ferveur",
+    "duree": "15 minutes",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui crée un cercle de protection contre le mal autour de lui (Rayon de 5m). Ce cercle empêche les créatures maléfiques d'approcher pendant la durée du sort."
+  },
+  {
+    "name": "Enchaînement divin",
+    "level": 5,
+    "classe": ["Prêtre"],
+    "incantation": "Prière",
+    "cout": "5 Ferveur",
+    "duree": "Instantané / 15 secondes",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui paralyse (divin - majeur) la cible touchée pendant 15 secondes."
+  },
+  {
+    "name": "Matérialisation spirituelle",
+    "level": 5,
+    "classe": ["Shaman"],
+    "incantation": "Prière",
+    "cout": "5 Ferveur",
+    "duree": "15 minutes ou jusqu'à la dissipation",
+    "requis": "",
+    "effet": "Après incantation, le spiritualiste invoque une force divine qui matérialise trois esprits vengeurs de 3 points de vie pour la durée du sort. Les esprits vengeurs obéissent aux ordres simples donnés par le spiritualiste, frappent de 1 point de dégâts et doivent être joués par des cadavres ou des volontaires."
   }
 ]

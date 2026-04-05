@@ -70,6 +70,29 @@ fetch('header.html')
     <button class="filter" data-filter="skill">Compétences</button>
   </div>
 
+  <div class="search-filters" style="margin-top: 8px;">
+    <select id="classeFilter" style="background: #1a1a2e; color: #ffe48a; border: 1px solid #ffe48a; border-radius: 6px; padding: 6px 10px; font-size: 0.9rem; cursor: pointer;">
+      <option value="">Toutes les classes</option>
+      <optgroup label="Arcanistes">
+        <option value="Arcaniste">Arcaniste (commun)</option>
+        <option value="Élémentaliste">Élémentaliste</option>
+        <option value="Enchanteur">Enchanteur</option>
+        <option value="Mage de Sang">Mage de Sang</option>
+        <option value="Sorcier">Sorcier</option>
+      </optgroup>
+      <optgroup label="Combattants">
+        <option value="Paladin">Paladin</option>
+      </optgroup>
+      <optgroup label="Spiritualistes">
+        <option value="Cultiste">Cultiste</option>
+        <option value="Druide">Druide</option>
+        <option value="Nécromancien">Nécromancien</option>
+        <option value="Prêtre">Prêtre</option>
+        <option value="Shaman">Shaman</option>
+      </optgroup>
+    </select>
+  </div>
+
 </div>
 
 <div id="search-results"></div>
@@ -87,15 +110,25 @@ fetch('header.html')
   <script>
   function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
-  async function renderSpellsByLevel() {
+  let allSpells = [];
+
+  async function loadSpells() {
     const response = await fetch('data/spells.json');
-    const spells = await response.json();
-    spells.sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+    allSpells = await response.json();
+    allSpells.sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+    renderSpellsByLevel();
+  }
+
+  function renderSpellsByLevel() {
+    const selectedClasse = document.getElementById('classeFilter').value;
 
     for (let level = 1; level <= 5; level++) {
       const list = document.getElementById(`level-${level}`);
       if (!list) continue;
-      const filtered = spells.filter(s => s.level === level);
+      let filtered = allSpells.filter(s => s.level === level);
+      if (selectedClasse) {
+        filtered = filtered.filter(s => s.classe && s.classe.includes(selectedClasse));
+      }
       if (filtered.length === 0) {
         list.innerHTML = '<p class="empty">Aucun sort à ce niveau.</p>';
         continue;
@@ -112,7 +145,10 @@ fetch('header.html')
       `).join('');
     }
   }
-  renderSpellsByLevel();
+
+  document.getElementById('classeFilter').addEventListener('change', renderSpellsByLevel);
+
+  loadSpells();
   </script>
 
 <script>
