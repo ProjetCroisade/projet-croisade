@@ -582,6 +582,14 @@ a.btn-metier:active {
   opacity: 0.9;
 }
 
+.img-disclaimer {
+  font-size: 0.7rem;
+  color: #888;
+  text-align: center;
+  margin-top: 4px;
+  font-style: italic;
+}
+
 /* ================= DIVINITÉS ================= */
 
 .divinites-etats {
