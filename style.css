@@ -917,3 +917,143 @@ a.btn-metier:active {
   text-align: center;
   margin: 16px 0;
 }
+
+/* ================= INFOS PAGE ================= */
+
+/* Event cards grid */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.event-card {
+  background-color: rgba(30, 20, 10, 0.75);
+  border: 1px solid #3a2e1a;
+  border-top: 3px solid #c9a84c;
+  border-radius: 6px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.event-card.event-special {
+  border-top-color: #e7ba79;
+  background-color: rgba(90, 69, 32, 0.2);
+  box-shadow: 0 0 12px rgba(231, 186, 121, 0.12);
+}
+
+.event-num {
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 0.8rem;
+  color: #888;
+  letter-spacing: 0.05em;
+}
+
+.event-num::before {
+  content: 'Événement ';
+}
+
+.event-label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #e7ba79;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.event-dates {
+  font-size: 0.95rem;
+  color: #f5f0e6;
+}
+
+/* Interac info box */
+.info-interac {
+  background-color: rgba(90, 69, 32, 0.2);
+  border: 1px solid #5a4520;
+  border-left: 4px solid #e7ba79;
+  border-radius: 0 6px 6px 0;
+  padding: 14px 18px;
+  margin-top: 16px;
+  display: inline-block;
+}
+
+.info-interac-label {
+  display: block;
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 0.85rem;
+  color: #e7ba79;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.info-interac-row {
+  font-size: 0.95rem;
+  color: #e0d8cc;
+  margin-bottom: 4px;
+}
+
+/* Timeline list */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  border-left: 2px solid #3a2e1a;
+  padding-left: 20px;
+}
+
+.timeline li {
+  position: relative;
+  padding: 10px 0 10px 8px;
+  border-bottom: 1px solid rgba(58, 46, 26, 0.5);
+  color: #e0d8cc;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -26px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #c9a84c;
+  border: 2px solid #1c1c1c;
+}
+
+.timeline li:last-child {
+  border-bottom: none;
+}
+
+.timeline-time {
+  display: inline-block;
+  font-weight: bold;
+  color: #e7ba79;
+  min-width: 200px;
+}
+
+.timeline-couvrefeu {
+  color: #aaa !important;
+  font-style: italic;
+}
+
+.timeline-couvrefeu .timeline-time {
+  color: #999 !important;
+}
+
+.timeline-couvrefeu::before {
+  background-color: #555 !important;
+}
+
+.timeline-fin .timeline-time {
+  color: #7eba8a !important;
+}
+
+.timeline-fin::before {
+  background-color: #7eba8a !important;
+}

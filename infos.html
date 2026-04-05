@@ -11,7 +11,7 @@
 <link href="pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="pagefind/pagefind-ui.js"></script>
 </head>
-<body>
+<body class="page-regles">
 <div id="header"></div>
 <script>
 fetch('header.html')
@@ -24,81 +24,151 @@ fetch('header.html')
     document.body.appendChild(script);
   });
 </script>
-  <main>
-    <div class="content">
-    <h2>Calendrier des événements</h2>
-    <p>Voici les dates prévues pour les activités à venir :</p>
-    <ul>
-      <li><strong>Événement 1 :</strong> 15 au 17 mai 2026</li>
-      <li><strong>Événement 2 :</strong> 19 au 21 juin 2026</li>
-      <li><strong>Événement 3 :</strong> 7 au 9 août 2026</li>
-      <li><strong>Événement 4 :</strong> 4 au 6 septembre 2026</li>
-      <li><strong>Événement 5 :</strong> 2 au 4 octobre 2026</li>
-      <li><strong>Événement 6 :</strong> <strong>Inter GN : 9 au 11 octobre 2026</strong></li>    
-      <strong>Du vendredi ~20h au dimanche 13h</strong>
-    </ul>
 
-    <h2>Coûts et inscriptions</h2>
-    <ul>
-      <li><strong>Jeune joueur (16 à 21 ans):</strong> 35$</li>
-      <li><strong>Joueur régulier (22 ans et plus):</strong> 50$</li>
-      <li><strong>Passe de saison :</strong> 140$ pour les 16-21 et 200$ pour les 22 et plus</li>
-      <li><strong>Location d’équipement :</strong> À voir avec l'animation</li>
-      <li><strong>Location de cabanes :</strong> À voir avec l'organisation</li>
-    </ul>
-    <p>Les pré-inscriptions se font par virement interac à <a href="mailto:projetcroisade@gmail.com">projetcroisade@gmail.com</a>.</p>
-    <p>Envoyez un email avec :</p>
-    <ul>
-      <li>Votre nom complet</li>
-      <li>La date de l'événement</li>
-      <li>Votre fiche de personnage (<a href="fiche.html">créer votre personnage</a>)</li>
-    </ul>
-    <p>Virement :</p>
-    <ul>
-      <li>Identifiez-vous clairement lors de votre virement</li>
-      <li>Inscrivez votre nom, ainsi que ceux de tous les membres de votre groupe (si vous inscrivez un groupe)</li>
-    </ul>
-    <p>Mettre la question de sécurité de <strong> Projet Croisade : </strong></p>
-      <p>Question : Projet</p>
-      <p>Réponse : Croisade</p>
-    <section>
-    <h2>Déroulement du GN</h2>
-    <p>Un GN (Grandeur Nature) se déroule sur un week-end, du vendredi soir au dimanche après-midi.</p>
-    <ul>
-    <li><strong>Vendredi 17h</strong> : Arrivée sur le terrain</li>
-    <li><strong>Vendredi 17h à 20h</strong> : Période d'inscription sur le terrain</li>
-    <li><strong>Vendredi ~20h</strong> : Briefing pré-GN</li>
-    <li><strong>Vendredi ~21h</strong> : Début du GN</li>
-    <li><strong>Vendredi Nuit - 1h AM jusqu'à 6h AM</strong> : Couvre-feu (Aucune animation en jeu, aucune attaque de campements)</li>
-    <li><strong>Samedi 16h à 18h</strong> : Pause et briefing de soirée pour les animateurs</li>
-    <li><strong>Samedi Nuit - 1h AM jusqu'à 6h AM</strong> : Couvre-feu (Aucune animation en jeu, aucune attaque de campements)</li>
-    <li><strong>Dimanche 13h</strong> : Fin du GN</li>
-    </ul>
+<main>
+  <aside>
+    <nav>
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#calendrier">Calendrier</a></li>
+        <li><a href="#couts">Coûts et inscriptions</a></li>
+        <li><a href="#deroulement">Déroulement du GN</a></li>
+        <li><a href="#promo">Codes promo</a></li>
+        <li><a href="#lieu">Lieu</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="regles-content">
+
+    <section id="calendrier">
+      <h2>Calendrier des événements</h2>
+      <p>Voici les dates prévues pour les activités à venir :</p>
+      <div class="events-grid">
+        <div class="event-card">
+          <span class="event-num">1</span>
+          <span class="event-dates">15 au 17 mai 2026</span>
+        </div>
+        <div class="event-card">
+          <span class="event-num">2</span>
+          <span class="event-dates">19 au 21 juin 2026</span>
+        </div>
+        <div class="event-card">
+          <span class="event-num">3</span>
+          <span class="event-dates">7 au 9 août 2026</span>
+        </div>
+        <div class="event-card">
+          <span class="event-num">4</span>
+          <span class="event-dates">4 au 6 septembre 2026</span>
+        </div>
+        <div class="event-card">
+          <span class="event-num">5</span>
+          <span class="event-dates">2 au 4 octobre 2026</span>
+        </div>
+        <div class="event-card event-special">
+          <span class="event-num">6</span>
+          <span class="event-label">Inter GN</span>
+          <span class="event-dates">9 au 11 octobre 2026</span>
+        </div>
+      </div>
+      <p><em>Du vendredi ~20h au dimanche 13h.</em></p>
     </section>
 
-    
-  <h2>Code Promo</h2>
-  <p>Les codes promos sont tous à usage unique.</p>
-  <p>Un seul code promo peut être utilisé à la fois.</p>
-  <p>Les codes promos de type <strong>"familial"</strong> sont utilisables pour les <strong>5 événements de l'année</strong>.</p>
-  <p>Pour utiliser un code promo, ajoutez-le simplement au courriel lors de votre inscription.<br>
-  <em>Ex. : code promo : <strong>XX90-L</strong></em></p>
-    <h2>Lieu</h2>
-    <p>1080 Route 112 Weedon, QC J0B 3J0</p>
-  <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.2291758297038!2d-71.53375969999999!3d45.66629940000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb7992b3423df37%3A0xba9ae607eab9e6ea!2s1080%20Rte%20112%2C%20Weedon%2C%20QC%20J0B%203J0!5e0!3m2!1sen!2sca!4v1760304036438!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
+    <section id="couts">
+      <h2>Coûts et inscriptions</h2>
 
+      <table class="table-regles">
+        <thead>
+          <tr><th>Profil</th><th>Par événement</th><th>Passe de saison</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jeune joueur (16–21 ans)</td>
+            <td>35 $</td>
+            <td>140 $</td>
+          </tr>
+          <tr>
+            <td>Joueur régulier (22 ans et plus)</td>
+            <td>50 $</td>
+            <td>200 $</td>
+          </tr>
+          <tr>
+            <td>Location d'équipement</td>
+            <td colspan="2"><em>À voir avec l'animation</em></td>
+          </tr>
+          <tr>
+            <td>Location de cabanes</td>
+            <td colspan="2"><em>À voir avec l'organisation</em></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Comment s'inscrire</h3>
+      <p>Les pré-inscriptions se font par virement Interac à <a href="mailto:projetcroisade@gmail.com">projetcroisade@gmail.com</a>.</p>
+      <p>Envoyez un courriel avec :</p>
+      <ul>
+        <li>Votre nom complet</li>
+        <li>La date de l'événement souhaité</li>
+        <li>Votre fiche de personnage (<a href="fiche.html">créer votre personnage</a>)</li>
+      </ul>
+      <p>Lors du virement :</p>
+      <ul>
+        <li>Identifiez-vous clairement</li>
+        <li>Inscrivez votre nom ainsi que ceux de tous les membres de votre groupe</li>
+      </ul>
+
+      <div class="info-interac">
+        <span class="info-interac-label">Question de sécurité</span>
+        <div class="info-interac-row"><strong>Question :</strong> Projet</div>
+        <div class="info-interac-row"><strong>Réponse :</strong> Croisade</div>
       </div>
-  </main>
-  <footer>
-    <p>&copy; Projet Croisade - Tous droits réservés</p>
-  </footer>
-  <button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
-  <script>
-  function scrollToTop() {
+    </section>
+
+    <section id="deroulement">
+      <h2>Déroulement du GN</h2>
+      <p>Un GN (Grandeur Nature) se déroule sur un week-end, du vendredi soir au dimanche après-midi.</p>
+      <ul class="timeline">
+        <li><span class="timeline-time">Vendredi 17h</span> Arrivée sur le terrain</li>
+        <li><span class="timeline-time">Vendredi 17h–20h</span> Période d'inscription sur le terrain</li>
+        <li><span class="timeline-time">Vendredi ~20h</span> Briefing pré-GN</li>
+        <li><span class="timeline-time">Vendredi ~21h</span> Début du GN</li>
+        <li class="timeline-couvrefeu"><span class="timeline-time">Vendredi nuit — 1h à 6h</span> Couvre-feu (aucune animation en jeu, aucune attaque de campements)</li>
+        <li><span class="timeline-time">Samedi 16h–18h</span> Pause et briefing de soirée pour les animateurs</li>
+        <li class="timeline-couvrefeu"><span class="timeline-time">Samedi nuit — 1h à 6h</span> Couvre-feu (aucune animation en jeu, aucune attaque de campements)</li>
+        <li class="timeline-fin"><span class="timeline-time">Dimanche 13h</span> Fin du GN</li>
+      </ul>
+    </section>
+
+    <section id="promo">
+      <h2>Codes promo</h2>
+      <ul>
+        <li>Les codes promos sont tous à usage unique.</li>
+        <li>Un seul code promo peut être utilisé à la fois.</li>
+        <li>Les codes promos de type <strong>« familial »</strong> sont utilisables pour les <strong>5 événements de l'année</strong>.</li>
+      </ul>
+      <p class="exemple">Pour utiliser un code promo, ajoutez-le simplement au courriel lors de votre inscription.<br>
+      <em>Ex. : code promo : <strong>XX90-L</strong></em></p>
+    </section>
+
+    <section id="lieu">
+      <h2>Lieu</h2>
+      <p>1080 Route 112, Weedon, QC J0B 3J0</p>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.2291758297038!2d-71.53375969999999!3d45.66629940000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb7992b3423df37%3A0xba9ae607eab9e6ea!2s1080%20Rte%20112%2C%20Weedon%2C%20QC%20J0B%203J0!5e0!3m2!1sen!2sca!4v1760304036438!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <p>&copy; Projet Croisade - Tous droits réservés</p>
+</footer>
+<button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+<script>
+function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+}
 </script>
 </body>
 </html>
