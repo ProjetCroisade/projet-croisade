@@ -141,7 +141,7 @@
     "duree": "1 fois par combat",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet d'obtenir une esquive supplémentaire par niveau d'Esquive lors d'un combat."
+    "effet": "Permet d'obtenir une esquive supplémentaire par niveau d'Esquive lors d'un combat. Permet au joueur d'esquiver une attaque physique (un coup) qu'il a vue venir (ex : esquive I = 1 esquive supplémentaire, Esquive II = 2 esquives supplémentaires, etc.)."
   },
   {
     "name": "Premiers soins",
