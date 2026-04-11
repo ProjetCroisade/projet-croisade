@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elfes de l'Arbre Monde — Historique | Projet Croisade</title>
+  <base href="../">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
+<main>
+  <div class="content">
+    <h2>Elfes de l'Arbre Monde — Historique & Lore</h2>
+
+    <aside class="lore-infobox">
+      <p class="lore-infobox-title">En bref</p>
+      <dl>
+        <dt>Origine</dt>
+        <dd>Les Lëfals — créés par les dieux à leur image</dd>
+        <dt>Territoire</dt>
+        <dd>Autour de l'Arbre Monde</dd>
+        <dt>Cités</dt>
+        <dd>Vyshad (capitale & académies), Heilona (artisans), Jansalri (armée)</dd>
+        <dt>Divinité</dt>
+        <dd>L'Arbre Monde — divinité née des prières elfiques</dd>
+        <dt>Magie</dt>
+        <dd>Divine (Arbre Monde) et arcanique — enseignée dès l'enfance</dd>
+        <dt>État actuel</dt>
+        <dd>Fragmentés, accusés à tort des exterminations, l'Arbre Monde s'affaiblit</dd>
+      </dl>
+    </aside>
+
+    <p>L'origine elfique remonte au début des temps. Ils sont la création des dieux qui cherchaient un moyen de combattre l'ennui. À l'époque, ils étaient appelés les Lëfals. Ayant été créés à l'image des dieux, les Lëfals leur portaient beaucoup de respect. Chaque début de cycle lunaire, ils organisaient une grande fête en l'honneur de leur créateur. Avant de créer les Lëfals, les dieux avaient semé une graine qui éventuellement devint un arbre. C'est proche de cet arbre qu'ils se sentaient le plus proches des dieux. Celui-ci devint alors l'intermédiaire entre les Lëfals et leurs créateurs. Au bout d'un moment, l'arbre accumula suffisamment de « priants » et il devint un dieu lui-même. Face à cette situation, les dieux les plus avares de pouvoir se sentaient menacés et décidèrent d'éliminer leur création. Ce fut la première guerre du continent, marquant à jamais les Lëfals. Plusieurs se sentaient trahis et rejetèrent complètement les dieux. Les dégâts causés par la guerre ainsi que la perte de la foi pour plusieurs Lëfals causèrent une division de la nouvelle divinité. L'arbre, désormais appelé Arbre Monde, était divisé en deux : d'un côté une moitié lumineuse représentant les Lëfals qui croyaient en l'arbre et en son désir de les protéger, et de l'autre une moitié sombre représentant ceux qui avaient perdu la foi. Par la suite, les Lëfals abandonnèrent leur ancien nom et adoptèrent celui d'Elf.</p>
+
+    <p>Les Elfs priant l'Arbre Monde se sont installés autour de celui-ci, érigant de prestigieuses cités : Vyshad, la capitale, accueillant principalement la royauté ainsi que les académies elfiques ; Heilona, une cité regroupant principalement des artisans ; et Jansalri, accueillant principalement l'armée elfique.</p>
+
+    <p>Avec l'arrivée de nouveaux peuples sur le continent, les Elfs de l'Arbre Monde décidèrent de limiter au maximum leur interaction avec ceux-ci. Selon eux, les nouveaux peuples étaient largement inférieurs et indignes de leur connaissance.</p>
+
+    <p>Les Elfs ont un lien particulier avec la magie. Dès leur plus jeune âge, les Elfs de l'Arbre Monde sont introduits à la magie. La capitale elfique, Vyshad, possède plusieurs académies où est enseignée aussi bien la magie divine provenant de l'Arbre Monde que la magie arcanique.</p>
+
+    <p>Les exterminations ont grandement frappé les Elfs : ils ont vu leurs prestigieuses cités se faire anéantir et leur fierté piétiner. Beaucoup d'Elfs de l'Arbre Monde ont perdu la foi face à l'inaction de leur divinité devant le massacre de leurs semblables. L'Arbre Monde perd grandement en puissance et ses priants en paient le prix.</p>
+
+    <p>Aujourd'hui, les Elfs sont fragmentés, victimes de complots et d'accusations. Des rumeurs circulent selon lesquelles ils seraient à l'origine des fameuses exterminations et bien qu'ils revendiquent le contraire, très peu sont prêts à prendre le risque de les fréquenter. Après tout, leurs confrères des ténèbres ont déjà massacré par le passé et aucune des victimes des exterminations n'est encore en vie pour témoigner de l'innocence des Elfs.</p>
+
+    <a href="races.html#elfe-monde" class="btn-metier">← Retour aux races</a>
+  </div>
+</main>
+<footer>
+  <p>&copy; Projet Croisade - Tous droits réservés</p>
+</footer>
+<button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+<script>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>

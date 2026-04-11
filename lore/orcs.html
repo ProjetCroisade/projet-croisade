@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orcs — Historique | Projet Croisade</title>
+  <base href="../">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
+<main>
+  <div class="content">
+    <h2>Orcs — Historique & Lore</h2>
+
+    <aside class="lore-infobox">
+      <p class="lore-infobox-title">En bref</p>
+      <dl>
+        <dt>Territoire</dt>
+        <dd>Sud-ouest du continent — terres désertiques</dd>
+        <dt>Organisation</dt>
+        <dd>Tribus guerrières indépendantes</dd>
+        <dt>Valeur centrale</dt>
+        <dd>L'honneur — les conflits se règlent en duel à mort</dd>
+        <dt>Événement en cours</dt>
+        <dd>L'Orbe Verte — boule d'énergie mystérieuse grandissant dans la capitale</dd>
+        <dt>État actuel</dt>
+        <dd>Peuple divisé, faune environnante en déclin</dd>
+      </dl>
+    </aside>
+
+    <p>Les Orcs sont le peuple le plus divisé du continent. Puisque la majorité d'entre eux ne savent ni lire ni écrire, l'histoire du peuple est très peu documentée. Leur origine remonte à la même époque que la majorité des apparitions des autres peuples. Les Orcs vivent organisés en tribu guerrière dans un territoire au sud-ouest du continent. Les terres qu'ils habitent sont désertiques et les fréquentes querelles territoriales ont poussé la majorité de la faune à abandonner cette partie du continent.</p>
+
+    <p>L'honneur joue un grand rôle dans leur croyance, c'est pourquoi la majorité des conflits sont réglés par des duels à mort.</p>
+
+    <p>De plus, le chef a une ambition préoccupante. Grâce à leurs connaissances druidiques et à l'aide d'un mage de sang étrange, il met en place un sort ou une malédiction qui leur serve de nouvelle effigie divine. Ce rituel a donné naissance à l'Orbe Verte, une boule d'énergie verte qui grossit jour en jour dans l'épicentre de la capitale. La majorité des Orcs de la basse population sont sceptiques face à cette tentative de nouvelle création divine, et certains accusent même le sort d'être à l'origine de la destruction de la faune environnante.</p>
+
+    <a href="races.html#orc" class="btn-metier">← Retour aux races</a>
+  </div>
+</main>
+<footer>
+  <p>&copy; Projet Croisade - Tous droits réservés</p>
+</footer>
+<button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+<script>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>

@@ -12,7 +12,8 @@
       "Bash(python3 -c \":*)",
       "Bash(node -e \":*)",
       "Bash(python -c \"import json,sys; data=json.load\\(sys.stdin\\); [print\\(d['name']\\) for d in data]\")",
-      "Bash(python -c ':*)"
+      "Bash(python -c ':*)",
+      "Bash(ls c:/Users/Julien/Documents/GitHub/projet-croisade/*.html)"
     ]
   }
 }

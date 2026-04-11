@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elfes des Ténèbres — Historique | Projet Croisade</title>
+  <base href="../">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
+<main>
+  <div class="content">
+    <h2>Elfes des Ténèbres — Historique & Lore</h2>
+
+    <aside class="lore-infobox">
+      <p class="lore-infobox-title">En bref</p>
+      <dl>
+        <dt>Origine</dt>
+        <dd>Les Lëfals — branche ayant perdu la foi lors de la première guerre</dd>
+        <dt>Territoire</dt>
+        <dd>Forêt obscure au nord, près des montagnes</dd>
+        <dt>Magie</dt>
+        <dd>Arcanique sombre — maîtrise exceptionnelle</dd>
+        <dt>Passé trouble</dt>
+        <dd>Ont massacré des villages après la première guerre, rongés par les remords</dd>
+        <dt>État actuel</dt>
+        <dd>Isolés, fortement suspectés d'être à l'origine des exterminations</dd>
+      </dl>
+    </aside>
+
+    <p>L'origine elfique remonte au début des temps. Ils sont la création des dieux qui cherchaient un moyen de combattre l'ennui. À l'époque, ils étaient appelés les Lëfals. Ayant été créés à l'image des dieux, les Lëfals leur portaient beaucoup de respect. Chaque début de cycle lunaire, ils organisaient une grande fête en l'honneur de leur créateur. Avant de créer les Lëfals, les dieux avaient semé une graine qui éventuellement devint un arbre. C'est proche de cet arbre qu'ils se sentaient le plus proches des dieux. Celui-ci devint alors l'intermédiaire entre les Lëfals et leurs créateurs. Au bout d'un moment, l'arbre accumula suffisamment de « priants » et il devint un dieu lui-même. Face à cette situation, les dieux les plus avares de pouvoir se sentaient menacés et décidèrent d'éliminer leur création. Ce fut la première guerre du continent, marquant à jamais les Lëfals. Plusieurs se sentaient trahis et rejetèrent complètement les dieux. Les dégâts causés par la guerre ainsi que la perte de la foi pour plusieurs Lëfals causèrent une division de la nouvelle divinité. L'arbre, désormais appelé Arbre Monde, était divisé en deux : d'un côté une moitié lumineuse représentant ceux qui croyaient en l'arbre, et de l'autre une moitié sombre représentant ceux qui avaient perdu la foi — les futurs Elfes des Ténèbres. Par la suite, les Lëfals abandonnèrent leur ancien nom et adoptèrent celui d'Elf.</p>
+
+    <p>Les Elfs ayant abandonné la foi se sont installés plus au nord vers les montagnes, bâtissant de petits villages dans une forêt presque entièrement coupée de la lumière du soleil.</p>
+
+    <p>Avec l'arrivée de nouveaux peuples sur le continent, les Elfes des Ténèbres ont vu cela comme une occasion de se venger des dieux. Ils commencèrent alors à massacrer des villages, ne laissant que très peu de survivants derrière eux. Leur soif de vengeance finit par s'estomper et, rongés par les remords, ils se sont isolés du monde dans leur forêt.</p>
+
+    <p>De leur côté, les Elfs des Ténèbres se sont plus tournés vers la magie arcanique, qui leur apporte un sentiment de puissance. Leur maîtrise de cette magie est exceptionnelle et beaucoup se tournent vers les côtés plus sombres de l'arcane.</p>
+
+    <p>Les exterminations ont grandement frappé les Elfs : ils ont vu leurs cités se faire anéantir et leur fierté piétiner. Aujourd'hui, les Elfs sont fragmentés, victimes de complots et d'accusations. Des rumeurs circulent selon lesquelles ils seraient à l'origine des fameuses exterminations. Le passé sanglant des Elfes des Ténèbres ne fait qu'alimenter ces soupçons, et très peu de peuples sont prêts à prendre le risque de les fréquenter.</p>
+
+    <a href="races.html#elfe-tenebres" class="btn-metier">← Retour aux races</a>
+  </div>
+</main>
+<footer>
+  <p>&copy; Projet Croisade - Tous droits réservés</p>
+</footer>
+<button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+<script>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>

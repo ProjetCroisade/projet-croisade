@@ -1060,3 +1060,61 @@ a.btn-metier:active {
 .timeline-fin::before {
   background-color: #7eba8a !important;
 }
+
+/* ================= LORE INFOBOX ================= */
+
+.lore-infobox {
+  float: right;
+  width: 260px;
+  margin: 0 0 24px 32px;
+  background-color: #1e1e1e;
+  border: 1px solid #e7ba79;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+.lore-infobox-title {
+  background-color: #e7ba79;
+  color: #1a1000;
+  margin: 0;
+  padding: 9px 14px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.lore-infobox dl {
+  margin: 0;
+  padding: 12px 14px 14px;
+}
+
+.lore-infobox dt {
+  color: #e7ba79;
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 10px;
+}
+
+.lore-infobox dt:first-child {
+  margin-top: 0;
+}
+
+.lore-infobox dd {
+  margin: 3px 0 0 0;
+  color: #d0c8b8;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 700px) {
+  .lore-infobox {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+  }
+}

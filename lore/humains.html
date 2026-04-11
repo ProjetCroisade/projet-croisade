@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Humains — Historique | Projet Croisade</title>
+  <base href="../">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
+<main>
+  <div class="content">
+    <h2>Humains — Historique & Lore</h2>
+
+    <aside class="lore-infobox">
+      <p class="lore-infobox-title">En bref</p>
+      <dl>
+        <dt>Territoire</dt>
+        <dd>Centre du continent</dd>
+        <dt>Capitale</dt>
+        <dd>KoeurValloie (ancienne : Jularia)</dd>
+        <dt>Autres cités</dt>
+        <dd>Amyria, Cyrvoie</dd>
+        <dt>Personnages clés</dt>
+        <dd>Julius le Grand (fondateur de l'empire), Alexander Voldak 1er (empereur expansionniste)</dd>
+        <dt>Divinité</dt>
+        <dd>Ehphine — déesse de la bonté, du courage et du pardon</dd>
+        <dt>État actuel</dt>
+        <dd>Empire en déclin, couronne instable, corruption généralisée</dd>
+      </dl>
+    </aside>
+
+    <p>À l'origine, le peuple humain vivait en petites tribus éparpillées sur un vaste territoire au centre du continent. Chaque tribu possédait son propre chef et ses propres lois. Il n'existait pas de réelle union entre les tribus, ce qui faisait des humains une des races les plus faibles du continent. Un beau jour, un brave guerrier, du nom de Julius le Grand, prit comme quête d'unir les tribus humaines afin de former un empire digne de la reconnaissance des dieux. Guidé par Ehphine, déesse de la bonté, du courage et du pardon, Julius et son groupe parcoururent le continent afin de rassembler les tribus humaines sous sa bannière. Au bout de 12 ans, le voyage de Julius prit fin et l'empire humain vit le jour. Une première cité fut bâtie et nommée Jularia en l'honneur du nouvel empereur Julius le Grand.</p>
+
+    <p>Pendant plusieurs années, l'empire humain vécut une période d'instabilité politique. Les empereurs s'enchaînaient les uns après les autres sans réelle évolution pour le peuple. Jusqu'au jour où la couronne fut transmise à Alexander Voldak 1er. Le nouvel empereur âgé de seulement 15 ans avait de très grandes ambitions pour son empire. Sa vision très expansionniste étendit les frontières de l'empire sur pratiquement l'entièreté du centre du continent. Alexander fit construire trois cités majeures : KoeurValloie, qui devint la nouvelle capitale de l'empire et le lieu de résidence de la famille royale ; Amyria, une cité marchande très influente dans le marché mondial ; et Cyrvoie, la plus grande cité portuaire fortifiée jamais construite.</p>
+
+    <p>La période de temps durant laquelle la famille Voldak fut au pouvoir a été nommée l'ère des Voldak. Pendant cette période, un grand calme régnait sur le continent qui permit aux humains de développer de nouvelles techniques artisanales et militaires. La qualité de tous les produits qui parcouraient les rues de l'empire augmentèrent drastiquement. La puissance diplomatique de la famille permit aussi de créer un conseil inter-race qui prit siège au parlement de Löftina, la capitale de la nation hybride.</p>
+
+    <p>Toutefois, rien ne dure éternellement et la dynastie Voldak s'éteint durant la sombre période des exterminations. Cette tragédie poussa le peuple humain à se renfermer sur lui-même, causant la fin de l'union inter-race.</p>
+
+    <p>De nos jours, la race humaine n'est plus que l'ombre d'elle-même. Le peuple est divisé et vit sans cesse dans la crainte et la méfiance d'autrui. L'instabilité de la couronne pousse plusieurs à fuir la capitale rendue presque déserte. L'empereur, si nous pouvons encore l'appeler ainsi, change pratiquement à chaque nouvelle année. La corruption vit en reine dans l'empire ; les autres cités, Amyria et Cyrvoie, cherchent à se détacher de l'empire quitte à entrer en guerre avec celui-ci. La cité d'Amyria s'implique dans plusieurs conflits territoriaux et offre sa protection à de petits villages dans le besoin. De son côté, la cité de Cyrvoie est au bord de la guerre civile. Depuis plusieurs cycles lunaires, un groupe de pirates fait pression sur les dirigeants de la cité afin qu'ils cèdent la cité ainsi que l'entièreté des richesses qui s'y trouvent. La race humaine est au niveau le plus bas qu'elle n'ait jamais été et chaque tentative de changement se résulte en un échec cuisant. Le peuple a perdu foi en la couronne ainsi qu'en l'église et les dieux qu'elle représente. Seuls quelques sanctuaires dédiés à la déesse Ehphine existent encore, mais le nombre de priants réduit à chaque jour.</p>
+
+    <a href="races.html#humain" class="btn-metier">← Retour aux races</a>
+  </div>
+</main>
+<footer>
+  <p>&copy; Projet Croisade - Tous droits réservés</p>
+</footer>
+<button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+<script>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>

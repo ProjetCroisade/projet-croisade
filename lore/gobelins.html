@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gobelins — Historique | Projet Croisade</title>
+  <base href="../">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
+<main>
+  <div class="content">
+    <h2>Gobelins — Historique & Lore</h2>
+
+    <aside class="lore-infobox">
+      <p class="lore-infobox-title">En bref</p>
+      <dl>
+        <dt>Territoire</dt>
+        <dd>Villages dispersés sur tout le continent</dd>
+        <dt>Cité secrète</dt>
+        <dd>Bolargyr — réseau souterrain reliant tous les villages</dd>
+        <dt>Organisation</dt>
+        <dd>Tribus indépendantes, chefs élus démocratiquement</dd>
+        <dt>Menace constante</dt>
+        <dd>Enlèvements et esclavage, surtout par les Orcs</dd>
+        <dt>État actuel</dt>
+        <dd>Reconstruction post-exterminations, Bolargyr en décrépitude</dd>
+      </dl>
+    </aside>
+
+    <p>Les gobelins sont un peuple tribal habitant de petits villages éloignés des grosses cités des autres peuples. Selon les dires, il existerait une cité gobeline secrète appelée Bolargyr. Elle serait cachée sous terre et serait au cœur d'un réseau de galeries souterraines reliant chacun des villages gobelins du continent. Il n'existe pas réellement d'ordre social chez les tribus gobelines ; tout le monde est égal à l'exception des chefs de village qui sont élus démocratiquement au sein de chacun des villages.</p>
+
+    <p>Les gobelins vivent dans un état de peur constante, puisque, depuis toujours, ils sont victimes d'enlèvements. Dû à leur grande capacité reproductive ainsi que leur petit gabarit, les gobelins ont été pris pour esclaves par plusieurs peuples, notamment les Orcs.</p>
+
+    <p>Les exterminations ont grandement frappé les tribus gobelins qui étaient, pour la plupart, sans défense. Bolargyr a servi de refuge aux familles victimes de ces massacres. Toutefois, la cité gobeline ne possédait pas d'espace infini et les exterminations continuaient. Rapidement, la surpopulation de la cité causait problème et des tensions commençaient à naître entre les familles provenant de différentes tribus.</p>
+
+    <p>Pour les familles ayant choisi de ne pas se réfugier dans la cité souterraine, une croyance commune a commencé à se répandre. Selon eux, les exterminations auraient un lien avec la nature et seraient causées par la déesse de la nature elle-même. Convaincus de leur théorie, ils auraient développé un lien particulier avec la nature et les pratiques druidiques.</p>
+
+    <p>Aujourd'hui, les gobelins sont en quête de reconstruction. Le peuple souffre d'un passé lourd dont il cherche à s'affranchir. La pratique de l'esclavage gobelin persiste et l'état de la cité de Bolargyr ne cesse de se détériorer.</p>
+
+    <a href="races.html#gobelin" class="btn-metier">← Retour aux races</a>
+  </div>
+</main>
+<footer>
+  <p>&copy; Projet Croisade - Tous droits réservés</p>
+</footer>
+<button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+<script>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>

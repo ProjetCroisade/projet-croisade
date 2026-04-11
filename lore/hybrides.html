@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hybrides — Historique | Projet Croisade</title>
+  <base href="../">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
+<main>
+  <div class="content">
+    <h2>Hybrides — Historique & Lore</h2>
+
+    <aside class="lore-infobox">
+      <p class="lore-infobox-title">En bref</p>
+      <dl>
+        <dt>Origine</dt>
+        <dd>Inconnue — mutation arcanique ou volonté divine, selon les croyances</dd>
+        <dt>Territoire</dt>
+        <dd>Löftina — cité organisée en quartiers par type d'hybride</dd>
+        <dt>Anciens alliés</dt>
+        <dd>Famille Voldak (humains) — leur ont permis de s'unifier</dd>
+        <dt>Tension interne</dt>
+        <dd>Hybrides "proie" (Cerf, Lapin…) vs "prédateur" (Loup, Ours…)</dd>
+        <dt>État actuel</dt>
+        <dd>Cité divisée, portes fermées aux autres peuples, chasse reprise sur les marchés</dd>
+      </dl>
+    </aside>
+
+    <p>L'origine des hybrides reste un mystère pour plusieurs. Certains disent que c'est la volonté de la déesse de la nature et qu'ils possédaient des pouvoirs divins hors du commun ; d'autres disent que c'est le résultat d'une mutation animale suite à une catastrophe arcanique il y a de cela bien longtemps.</p>
+
+    <p>Il fallut plusieurs années avant que le peuple s'unisse sous une seule bannière. Pendant longtemps, les hybrides furent victimes de chasse et de massacre. Puisqu'ils ont été altérés magiquement, les « produits » tels que les cornes d'homme-cerf ou la fourrure d'homme-ours ont pris énormément de valeur et leur demande sur le marché a explosé. La situation devint critique au point où les hybrides passèrent très proche de l'extinction. C'est suite à l'arrivée au pouvoir de la famille Voldak dans l'empire humain que les choses ont changé. Grâce à l'appui financier et militaire de cette famille, les hybrides ont réussi à se rassembler et à créer une véritable nation. Ils ont ensuite établi une cité, Löftina, regroupant tous les types d'hybrides. Löftina est organisée en quartiers rassemblant les mêmes types d'hybrides ensemble. Au centre de la cité se trouve un parlement où se retrouvaient les différents peuples du continent pour discuter et échanger des informations tout au long de l'époque appelée l'ère des Voldak.</p>
+
+    <p>Aujourd'hui, la cité est en piteux état. Les quartiers s'accusent les uns les autres de commettre des meurtres et le peuple hybride est scindé en deux : d'un côté les hybrides typiquement « proie » (Cerf, Lapin, etc.) et de l'autre les hybrides typiquement « prédateur » (Loup, Ours, etc.). Les tensions inter-races sur le continent ont poussé la cité de Löftina à fermer ses portes aux autres peuples.</p>
+
+    <p>Des rumeurs, selon lesquelles les produits animaux provenant des hybrides reprennent de l'intérêt sur plusieurs marchés du continent, augmentent davantage les inquiétudes de la race et il est difficile pour eux de faire confiance aux autres peuples.</p>
+
+    <a href="races.html#hybride" class="btn-metier">← Retour aux races</a>
+  </div>
+</main>
+<footer>
+  <p>&copy; Projet Croisade - Tous droits réservés</p>
+</footer>
+<button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+<script>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>

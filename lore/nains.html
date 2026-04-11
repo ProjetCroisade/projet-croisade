@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nains — Historique | Projet Croisade</title>
+  <base href="../">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
+<main>
+  <div class="content">
+    <h2>Nains — Historique & Lore</h2>
+
+    <aside class="lore-infobox">
+      <p class="lore-infobox-title">En bref</p>
+      <dl>
+        <dt>Territoire</dt>
+        <dd>Montagnes du nord</dd>
+        <dt>Cité</dt>
+        <dd>Vil Faldur — forteresse dans la montagne</dd>
+        <dt>Personnages clés</dt>
+        <dd>Burik Ashgor (ancien roi, a ouvert les portes aux humains)</dd>
+        <dt>Arme légendaire</dt>
+        <dd>Xalirce — offerte à l'empereur Alexander Voldak 1er</dd>
+        <dt>Spécialité</dt>
+        <dd>Forge et mines — les meilleurs forgerons du continent</dd>
+        <dt>État actuel</dt>
+        <dd>Isolés, portes fermées, la grande forge à l'arrêt</dd>
+      </dl>
+    </aside>
+
+    <p>Les nains sont un peuple assez solitaire. Ils vivent dans leur grande cité appelée Vil Faldur, située dans les montagnes au nord du continent. Depuis toujours, les nains ne vivent que pour deux choses : les mines et la forge. Leur talent de forgeron est hors du commun ; ils sont les maîtres à l'origine d'armes légendaires telles que la célèbre Xalirce, offerte en cadeau à l'empereur humain Alexander 1er, signant le début d'une longue amitié avec la famille Voldak.</p>
+
+    <p>Le peuple nain a mis beaucoup de temps à ouvrir les portes de Vil Faldur à d'autres peuples. Pendant bien longtemps, les nains vivaient seuls dans la montagne et n'étaient guère intéressés par la diplomatie et les échanges avec les autres races. Leurs mines et leur forge étaient tout ce dont ils avaient besoin. La donne a changé pendant l'ère des Voldak : les ambitions expansionnistes des dirigeants humains les ont menés jusqu'aux portes de Vil Faldur. Pendant un peu moins d'un cycle lunaire, Alexander 1er tenta de pénétrer de force dans la forteresse naine, sans succès. Épâté par les prouesses militaires de l'armée naine et surtout fasciné par leurs équipements, les intentions de l'empereur humain changèrent. Il voulait à tout prix faire de la forge de Vil Faldur son fournisseur personnel pour équiper son armée avec des armes et armures de qualité exceptionnelle. Le roi nain de l'époque, Burik Ashgor, accepta, voyant toute l'admiration que portait Alexander face aux créations naines. L'union entre les humains et les nains dura jusqu'à la fin de l'ère des Voldak.</p>
+
+    <p>Après la mort du dernier héritier Voldak, l'empire humain coupa contact avec le monde extérieur. Les nains le prirent comme une trahison et, ayant grandement souffert des multiples attaques durant les grandes exterminations, eux aussi décidèrent de fermer, cette fois-ci pour de bon, les portes de leur cité.</p>
+
+    <p>Aujourd'hui, le peuple nain est déchiré de l'intérieur. La forge de Vil Faldur, ayant été partiellement détruite pendant les exterminations, n'est plus en fonction. Ce qui faisait l'essence du peuple est désormais éteint et personne n'est suffisamment courageux pour reprendre le flambeau.</p>
+
+    <a href="races.html#nain" class="btn-metier">← Retour aux races</a>
+  </div>
+</main>
+<footer>
+  <p>&copy; Projet Croisade - Tous droits réservés</p>
+</footer>
+<button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+<script>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>

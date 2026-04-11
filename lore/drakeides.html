@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drakéïdes — Historique | Projet Croisade</title>
+  <base href="../">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
+<main>
+  <div class="content">
+    <h2>Drakéïdes — Historique & Lore</h2>
+
+    <aside class="lore-infobox">
+      <p class="lore-infobox-title">En bref</p>
+      <dl>
+        <dt>Origine</dt>
+        <dd>Anciens dragons ayant adopté une forme humanoïde</dd>
+        <dt>Territoire</dt>
+        <dd>Montagnes et zones volcaniques</dd>
+        <dt>Cité</dt>
+        <dd>Dorn'Laak — bâtie au cœur d'un volcan éteint</dd>
+        <dt>Anciens alliés</dt>
+        <dd>Humains (famille Voldak) — alliance désormais rompue</dd>
+        <dt>État actuel</dt>
+        <dd>Dorn'Laak en ruines, roi reclus avec ses trésors, peuple méfiant</dd>
+      </dl>
+    </aside>
+
+    <p>L'origine des Drakéïdes remonte aux anciens dragons. À l'époque, ils étaient des créatures craintes de tous de par leur grandeur et leur force. Ils avaient pour habitude de s'installer dans les montagnes et les zones volcaniques. Là-bas, ils installèrent leur nid qu'ils recouvraient la plupart du temps d'or et de minéraux précieux.</p>
+
+    <p>Plusieurs peuples convoitaient leur trésor, c'est pourquoi des expéditions étaient organisées pour aller piller les nids de dragons. Voyant le danger que pouvaient représenter ces expéditions, les dragons cherchèrent une solution puis décidèrent d'abandonner leur ancienne forme pour adopter une forme plus humanoïde. Leur idée était simple : s'ils ressemblaient davantage à leurs ennemis, il leur serait plus aisé de trouver une entente.</p>
+
+    <p>Leur nouvelle forme était d'autant plus pratique : ils gardèrent leur force de dragon mais pouvaient désormais interagir plus facilement avec les autres peuples. Il fallut plusieurs cycles lunaires aux Drakéïdes pour apprendre la langue commune du continent, mais une fois celle-ci maîtrisée, ils l'utilisèrent pour monter dans l'estime des autres peuples, notamment les humains.</p>
+
+    <p>Toujours autant attirés par l'or et les trésors, les Drakéïdes effectuaient différents travaux pour les humains. Que ce soit pour aider au transport de matériaux lourds ou encore à l'exploration profonde dans les mines, la grande force et la résistance des Drakéïdes étaient d'une grande aide pour les humains, en échange de quelques pièces et trésors, bien entendu.</p>
+
+    <p>Entre-temps, les Drakéïdes ont fondé une cité qu'ils ont nommée Dorn'Laak et ont élu un roi afin de les représenter lors des rencontres inter-race. La cité avait été construite au cœur d'un volcan éteint depuis plusieurs années et s'étendait jusqu'à un territoire plus adapté pour leur allié humain.</p>
+
+    <p>L'amitié Drakéïde-humain a nettement cessé après la fin de l'ère des Voldak. Suite à la fermeture des frontières humaines, les Drakéïdes se sont retrouvés sans allié et ont été forcés de retourner à leur montagne.</p>
+
+    <p>Aujourd'hui, Dorn'Laak est en piteux état. Détruite en majorité lors des exterminations, la cité n'a jamais retrouvé sa splendeur passée. De plus, le nouveau roi passe son temps enfermé avec ses trésors et refuse d'en sortir. Le peuple se sent trahi et peine à refaire confiance aux autres races après la trahison humaine.</p>
+
+    <a href="races.html#drakeide" class="btn-metier">← Retour aux races</a>
+  </div>
+</main>
+<footer>
+  <p>&copy; Projet Croisade - Tous droits réservés</p>
+</footer>
+<button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+<script>
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>
