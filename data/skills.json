@@ -69,7 +69,7 @@
     "duree": "15 secondes",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet au lanceur de s'enfuir et de ne pas être suivi pendant 15 secondes."
+    "effet": "Permet au lanceur de s'enfuir et de ne pas être suivi pendant 15 secondes. Utilisable 2 fois par jour maximum."
   },
   {
     "name": "Lumière",
