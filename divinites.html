@@ -12,7 +12,7 @@
 <link href="pagefind/pagefind-ui.css" rel="stylesheet">
 <script src="pagefind/pagefind-ui.js"></script>
 </head>
-<body>
+<body class="page-divinites">
 <div id="header"></div>
 <script>
 fetch('header.html')
@@ -26,31 +26,50 @@ fetch('header.html')
   });
 </script>
   <main>
+    <aside>
+      <nav>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#intro">Qu'est-ce qu'une divinité ?</a></li>
+          <li><a href="#le-fou">Le Fou</a> <span class="dot dot-bon"></span></li>
+          <li><a href="#oorun-osupa">O'orun et O'supa</a> <span class="dot dot-bon"></span></li>
+          <li><a href="#ehphine">Ehphine</a> <span class="dot dot-affaibli"></span></li>
+          <li><a href="#sepudon">Sepudon</a> <span class="dot dot-affaibli"></span></li>
+          <li><a href="#rahny">Rah'ny</a> <span class="dot dot-bon"></span></li>
+          <li><a href="#sirius">Sirius</a> <span class="dot dot-inconnu"></span></li>
+          <li><a href="#arbre-monde">L'Arbre Monde</a> <span class="dot dot-affaibli"></span></li>
+        </ul>
+      </nav>
+    </aside>
     <div class="divinites-content">
 
-      <h2>Qu'est-ce qu'une divinité ?</h2>
+      <h2 id="intro">Qu'est-ce qu'une divinité ?</h2>
       <p>Dans l'univers de Projet Croisade, une divinité n'est pas simplement une figure divine, mais une manifestation vivante de croyances collectives. Grâce à l'engagement et à la foi partagée de nombreux adeptes, l'image de cette divinité se façonne, se solidifie et prend forme en tant qu'entité tangible, née de l'imagination collective de ses croyants. Les prêtres et les paladins doivent prononcer une prière de dix mots en l'honneur de leur divinité pour invoquer ses pouvoirs. Si vous souhaitez créer une nouvelle divinité, il est recommandé d'opter pour un panthéon polythéiste afin de pouvoir accéder à vos pouvoirs en tout temps.</p>
       <p>Les divinités de Projet Croisade évoluent en fonction du nombre d'adeptes qui les vénèrent et des dommages qu'elles subissent. Leur état peut influencer l'accès aux pouvoirs des prêtres et des paladins :</p>
 
       <div class="effets-grid divinites-etats">
         <div class="effet-card">
-          <h4>État bon</h4>
+          <h4><span class="statut statut-bon">Bon</span></h4>
           <p>Divinité intacte, fortement vénérée. Pouvoirs accessibles pleinement.</p>
         </div>
         <div class="effet-card">
-          <h4>État affaibli</h4>
+          <h4><span class="statut statut-affaibli">Affaibli</span></h4>
           <p>Perte d'adeptes ou blessures importantes. Pouvoirs réduits ou instables.</p>
         </div>
         <div class="effet-card">
-          <h4>État mort</h4>
+          <h4><span class="statut statut-mort">Mort</span></h4>
           <p>Invocation impossible. La divinité a disparu ou a été détruite.</p>
+        </div>
+        <div class="effet-card">
+          <h4><span class="statut statut-inconnu">Inconnu</span></h4>
+          <p>État de la divinité indéterminé. L'accès aux pouvoirs est imprévisible.</p>
         </div>
       </div>
 
       <hr>
 
-      <section>
-        <h2>Le fou (inconnu)</h2>
+      <section id="le-fou">
+        <h2>Le Fou <span class="statut statut-bon">Bon</span></h2>
         <div class="race-layout">
           <div class="race-info">
             <p>Le Dieu Fou est une entité imprévisible et insaisissable.</p>
@@ -77,14 +96,14 @@ fetch('header.html')
 
       <hr>
 
-      <section>
-        <h2>Astres du jour et de la nuit (inconnu)</h2>
+      <section id="oorun-osupa">
+        <h2>O'orun et O'supa <span class="statut statut-bon">Bon</span></h2>
         <div class="race-layout">
           <div class="race-info">
-            <p>Les Dieux du Jour et de la Nuit forment une entité double, ancienne et insondable. Ils ne sont pas deux divinités distinctes, mais deux faces d'une même essence primordiale. Depuis l'aube du monde, ils incarnent l'équilibre fragile entre la lumière et l'ombre.</p>
+            <p>Le Dieu du Jour, O'orun, et la déesse de la Nuit, O'supa, forment une entité double, ancienne et insondable. Ils ne sont pas deux divinités distinctes, mais deux faces d'une même essence primordiale. Depuis l'aube du monde, ils incarnent l'équilibre fragile entre la lumière et l'ombre.</p>
 
             <h3>Le Credo du Jour</h3>
-            <p>Les fidèles du Jour prient la face lumineuse de l'entité. Ils recherchent :</p>
+            <p>Les fidèles d'O'orun prient la face lumineuse de l'entité. Ils recherchent :</p>
             <ul>
               <li>La santé</li>
               <li>L'abondance</li>
@@ -92,10 +111,10 @@ fetch('header.html')
               <li>La vérité</li>
               <li>La prospérité</li>
             </ul>
-            <p>Pour eux, la lumière révèle, purifie et protège. Ils voient dans le Jour la force qui repousse le chaos et nourrit la vie.</p>
+            <p>Pour eux, la lumière révèle, purifie et protège. Ils voient dans O'orun la force qui repousse le chaos et nourrit la vie.</p>
 
             <h3>Le Credo de la Nuit</h3>
-            <p>Les fidèles de la Nuit prient la face obscure de l'entité. Ils recherchent :</p>
+            <p>Les fidèles d'O'supa prient la face obscure de l'entité. Ils recherchent :</p>
             <ul>
               <li>Le calme</li>
               <li>La renaissance</li>
@@ -103,10 +122,10 @@ fetch('header.html')
               <li>La transformation</li>
               <li>L'ombre protectrice</li>
             </ul>
-            <p>Pour eux, l'obscurité n'est pas malveillante. Elle est le repos, le secret et la gestation. C'est dans la Nuit que les blessures guérissent et que les âmes se reforment.</p>
+            <p>Pour eux, l'obscurité n'est pas malveillante. Elle est le repos, le secret et la gestation. C'est au travers d'O'supa que les blessures guérissent et que les âmes se reforment.</p>
 
             <h3>La Guerre Éternelle</h3>
-            <p>Malgré leur origine commune, les deux factions s'opposent sans relâche. Les Héros du Jour et les Champions de la Nuit se livrent une bataille sans fin, persuadés que leur vision du monde doit triompher.</p>
+            <p>Malgré leur origine commune, les deux factions s'opposent sans relâche. Les Héros d'O'orun et les Champions d'O'supa se livrent une bataille sans fin, persuadés que leur vision du monde doit triompher.</p>
             <blockquote>
               La guerre entre la Lumière et l'Ombre ne cessera qu'à la fin des temps, lorsque l'entité elle-même décidera de réunifier ses deux visages.
             </blockquote>
@@ -120,8 +139,8 @@ fetch('header.html')
 
       <hr>
 
-      <section>
-        <h2>Ehphine (inconnu)</h2>
+      <section id="ehphine">
+        <h2>Ehphine <span class="statut statut-affaibli">Affaibli</span></h2>
         <div class="race-layout">
           <div class="race-info">
             <p>Ehphine représente ce qu'il y a de bien dans chaque être vivant. Selon elle, il existe, même dans le cœur de la plus cruelle des créatures, une part de bonté. Ehphine accepte les défauts de ses priants et les guide au travers de ceux-ci pour faire d'eux de meilleurs individus. Elle prêche que la bonté et le pardon sont les meilleurs cadeaux et que chaque petit geste compte pour faire un monde meilleur.</p>
@@ -136,6 +155,64 @@ fetch('header.html')
             </ul>
 
             <p>Aujourd'hui, de moins en moins de personnes prêchent encore activement les enseignements d'Ehphine et celle-ci perd en puissance et en influence. Il n'existe plus réellement d'église consacrée à son culte, seulement quelques petits sanctuaires éparpillés sur le territoire de l'empire humain.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="sepudon">
+        <h2>Sepudon <span class="statut statut-affaibli">Affaibli</span></h2>
+        <div class="race-layout">
+          <div class="race-info">
+            <p>Sepudon est le gardien sacré des mers et des océans. Il contrôle les marées et le calme des mers varie selon son humeur. Son influence se fait surtout ressentir chez les Aïshas qui le vénèrent comme leur créateur. Selon eux, Sepudon serait à l'origine de toutes les créatures marines, y compris les Aïshas, et les protégerait contre le mal qui ronge de l'intérieur les peuples de la terre. Plusieurs marins et pirates ont pour tradition de transporter des offrandes pour le dieu des mers lorsqu'ils partent pour de long voyage en mer. On raconte que tous ceux qui prennent la mer sans apporter avec eux de cadeaux pour le Père des océans ne reviennent jamais de leur voyage.</p>
+
+            <h3>Le temple perdu et KorGath</h3>
+            <p>Selon la légende, il existerait un temple perdu au beau milieu de l'océan où aurait autrefois résidé Sepudon. On raconte qu'il y aurait oublié son trident, KorGath ; celui-ci aurait le pouvoir de contrôler les mers.</p>
+            <p>Aujourd'hui, autant les Aïshas que les marins se sont lancés dans une chasse au trésor afin de retrouver ce temple perdu et prendre possession de l'artefact divin qui se trouve à l'intérieur.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="rahny">
+        <h2>Rah'ny <span class="statut statut-bon">Bon</span></h2>
+        <div class="race-layout">
+          <div class="race-info">
+            <p>Rah'ny est la porteuse de toutes les connaissances. Autrefois, elle entretenait une relation très proche avec les Lëfals, premiers habitants du continent. La déesse des connaissances aimait beaucoup partager son savoir avec les autres. Elle apprit aux Lëfals comment chasser, comment cuisiner et comment bâtir des maisons et des sanctuaires. Elle leur donna ensuite pour mission de bâtir une grande bibliothèque afin d'entreposer tout son savoir.</p>
+
+            <h3>La bibliothèque cachée</h3>
+            <p>Selon les croyances des priants, cette bibliothèque serait cachée quelque part sur le continent et renfermerait une quantité presque infinie de livres et de grimoires. Elle serait protégée par deux gardiens célestes, Atheriel et Rahtiel, ainsi que Rah'ny en personne. On raconte aussi que la bibliothèque renferme deux artefacts divins ; l'orbe des connaissances ainsi que Hëldia, une arme légendaire qui peut se métamorphoser au besoin de l'utilisateur.</p>
+            <p>Aujourd'hui, les priants de Rah'ny sont des personnes en quête de savoir infini et quelques aventuriers à la recherche de cette fameuse bibliothèque et des trésors qu'elle renferme.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="sirius">
+        <h2>Sirius <span class="statut statut-inconnu">Inconnu</span></h2>
+        <div class="race-layout">
+          <div class="race-info">
+            <p>Sirius représente l'égalité sous toutes ses formes et intervient dès que celle-ci est rompue. Toutefois, il est celui qui trace les lignes de l'égalité et écrit sa propre justice. Pour lui, le gris n'existe pas et la lumière et l'ombre doivent coexister à force égale. Il ne fait pas de favoritisme ni de compromis pour personne. Sirius est aussi parfois nommé le tueur de dieux, puisqu'il a dû à plusieurs reprises se débarrasser de dieux qui compromettaient l'égalité du monde.</p>
+            <p>Les priants de Sirius sont bien souvent détachés de lien émotionnel envers qui que ce soit, ils suivent l'exemple de leur maître absolu et éliminent tout obstacle à l'équilibre parfait. Toutefois, il n'est pas rare que Sirius doive intervenir directement contre ces priants puisque ceux-ci causent un déséquilibre en commettant des meurtres en son nom.</p>
+
+            <h3>Xelcith, la tueuse de dieux</h3>
+            <p>Aujourd'hui, personne ne sait réellement où se trouve Sirius. Certains racontent qu'il aurait perdu son arme légendaire quelque part sur le continent. Cette dague aurait été forgée dans un métal sombre ayant la capacité de blesser même les dieux, c'est pourquoi elle porte le nom de Xelcith, la tueuse de dieux. Si celle-ci venait à tomber dans les mains d'une personne mal intentionnée, les conséquences pourraient être désastreuses.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section id="arbre-monde">
+        <h2>L'Arbre Monde <span class="statut statut-affaibli">Affaibli</span></h2>
+        <div class="race-layout">
+          <div class="race-info">
+            <p>L'Arbre Monde était au départ simplement qu'une graine composée d'un peu de la magie de chacun des anciens dieux. Il est devenu une divinité à part entière à force que les premiers peuples du continent, les Lëfals, le prient. La volonté et les croyances de chacun des Lëfals ont permis à l'Arbre Monde de développer une conscience et des pouvoirs divins qui lui sont propres.</p>
+            <p>Suite à la guerre entre les Lëfals et les dieux, l'Arbre Monde s'est retrouvé scindé en deux : un côté représentant les Lëfals qui croyaient toujours en lui et un autre représentant les Lëfals ayant perdu la foi.</p>
+            <p>Aujourd'hui, l'Arbre Monde perd en puissance et voit son nombre de croyants réduire de jour en jour. Les Elfs, anciennement Lëfals, ont grandement perdu la foi suite aux Grandes Exterminations qui ont frappé le continent. L'instabilité religieuse du peuple affecte grandement l'Arbre Monde qui craint de disparaître si la situation ne change pas sous peu.</p>
           </div>
         </div>
       </section>

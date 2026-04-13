@@ -593,12 +593,118 @@ a.btn-metier:active {
 /* ================= DIVINITÉS ================= */
 
 .divinites-etats {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: 20px 0 0;
 }
 
 .divinites-content section {
   padding-bottom: 10px;
+}
+
+/* ================= STATUTS DIVINITES ================= */
+
+.statut {
+  display: inline-block;
+  font-size: 0.55em;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 999px;
+  vertical-align: middle;
+  line-height: 1.6;
+}
+
+.statut-bon {
+  background-color: #1e3d20;
+  color: #7eba8a;
+  border: 1px solid #7eba8a;
+}
+
+.statut-affaibli {
+  background-color: #3d2e10;
+  color: #e7a84a;
+  border: 1px solid #e7a84a;
+}
+
+.statut-inconnu {
+  background-color: #2a2a2a;
+  color: #888;
+  border: 1px solid #555;
+}
+
+.statut-mort {
+  background-color: #3d1010;
+  color: #c87070;
+  border: 1px solid #c87070;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.dot-bon { background-color: #7eba8a; }
+.dot-affaibli { background-color: #e7a84a; }
+.dot-inconnu { background-color: #555; }
+.dot-mort { background-color: #c87070; }
+
+/* ================= DIVINITES PAGE LAYOUT ================= */
+
+.page-divinites main {
+  display: flex;
+  gap: 30px;
+}
+
+.page-divinites aside {
+  width: 200px;
+  flex-shrink: 0;
+  background-color: #1e1e1e;
+  border-right: 1px solid #3a2e1a;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  color: #f5f0e6;
+}
+
+.page-divinites aside h3 {
+  color: #ffe48a;
+  text-align: center;
+}
+
+.page-divinites aside nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.page-divinites aside nav ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.page-divinites aside nav ul li:last-child {
+  border-bottom: none;
+}
+
+.page-divinites aside nav ul li a {
+  color: #f5f0e6;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.page-divinites main > div {
+  flex: 1;
+  min-width: 0;
 }
 
 /* ================= SEARCH ================= */
