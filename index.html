@@ -32,7 +32,12 @@ fetch('header.html')
     <p>Puis, sans présage, sans prophétie, les Exterminations cessèrent, net, il y a deux ans. Depuis, les nations pansent leurs plaies, relèvent leurs remparts… et cherchent celui qui a commis l’hécatombe.</p>
     <p>C’est alors que vous, héros… ou malfrat, recevez une lettre scellée d’un symbole inconnu. Un certain Avarus, jeune aventurier aux ambitions inquiétantes, y affirme vouloir fonder une guilde. Son but : percer le mystère des Exterminations… et empêcher le prochain, si d’aventure l’ombre devait revenir.</p>
     <p>Le destin vous appelle… Allez-vous répondre ?</p>
-    <img src="/images/carte_en_construction.png" alt="Carte du monde en construction" class="carte">
+    <div class="slideshow-container" id="slideshow-container" style="display:none">
+      <div class="slideshow-track" id="slideshow-track"></div>
+      <button class="slide-btn slide-prev" id="slide-prev" aria-label="Précédent">&#10094;</button>
+      <button class="slide-btn slide-next" id="slide-next" aria-label="Suivant">&#10095;</button>
+      <div class="slide-dots" id="slide-dots"></div>
+    </div>
       </div>
   </main>
   <footer>
@@ -43,6 +48,64 @@ fetch('header.html')
   function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   }
+
+  // ── Slideshow ──────────────────────────────────────────────
+  (function() {
+    let current = 0;
+    let total = 0;
+    let autoTimer = null;
+    const INTERVAL = 5000;
+
+    const container = document.getElementById('slideshow-container');
+    const track     = document.getElementById('slideshow-track');
+    const dotsEl    = document.getElementById('slide-dots');
+    const prevBtn   = document.getElementById('slide-prev');
+    const nextBtn   = document.getElementById('slide-next');
+
+    fetch('data/slideshow.json')
+      .then(r => r.json())
+      .then(function(images) {
+        if (!images.length) return;
+        total = images.length;
+
+        images.forEach(function(img, i) {
+          const el = document.createElement('img');
+          el.src = img.src;
+          el.alt = img.alt || '';
+          el.className = 'slide-img' + (i === 0 ? ' active' : '');
+          track.appendChild(el);
+
+          const dot = document.createElement('button');
+          dot.className = 'slide-dot' + (i === 0 ? ' active' : '');
+          dot.setAttribute('aria-label', 'Image ' + (i + 1));
+          dot.addEventListener('click', function() { goTo(i); });
+          dotsEl.appendChild(dot);
+        });
+
+        container.style.display = '';
+        startAuto();
+      })
+      .catch(function() { /* slideshow JSON missing or empty, silently skip */ });
+
+    function goTo(n) {
+      const imgs = track.querySelectorAll('.slide-img');
+      const dots = dotsEl.querySelectorAll('.slide-dot');
+      imgs[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (n + total) % total;
+      imgs[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    function startAuto() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(function() { goTo(current + 1); }, INTERVAL);
+    }
+
+    prevBtn.addEventListener('click', function() { goTo(current - 1); startAuto(); });
+    nextBtn.addEventListener('click', function() { goTo(current + 1); startAuto(); });
+  })();
+  // ───────────────────────────────────────────────────────────
 
   const konamiCode = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
   let konamiIndex = 0;
