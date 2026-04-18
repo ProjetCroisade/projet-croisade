@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte du monde | Projet Croisade</title>
+  <meta name="description" content="Carte du monde de l'univers de Projet Croisade.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
+</head>
+<body>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
+
+<main style="text-align:center; padding: 60px 20px;">
+  <h2 style="font-family:'Uncial Antiqua', cursive; color:#e7ba79; font-size:2rem; margin-bottom:2rem;">Carte du monde</h2>
+  <img src="images/carte_en_construction.png" alt="Carte du monde - En construction" style="max-width:100%; height:auto; border:2px solid #e7ba79; box-shadow:0 4px 24px rgba(0,0,0,0.6);">
+</main>
+
+<footer>
+  <p>Projet Croisade &copy; 2024</p>
+</footer>
+</body>
+</html>

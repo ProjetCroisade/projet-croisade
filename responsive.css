@@ -14,6 +14,24 @@ img {
     align-items: center;
   }
 
+  /* Dropdowns : affichage inline sur mobile */
+  nav ul li .dropdown {
+    position: static;
+    transform: none;
+    border: none;
+    border-top: 1px solid rgba(231, 186, 121, 0.2);
+    border-left: 2px solid #e7ba79;
+    background: rgba(231, 186, 121, 0.05);
+    box-shadow: none;
+    padding: 4px 0 4px 12px;
+    margin-top: 4px;
+    min-width: unset;
+  }
+
+  nav ul li.open .dropdown {
+    display: flex;
+  }
+
   main {
     padding: 25px;
     margin: 20px;
