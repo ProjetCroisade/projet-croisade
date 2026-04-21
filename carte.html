@@ -47,8 +47,7 @@
       pointer-events: none;
       display: none;
       z-index: 1000;
-      min-width: 230px;
-      max-width: 290px;
+      width: min(290px, calc(100vw - 24px));
       box-shadow: 0 4px 24px rgba(0,0,0,0.75);
       overflow: hidden;
     }
@@ -85,6 +84,21 @@
       opacity: 0.65;
       border-top: 1px solid rgba(231,186,121,0.18);
       text-align: right;
+    }
+
+    /* Sur mobile : tooltip centré en bas de l'écran, taille fixe */
+    @media (max-width: 600px) {
+      #map-tooltip {
+        position: fixed;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto !important;
+        width: calc(100vw - 32px);
+      }
+      #map-tooltip .tip-desc {
+        font-size: 0.75rem;
+      }
     }
   </style>
 </head>
@@ -208,13 +222,14 @@ function setFill(el, color) {
 }
 
 function moveTip(e) {
+  if (window.innerWidth <= 600) return; // handled by CSS on mobile
   const tw = tooltip.offsetWidth;
   const th = tooltip.offsetHeight;
   const x  = e.clientX;
   const y  = e.clientY;
   const margin = 14;
-  const left = (x + margin + tw > window.innerWidth) ? x - tw - margin : x + margin;
-  const top  = Math.max(8, y - th - margin);
+  const left = Math.min(x + margin, window.innerWidth  - tw - 8);
+  const top  = Math.max(8,          Math.min(y - th - margin, window.innerHeight - th - 8));
   tooltip.style.left = left + 'px';
   tooltip.style.top  = top  + 'px';
 }
