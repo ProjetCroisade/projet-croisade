@@ -40,13 +40,13 @@ const REGIONS = {
     label: 'Territoire Neutre',
     url: null,
     color: '#8A8A7A',
-    desc: 'Territoire indépendant — ne relevant d\'aucune nation du continent.'
+    desc: 'Territoire indépendant - ne relevant d\'aucune nation du continent.'
   },
   'ile-independante': {
     label: 'Territoire Neutre',
     url: null,
     color: '#8A8A7A',
-    desc: 'Territoire indépendant — ne relevant d\'aucune nation du continent.'
+    desc: 'Territoire indépendant - ne relevant d\'aucune nation du continent.'
   },
   'path22': {
     label: 'Territoire des Orcs',
