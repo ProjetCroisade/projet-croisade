@@ -1,4 +1,11 @@
 const REGIONS = {
+  'ocean': {
+    label: 'Territoire des Aïshas',
+    url: 'lore/aisha.html',
+    color: '#1A6B8A',
+    alpha: 0.18,
+    desc: 'Peuple mystérieux vivant à Atlante, cité d\'or érigée au cœur de la mer. Leur chant sacré, don de leur dieu marin, est redouté de tous les marins.'
+  },
   'path9': {
     label: 'Territoire des Nains',
     url: 'lore/nains.html',
@@ -10,6 +17,12 @@ const REGIONS = {
     url: 'lore/elfes-monde.html',
     color: '#2D8A4E',
     desc: 'Peuple ancien bâti autour de l\'Arbre Monde, réparti entre les cités de Vyshad (capitale), Heilona et Jansalri. Créés par les dieux à l\'aube des temps.'
+  },
+  'path1': {
+    label: 'Territoire des Elfes des Ténèbres',
+    url: 'lore/elfes-tenebres.html',
+    color: '#3A3A9A',
+    desc: 'Elfes ayant perdu la foi en l\'Arbre Monde après la trahison des dieux. Retirés dans une forêt plongée dans l\'obscurité, au nord des montagnes.'
   },
   'g2': {
     label: 'Territoire des Drakeïdes',
@@ -24,22 +37,22 @@ const REGIONS = {
     desc: 'Peuple mi-humain mi-animal réuni à Löftina, autrefois carrefour diplomatique du continent. Frôlèrent l\'extinction avant d\'être sauvés par la famille Voldak.'
   },
   'path21': {
-    label: 'Territoire des Orcs',
-    url: 'lore/orcs.html',
-    color: '#3D5A1A',
-    desc: 'Tribus guerrières éparpillées dans des terres arides au sud-ouest. L\'honneur et les duels à mort régissent leur société, fragmentée par d\'incessantes guerres de territoire.'
+    label: 'Territoire Neutre',
+    url: null,
+    color: '#8A8A7A',
+    desc: 'Territoire indépendant — ne relevant d\'aucune nation du continent.'
+  },
+  'ile-independante': {
+    label: 'Territoire Neutre',
+    url: null,
+    color: '#8A8A7A',
+    desc: 'Territoire indépendant — ne relevant d\'aucune nation du continent.'
   },
   'path22': {
-    label: "Territoire des Aïshas",
-    url: 'lore/aisha.html',
-    color: '#B8860B',
-    desc: 'Peuple mystérieux vivant à Atlante, cité d\'or érigée au cœur de la mer. Leur chant sacré, don de leur dieu marin, est redouté de tous les marins.'
-  },
-  'path23': {
-    label: 'Territoire des Elfes des Ténèbres',
-    url: 'lore/elfes-tenebres.html',
-    color: '#3A3A9A',
-    desc: 'Elfes ayant perdu la foi en l\'Arbre Monde après la trahison des dieux. Retirés dans une forêt plongée dans l\'obscurité, au nord des montagnes.'
+    label: 'Territoire des Orcs',
+    url: 'lore/orcs.html',
+    color: '#D4C46A',
+    desc: 'Tribus guerrières éparpillées dans des terres arides au sud-ouest. L\'honneur et les duels à mort régissent leur société, fragmentée par d\'incessantes guerres de territoire.'
   },
   'path24': {
     label: 'Territoire des Gobelins',
@@ -86,7 +99,7 @@ function setFill(el, color) {
 }
 
 function getIdleFill(data) {
-  return layers.colors ? hexToRgba(data.color, 0.72) : 'transparent';
+  return layers.colors ? hexToRgba(data.color, data.alpha ?? 0.72) : 'transparent';
 }
 
 function applyIdleFills() {
@@ -111,13 +124,15 @@ function initInteractivity(svgEl) {
 
     svgRegionEls[id] = { el, data };
     setFill(el, getIdleFill(data));
-    el.style.cursor = 'pointer';
+    el.style.cursor = data.url ? 'pointer' : 'default';
 
     el.addEventListener('mouseenter', e => {
-      setFill(el, hexToRgba(data.color, 0.85));
+      setFill(el, hexToRgba(data.color, data.alpha ? data.alpha + 0.1 : 0.85));
       tipDot.style.background = data.color;
       tipName.textContent     = data.label;
       tipDesc.textContent     = data.desc;
+      const cta = document.querySelector('.tip-cta');
+      if (cta) cta.style.display = data.url ? '' : 'none';
       tooltip.style.display   = 'block';
       moveTip(e);
     });
@@ -130,7 +145,7 @@ function initInteractivity(svgEl) {
     });
 
     el.addEventListener('click', () => {
-      window.location.href = data.url;
+      if (data.url) window.location.href = data.url;
     });
   });
 }
@@ -264,7 +279,7 @@ container.addEventListener('touchmove', e => {
 container.addEventListener('touchend', e => { lastTouches = e.touches; }, { passive: true });
 
 // ── Load SVG ──────────────────────────────────────────────────
-fetch('images/carte incomplète.svg')
+fetch('images/carte incomplète2.svg')
   .then(res => res.text())
   .then(svgText => {
     const parser = new DOMParser();
