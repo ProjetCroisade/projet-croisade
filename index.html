@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil | Projet Croisade</title>
   <meta name="description" content="Site officiel de Projet Croisade, un jeu de rôle grandeur nature médiéval-fantastique. Découvrez l'univers, les règles et les personnages.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://projetcroisade.ca/">
+  <meta property="og:title" content="Projet Croisade - JGN Médiéval Fantastique">
+  <meta property="og:description" content="Site officiel de Projet Croisade, un jeu de rôle grandeur nature médiéval-fantastique. Découvrez l'univers, les règles et les personnages.">
+  <meta property="og:image" content="https://projetcroisade.ca/images/logo.webp">
+  <meta name="theme-color" content="#e7ba79">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <link rel="icon" href="favicon.png" type="image/x-icon">
@@ -73,6 +79,7 @@ fetch('header.html')
           el.src = img.src;
           el.alt = img.alt || '';
           el.className = 'slide-img' + (i === 0 ? ' active' : '');
+          el.loading = i === 0 ? 'eager' : 'lazy';
           track.appendChild(el);
 
           const dot = document.createElement('button');

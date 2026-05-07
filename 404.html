@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page introuvable | Projet Croisade</title>
+  <meta name="description" content="La page que vous cherchez n'existe pas.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  })
+  .catch(function() {});
+</script>
+
+<main>
+  <div class="content" style="text-align: center; padding: 60px 40px;">
+    <h2 style="font-size: 4rem; margin-bottom: 0; opacity: 0.35; font-family: 'Uncial Antiqua', cursive;">404</h2>
+    <h2>Page introuvable</h2>
+    <p>Les brumes de l'Extermination ont englouti ce chemin.<br>La page que vous cherchez n'existe pas ou a été déplacée.</p>
+    <p style="margin-top: 30px;">
+      <a href="index.html" class="btn-metier">Retour à l'accueil</a>
+    </p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; Projet Croisade - Tous droits réservés</p>
+</footer>
+</body>
+</html>

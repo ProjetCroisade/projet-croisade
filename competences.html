@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Compétences | Projet Croisade</title>
   <meta name="description" content="Liste complète des compétences disponibles dans Projet Croisade pour personnaliser votre personnage.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://projetcroisade.ca/competences.html">
+  <meta property="og:title" content="Compétences | Projet Croisade">
+  <meta property="og:description" content="Liste complète des compétences disponibles dans Projet Croisade pour personnaliser votre personnage.">
+  <meta property="og:image" content="https://projetcroisade.ca/images/logo.webp">
+  <meta name="theme-color" content="#e7ba79">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <link rel="icon" href="favicon.png" type="image/x-icon">
@@ -95,11 +101,11 @@ fetch('header.html')
 </div>
 
 <div id="search-results"></div>
-        <section id="niveau1" class="competences"><h2>Niveau 1</h2><div id="level-1" class="spell-list"></div></section>
-        <section id="niveau2" class="competences"><h2>Niveau 2</h2><div id="level-2" class="spell-list"></div></section>
-        <section id="niveau3" class="competences"><h2>Niveau 3</h2><div id="level-3" class="spell-list"></div></section>
-        <section id="niveau4" class="competences"><h2>Niveau 4</h2><div id="level-4" class="spell-list"></div></section>
-        <section id="niveau5" class="competences"><h2>Niveau 5</h2><div id="level-5" class="spell-list"></div></section>
+        <section id="niveau1" class="competences"><h2>Niveau 1</h2><div id="level-1" class="spell-list"><p>Chargement...</p></div></section>
+        <section id="niveau2" class="competences"><h2>Niveau 2</h2><div id="level-2" class="spell-list"><p>Chargement...</p></div></section>
+        <section id="niveau3" class="competences"><h2>Niveau 3</h2><div id="level-3" class="spell-list"><p>Chargement...</p></div></section>
+        <section id="niveau4" class="competences"><h2>Niveau 4</h2><div id="level-4" class="spell-list"><p>Chargement...</p></div></section>
+        <section id="niveau5" class="competences"><h2>Niveau 5</h2><div id="level-5" class="spell-list"><p>Chargement...</p></div></section>
       </section>
     </div>
   </main>
@@ -114,28 +120,30 @@ fetch('header.html')
   function scrollToTop() { window.scrollTo({ top: 0, behavior: 'smooth' }); }
 
   let allSkills = [];
+  let allData = [];
+  let currentFilter = "all";
 
-  async function loadSkills() {
-    const response = await fetch('data/skills.json');
-    allSkills = await response.json();
-    allSkills.sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+  async function init() {
+    const [spells, skills] = await Promise.all([
+      fetch("data/spells.json").then(r => r.json()),
+      fetch("data/skills.json").then(r => r.json())
+    ]);
+    allSkills = skills.slice().sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+    allData = [
+      ...spells.map(s => ({...s, type: "sort"})),
+      ...skills.map(s => ({...s, type: "skill"}))
+    ];
     renderSkillsByLevel();
   }
 
   function renderSkillsByLevel() {
     const selectedClasse = document.getElementById('classeFilter').value;
-
     for (let level = 1; level <= 5; level++) {
       const list = document.getElementById(`level-${level}`);
       if (!list) continue;
       let filtered = allSkills.filter(s => s.level === level);
-      if (selectedClasse) {
-        filtered = filtered.filter(s => s.classe && s.classe.includes(selectedClasse));
-      }
-      if (filtered.length === 0) {
-        list.innerHTML = '<p class="empty">Aucune compétence à ce niveau.</p>';
-        continue;
-      }
+      if (selectedClasse) filtered = filtered.filter(s => s.classe && s.classe.includes(selectedClasse));
+      if (filtered.length === 0) { list.innerHTML = '<p class="empty">Aucune compétence à ce niveau.</p>'; continue; }
       list.innerHTML = filtered.map(skill => `
         <article class="spell">
           <h3>${skill.name}</h3>
@@ -148,116 +156,52 @@ fetch('header.html')
     }
   }
 
+  function performSearch() {
+    const query = document.getElementById("searchBox").value.toLowerCase();
+    if (query.length < 2) { document.getElementById("search-results").innerHTML = ""; return; }
+    const results = allData.filter(item => {
+      const matchesText =
+        item.name?.toLowerCase().includes(query) ||
+        item.effet?.toLowerCase().includes(query) ||
+        item.incantation?.toLowerCase().includes(query) ||
+        item.requis?.toLowerCase().includes(query);
+      return matchesText && (currentFilter === "all" || item.type === currentFilter);
+    });
+    const container = document.getElementById("search-results");
+    if (results.length === 0) { container.innerHTML = "<p>Aucun résultat.</p>"; return; }
+    container.innerHTML = results.map(item => `
+      <article class="search-result">
+        <span class="type ${item.type}">${item.type === "sort" ? "Sort" : "Compétence"}</span>
+        <h3>${item.name}</h3>
+        <p><strong>Niveau :</strong> ${item.level}</p>
+        ${item.incantation ? `<p><strong>Incantation :</strong> ${item.incantation}</p>` : ""}
+        ${item.cout ? `<p><strong>Coût :</strong> ${item.cout}</p>` : ""}
+        ${item.requis ? `<p><strong>Requis :</strong> ${item.requis}</p>` : ""}
+        ${item.duree ? `<p><strong>Durée :</strong> ${item.duree}</p>` : ""}
+        ${item.portee ? `<p><strong>Portée :</strong> ${item.portee}</p>` : ""}
+        ${item.effet ? `<p>${item.effet}</p>` : ""}
+      </article>
+    `).join("");
+  }
+
   document.getElementById('classeFilter').addEventListener('change', renderSkillsByLevel);
+  document.getElementById("searchBox").addEventListener("input", performSearch);
+  document.querySelectorAll(".filter").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentFilter = btn.dataset.filter;
+      performSearch();
+    });
+  });
 
-  loadSkills();
+  init().catch(() => {
+    for (let level = 1; level <= 5; level++) {
+      const list = document.getElementById(`level-${level}`);
+      if (list) list.innerHTML = '<p>Erreur de chargement. Veuillez recharger la page.</p>';
+    }
+  });
   </script>
-
-<script>
-
-let allData = [];
-let currentFilter = "all";
-
-async function loadData(){
-
-  const spells = await fetch("data/spells.json").then(r => r.json());
-  const skills = await fetch("data/skills.json").then(r => r.json());
-
-  const spellsTagged = spells.map(s => ({...s, type:"sort"}));
-  const skillsTagged = skills.map(s => ({...s, type:"skill"}));
-
-  allData = [...spellsTagged, ...skillsTagged];
-
-}
-
-function performSearch(){
-
-  const query = document.getElementById("searchBox").value.toLowerCase();
-
-  if(query.length < 2){
-    document.getElementById("search-results").innerHTML = "";
-    return;
-  }
-
-  const results = allData.filter(item => {
-
-    const matchesText =
-      item.name?.toLowerCase().includes(query) ||
-      item.effet?.toLowerCase().includes(query) ||
-      item.incantation?.toLowerCase().includes(query) ||
-      item.requis?.toLowerCase().includes(query);
-
-    const matchesType =
-      currentFilter === "all" || item.type === currentFilter;
-
-    return matchesText && matchesType;
-
-  });
-
-  renderResults(results);
-
-}
-
-function renderResults(results){
-
-  const container = document.getElementById("search-results");
-
-  if(results.length === 0){
-    container.innerHTML = "<p>Aucun résultat.</p>";
-    return;
-  }
-
-  container.innerHTML = results.map(item => `
-
-    <article class="search-result">
-
-      <span class="type ${item.type}">
-        ${item.type === "sort" ? "Sort" : "Compétence"}
-      </span>
-
-      <h3>${item.name}</h3>
-
-      <p><strong>Niveau :</strong> ${item.level}</p>
-
-      ${item.incantation ? `<p><strong>Incantation :</strong> ${item.incantation}</p>` : ""}
-
-      ${item.cout ? `<p><strong>Coût :</strong> ${item.cout}</p>` : ""}
-
-      ${item.requis ? `<p><strong>Requis :</strong> ${item.requis}</p>` : ""}
-
-      ${item.duree ? `<p><strong>Durée :</strong> ${item.duree}</p>` : ""}
-
-      ${item.portee ? `<p><strong>Portée :</strong> ${item.portee}</p>` : ""}
-
-      ${item.effet ? `<p>${item.effet}</p>` : ""}
-
-    </article>
-
-  `).join("");
-
-}
-
-document.getElementById("searchBox").addEventListener("input", performSearch);
-
-document.querySelectorAll(".filter").forEach(button => {
-
-  button.addEventListener("click", () => {
-
-    document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
-
-    button.classList.add("active");
-
-    currentFilter = button.dataset.filter;
-
-    performSearch();
-
-  });
-
-});
-
-loadData();
-
-</script>
 
 </body>
 </html>

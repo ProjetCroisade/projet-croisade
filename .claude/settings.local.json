@@ -17,7 +17,13 @@
       "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\" -Recurse -Include \"*.html\", \"*.css\")",
       "Bash(Select-Object FullName)",
       "PowerShell(\\(Get-Content \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\\\\documents.html\" -Raw\\) -replace 'href=\"documents/fiche_de_personnage_2026_remplissable\\\\.pdf\" download>Fiche de personnage 2026', 'href=\"fiche.html\">Fiche de personnage 2026' | Set-Content \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\\\\documents.html\" -NoNewline -Encoding utf8)",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\" -Recurse)",
+      "Bash(Select-Object FullName, PSIsContainer)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\" -Filter \"*.js\" -Recurse)",
+      "Bash(Measure-Object)",
+      "Bash(Select-Object Count)"
     ]
   }
 }
