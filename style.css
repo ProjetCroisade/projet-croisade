@@ -1086,6 +1086,18 @@ a.btn-metier:active {
   background-color: rgba(231, 186, 121, 0.08);
 }
 
+/* Note block */
+.note {
+  background-color: rgba(60, 60, 60, 0.25);
+  border-left: 4px solid #888;
+  border-radius: 0 6px 6px 0;
+  padding: 10px 16px;
+  margin: 14px 0;
+  font-size: 0.88rem;
+  color: #b0a898;
+  font-style: italic;
+}
+
 /* Example block */
 .exemple {
   background-color: rgba(90, 69, 32, 0.25);
