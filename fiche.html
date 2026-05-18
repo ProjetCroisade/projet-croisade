@@ -44,13 +44,11 @@ fetch('header.html')
       </ol>
 
       <h2>PROGRESSION & EXPÉRIENCE (XP)</h2>
-      <p>1 GN = 1 XP pour la classe, 1 XP pour le métier de base et 1 XP pour un arbre supplémentaire (SI LE JOUEUR EN POSSÈDE UN, sinon le point est perdu)</p>
-      <p><em>Les arbres supplémentaires sont obtenus en jeu comme récompense de quêtes.</em></p>
       <table class="table-xp">
         <thead>
           <tr>
             <th>Niveau</th>
-            <th>Points d'expérience requis</th>
+            <th>Nombre d'événements requis</th>
             <th>Actions à accomplir</th>
           </tr>
         </thead>
@@ -62,9 +60,40 @@ fetch('header.html')
           <tr><td>5</td><td>8</td><td>Quête perso. + Excursion lég.</td></tr>
         </tbody>
       </table>
-      <p>Votre classe et votre métier de base évoluent en même temps, donc lorsque vous atteignez le niveau 5, votre classe et votre métier de base seront tous deux au même niveau (5), et vous aurez dépensé 14 EXP dans leurs arbres.</p>
-      <p>Les arbres supplémentaires, quant à eux, évoluent de manière individuelle à partir du moment où ils sont acquis.</p>
-      <p>Donc, lorsqu'un joueur gagne de l'expérience, sa classe et son métier de base recoivent tous deux l'expérience acquise, et ensuite le joueur peut décider lequel de ses arbres de compétences supplémentaires recevra l'expérience.</p>
+      <p><i>Note : avec le temps, il sera possible de monter au-delà du niveau 5, l'Équipe d'Animation travaille encore sur les mécanismes de progression.</i></p>
+      <h3>Monter de niveau</h3>
+      <p>Lorsque vous montez de niveau, vous devez choisir laquelle de vos classes et lequel de vos métiers monteront en niveau. <i>(Note : si les métiers ne vous intéressent pas, vous pourriez décider de monter deux classes ou, vice-versa, deux métiers.)</i></p>
+      <p>Exemple : Jimmy a commencé son personnage avec une classe et un métier de base, disons Arcaniste et Herboriste (ces deux choix sont faits au moment de la création du personnage), mais en jeu lors d'un événement, il a débloqué le métier de mineur grâce à une quête.</p>
+      <p>Sa fiche de personnage à la fin de l'événement ressemblerait donc à ceci : </p>
+      <table class="table-xp">
+        <thead>
+          <tr>
+            <th>Niveau du personnage</th>
+            <th>Niveau Arcaniste (base)</th>
+            <th>Niveau Herboriste (base)</th>
+            <th>Niveau Mineur (tout juste débloqué)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+        </tbody>
+      </table>
+      <p>On note donc que les nouvelles classes et les nouveaux métiers débloqués en jeu commencent au niveau 0 (Donc sans aucune compétence gratuite de niveau, simplement leurs compétences de base).</p>
+      <p> Jimmy a maintenant le choix de faire progresser l'une de ses classes et l'un de ses métiers au niveau 2. Il choisit de faire progresser son Arcaniste et son tout nouveau métier de Mineur. Sa fiche de personnage au début du prochain événement ressemblerait donc à ceci : </p>
+      <table class="table-xp">
+        <thead>
+          <tr>
+            <th>Niveau du personnage</th>
+            <th>Niveau Arcaniste (base)</th>
+            <th>Niveau Herboriste (base)</th>
+            <th>Niveau Mineur (tout juste débloqué)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1 → 2</td><td>1 → 2</td><td>1</td><td>0 → 1</td></tr>
+        </tbody>
+      </table>
+      <p>Maintenant que Jimmy est niveau 2 Arcaniste et niveau 1 Mineur, il peut désormais sélectionner une compétence dans le niveau 2 de l'arbre de compétences Arcaniste, et une compétence dans le niveau 1 de l'arbre de compétences Mineur.</p>
 
       <h3>À partir du niveau 3</h3>
       <p>L’XP seul ne suffit plus pour monter de niveau. Vous devrez accomplir certaines actions (exemple : quêtes personnelles en lien avec le domaine). Détails supplémentaires à découvrir en jeu !</p>
