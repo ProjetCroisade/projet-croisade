@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -186,7 +186,7 @@ fetch('header.html')
     <!-- ======== LEXIQUE DES EFFETS ======== -->
     <section id="lexique-effets">
       <h2>Lexique des effets et états</h2>
-      <p>Voici la liste des effets et états les plus courants dans le jeu. Chaque effet doit être joué de manière immersive pour une meilleure expérience de jeu. Il n'est pas requis de retenir tous les effets — le lanceur a la responsabilité d'expliquer l'effet si demandé par la cible.</p>
+      <p>Voici la liste des effets et états les plus courants dans le jeu. Chaque effet doit être joué de manière immersive pour une meilleure expérience de jeu. Il n'est pas requis de retenir tous les effets - le lanceur a la responsabilité d'expliquer l'effet si demandé par la cible.</p>
 
       <div class="effets-grid">
         <div class="effet-card"><h4>Paralysie</h4><p>Le personnage est immobile comme une statue jusqu'au premier dégât reçu.</p></div>
@@ -202,12 +202,12 @@ fetch('header.html')
         <div class="effet-card"><h4>Étourdi</h4><p>Le personnage tombe à genoux mais peut se défendre.</p></div>
         <div class="effet-card"><h4>Lenteur / Affaibli</h4><p>Impossible de courir ou de faire un élan de 3 pas sans grande fatigue.</p></div>
         <div class="effet-card"><h4>Empoisonné</h4><p>Empêche la guérison par soins classiques (nécessite antidote ou purification). À 0 PV, aller voir la Mort.</p></div>
-        <div class="effet-card"><h4>Fracture / Démembrement</h4><p>Le membre touché est inutilisable jusqu'à guérison. Coup au torse sans armure → coma.</p></div>
+        <div class="effet-card"><h4>Fracture / Démembrement / Brise Membre</h4><p>Le membre touché est brisé et inutilisable jusqu'à guérison ou fin de l'effet.</p></div>
         <div class="effet-card"><h4>Saignement</h4><p>Le personnage meurt après 15 minutes, sauf si soigné par un médecin.</p></div>
         <div class="effet-card"><h4>Attaché</h4><p>Le personnage est lié. Nécessite une lame ou une compétence pour se détacher.</p></div>
         <div class="effet-card"><h4>Brise-Bouclier</h4><p>L'attaque brise le bouclier touché.</p></div>
         <div class="effet-card"><h4>Brise Arme</h4><p>L'attaque brise l'arme touchée.</p></div>
-        <div class="effet-card"><h4>Brise Membre</h4><p>Le membre touché est brisé et inutilisable pendant un laps de temps.</p></div>
+
         <div class="effet-card"><h4>Projection</h4><p>La cible est projetée au sol et doit simuler une chute.</p></div>
         <div class="effet-card"><h4>Stabilité</h4><p>Résistance mineure/majeure aux projections, Déséquilibre et autres effets de mouvement.</p></div>
         <div class="effet-card"><h4>Silence</h4><p>Empêche de lancer des sorts ou d'utiliser des compétences verbales.</p></div>
@@ -223,6 +223,25 @@ fetch('header.html')
         <div class="effet-card"><h4>Régénération</h4><p>La cible récupère des PV au fil du temps selon les consignes de la source de l'effet.</p></div>
         <div class="effet-card"><h4>Chance</h4><p>Permet de relancer un dé une deuxième fois et de garder le meilleur résultat.</p></div>
         <div class="effet-card"><h4>Folie / Oubli / Amnésie</h4><p>La cible oublie les X dernières minutes (précisé par la source de l'effet).</p></div>
+        <div class="effet-card"><h4>Embrouille</h4><p>La cible est absorbée par une histoire ou une idée confuse et ne peut plus se concentrer sur autre chose pendant la durée indiquée.</p></div>
+        <div class="effet-card"><h4>Pacification</h4><p>La cible ne peut plus effectuer d'actions hostiles ou attaquer. L'effet prend fin immédiatement si elle subit des dégâts.</p></div>
+        <div class="effet-card"><h4>Démoralisation</h4><p>La cible perd toute motivation et refuse d'agir ou de combattre. L'effet prend fin si elle subit des dégâts.</p></div>
+        <div class="effet-card"><h4>Déséquilibre</h4><p>La cible pose un genou au sol et simule une perte d'équilibre pendant X secondes.</p></div>
+        <div class="effet-card"><h4>Entrave Arcanique</h4><p>Des chaînes magiques immobilisent les bras et les jambes de la cible. Elle ne peut plus bouger ni attaquer pendant la durée du sort.</p></div>
+        <div class="effet-card"><h4>Distraction</h4><p>La cible doit simuler une perte d'attention pendant une durée déterminée, incapable de réagir à son environnement immédiat.</p></div>
+        <div class="effet-card"><h4>Maladie</h4><p>La cible est affectée par une maladie. Les détails de la maladie sont précisés par la source de l'effet. Nécessite un médecin ou une Purification pour en guérir.</p></div>
+        <div class="effet-card"><h4>Terreur</h4><p>La cible doit fuir activement la source de la terreur pendant la durée indiquée. Elle ne peut pas s'en approcher ni l'attaquer.</p></div>
+        <div class="effet-card"><h4>Possession</h4><p>Un esprit prend le contrôle du personnage. Les actions sont dictées par la source de l'effet, en accord avec l'équipe d'animation.</p></div>
+        <div class="effet-card"><h4>Serment</h4><p>La cible est magiquement liée à une promesse. Trahir le serment entraîne une conséquence précisée par la source de l'effet.</p></div>
+        <div class="effet-card"><h4>Vertige</h4><p>La cible marche de façon chancelante et ne peut pas effectuer d'actions précises pendant la durée indiquée.</p></div>
+        <div class="effet-card"><h4>Tremblement</h4><p>La cible subit des tremblements incontrôlables rendant impossible toute action fine (tenir une arme, écrire, lancer) pendant la durée indiquée.</p></div>
+        <div class="effet-card"><h4>Brûlure</h4><p>La cible simule une douleur vive dans un membre spécifique. Le membre reste utilisable mais le joueur doit simuler la douleur pendant la durée indiquée.</p></div>
+        <div class="effet-card"><h4>Surdité</h4><p>La cible se bouche les oreilles et ne peut plus entendre son environnement pendant la durée indiquée.</p></div>
+        <div class="effet-card"><h4>Illusion</h4><p>La cible perçoit quelque chose qui n'existe pas, précisé par la source de l'effet.</p></div>
+        <div class="effet-card"><h4>Vulnérabilité</h4><p>La cible reçoit des dégâts supplémentaires d'un type précisé par la source pendant la durée indiquée.</p></div>
+        <div class="effet-card"><h4>Lycanthropisme</h4><p>La cible est transformée en loup-garou. Voir avec l'équipe d'animation pour les détails de la transformation.</p></div>
+        <div class="effet-card"><h4>Vampirisme</h4><p>La cible est transformée en vampire. Voir avec l'équipe d'animation pour les détails de la transformation.</p></div>
+        <div class="effet-card"><h4>Pestilence</h4><p>La cible dégage une odeur pestilentielle. Il est impossible de l'approcher dans un certain rayon précisé par la source de l'effet.</p></div>
       </div>
     </section>
 

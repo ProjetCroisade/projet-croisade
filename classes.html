@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -169,7 +169,7 @@ fetch('header.html')
   <table class="fiche-mage">
     <tbody>
       <tr><td>1. Sort : Renforcement II</td></tr>
-      <tr><td>2. Comp : Apprentissage d'Enchantement</td></tr>
+      <tr><td>2. Comp : Création de parchemins magiques</td></tr>
       <tr><td>3. Sort : Renforcement d'armure I</td></tr>
     </tbody>
   </table>
@@ -804,7 +804,7 @@ fetch('header.html')
 
   function register(item, type) {
     const obj = { ...item, type };
-    // Some names are "Coup puissant I, II, III" — split and register each part
+    // Some names are "Coup puissant I, II, III" - split and register each part
     const parts = item.name.split(',').map(s => s.trim());
     for (const part of parts) {
       addKey(part, obj);
