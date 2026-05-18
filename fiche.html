@@ -38,7 +38,7 @@ fetch('header.html')
       <ol>
         <li>Téléchargez votre fiche de personnage : <a class="btn-metier"  href="documents/fiche_de_personnage_2026_remplissable.pdf">Lien de téléchargement</a></li>
         <p><li>Choisissez une race et inscrivez-la sur votre fiche, ainsi que ses compétences gratuites incluses.</li>
-        <li>Choisissez une classe et sélectionnez gratuitement une des 3 compétences disponibles au niveau 1. Ajoutez également les compétences gratuites de votre classe. N'oubliez pas que vous ne pouvez choisir qu'une compétence par palier de niveau.</li>
+        <li>Choisissez une classe et sélectionnez gratuitement une des 3 compétences disponibles au niveau 1. Ajoutez également les compétences gratuites de votre classe. N'oubliez pas que vous ne pouvez choisir qu'une compétence par palier de niveau. <strong>Les autres pourront être débloquées en jeu !</strong></li>
         <li>Choisissez un métier et sélectionnez gratuitement une des 3 compétences disponibles au niveau 1.</li>
         <li>Inscrivez votre nom ainsi que celui de votre personnage.</li></p>
       </ol>
@@ -94,9 +94,59 @@ fetch('header.html')
         </tbody>
       </table>
       <p>Maintenant que Jimmy est niveau 2 Arcaniste et niveau 1 Mineur, il peut désormais sélectionner une compétence dans le niveau 2 de l'arbre de compétences Arcaniste, et une compétence dans le niveau 1 de l'arbre de compétences Mineur.</p>
+      <P>Jimmy continue donc son aventure... et quelques événements plus tard, il montre au niveau 3. Sa fiche actuelle ressemble à ceci : </P>
+      <table class="table-xp">
+        <thead>
+          <tr>
+            <th>Niveau du personnage</th>
+            <th>Niveau Arcaniste (base)</th>
+            <th>Niveau Herboriste (base)</th>
+            <th>Niveau Mineur (débloqué il y a quelques événements)</th>
+            <th>Niveau Alchimiste (tout juste débloqué)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>2</td><td>2</td><td>1</td><td>1</td><td>0</td></tr>
+        </tbody>
+      </table>
+      <p>On voit que Jimmy a débloqué un nouveau métier, l'Alchimiste, mais il n'a pas encore choisi de le faire progresser. Il doit donc maintenant choisir laquelle de ses classes et lequel de ses métiers monteront de niveau.</p>
+      <p>Jimmy décide donc de faire progresser son Arcaniste et son Herboriste. Sa fiche de personnage au début du prochain événement ressemblerait donc à ceci : </p>
+      <table class="table-xp">
+        <thead>
+          <tr>
+            <th>Niveau du personnage</th>
+            <th>Niveau Arcaniste (base)</th>
+            <th>Niveau Herboriste (base)</th>
+            <th>Niveau Mineur (débloqué il y a quelques événements)</th>
+            <th>Niveau Alchimiste (tout juste débloqué)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>2 → 3</td><td>2 → 3</td><td>1 → 2</td><td>1</td><td>0</td></tr>
+        </tbody>
+      </table>
 
       <h3>À partir du niveau 3</h3>
-      <p>L’XP seul ne suffit plus pour monter de niveau. Vous devrez accomplir certaines actions (exemple : quêtes personnelles en lien avec le domaine). Détails supplémentaires à découvrir en jeu !</p>
+      <p>Lorsque l'une de ses classes et l'un de ses métiers atteint le niveau 3, le personnage doit choisir une spécialisation pour cette classe et ce métier.</p>
+      <p>Exemple : Jimmy a atteint le niveau 3 dans sa classe d'Arcaniste et le niveau 3 dans son métier d'herboriste. Il choisit donc une spécialisation pour sa classe d'Arcaniste → Mage de sang. Et pour son métier d'Herboriste → Botaniste.</p>
+      <p>De plus, l’XP seul ne suffit plus pour monter de niveau. Vous devrez accomplir certaines actions (exemple : quêtes personnelles en lien avec le domaine). Détails supplémentaires à découvrir en jeu !</p>
+      <p> Donc Jimmy, qui a maintenant atteint le niveau 3 dans Arcaniste peut désormais choisir une spécialisation pour sa classe, et choisir l'une des compétences du niveau 3 de cette spécialisation.</p>
+      <p> Sa fiche de personnage ressemblerait donc à ceci au début de l'événement : </p>
+      <table class="table-xp">
+        <thead>
+          <tr>
+            <th>Niveau du personnage</th>
+            <th>Niveau Arcaniste (base) → <i>Mage de sang (spécialisation)</i></th>
+            <th>Niveau Herboriste (base)</th>
+            <th>Niveau Mineur (débloqué il y a quelques événements)</th>
+            <th>Niveau Alchimiste (tout juste débloqué)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>3</td><td>3</td><td>2</td><td>1</td><td>0</td></tr>
+        </tbody>
+      </table>
+      <p>Jimmy a décidé de devenir un Mage de sang et continue son aventure dans Projet Croisade...</p>
 
       <h2>SYSTÈME D’ÉVOLUTION DES COMPAGNONS</h2>
       <p>Les compagnons montent de niveau différemment des joueurs :</p>
