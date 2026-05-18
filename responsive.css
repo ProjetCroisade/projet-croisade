@@ -149,6 +149,7 @@ img {
 @media (max-width: 768px) {
   .page-regles main {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .page-regles aside {
@@ -157,6 +158,9 @@ img {
 
   .regles-content {
     padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .effets-grid {
