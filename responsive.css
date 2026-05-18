@@ -161,4 +161,40 @@ img {
   .effets-grid {
     grid-template-columns: 1fr;
   }
+
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .table-regles {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .info-interac {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 16px;
+  }
+
+  .timeline li {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .timeline-time {
+    width: auto;
+    font-size: 0.85rem;
+  }
 }
