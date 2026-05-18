@@ -5,30 +5,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Médecin - Métiers</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../responsive.css">
+  <base href="../">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Métier : Médecin</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../races.html">Races</a></li>
-        <li><a href="../classes.html">Classes</a></li>
-        <li><a href="../metiers.html">Métiers</a></li>
-        <li><a href="../regles.html">Règles de jeu</a></li>
-        <li><a href="../infos.html">Informations</a></li>
-        <li><a href="../magie.html">Magie</a></li>
-        <li><a href="../documents.html">Documents</a></li>
-        <li><a href="../fiche.html">Fiche de personnage</a></li>
-      </ul>
-    </nav>
-  </header>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
   <main>
     <div class="content">
+      <a href="metiers.html" class="btn-metier">&#8592; Retour aux métiers</a>
       <section>
         <h2>Médecin</h2>
+
+        <blockquote>
+          <p><em>« La médecine est un art, pas une science. Chaque patient est un mystère à résoudre, chaque guérison une victoire sur l'inconnu. »</em><br>
+          – Docteur Philibus Cornius, Médecin de Calipséa</p>
+        </blockquote>
+
+        <h3>Capacité de base :</h3>
+        <p>Création de pansement – <strong>15 mins</strong></p>
+        <p>Le médecin peut créer un pansement en 15 minutes, qui peut être utilisé avec les bonnes compétences.</p>
 
         <h3>Choisissez une des 2 spécialisations suivantes :</h3>
         <ul>

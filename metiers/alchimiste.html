@@ -4,28 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alchimiste - Métiers</title>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../responsive.css">
+  <base href="../">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Métier : Alchimiste</h1>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="../races.html">Races</a></li>
-        <li><a href="../classes.html">Classes</a></li>
-        <li><a href="../metiers.html">Métiers</a></li>
-        <li><a href="../regles.html">Règles de jeu</a></li>
-        <li><a href="../infos.html">Informations</a></li>
-        <li><a href="../magie.html">Magie</a></li>
-        <li><a href="../documents.html">Documents</a></li>
-        <li><a href="../fiche.html">Fiche de personnage</a></li>
-      </ul>
-    </nav>
-  </header>
+<div id="header"></div>
+<script>
+fetch('header.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('header').innerHTML = html;
+    const script = document.createElement('script');
+    script.src = 'data/js/search.js';
+    document.body.appendChild(script);
+  });
+</script>
   <main>
     <div class="content">
+      <a href="metiers.html" class="btn-metier">&#8592; Retour aux métiers</a>
       <section class="alchimie">
       <h2>Les Secrets de l'Alchimie</h2>
       <blockquote>
@@ -37,11 +37,11 @@
       <h3>Les Concoctions</h3>
     <h4>Utilisation des différents types de potions</h4>
   <ul>
-    <li><strong>Eau </strong> → <em>Potion</em> : Une infusion bénéfique, à ingérer.</li>
-    <li><strong>Huile </strong> → <em>Poison</em> : Un agent destructeur, enduit sur une lame ou une flèche.</li>
-    <li><strong>Pâte </strong> → <em>Onguent</em> : Une application cutanée, lente mais ciblée.</li>
+    <li><strong>Eau mystique </strong> → <em>Potion</em> : Une infusion bénéfique, à ingérer.</li>
+    <li><strong>Huile alchimique</strong> → <em>Poison</em> : Un agent destructeur, enduit sur une lame ou une flèche.</li>
+    <li><strong>Pâte alchimique</strong> → <em>Onguent</em> : Une application cutanée, lente mais ciblée.</li>
     <li><strong>Vin alchimique</strong> → <em>Filtre</em> : Un breuvage puissant à effets vifs, peut être bu ou appliqué sur une plaie ou une arme</li>
-    <li><strong>Cendre </strong> → <em>Substrat</em> : Un support alchimique, peut être lancé sur une cible (Bombe alchimique)</li>
+    <li><strong>Cendre alchimique</strong> → <em>Substrat</em> : Un support alchimique, peut être lancé sur une cible (Bombe alchimique)</li>
   </ul>
   <h3>Règle importante de transparence</h3>
   <p>Si vous donnez ou recevez une potion d’un autre joueur, vous n’êtes pas obligé de réellement la boire.</p>
@@ -71,7 +71,7 @@
 
   <h3>Règle générale contre l’abus</h3>
   <p>Les effets de potions sont cumulables, mais toujours limités par le système de règles.</p>
-  <p>Exemple : Si vous possédez 32 potions donnant +1 dégât à votre prochaine attaque, vous devrez boire 32 fioles pour obtenir le bonus.</p>
+  <p>Exemple : Si vous possédez 32 potions donnant +1 dégât à votre prochaine attaque, mais vous paralyse pendant 1 minute chaque fois qu’elle est utilisée, vous devrez boire 32 fioles et subir les malus pour obtenir le bonus.</p>
   <p>C’est le prix du pouvoir.</p>
 
   <h3>Conséquences en cas d’abus ou de tricherie</h3>
@@ -102,6 +102,7 @@
   <ul>
     <li>Qualité identique : la qualité est garantie.</li>
     <li>Qualité différente : 50% de chance d’obtenir l’une ou l’autre.</li>
+<p><i>Note : il existe en théorie une quantité infinie de potions possibles, il est donc possible lors de la création de potions que l'Équipe d'Animation se trompe et donne à deux potions les mêmes effets. Si ça arrive, n'hésitez pas à nous le signaler.</i></p>
   </ul>
 
   <h3>Règle d’unicité</h3>
