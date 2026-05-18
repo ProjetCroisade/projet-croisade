@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -35,93 +34,303 @@ fetch('header.html')
           – Eibhlin aux Mains Noires, Grande Forgeronne de l'Enclume Royale</p>
         </blockquote>
 
-        <h3>Capacité de base</h3>
-        <p>Réparations d’armes et d’armures (15 minutes par point d'armure ou par objet brisé)</p>
+        <div class="niveau-card niveau-base">
+          <div class="niveau-header">
+            <span class="niveau-badge">◈</span>
+            <span class="niveau-label">Capacité de base</span>
+          </div>
+          <div class="niveau-body">
+            <p>Réparations d'armes et d'armures (<strong>15 minutes</strong> par point d'armure ou par objet brisé).</p>
+          </div>
+        </div>
 
-        <h3>Niveau 1</h3>
-        <ul>
-          <li><strong>Fabrication d'objets en métaux (Petit et moyen) :</strong> Voir tableau de créations</li>
-          <li><strong>Forge rapide :</strong> réduit le temps de forge de 1 minute.</li>
-          <li><strong>Démantèlement :</strong> prend 15 minutes (sur objets).</li>
-          <li><strong>Fabrication d’armes (peu importe la taille).</strong></li>
-        </ul>
+        <div class="niveau-card">
+          <div class="niveau-header">
+            <span class="niveau-badge">I</span>
+            <span class="niveau-label">Niveau 1</span>
+          </div>
+          <div class="niveau-body">
+            <div class="competences-list">
+              <div class="competence">
+                <span class="competence-nom">Fabrication d'objets en métaux (Petit et moyen)</span>
+                <span class="competence-desc">Voir tableau de créations.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Forge rapide</span>
+                <span class="competence-desc">Réduit le temps de forge de 1 minute.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Démantèlement</span>
+                <span class="competence-desc">Prend 15 minutes (sur objets).</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Fabrication d'armes (peu importe la taille)</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h3>Niveau 2</h3>
-        <ul>
-          <li><strong>Fabrication d'objets divers en métal (Grand et très grand)</strong></li>
-          <li><strong>Forge rapide niv.2 :</strong> réduit le temps de forge de 1 minute.</li>
-          <li><strong>Connaissance des métaux</strong></li>
-          <li><strong>Fabrication de boucliers en métal (peu importe la taille).</strong></li>
-          <li><strong>Main de Phaïstos :</strong> confère une résistance au feu mineur permanente</li>
-        </ul>
+        <div class="niveau-card">
+          <div class="niveau-header">
+            <span class="niveau-badge">II</span>
+            <span class="niveau-label">Niveau 2</span>
+          </div>
+          <div class="niveau-body">
+            <div class="competences-list">
+              <div class="competence">
+                <span class="competence-nom">Fabrication d'objets divers en métal (Grand et très grand)</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Forge rapide niv.2</span>
+                <span class="competence-desc">Réduit le temps de forge de 1 minute supplémentaire.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Connaissance des métaux</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Fabrication de boucliers en métal (peu importe la taille)</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Main de Phaïstos</span>
+                <span class="competence-desc">Confère une résistance au feu mineur permanente.</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h3>Choix de Spécialisation</h3>
-        <p>Veuillez choisir une des trois spécialisations suivantes pour la suite de vos compétences :</p>
-        <ul>
-          <li>L'Adepte du Monument</li>
-          <li>L'Adepte de la Lame</li>
-          <li>L'Adepte de la Productivité</li>
-        </ul>
+        <div class="choix-spec">
+          <strong>Choisissez une spécialisation</strong>
+          <ul>
+            <li>L'Adepte du Monument</li>
+            <li>L'Adepte de la Lame</li>
+            <li>L'Adepte de la Productivité</li>
+          </ul>
+        </div>
 
-        <h2>L’Adepte du Monument</h2>
-        <h4>Niveau 3</h4>
-        <ul>
-          <li><strong>Réparation d’articles en métal :</strong> Coûte la moitié du coût de création</li>
-          <li><strong>Fabrication d’armures diverses.</strong></li>
-          <li>Renforcement de bâtiments mineurs : +1 durabilité.</li>
-        </ul>
-        <h4>Niveau 4</h4>
-        <ul>
-          <li><strong>Fourniture de ferronnerie :</strong> prépare des pièces métalliques pour un Bâtisseur, réduisant le coût en ressources et le temps de construction. (Voir avec animation)</li>
-          <li>Renforcement de bâtiments majeurs : +2 durabilités.</li>
-          <li>Brèche : inflige +10 dégâts contre les bâtiments.</li>
-          <li>Structure artistique : Un bâtiment peut servir de réceptacle d’enchantement.</li>
-        </ul>
-        <h4>Niveau 5</h4>
-        <ul>
-          <li>Renforcement de bâtiments légendaires : +3 durabilités.</li>
-          <li>Brèche majeure : inflige +20 dégâts contre les bâtiments.</li>
-          <li>Système complexe mineur.</li>
-        </ul>
+        <div class="specialisation-block">
+          <h3 class="specialisation-titre">L'Adepte du Monument</h3>
+          <div class="specialisation-body">
 
-        <h2>L’Adepte de la Lame</h2>
-        <h4>Niveau 3</h4>
-        <ul>
-          <li><strong>Renforcement de bouclier :</strong> le bouclier peut maintenant résister à un seul brise-bouclier.</li>
-          <li>Fer rouge : applique des dégâts de feu sur une lame (nécessite 15 min de chauffage, durée 1 combat).</li>
-          <li>Contendante : inflige +1 dégât.</li>
-        </ul>
-        <h4>Niveau 4</h4>
-        <ul>
-          <li>Arme réceptacle : peut contenir jusqu’à 2 enchantements.</li>
-          <li><strong>Renforcement de bouclier majeur :</strong> le bouclier peut maintenant résister à deux effets brise-bouclier.</li>
-          <li>Aiguiser : +1 dégât pour 1 coup (nécessite 15 min d’aiguisage).</li>
-        </ul>
-        <h4>Niveau 5</h4>
-        <ul>
-          <li><strong>Fabrication d’artéfacts magiques :</strong> Voir table des créations</li>
-          <li><strong>Renforcement de bouclier légendaire :</strong> le bouclier est maintenant incassable par brise-bouclier.</li>
-          <li>Aiguiser niv.2 : +2 dégâts pour 1 coup.</li>
-        </ul>
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">III</span>
+                <span class="niveau-label">Niveau 3</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Réparation d'articles en métal</span>
+                    <span class="competence-desc">Coûte la moitié du coût de création.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Fabrication d'armures diverses</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Renforcement de bâtiments mineurs</span>
+                    <span class="competence-desc">+1 durabilité.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <h2>L’Adepte de la Productivité</h2>
-        <h4>Niveau 3</h4>
-        <ul>
-          <li>Récolte x2.</li>
-          <li>Forge rapide niv.3 : réduit le temps de forge de 3 minutes.</li>
-        </ul>
-        <h4>Niveau 4</h4>
-        <ul>
-          <li>Forge rapide niv.4 : réduit le temps de forge de 3 minutes.</li>
-          <li>Démantèlement rapide : -5 min.</li>
-          <li>Réparation mineure : permet de réparer 1 arme pour le prochain combat (prend 15 secondes, l'arme se re-brise à la fin du combat).</li>
-        </ul>
-        <h4>Niveau 5</h4>
-        <ul>
-          <li>Forge rapide : -2 min supplémentaires.</li>
-          <li>Démantèlement rapide : -5 min supplémentaires.</li>
-          <li>Fabrication multiple : le forgeron peut procéder à la création de deux objets en même temps (S'il possède les ressources)</li>
-        </ul>
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">IV</span>
+                <span class="niveau-label">Niveau 4</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Fourniture de ferronnerie</span>
+                    <span class="competence-desc">Prépare des pièces métalliques pour un Bâtisseur, réduisant le coût en ressources et le temps de construction. (Voir avec animation)</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Renforcement de bâtiments majeurs</span>
+                    <span class="competence-desc">+2 durabilités.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Brèche</span>
+                    <span class="competence-desc">Inflige +10 dégâts contre les bâtiments.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Structure artistique</span>
+                    <span class="competence-desc">Un bâtiment peut servir de réceptacle d'enchantement.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">V</span>
+                <span class="niveau-label">Niveau 5</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Renforcement de bâtiments légendaires</span>
+                    <span class="competence-desc">+3 durabilités.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Brèche majeure</span>
+                    <span class="competence-desc">Inflige +20 dégâts contre les bâtiments.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Système complexe mineur</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="specialisation-block">
+          <h3 class="specialisation-titre">L'Adepte de la Lame</h3>
+          <div class="specialisation-body">
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">III</span>
+                <span class="niveau-label">Niveau 3</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Renforcement de bouclier</span>
+                    <span class="competence-desc">Le bouclier peut maintenant résister à un seul brise-bouclier.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Fer rouge</span>
+                    <span class="competence-desc">Applique des dégâts de feu sur une lame (nécessite 15 min de chauffage, durée 1 combat).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Contendante</span>
+                    <span class="competence-desc">Inflige +1 dégât.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">IV</span>
+                <span class="niveau-label">Niveau 4</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Arme réceptacle</span>
+                    <span class="competence-desc">Peut contenir jusqu'à 2 enchantements.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Renforcement de bouclier majeur</span>
+                    <span class="competence-desc">Le bouclier peut maintenant résister à deux effets brise-bouclier.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Aiguiser</span>
+                    <span class="competence-desc">+1 dégât pour 1 coup (nécessite 15 min d'aiguisage).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">V</span>
+                <span class="niveau-label">Niveau 5</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Fabrication d'artéfacts magiques</span>
+                    <span class="competence-desc">Voir table des créations.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Renforcement de bouclier légendaire</span>
+                    <span class="competence-desc">Le bouclier est maintenant incassable par brise-bouclier.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Aiguiser niv.2</span>
+                    <span class="competence-desc">+2 dégâts pour 1 coup.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="specialisation-block">
+          <h3 class="specialisation-titre">L'Adepte de la Productivité</h3>
+          <div class="specialisation-body">
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">III</span>
+                <span class="niveau-label">Niveau 3</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Récolte x2</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Forge rapide niv.3</span>
+                    <span class="competence-desc">Réduit le temps de forge de 3 minutes.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">IV</span>
+                <span class="niveau-label">Niveau 4</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Forge rapide niv.4</span>
+                    <span class="competence-desc">Réduit le temps de forge de 3 minutes supplémentaires.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Démantèlement rapide</span>
+                    <span class="competence-desc">-5 min.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Réparation mineure</span>
+                    <span class="competence-desc">Permet de réparer 1 arme pour le prochain combat (prend 15 secondes, l'arme se re-brise à la fin du combat).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">V</span>
+                <span class="niveau-label">Niveau 5</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Forge rapide</span>
+                    <span class="competence-desc">-2 min supplémentaires.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Démantèlement rapide</span>
+                    <span class="competence-desc">-5 min supplémentaires.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Fabrication multiple</span>
+                    <span class="competence-desc">Le forgeron peut procéder à la création de deux objets en même temps (s'il possède les ressources).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </section>
     </div>
     <button onclick="scrollToTop()" id="btnTop" title="Retour en haut">⬆ Haut</button>

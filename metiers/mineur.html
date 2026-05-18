@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -35,92 +34,306 @@ fetch('header.html')
           – Borgan Croc-de-Pierre, Maître Mineur des Entrailles</p>
         </blockquote>
 
-        <h3>Capacités de base</h3>
-        <p>Le mineur peut extraire des ressources d'un gisement en 15 minutes. (Récolte)</p>
+        <div class="niveau-card niveau-base">
+          <div class="niveau-header">
+            <span class="niveau-badge">◈</span>
+            <span class="niveau-label">Capacité de base</span>
+          </div>
+          <div class="niveau-body">
+            <p>Le mineur peut extraire des ressources d'un gisement en <strong>15 minutes</strong>. (Récolte)</p>
+          </div>
+        </div>
 
-        <h3>Niveau 1</h3>
-        <ul>
-          <li><strong>Mineur Rapide :</strong> Réduit le temps de minage de 5 minutes.</li>
-          <li><strong>Pioche Pointue :</strong> +1 au jet de dé à la récolte</li>
-          <li><strong>Endurance :</strong> +1 PV.</li>
-          <li><strong>Lueur du Mineur :</strong> Obtient une torche (ou lampe) pour éclairer les mines. (Voir animation)</li>
-        </ul>
+        <div class="niveau-card">
+          <div class="niveau-header">
+            <span class="niveau-badge">I</span>
+            <span class="niveau-label">Niveau 1</span>
+          </div>
+          <div class="niveau-body">
+            <div class="competences-list">
+              <div class="competence">
+                <span class="competence-nom">Mineur Rapide</span>
+                <span class="competence-desc">Réduit le temps de minage de 5 minutes.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Pioche Pointue</span>
+                <span class="competence-desc">+1 au jet de dé à la récolte.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Endurance</span>
+                <span class="competence-desc">+1 PV.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Lueur du Mineur</span>
+                <span class="competence-desc">Obtient une torche (ou lampe) pour éclairer les mines. (Voir animation)</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h3>Niveau 2</h3>
-        <ul>
-          <li><strong>Fracasseur :</strong> +2 au jet de dé à la récolte</li>
-          <li><strong>Adepte du Trou Dur :</strong> Pour 4 ressources communes, obtient 1 ressource rare.</li>
-          <li><strong>Frappe du Mineur :</strong> Engourdit un adversaire pendant 20 secondes (Lenteur, empêche de courir).</li>
-          <li><strong>Mineur de Trésors :</strong> Peut extraire 1 pierre précieuse (rare) au lieu des ressources communes habituelles. (1x par GN)</li>
-        </ul>
+        <div class="niveau-card">
+          <div class="niveau-header">
+            <span class="niveau-badge">II</span>
+            <span class="niveau-label">Niveau 2</span>
+          </div>
+          <div class="niveau-body">
+            <div class="competences-list">
+              <div class="competence">
+                <span class="competence-nom">Fracasseur</span>
+                <span class="competence-desc">+2 au jet de dé à la récolte.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Adepte du Trou Dur</span>
+                <span class="competence-desc">Pour 4 ressources communes, obtient 1 ressource rare.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Frappe du Mineur</span>
+                <span class="competence-desc">Engourdit un adversaire pendant 20 secondes (Lenteur, empêche de courir).</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Mineur de Trésors</span>
+                <span class="competence-desc">Peut extraire 1 pierre précieuse (rare) au lieu des ressources communes habituelles. (1x par GN)</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h2>Choix de Spécialisation</h2>
-        <p>Veuillez choisir une des trois spécialisations suivantes :</p>
-        <ul>
-          <li>Mineur à Blanc</li>
-          <li>Gemmologue</li>
-          <li>Tailleur de Pierre</li>
-        </ul>
+        <div class="choix-spec">
+          <strong>Choisissez une spécialisation</strong>
+          <ul>
+            <li>Mineur à Blanc</li>
+            <li>Gemmologue</li>
+            <li>Tailleur de Pierre</li>
+          </ul>
+        </div>
 
-        <h2>Mineur à Blanc</h2>
-        <h4>Niveau 3</h4>
-        <ul>
-          <li><strong>Le Gisement du Jour :</strong> +3 au jet de dé à la récolte</li>
-          <li><strong>Frappe Fracassante :</strong> Détruit un bouclier ou une porte d’un coup.</li>
-          <li><strong>Prospecteur :</strong> Peut miner ½ gisement supplémentaire.</li>
-        </ul>
-        <h4>Niveau 4</h4>
-        <ul>
-          <li><strong>Le Gisement Tardif :</strong> +4 au jet de dé à la récolte</li>
-          <li><strong>Prospecteur Chevronné :</strong> Peut miner 1 gisement supplémentaire</li>
-          <li><strong>Coup Fracturant :</strong> Peut casser un membre d’un adversaire (Fracture) (court repos requis).</li>
-        </ul>
-        <h4>Niveau 5</h4>
-        <ul>
-          <li><strong>Le Gisement de Trop :</strong> +1 gisement supplémentaire et +1 ressource commune aléatoire par gisement.</li>
-          <li><strong>Où est ton Casque ? :</strong> Assomme un adversaire avec une attaque sournoise (Assomé 2 min).</li>
-          <li><strong>Tremblement du Mineur :</strong> Secousse de 3m autour, tous s’agenouillent 30 sec (Légendaire, court repos requis).</li>
-        </ul>
+        <div class="specialisation-block">
+          <h3 class="specialisation-titre">Mineur à Blanc</h3>
+          <div class="specialisation-body">
 
-        <h2>Gemmologue</h2>
-        <h4>Niveau 3</h4>
-        <ul>
-          <li><strong>Petit Trésor :</strong> +1 ressource rare supplémentaire (par récolte).</li>
-          <li><strong>Identification :</strong> Permet d’identifier toutes les ressources communes et rares du Mineur.</li>
-          <li><strong>Cœur de Gemme :</strong> En donjon, permet de trouver 2 gemmes supplémentaires. (Donjon)</li>
-        </ul>
-        <h4>Niveau 4</h4>
-        <ul>
-          <li><strong>Grand Trésor :</strong> +1 ressource rare et +1 ressource commune (par récolte).</li>
-          <li><strong>Corps solidifié :</strong> Résistance aux fractures et démembrements (majeurs).</li>
-          <li><strong>Ma Gemme à Moi :</strong> Permet de transformer 4 ressources communes en 1 ressource rare. (1x par journée)</li>
-        </ul>
-        <h4>Niveau 5</h4>
-        <ul>
-          <li><strong>Jackpot :</strong> +2 ressources rares et +2 ressources communes (par récolte).</li>
-          <li><strong>Corps de Diamant :</strong> Réduit de 1 les dégâts reçus pendant 1 scène (recharge après 4h de repos).</li>
-          <li><strong>Fusion Gémique :</strong> Permet de raffiner les ressources : 4 ressources rares pour 1 légendaire.</li>
-        </ul>
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">III</span>
+                <span class="niveau-label">Niveau 3</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Le Gisement du Jour</span>
+                    <span class="competence-desc">+3 au jet de dé à la récolte.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Frappe Fracassante</span>
+                    <span class="competence-desc">Détruit un bouclier ou une porte d'un coup.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Prospecteur</span>
+                    <span class="competence-desc">Peut miner ½ gisement supplémentaire.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <h2>Tailleur de Pierre</h2>
-        <h4>Niveau 3</h4>
-        <ul>
-          <li><strong>Qualité Minérale :</strong> 1 ressource rare pour 2 ressources communes (1x par journée) (+2 si niveau 5 avec "Maître de la ressource").</li>
-          <li><strong>Identification des Ressources :</strong> +1 ressource rare supplémentaire (par récolte).</li>
-          <li><strong>Au Diable la Qualité :</strong> +3 ressources communes supplémentaires (par récolte).</li>
-        </ul>
-        <h4>Niveau 4</h4>
-        <ul>
-          <li><strong>Tailleur d’Autel :</strong> Permet la création et réparation de monuments.</li>
-          <li><strong>Fusion Minérale :</strong> Fusionne 2 ressources mineur en une nouvelle matière (Alliage).</li>
-          <li><strong>Fondation de Pierre :</strong> Fortifie les murs en pierre (Coûte 1 ressource pierre par mur).</li>
-        </ul>
-        <h4>Niveau 5</h4>
-        <ul>
-          <li><strong>Maître de la Ressource :</strong> 1 ressource de qualité commune pour 1 ressource rare (1x par journée) et +3 ressources commune par récolte.</li>
-          <li><strong>Renforcement Légendaire :</strong> +3 défense aux bâtiments en pierre.</li>
-          <li><strong>Taille Précise :</strong> 2 attaques à +1 dégât contre ennemis sans armure (recharge : court repos).</li>
-        </ul>
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">IV</span>
+                <span class="niveau-label">Niveau 4</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Le Gisement Tardif</span>
+                    <span class="competence-desc">+4 au jet de dé à la récolte.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Prospecteur Chevronné</span>
+                    <span class="competence-desc">Peut miner 1 gisement supplémentaire.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Coup Fracturant</span>
+                    <span class="competence-desc">Peut casser un membre d'un adversaire (Fracture) (court repos requis).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">V</span>
+                <span class="niveau-label">Niveau 5</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Le Gisement de Trop</span>
+                    <span class="competence-desc">+1 gisement supplémentaire et +1 ressource commune aléatoire par gisement.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Où est ton Casque ?</span>
+                    <span class="competence-desc">Assomme un adversaire avec une attaque sournoise (Assommé 2 min).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Tremblement du Mineur</span>
+                    <span class="competence-desc">Secousse de 3m autour, tous s'agenouillent 30 sec (Légendaire, court repos requis).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="specialisation-block">
+          <h3 class="specialisation-titre">Gemmologue</h3>
+          <div class="specialisation-body">
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">III</span>
+                <span class="niveau-label">Niveau 3</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Petit Trésor</span>
+                    <span class="competence-desc">+1 ressource rare supplémentaire (par récolte).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Identification</span>
+                    <span class="competence-desc">Permet d'identifier toutes les ressources communes et rares du Mineur.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Cœur de Gemme</span>
+                    <span class="competence-desc">En donjon, permet de trouver 2 gemmes supplémentaires. (Donjon)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">IV</span>
+                <span class="niveau-label">Niveau 4</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Grand Trésor</span>
+                    <span class="competence-desc">+1 ressource rare et +1 ressource commune (par récolte).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Corps solidifié</span>
+                    <span class="competence-desc">Résistance aux fractures et démembrements (majeurs).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Ma Gemme à Moi</span>
+                    <span class="competence-desc">Permet de transformer 4 ressources communes en 1 ressource rare. (1x par journée)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">V</span>
+                <span class="niveau-label">Niveau 5</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Jackpot</span>
+                    <span class="competence-desc">+2 ressources rares et +2 ressources communes (par récolte).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Corps de Diamant</span>
+                    <span class="competence-desc">Réduit de 1 les dégâts reçus pendant 1 scène (recharge après 4h de repos).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Fusion Gémique</span>
+                    <span class="competence-desc">Permet de raffiner les ressources : 4 ressources rares pour 1 légendaire.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="specialisation-block">
+          <h3 class="specialisation-titre">Tailleur de Pierre</h3>
+          <div class="specialisation-body">
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">III</span>
+                <span class="niveau-label">Niveau 3</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Qualité Minérale</span>
+                    <span class="competence-desc">1 ressource rare pour 2 ressources communes (1x par journée) (+2 si niveau 5 avec "Maître de la ressource").</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Identification des Ressources</span>
+                    <span class="competence-desc">+1 ressource rare supplémentaire (par récolte).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Au Diable la Qualité</span>
+                    <span class="competence-desc">+3 ressources communes supplémentaires (par récolte).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">IV</span>
+                <span class="niveau-label">Niveau 4</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Tailleur d'Autel</span>
+                    <span class="competence-desc">Permet la création et réparation de monuments.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Fusion Minérale</span>
+                    <span class="competence-desc">Fusionne 2 ressources mineur en une nouvelle matière (Alliage).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Fondation de Pierre</span>
+                    <span class="competence-desc">Fortifie les murs en pierre (coûte 1 ressource pierre par mur).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">V</span>
+                <span class="niveau-label">Niveau 5</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Maître de la Ressource</span>
+                    <span class="competence-desc">1 ressource de qualité commune pour 1 ressource rare (1x par journée) et +3 ressources communes par récolte.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Renforcement Légendaire</span>
+                    <span class="competence-desc">+3 défense aux bâtiments en pierre.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Taille Précise</span>
+                    <span class="competence-desc">2 attaques à +1 dégât contre ennemis sans armure (recharge : court repos).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </section>
     </div>
     <button onclick="scrollToTop()" id="btnTop" title="Retour en haut">⬆ Haut</button>

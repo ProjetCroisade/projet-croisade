@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -15,8 +14,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <link rel="icon" href="favicon.png" type="image/x-icon">
-<link href="pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="pagefind/pagefind-ui.js"></script>
+  <link href="pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="pagefind/pagefind-ui.js"></script>
 </head>
 <body>
 <div id="header"></div>
@@ -25,7 +24,6 @@ fetch('header.html')
   .then(res => res.text())
   .then(html => {
     document.getElementById('header').innerHTML = html;
-
     const script = document.createElement('script');
     script.src = 'data/js/search.js';
     document.body.appendChild(script);
@@ -34,86 +32,156 @@ fetch('header.html')
 
   <main>
     <div class="content">
-    <section>
-  <h2>Les Métiers de récolte</h2>
-  <div class="metiers-container">
-    <a class="btn-metier" href="metiers/bucheron.html">Bûcheron</a>
-    <a class="btn-metier" href="metiers/chasseur.html">Chasseur</a>
-    <a class="btn-metier" href="metiers/herboriste.html">Herboriste</a>
-    <a class="btn-metier" href="metiers/mineur.html">Mineur</a>
-  </div>
-  <h2>Les Métiers d'artisanat</h2>
-  <div class="metiers-container">
-    <a class="btn-metier" href="metiers/alchimiste.html">Alchimiste</a>
-    <a class="btn-metier" href="metiers/batisseur.html">Bâtisseur</a>
-    <a class="btn-metier" href="metiers/forgeron.html">Forgeron</a>
-    <a class="btn-metier" href="metiers/medecin.html">Médecin</a>
-  </div>
-</section>
-<section>
-  <h2>Le Comptoir des Métiers</h2>
-  <p>Un comptoir des métiers se trouve dans presque chaque village et bourgade. C'est là que les artisans viennent déclarer leurs récoltes, valider leurs fabrications et consulter les tables de ressources. L'intendant qui y officie est un PNJ de l'animation.</p>
-  <p><strong>Cependant, sa coopération n'est pas garantie : si vous vous trouvez dans un village <span style="color:red;">hostile</span> ou mal disposé envers votre faction, l'intendant pourra se montrer peu enclin à vous aider, voire refuser de vous servir.</strong></p>
-  <p><em>Note : le PNJ tenant le comptoir peut être braqué en jeu. Cependant, tout ce qui se trouve <strong>derrière le comptoir</strong> est considéré comme <strong>hors-jeu</strong> et ne peut en aucun cas être ciblé ou saisi (bacs de plastique, sacs ziploc et matériel d'animation).</em></p>
-</section>
 
-<section>
+      <section>
+        <h2>Les Métiers</h2>
+        <p>Chaque personnage peut maîtriser un métier qui définit son rôle économique dans le monde. Les métiers se divisent en deux grandes familles : la <strong>récolte</strong>, qui permet d'extraire des ressources brutes, et <strong>l'artisanat</strong>, qui permet de les transformer en objets utiles.</p>
 
-  <h3>Fonctionnement de la Récolte pour les Métiers</h3>
-  <p>Chaque joueur possédant un métier de récolte peut venir au <strong>comptoir des métiers</strong> afin d'effectuer une action de récolte. Cette action représente une exploration, une cueillette, une extraction ou une création dépendant du métier choisi (herboriste, chasseur, etc.).</p>
+        <h3>Récolte</h3>
+        <div class="metiers-container">
+          <a class="btn-metier" href="metiers/bucheron.html">Bûcheron</a>
+          <a class="btn-metier" href="metiers/chasseur.html">Chasseur</a>
+          <a class="btn-metier" href="metiers/herboriste.html">Herboriste</a>
+          <a class="btn-metier" href="metiers/mineur.html">Mineur</a>
+        </div>
 
-  <h3>Déroulement :</h3>
-  <ol>
-    <li>En utilisant votre capacité de base, effectuez une action de récolte pendant 15, 30, 45 ou 60 minutes. dans un endroit désigné à la récolte.</li>
-    <li>Présentez-vous ensuite au comptoir des métiers.</li>
-    <li>Annoncez le métier avec lequel vous avez récolté et la durée de temps de récolte.</li>
-    <li>Lancez un dé à 20 faces (d20).</li>
-    <li>Le responsable du comptoir détermine la ressource obtenue en fonction du résultat du dé.</li>
-  </ol>
-  <p>Le résultat du dé détermine la ressource obtenue. Chaque ressource a une <strong>rareté</strong>, une <strong>valeur estimée</strong> et un <strong>effet caché</strong> (révélé uniquement aux maîtres de jeu).</p>
+        <h3>Artisanat</h3>
+        <div class="metiers-container">
+          <a class="btn-metier" href="metiers/alchimiste.html">Alchimiste</a>
+          <a class="btn-metier" href="metiers/batisseur.html">Bâtisseur</a>
+          <a class="btn-metier" href="metiers/forgeron.html">Forgeron</a>
+          <a class="btn-metier" href="metiers/medecin.html">Médecin</a>
+        </div>
+      </section>
 
-  <h3>Répartition des chances :</h3>
-  <ul>
-    <li><strong>1</strong> : Échec critique, Ressource <span style="color:gray"><strong>désuette</strong></span></li>
-    <li><strong>2 à 15</strong> : Ressource <span style="color:green"><strong>commune</strong></span></li>
-    <li><strong>16 à 17</strong> : Ressource <span style="color:blue"><strong>rare</strong></span></li>
-    <li><strong>18 à 19</strong> : Ressource <span style="color:orange"><strong>légendaire</strong></span></li>
-    <li><strong>20</strong> : Ressource <span style="color:purple"><strong>mythique</strong></span></li>
-  </ul>
+      <hr>
 
-  <h3>Limites et règles :</h3>
-  <ul>
-    <li>Jusqu'à quatre tentatives de récolte (15 minutes par récolte, jusqu'à 60 minutes) par <strong>journée (période de 24hrs)</strong>.</li>
-    <li>Certains effets ne sont <strong>pas connus des joueurs</strong> et doivent être découverts via RP, alchimie ou magie.</li>
-    <li>Des talents, objets ou effets peuvent <strong>améliorer vos chances</strong> (bonus au jet, relance, etc.).</li>
-  </ul>
+      <section>
+        <h2>Le Comptoir des Métiers</h2>
+        <p>Un comptoir des métiers se trouve dans presque chaque village et bourgade. C'est là que les artisans viennent déclarer leurs récoltes, valider leurs fabrications et consulter les tables de ressources. L'intendant qui y officie est un PNJ de l'animation.</p>
+        <p><strong>Sa coopération n'est pas garantie : si vous vous trouvez dans un village <span class="negatif">hostile</span> ou mal disposé envers votre faction, l'intendant pourra se montrer peu enclin à vous aider, voire refuser de vous servir.</strong></p>
+        <div class="note">Tout ce qui se trouve <strong>derrière le comptoir</strong> est considéré comme <strong>hors-jeu</strong> et ne peut en aucun cas être ciblé ou saisi (bacs de plastique, sacs ziploc, matériel d'animation). Le PNJ tenant le comptoir peut être braqué en jeu, mais uniquement les éléments in-game.</div>
+      </section>
 
-  <h3>Exemple :</h3>
-  <p><em>Thémar, un bûcheron expérimenté, vient au comptoir et lance un d20. Il obtient <strong>17</strong>. Selon le tableau du Bûcheron, il récolte <strong>Écorce sanglante</strong>, une ressource <strong>rare</strong> avec des propriétés rituelles. Il la reçoit sous forme de carte et pourra l’utiliser en RP ou l’échanger.</em></p>
-</section>
+      <hr>
 
-<section>
-  <h2>Esclaves et Travailleurs</h2>
-  <p>Il est possible d'obtenir des esclaves et des travailleurs en jeu. Ceux-ci possèdent un métier spécifique et peuvent effectuer une récolte supplémentaire par événement, en votre nom. <strong>Une seule récolte par esclave ou travailleur par événement.</strong></p>
+      <section>
+        <h2>Fonctionnement de la Récolte</h2>
+        <p>Chaque joueur possédant un métier de récolte peut venir au comptoir afin d'effectuer une action de récolte. Cette action représente une exploration, une cueillette, une extraction ou une création selon le métier choisi.</p>
 
-  <h3>Comment obtenir des travailleurs et des esclaves</h3>
-  <p><strong>Travailleurs :</strong> Les travailleurs peuvent être engagés et rémunérés auprès de PNJ spécifiques, ou directement au comptoir des métiers. Notez qu'il n'y a aucune garantie que l'intendant aura des travailleurs disponibles.</p>
-  <p><strong>Esclaves :</strong> Les esclaves peuvent être achetés en jeu auprès de certains PNJ, ou capturés. Pour capturer un esclave, vous devez lui apposer un <strong>sceau de serment</strong> (voir l'effet <em>Serment</em> et la classe <em>Enchanteur</em> pour les parchemins de Serment).</p>
+        <h3>Déroulement</h3>
+        <div class="regles-cards">
+          <div class="regle-card">
+            <span class="regle-num">1</span>
+            <div class="regle-body">
+              <strong>Effectuez une action de récolte</strong>
+              <p>Passez 15, 30, 45 ou 60 minutes dans un endroit désigné à la récolte en utilisant votre capacité de base.</p>
+            </div>
+          </div>
+          <div class="regle-card">
+            <span class="regle-num">2</span>
+            <div class="regle-body">
+              <strong>Présentez-vous au comptoir des métiers</strong>
+              <p>Rendez-vous auprès de l'intendant après votre récolte.</p>
+            </div>
+          </div>
+          <div class="regle-card">
+            <span class="regle-num">3</span>
+            <div class="regle-body">
+              <strong>Annoncez votre métier et la durée</strong>
+              <p>Indiquez le métier avec lequel vous avez récolté et le temps passé.</p>
+            </div>
+          </div>
+          <div class="regle-card">
+            <span class="regle-num">4</span>
+            <div class="regle-body">
+              <strong>Lancez un d20</strong>
+              <p>Le résultat détermine la rareté de la ressource obtenue.</p>
+            </div>
+          </div>
+          <div class="regle-card">
+            <span class="regle-num">5</span>
+            <div class="regle-body">
+              <strong>Recevez votre ressource</strong>
+              <p>L'intendant détermine la ressource obtenue en fonction du résultat et du tableau de votre métier.</p>
+            </div>
+          </div>
+        </div>
 
-  <h3>Rendement réduit</h3>
-  <p>Les esclaves et travailleurs sont moins efficaces que les personnages joués par les joueurs. Leur travail est plus lent, moins précis et produit des résultats de moindre qualité. En conséquence :</p>
-  <ul>
-    <li>Ils génèrent <strong>moins de ressources</strong> qu'un joueur pour une même durée de travail.</li>
-    <li>Les ressources obtenues sont de <strong>qualité inférieure</strong> (probabilités ajustées vers les raretés plus basses).</li>
-    <li>Leur récolte prend <strong>plus de temps</strong> à être traitée au comptoir des métiers.</li>
-  </ul>
+        <h3>Répartition des chances (d20)</h3>
+        <table class="table-regles">
+          <thead>
+            <tr>
+              <th>Résultat</th>
+              <th>Rareté</th>
+              <th>Fréquence</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="rarity-desuet">
+              <td>1</td>
+              <td>Désuet — Échec critique</td>
+              <td>5 %</td>
+            </tr>
+            <tr class="rarity-commune">
+              <td>2 – 15</td>
+              <td>Commune</td>
+              <td>70 %</td>
+            </tr>
+            <tr class="rarity-rare">
+              <td>16 – 17</td>
+              <td>Rare</td>
+              <td>10 %</td>
+            </tr>
+            <tr class="rarity-legendaire">
+              <td>18 – 19</td>
+              <td>Légendaire</td>
+              <td>10 %</td>
+            </tr>
+            <tr class="rarity-mythique">
+              <td>20</td>
+              <td>Mythique</td>
+              <td>5 %</td>
+            </tr>
+          </tbody>
+        </table>
 
-  <h3>Utilisation</h3>
-  <p>Chaque esclave et travailleur est représenté en jeu par une <strong>carte ressource</strong> indiquant son métier. Pour effectuer une récolte, présentez-vous au comptoir des métiers avec cette carte. L'intendant appliquera les règles de rendement réduit lors de la résolution de la récolte. La carte reste en votre possession après utilisation.</p>
-</section>
+        <h3>Limites et règles</h3>
+        <ul>
+          <li>Maximum <strong>4 tentatives de récolte par journée</strong> (période de 24h), soit 15 minutes chacune pour un total de 60 minutes.</li>
+          <li>Certains effets de ressources ne sont <strong>pas connus des joueurs</strong> et doivent être découverts via RP, alchimie ou magie.</li>
+          <li>Des talents, objets ou effets peuvent <strong>améliorer vos chances</strong> (bonus au jet, relance, etc.).</li>
+        </ul>
+
+        <div class="exemple">
+          <strong>Exemple :</strong> Thémar, un bûcheron expérimenté, vient au comptoir et lance un d20. Il obtient <strong>17</strong>. Selon le tableau du Bûcheron, il récolte <strong>Écorce sanglante</strong>, une ressource <strong>rare</strong> aux propriétés rituelles. Il la reçoit sous forme de carte et pourra l'utiliser en RP ou l'échanger.
+        </div>
+      </section>
+
+      <hr>
+
+      <section>
+        <h2>Esclaves et Travailleurs</h2>
+        <p>Il est possible d'obtenir des esclaves et des travailleurs en jeu. Ceux-ci possèdent un métier spécifique et peuvent effectuer une récolte supplémentaire par événement, en votre nom. <strong>Une seule récolte par esclave ou travailleur par événement.</strong></p>
+
+        <h3>Comment les obtenir</h3>
+        <p><strong>Travailleurs :</strong> Ils peuvent être engagés et rémunérés auprès de PNJ spécifiques ou directement au comptoir des métiers. Leur disponibilité n'est pas garantie.</p>
+        <p><strong>Esclaves :</strong> Ils peuvent être achetés en jeu auprès de certains PNJ, ou capturés. Pour capturer un esclave, vous devez lui apposer un <strong>sceau de serment</strong> (voir l'effet <em>Serment</em> et la classe <em>Enchanteur</em>).</p>
+
+        <h3>Rendement réduit</h3>
+        <p>Les esclaves et travailleurs sont moins efficaces que les personnages joueurs. En conséquence :</p>
+        <ul>
+          <li>Ils génèrent <strong>moins de ressources</strong> qu'un joueur pour une même durée de travail.</li>
+          <li>Les ressources obtenues sont de <strong>qualité inférieure</strong> (probabilités ajustées vers les raretés plus basses).</li>
+          <li>Leur récolte prend <strong>plus de temps</strong> à être traitée au comptoir.</li>
+        </ul>
+
+        <h3>Utilisation</h3>
+        <p>Chaque esclave ou travailleur est représenté par une <strong>carte ressource</strong> indiquant son métier. Présentez-vous au comptoir avec cette carte pour effectuer sa récolte. L'intendant appliquera les règles de rendement réduit. La carte reste en votre possession après utilisation.</p>
+      </section>
 
     </div>
-    <button onclick="scrollToTop()" id="btnTop" title="Retour en haut">Haut</button>
+    <button onclick="scrollToTop()" id="btnTop" title="Retour en haut">⬆ Haut</button>
     <script>
       function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });

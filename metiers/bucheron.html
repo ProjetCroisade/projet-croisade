@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -35,93 +34,307 @@ fetch('header.html')
           – Aldric le Fendeur, Maître Bûcheron de la Ligue des Pins</p>
         </blockquote>
 
-        <h3>Capacités de base</h3>
-        <p>Permet de couper du bois pendant 15 min pour obtenir des ressources forestières. (Récolte)</p>
-        <p>Un arbre fourni une quantité fixe de bois (3) + une ressource aléatoire selon le jet de la récolte</p>
+        <div class="niveau-card niveau-base">
+          <div class="niveau-header">
+            <span class="niveau-badge">◈</span>
+            <span class="niveau-label">Capacité de base</span>
+          </div>
+          <div class="niveau-body">
+            <p>Permet de couper du bois pendant <strong>15 minutes</strong> pour obtenir des ressources forestières. (Récolte)</p>
+            <p>Un arbre fournit une quantité fixe de bois (3) + une ressource aléatoire selon le jet de récolte.</p>
+          </div>
+        </div>
 
-        <h3>Niveau 1 :</h3>
-        <ul>
-          <li><strong>Bûcheron Rapide :</strong> Réduit le temps de coupe de 5 minutes lors de la récolte (sur 15 min).</li>
-          <li><strong>Hache Aiguisée :</strong> +1 bois récolté lors de la récolte.</li>
-          <li><strong>Endurance du Bûcheron :</strong> +1 PV.</li>
-          <li><strong>Réparation d'objets en bois :</strong> consomme 1 bois par niveau de l'objet pour le réparer (petit objet = 1 bois, moyen = 2 bois, etc.)</li>
-        </ul>
+        <div class="niveau-card">
+          <div class="niveau-header">
+            <span class="niveau-badge">I</span>
+            <span class="niveau-label">Niveau 1</span>
+          </div>
+          <div class="niveau-body">
+            <div class="competences-list">
+              <div class="competence">
+                <span class="competence-nom">Bûcheron Rapide</span>
+                <span class="competence-desc">Réduit le temps de coupe de 5 minutes lors de la récolte (sur 15 min).</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Hache Aiguisée</span>
+                <span class="competence-desc">+1 bois récolté lors de la récolte.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Endurance du Bûcheron</span>
+                <span class="competence-desc">+1 PV.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Réparation d'objets en bois</span>
+                <span class="competence-desc">Consomme 1 bois par niveau de l'objet pour le réparer (petit objet = 1 bois, moyen = 2 bois, etc.).</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h3>Niveau 2</h3>
-        <ul>
-          <li><strong>Hache Acérée :</strong> +2 bois récoltés lors de la récolte.</li>
-          <li><strong>Bûcheron Méfiant :</strong> +1 Esquive.</li>
-          <li><strong>Bois Bien Dur :</strong> +1 dégât à la hache à la prochaine scène (nécessite "Réparation d’objets en bois" et coûte 3 bois).</li>
-          <li><strong>L'Adepte du Bois :</strong> Pour 4 bois, obtient 1 bois de qualité rare.</li>
-        </ul>
+        <div class="niveau-card">
+          <div class="niveau-header">
+            <span class="niveau-badge">II</span>
+            <span class="niveau-label">Niveau 2</span>
+          </div>
+          <div class="niveau-body">
+            <div class="competences-list">
+              <div class="competence">
+                <span class="competence-nom">Hache Acérée</span>
+                <span class="competence-desc">+2 bois récoltés lors de la récolte.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Bûcheron Méfiant</span>
+                <span class="competence-desc">+1 Esquive.</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">Bois Bien Dur</span>
+                <span class="competence-desc">+1 dégât à la hache à la prochaine scène (nécessite "Réparation d'objets en bois" et coûte 3 bois).</span>
+              </div>
+              <div class="competence">
+                <span class="competence-nom">L'Adepte du Bois</span>
+                <span class="competence-desc">Pour 4 bois, obtient 1 bois de qualité rare.</span>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <h2>Choix de Spécialisation</h2>
-        <p>Veuillez choisir une des trois spécialisations suivantes pour la suite de vos compétences :</p>
-        <ul>
-          <li>Coupeur à Blanc</li>
-          <li>Montagnard</li>
-          <li>Artiste Ébéniste</li>
-        </ul>
+        <div class="choix-spec">
+          <strong>Choisissez une spécialisation</strong>
+          <ul>
+            <li>Coupeur à Blanc</li>
+            <li>Montagnard</li>
+            <li>Artiste Ébéniste</li>
+          </ul>
+        </div>
 
-        <h2>Coupeur à Blanc</h2>
-        <h4>Niveau 3</h4>
-        <ul>
-          <li><strong>La Coupe du Jour :</strong> +3 bois récoltés.</li>
-          <li><strong>Coupe Lisse :</strong> Inflige 1 attaque Saignement mineur(Long repos requis).</li>
-          <li><strong>La Coupe Blanche :</strong> Fournit ½ arbre supplémentaire par jour lors de la récolte.</li>
-        </ul>
-        <h4>Niveau 4</h4>
-        <ul>
-          <li><strong>La Coupe Tardive :</strong> +4 bois récoltés lors de la récolte.</li>
-          <li><strong>La Coupe Plus Blanche :</strong> +½ arbre et +1 bois en plus lors de la récolte.</li>
-          <li><strong>Bûche-moi Ça ! :</strong> +1 dégât pour les 2 prochaines attaques avec une hache (Court repos requis).</li>
-        </ul>
-        <h4>Niveau 5</h4>
-        <ul>
-          <li><strong>La Coupe de Trop :</strong> +3 bois et 1 attaques étourdissante (30 sec, la cible doit s’agenouiller – 1x journée).</li>
-          <li><strong>La Coupe Trop Blanche :</strong> +1 arbre et +1 bois supplémentaire lors de la récolte.</li>
-          <li><strong>Bûche dans ta Gueule ! :</strong> +3 dégâts additionnels et projection ultime de 10m à la hache sur la prochaine attaque. (1x par journée)</li>
-        </ul>
+        <div class="specialisation-block">
+          <h3 class="specialisation-titre">Coupeur à Blanc</h3>
+          <div class="specialisation-body">
 
-        <h2>Montagnard</h2>
-        <h4>Niveau 3</h4>
-        <ul>
-          <li><strong>En Forêt :</strong> +1 bois récolté lors de la récolte.</li>
-          <li><strong>Endurance du corps :</strong> Permet de résister à un effet négatif d'une concoction alchimique ou un tattouage runique (1x par long repos)</li>
-          <li><strong>Santé de Fer :</strong> Résistance aux maladies (1x par long repos)</li>
-        </ul>
-        <h4>Niveau 4</h4>
-        <ul>
-          <li><strong>Chute d’Arbre :</strong> Après avoir frappé un arbre, il tombe et paralyse 3 joueurs pendant 5 sec (Ciblé).</li>
-          <li><strong>Infatigable :</strong> Réduit le temps de repos de 15 minutes* et annule l'effet affaibli / lenteur après la mort. (*Minimum de 15 minutes, donc un court repos restera 15 mins, mais un long repose passe à 45 mins)</li>
-          <li><strong>Apprentissage Runique :</strong> Permet d’apprendre des tatouages runiques temporaires (Mineurs à Majeurs – trouvés dans des livres ou en géopolitique).</li>
-        </ul>
-        <h4>Niveau 5</h4>
-        <ul>
-          <li><strong>Vitalité Forestière :</strong> +3 PV.</li>
-          <li><strong>Chute d’Arbre Violente :</strong> Un arbre tombe et paralyse 6 personnes ciblées pendant 10 sec.</li>
-          <li><strong>Apprentissage Runique Supérieur :</strong> Permet d’apprendre des tatouages runiques légendaires (nécessite une aiguille ou une dague avec l’aptitude magique "Délicatesse").</li>
-        </ul>
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">III</span>
+                <span class="niveau-label">Niveau 3</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">La Coupe du Jour</span>
+                    <span class="competence-desc">+3 bois récoltés.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Coupe Lisse</span>
+                    <span class="competence-desc">Inflige 1 attaque Saignement mineur (long repos requis).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">La Coupe Blanche</span>
+                    <span class="competence-desc">Fournit ½ arbre supplémentaire par jour lors de la récolte.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <h2>Artiste Ébéniste</h2>
-        <h4>Niveau 3</h4>
-        <ul>
-          <li><strong>Bûcheron Né :</strong> 1 bois de qualité rare pour 2 bois commun (+2 bois si niveau 5 et a la compétence "Maître du Bois").</li>
-          <li><strong>Création de Parchemin :</strong> Permet de créer des parchemins afin d'y inscrire des glyphes magiques</li>
-          <li><strong>Berceau de la Forêt :</strong> Débloque la recette "Objet magique de bois", idéal pour l’infusion magique temporaire.</li>
-        </ul>
-        <h4>Niveau 4</h4>
-        <ul>
-          <li><strong>Charpentier de Noblesse :</strong> Prépare des pièces de bois pré-taillées pour un Bâtisseur, réduisant le coût en ressources et le temps de construction. Gagne également +1 bois lors de la récolte. (Voir comptoir des métiers pour les détails)</li>
-          <li><strong>Création d’Engins de Siège :</strong> Fabrication de catapultes, béliers, trébuchets, balistes. (Voir comptoir des métiers pour les ressources requises)</li>
-          <li><strong>Œuvre d’Art :</strong> Réalise une œuvre d’art magique (utilisée pour les objets magiques et totems). (Voir recettes pour les ressources requises)</li>
-        </ul>
-        <h4>Niveau 5</h4>
-        <ul>
-          <li><strong>Engin de Mort :</strong> Augmente la puissance d’un engin de siège. (Voir animation pour les détails)</li>
-          <li><strong>Renforcement légendaire de bâtiments :</strong> +3 protection pour les bâtiments.</li>
-          <li><strong>Maître du Bois :</strong> permet de raffiner 4 bois rares pour 1 bois légendaire.</li>
-        </ul>
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">IV</span>
+                <span class="niveau-label">Niveau 4</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">La Coupe Tardive</span>
+                    <span class="competence-desc">+4 bois récoltés lors de la récolte.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">La Coupe Plus Blanche</span>
+                    <span class="competence-desc">+½ arbre et +1 bois en plus lors de la récolte.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Bûche-moi Ça !</span>
+                    <span class="competence-desc">+1 dégât pour les 2 prochaines attaques avec une hache (court repos requis).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">V</span>
+                <span class="niveau-label">Niveau 5</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">La Coupe de Trop</span>
+                    <span class="competence-desc">+3 bois et 1 attaque étourdissante (30 sec, la cible doit s'agenouiller, 1x par journée).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">La Coupe Trop Blanche</span>
+                    <span class="competence-desc">+1 arbre et +1 bois supplémentaire lors de la récolte.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Bûche dans ta Gueule !</span>
+                    <span class="competence-desc">+3 dégâts additionnels et projection ultime de 10m à la hache sur la prochaine attaque. (1x par journée)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="specialisation-block">
+          <h3 class="specialisation-titre">Montagnard</h3>
+          <div class="specialisation-body">
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">III</span>
+                <span class="niveau-label">Niveau 3</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">En Forêt</span>
+                    <span class="competence-desc">+1 bois récolté lors de la récolte.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Endurance du corps</span>
+                    <span class="competence-desc">Permet de résister à un effet négatif d'une concoction alchimique ou d'un tatouage runique (1x par long repos).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Santé de Fer</span>
+                    <span class="competence-desc">Résistance aux maladies (1x par long repos).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">IV</span>
+                <span class="niveau-label">Niveau 4</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Chute d'Arbre</span>
+                    <span class="competence-desc">Après avoir frappé un arbre, il tombe et paralyse 3 joueurs pendant 5 sec (ciblé).</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Infatigable</span>
+                    <span class="competence-desc">Réduit le temps de repos de 15 minutes et annule l'effet affaibli / lenteur après la mort. (Minimum 15 min : un court repos reste 15 min, un long repos passe à 45 min)</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Apprentissage Runique</span>
+                    <span class="competence-desc">Permet d'apprendre des tatouages runiques temporaires (Mineurs à Majeurs, trouvés dans des livres ou en géopolitique).</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">V</span>
+                <span class="niveau-label">Niveau 5</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Vitalité Forestière</span>
+                    <span class="competence-desc">+3 PV.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Chute d'Arbre Violente</span>
+                    <span class="competence-desc">Un arbre tombe et paralyse 6 personnes ciblées pendant 10 sec.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Apprentissage Runique Supérieur</span>
+                    <span class="competence-desc">Permet d'apprendre des tatouages runiques légendaires (nécessite une aiguille ou une dague avec l'aptitude magique "Délicatesse").</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="specialisation-block">
+          <h3 class="specialisation-titre">Artiste Ébéniste</h3>
+          <div class="specialisation-body">
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">III</span>
+                <span class="niveau-label">Niveau 3</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Bûcheron Né</span>
+                    <span class="competence-desc">1 bois de qualité rare pour 2 bois communs (+2 bois si niveau 5 avec "Maître du Bois").</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Création de Parchemin</span>
+                    <span class="competence-desc">Permet de créer des parchemins afin d'y inscrire des glyphes magiques.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Berceau de la Forêt</span>
+                    <span class="competence-desc">Débloque la recette "Objet magique de bois", idéal pour l'infusion magique temporaire.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">IV</span>
+                <span class="niveau-label">Niveau 4</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Charpentier de Noblesse</span>
+                    <span class="competence-desc">Prépare des pièces de bois pré-taillées pour un Bâtisseur, réduisant le coût en ressources et le temps de construction. Gagne +1 bois lors de la récolte. (Voir comptoir des métiers)</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Création d'Engins de Siège</span>
+                    <span class="competence-desc">Fabrication de catapultes, béliers, trébuchets, balistes. (Voir comptoir des métiers pour les ressources requises)</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Œuvre d'Art</span>
+                    <span class="competence-desc">Réalise une œuvre d'art magique (utilisée pour les objets magiques et totems). (Voir recettes pour les ressources requises)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="niveau-card">
+              <div class="niveau-header">
+                <span class="niveau-badge">V</span>
+                <span class="niveau-label">Niveau 5</span>
+              </div>
+              <div class="niveau-body">
+                <div class="competences-list">
+                  <div class="competence">
+                    <span class="competence-nom">Engin de Mort</span>
+                    <span class="competence-desc">Augmente la puissance d'un engin de siège. (Voir animation pour les détails)</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Renforcement légendaire de bâtiments</span>
+                    <span class="competence-desc">+3 protection pour les bâtiments.</span>
+                  </div>
+                  <div class="competence">
+                    <span class="competence-nom">Maître du Bois</span>
+                    <span class="competence-desc">Permet de raffiner 4 bois rares pour 1 bois légendaire.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </section>
     </div>
     <button onclick="scrollToTop()" id="btnTop" title="Retour en haut">⬆ Haut</button>

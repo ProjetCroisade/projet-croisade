@@ -1400,3 +1400,288 @@ a.btn-metier:active {
   background: var(--gold);
 }
 }
+
+/* ================= MÉTIERS: LEVEL CARDS ================= */
+
+.niveau-card {
+  background: linear-gradient(160deg, #1d1508 0%, #141006 100%);
+  border: 1px solid var(--brown-border);
+  border-left: 4px solid var(--gold-dark);
+  border-radius: 8px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.niveau-card.niveau-base {
+  border-left-color: rgba(231, 186, 121, 0.35);
+}
+
+.niveau-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 9px 18px;
+  background: linear-gradient(90deg, rgba(90, 69, 32, 0.28) 0%, transparent 65%);
+  border-bottom: 1px solid rgba(231, 186, 121, 0.1);
+}
+
+.niveau-badge {
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 1.4rem;
+  color: var(--gold);
+  min-width: 28px;
+  text-align: center;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.niveau-label {
+  font-family: 'Uncial Antiqua', cursive;
+  color: var(--gold-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+}
+
+.niveau-body {
+  padding: 12px 20px 8px;
+}
+
+.niveau-body ul {
+  margin: 0 0 4px;
+  padding-left: 1.3em;
+}
+
+.niveau-body li {
+  margin-bottom: 0.5em;
+  line-height: 1.7;
+}
+
+.niveau-body p {
+  margin: 0 0 0.6em;
+  line-height: 1.7;
+}
+
+/* ================= MÉTIERS: CONCOCTIONS ================= */
+
+.concoctions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 1em 0 1.4em;
+}
+
+.concoction-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 8px 14px;
+  background: rgba(20, 14, 4, 0.7);
+  border: 1px solid rgba(58, 46, 26, 0.7);
+  border-radius: 6px;
+  font-size: 0.93rem;
+}
+
+.concoction-base {
+  color: var(--gold);
+  font-weight: bold;
+  min-width: 150px;
+  flex-shrink: 0;
+}
+
+.concoction-arrow {
+  color: var(--gold-accent);
+  flex-shrink: 0;
+}
+
+.concoction-type {
+  color: var(--gold-muted);
+  font-style: italic;
+  min-width: 70px;
+  flex-shrink: 0;
+}
+
+.concoction-desc {
+  color: var(--text-dim);
+  font-size: 0.88rem;
+}
+
+/* ================= MÉTIERS: COLLAPSIBLE RULES ================= */
+
+details.metier-rules {
+  background: rgba(20, 14, 4, 0.5);
+  border: 1px solid var(--brown-border);
+  border-radius: 8px;
+  margin: 1.4rem 0;
+  overflow: hidden;
+}
+
+details.metier-rules summary {
+  padding: 12px 18px;
+  cursor: pointer;
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 0.95rem;
+  color: var(--gold-muted);
+  letter-spacing: 0.04em;
+  background: linear-gradient(90deg, rgba(90, 69, 32, 0.18) 0%, transparent 80%);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+details.metier-rules summary::-webkit-details-marker {
+  display: none;
+}
+
+details.metier-rules summary::before {
+  content: '▶';
+  font-size: 0.65em;
+  color: var(--gold-dark);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+details[open].metier-rules summary {
+  border-bottom-color: rgba(58, 46, 26, 0.7);
+}
+
+details[open].metier-rules summary::before {
+  transform: rotate(90deg);
+}
+
+.rules-body {
+  padding: 14px 20px 12px;
+}
+
+.rules-body h4 {
+  color: var(--gold-muted);
+  font-size: 0.92rem;
+  letter-spacing: 0.03em;
+  margin: 1em 0 0.3em;
+}
+
+.rules-body h4:first-child {
+  margin-top: 0;
+}
+
+.rules-body p,
+.rules-body ul {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  margin: 0 0 0.5em;
+  line-height: 1.65;
+}
+
+.rules-body ul {
+  padding-left: 1.4em;
+}
+
+/* ================= MÉTIERS: SPÉCIALISATION BLOCKS ================= */
+
+.choix-spec {
+  margin: 1.6rem 0 1rem;
+  padding: 10px 16px;
+  background: rgba(90, 69, 32, 0.12);
+  border-left: 3px solid var(--gold-dark);
+  border-radius: 0 6px 6px 0;
+  color: var(--text-dim);
+  font-size: 0.93rem;
+}
+
+.choix-spec strong {
+  color: var(--gold-muted);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.choix-spec ul {
+  margin: 0;
+  padding-left: 1.3em;
+}
+
+.choix-spec li {
+  margin-bottom: 0.3em;
+}
+
+.specialisation-block {
+  margin-top: 1.6rem;
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-top: 3px solid var(--gold-dark);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.specialisation-titre {
+  font-family: 'Uncial Antiqua', cursive;
+  color: var(--gold);
+  font-size: 1.1rem;
+  padding: 10px 18px;
+  margin: 0;
+  background: linear-gradient(90deg, rgba(90, 69, 32, 0.28) 0%, transparent 75%);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.1);
+  letter-spacing: 0.03em;
+}
+
+.specialisation-body {
+  padding: 12px 12px 2px;
+}
+
+/* ================= MÉTIERS: COMPÉTENCES ================= */
+
+.competences-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 2px 0 4px;
+}
+
+.competence {
+  padding: 7px 12px 7px 14px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 5px;
+  border-left: 2px solid rgba(201, 168, 76, 0.22);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.competence:hover {
+  background: rgba(231, 186, 121, 0.05);
+  border-left-color: var(--gold-dark);
+}
+
+.competence-nom {
+  display: block;
+  color: var(--gold-muted);
+  font-weight: bold;
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.competence-desc {
+  display: block;
+  color: var(--text-dim);
+  font-size: 0.87rem;
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+/* ================= UTILITY ================= */
+
+.positif { color: var(--green); }
+.negatif { color: var(--red); }
+
+/* ================= RARITY COLORS ================= */
+
+.rarity-desuet    { color: #777; }
+.rarity-commune   { color: var(--green); font-weight: bold; }
+.rarity-rare      { color: #6a9fd8; font-weight: bold; }
+.rarity-legendaire{ color: var(--orange-warn); font-weight: bold; }
+.rarity-mythique  { color: #b87ed6; font-weight: bold; }
+
+tr.rarity-desuet    td { color: #777; }
+tr.rarity-commune   td:last-child { color: var(--green); font-weight: bold; }
+tr.rarity-rare      td:last-child { color: #6a9fd8; font-weight: bold; }
+tr.rarity-legendaire td:last-child { color: var(--orange-warn); font-weight: bold; }
+tr.rarity-mythique  td:last-child { color: #b87ed6; font-weight: bold; }
