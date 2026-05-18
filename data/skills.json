@@ -6,7 +6,7 @@
     "duree": "1 fois par heure",
     "portee": "1 cible à portée de voix",
     "requis": "",
-    "effet": "Permet d'inventer une histoire sans queue ni tête qui embrouillera la cible pendant 5 minutes, la rendant incapable de se concentrer sur autre chose."
+    "effet": "Dire 'Baragouinage' à la cible pour activer la compétence. Permet d'inventer une histoire sans queue ni tête qui embrouillera la cible pendant 5 minutes, la rendant incapable de se concentrer sur autre chose."
   },
   {
     "name": "Prière / Méditation",
@@ -24,7 +24,7 @@
     "duree": "1 fois par combat",
     "portee": "1 cible",
     "requis": "",
-    "effet": "Inflige +1 dégât supplémentaire lors de votre prochaine attaque physique. Chaque niveau de Coup puissant ajoute +1 dégât supplémentaire (ex : Coup puissant II = +2 dégâts) et une utilisation de plus par combat."
+    "effet": "Frapper la cible et annoncer 'Coup puissant [dégâts totaux]'. Inflige +1 dégât supplémentaire lors de votre prochaine attaque physique. Chaque niveau de Coup puissant ajoute +1 dégât supplémentaire (ex : Coup puissant II = +2 dégâts) et une utilisation de plus par combat."
   },
   {
     "name": "Désarmement (Mineur / Majeur)",
@@ -69,7 +69,7 @@
     "duree": "15 secondes",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet au lanceur de s'enfuir et de ne pas être suivi pendant 15 secondes. Utilisable 2 fois par jour maximum."
+    "effet": "Dire 'Fuite rapide' pour activer l'effet. Permet au lanceur de s'enfuir et de ne pas être suivi pendant 15 secondes. Utilisable 2 fois par jour maximum."
   },
   {
     "name": "Lumière",
@@ -87,7 +87,7 @@
     "duree": "1 fois par conversation",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet de mentir de manière convaincante lors d'une conversation (Permet de résister à une détection de mensonge)."
+    "effet": "Dire 'Mensonge' si une Détection de mensonges est utilisée contre vous pour y résister. Permet de mentir de manière convaincante lors d'une conversation."
   },
   {
     "name": "Résistance à la peur (Mineure / Majeure)",
@@ -96,7 +96,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Confère une résistance (mineure ou majeure selon l'indication) aux effets de peur."
+    "effet": "Dire 'Résistance à la peur' lorsqu'un effet de peur est utilisé contre vous pour y résister. Confère une résistance (mineure ou majeure selon l'indication) aux effets de peur."
   },
   {
     "name": "Soin divin léger",
@@ -105,7 +105,7 @@
     "duree": "Instantané / 1 fois par heure",
     "portee": "Soi-même ou 1 cible à portée de main",
     "requis": "",
-    "effet": "Permet de soigner 1 point de vie à soi-même ou à une autre personne en invoquant une énergie divine."
+    "effet": "Toucher la cible et dire 'Soin divin léger'. Permet de soigner 1 point de vie à soi-même ou à une autre personne."
   },
   {
     "name": "Transfert de mana",
@@ -132,7 +132,7 @@
     "duree": "Tant que le lanceur reste immobile",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet au lanceur de se fondre dans son environnement immédiat, le rendant difficile à détecter tant qu'il reste immobile."
+    "effet": "Se mettre bras croisés pour signaler l'état, comme Discrétion. Permet au lanceur de se fondre dans son environnement immédiat, le rendant difficile à détecter tant qu'il reste immobile."
   },
   {
     "name": "Corruption",
@@ -141,7 +141,7 @@
     "duree": "Une seule conversation",
     "portee": "1 cible à portée de voix",
     "requis": "",
-    "effet": "Permet de corrompre une personne en lui offrant un objet de valeur (réel ou symbolique). La cible doit simuler un changement d'attitude envers le lanceur, devenant plus encline à coopérer ou à suivre ses suggestions pendant une seule conversation."
+    "effet": "Offrir l'objet à la cible en disant 'Corruption' pour activer la compétence. La cible doit simuler un changement d'attitude envers le lanceur, devenant plus encline à coopérer ou à suivre ses suggestions pendant une seule conversation."
   },
   {
     "name": "Coup assommant",
@@ -150,7 +150,7 @@
     "duree": "1 fois par combat",
     "portee": "1 cible à portée d'arme",
     "requis": "",
-    "effet": "Permet au combattant d'utiliser le pommeau de son arme pour assommer un adversaire. L'adversaire touché doit simuler un état d'inconscience temporaire pendant 5 minutes. S'il subit des dégâts ou si il est secoué, il se réveille immédiatement."
+    "effet": "Toucher l'adversaire avec le pommeau de son arme et annoncer 'Coup assommant'. L'adversaire touché doit simuler un état d'inconscience temporaire pendant 5 minutes. S'il subit des dégâts ou s'il est secoué, il se réveille immédiatement."
   },
   {
     "name": "Cérémonie",
@@ -204,7 +204,7 @@
     "duree": "15 minutes / 1 fois par heure",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Le barbare entre dans une folie furieuse (Rage) et attaque tout le monde à vue. Il gagne +2 dégâts sur toutes ses attaques physiques, mais ne peut pas distinguer amis et ennemis."
+    "effet": "Annoncer 'Rage' à voix haute pour déclencher l'état. Le barbare entre dans une folie furieuse et attaque tout le monde à vue. Il gagne +2 dégâts sur toutes ses attaques physiques, mais ne peut pas distinguer amis et ennemis."
   },
   {
     "name": "Projection",
@@ -213,7 +213,7 @@
     "duree": "1 fois par combat",
     "portee": "1 cible à portée d'arme",
     "requis": "",
-    "effet": "Le barbare donne un coup violent qui projette son adversaire en arrière de 2 mètres. La cible doit simuler une chute au sol à 2 mètres derrière elle."
+    "effet": "Frapper l'adversaire et lui annoncer 'Projection 2 mètres'. La cible doit simuler une chute au sol à 2 mètres derrière elle."
   },
   {
     "name": "Déséquilibre",
@@ -222,7 +222,7 @@
     "duree": "Instantané / 1 fois par combat",
     "portee": "1 cible à portée d'arme",
     "requis": "",
-    "effet": "Le combattant utilise son arme pour frapper les jambes de son adversaire, le forçant à perdre l'équilibre. La cible doit mettre un genou à terre et simuler une perte d'équilibre pendant 10 secondes."
+    "effet": "Frapper les jambes de l'adversaire et annoncer 'Déséquilibre'. La cible doit mettre un genou à terre et simuler une perte d'équilibre pendant 10 secondes."
   },
   {
     "name": "Bouclier Solide I, II, III",
@@ -231,7 +231,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Chaque niveau permet de résister à un Brise Bouclier de plus (ex : Bouclier Solide II permet de résister à 2 Brise Bouclier). Au niveau 3, le Maître du Bouclier est immunisé contre les effets de Brise Bouclier."
+    "effet": "Dire 'Bouclier Solide' lorsqu'un effet de Brise Bouclier vous cible pour y résister. Chaque niveau permet de résister à un Brise Bouclier de plus (ex : Bouclier Solide II permet de résister à 2 Brise Bouclier). Au niveau 3, le Maître du Bouclier est immunisé contre les effets de Brise Bouclier."
   },
   {
     "name": "Ancrage",
@@ -240,7 +240,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Le guerrier devient extrêmement stable, ce qui lui permet de résister aux tentatives de le projeter ou de le déséquilibrer."
+    "effet": "Dire 'Ancrage' lorsqu'une tentative de projection ou de déséquilibre vous cible pour y résister. Le guerrier devient extrêmement stable, ce qui lui permet de résister aux tentatives de le projeter ou de le déséquilibrer."
   },
   {
     "name": "Méditation du Ki",
@@ -249,7 +249,7 @@
     "duree": "10 minutes",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet au moine de se concentrer et de régénérer son énergie intérieure (Ki). Pendant la méditation, le moine regagne 3 points de vie après avoir médité pendant 10 minutes."
+    "effet": "S'asseoir ou se mettre à genoux, yeux fermés, et annoncer 'Méditation du Ki' pour signaler l'état de méditation. Le moine regagne 3 points de vie après 10 minutes de méditation."
   },
   {
     "name": "Frappe du Ki",
@@ -258,7 +258,7 @@
     "duree": "1 fois par combat",
     "portee": "1 cible à portée d'arme",
     "requis": "",
-    "effet": "Le moine canalise son Ki dans une attaque puissante. La cible subit des dégâts spectraux lors de la prochaine attaque physique du moine."
+    "effet": "Frapper la cible et annoncer 'Frappe du Ki [dégâts totaux]'. Les dégâts infligés sont de type spectral."
   },
   {
     "name": "Coup divin",
@@ -267,7 +267,7 @@
     "duree": "1 fois par combat",
     "portee": "1 cible à portée d'arme",
     "requis": "",
-    "effet": "Le priant canalise l'énergie divine dans une attaque puissante. La cible subit des dégâts divins lors de la prochaine attaque physique du prêtre."
+    "effet": "Frapper la cible et annoncer 'Coup divin [dégâts totaux]'. Les dégâts infligés sont de type divin."
   },
   {
     "name": "Cible préférée : Spectres & fantômes",
@@ -285,7 +285,7 @@
     "duree": "1 fois par GN",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Le prêtre ou spiritualiste peut faire une requête à sa divinité ou aux esprits pour obtenir une aide divine ou spirituelle dans une situation critique. La nature de l'aide est laissée à la discrétion de l'équipe d'animation, mais elle doit être significative et appropriée au contexte."
+    "effet": "Prier à voix haute et formuler sa requête en direction de l'équipe d'animation. La nature de l'aide est laissée à la discrétion de l'équipe d'animation, mais elle doit être significative et appropriée au contexte."
   },
   {
     "name": "Pied Forestier",
@@ -303,7 +303,7 @@
     "duree": "1 fois par combat",
     "portee": "1 cible à distance",
     "requis": "",
-    "effet": "Inflige +1 dégât supplémentaire lors de votre prochaine attaque à distance. Chaque niveau de Tir Puissant ajoute +1 dégât supplémentaire (ex : Tir Puissant II = +2 dégâts) et une utilisation de plus par combat."
+    "effet": "Tirer et annoncer 'Tir puissant [dégâts totaux]'. Inflige +1 dégât supplémentaire lors de votre prochaine attaque à distance. Chaque niveau de Tir Puissant ajoute +1 dégât supplémentaire (ex : Tir Puissant II = +2 dégâts) et une utilisation de plus par combat."
   },
   {
     "name": "Analyse des points faibles",
@@ -312,7 +312,7 @@
     "duree": "1 fois par heure",
     "portee": "Une cible",
     "requis": "",
-    "effet": "Oblige l'adversaire à révéler un de ses points faibles (ex : faiblesse à un type de magie, incapacité à esquiver, etc.)."
+    "effet": "Dire 'Analyse des points faibles' à la cible pour activer la compétence. Oblige l'adversaire à révéler un de ses points faibles (ex : faiblesse à un type de magie, incapacité à esquiver, etc.)."
   },
   {
     "name": "Coup précis I, II, III",
@@ -320,8 +320,8 @@
     "classe": ["Assassin", "Voleur"],
     "duree": "1 fois par combat",
     "portee": "Une cible à portée d'arme",
-    "requis": "",
-    "effet": "Chaque niveau donne +1 dégât supplémentaire lors de votre prochaine attaque physique (ex : Coup précis II = +2 dégâts) et une utilisation de plus par combat."
+    "requis": "Chaque niveau requiert le niveau précédent.",
+    "effet": "Frapper la cible et annoncer 'Coup précis [dégâts totaux]'. Chaque niveau donne +1 dégât supplémentaire lors de votre prochaine attaque physique (ex : Coup précis II = +2 dégâts) et une utilisation de plus par combat."
   },
   {
     "name": "Chant de joie",
@@ -357,7 +357,7 @@
     "duree": "Une fois par cible par heure",
     "portee": "Une cible à portée de main",
     "requis": "Chaque niveau requiert le niveau précédent.",
-    "effet": "Permet au voleur de subtiliser un petit objet (qui tient dans la main) à une cible sans se faire remarquer. Chaque niveau permet de voler des objets de plus en plus gros (ex : Vol-à-la-tire II permet de voler des objets pouvant tenir dans deux mains). Vol-à-la-tire III permet de voler des objets pouvant être portés sur soi (sac, bourse, arme (en jeu), etc.)."
+    "effet": "Toucher avec la main l'objet sur la cible pendant 15 secondes sans se faire prendre et lui dire 'Vol-à-la-tire' pour effectuer le vol. La cible doit remettre l'objet au voleur. Chaque niveau permet de voler des objets de plus en plus gros (ex : Vol-à-la-tire I permet de voler des pièces, et des petits objets qui entre dans la paume d'une main, Vol-à-la-tire II permet de voler des objets pouvant tenir dans la paume de deux mains). Vol-à-la-tire III permet de voler des objets pouvant être portés sur soi (sac, bourse, arme (en jeu), etc.)."
   },
   {
     "name": "Ritualiste",
@@ -375,7 +375,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet de communiquer avec les animaux de manière basique (simuler des sons, des gestes, etc.)."
+    "effet": "Dire 'Communication avec les animaux' à l'animal (joué par l'animation ou un joueur) pour engager la communication. Permet de communiquer avec les animaux de manière basique."
   },
   {
     "name": "Création de parchemins magiques",
@@ -402,7 +402,7 @@
     "duree": "15 minutes / 1 fois par heure",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet d'esquiver tous les pièges et être immunisé aux dégâts et effets de chute pendant 15 minutes."
+    "effet": "Dire 'Agilité Arcanique' pour activer l'effet. Permet d'esquiver tous les pièges et être immunisé aux dégâts et effets de chute pendant 15 minutes."
   },
   {
     "name": "Rage Endurante",
@@ -411,7 +411,7 @@
     "duree": "Sur déclenchement de Rage / Passif",
     "portee": "Groupe à portée de voix",
     "requis": "Rage",
-    "effet": "Lorsque le barbare est en état de Rage, il gagne +3 points de vie temporaires et ignore la douleur des blessures légères (ne pas simuler les blessures qui ne sont pas mortelles)."
+    "effet": "S'active automatiquement lors du déclenchement de Rage. Lorsque le barbare est en état de Rage, il gagne +3 points de vie temporaires et ignore la douleur des blessures légères (ne pas simuler les blessures qui ne sont pas mortelles)."
   },
   {
     "name": "Empathie du Barbare",
@@ -420,7 +420,7 @@
     "duree": "1 fois par heure",
     "portee": "Un allié proche",
     "requis": "Rage",
-    "effet": "Permet au Barbare de partager une partie de sa rage avec un allié proche (à moins de 2 mètres). L'allié tombe lui aussi en rage pendant 5 minutes et gagne +1 dégât sur ses attaques physiques pendant ces 5 minutes."
+    "effet": "Dire 'Empathie du Barbare' à voix haute pour partager l'état avec un allié proche (à moins de 2 mètres). L'allié tombe lui aussi en rage pendant 5 minutes et gagne +1 dégât sur ses attaques physiques."
   },
   {
     "name": "Brise Membre",
@@ -429,7 +429,7 @@
     "duree": "Instantané / 1 fois par heure",
     "portee": "Une cible à portée d'arme",
     "requis": "Coup Puissant",
-    "effet": "Le barbare donne un coup puissant qui brise un membre de son adversaire (bras ou jambe), mais ne fait aucun dégât. La cible doit simuler une incapacité à utiliser ce membre jusqu'à la fin du combat."
+    "effet": "Frapper la cible et annoncer 'Brise Membre [bras/jambe]'. La cible doit simuler une incapacité à utiliser ce membre jusqu'à la fin du combat."
   },
   {
     "name": "Ralliement",
@@ -438,7 +438,7 @@
     "duree": "Instantané / 1 fois par jour",
     "portee": "Groupe à portée de voix",
     "requis": "",
-    "effet": "Le guerrier lance un cri de guerre inspirant qui redonne du courage à ses alliés. Tous les alliés à portée de voix regagnent 2 points de vie et gagnent +1 dégât sur leurs attaques physiques pendant le prochain combat."
+    "effet": "Crier 'Ralliement' à voix haute pour activer l'effet. Tous les alliés à portée de voix regagnent 2 points de vie et gagnent +1 dégât sur leurs attaques physiques pendant le prochain combat."
   },
   {
     "name": "Brise Arme",
@@ -447,7 +447,7 @@
     "duree": "Instantané / 1 fois par heure",
     "portee": "1 cible à portée d'arme",
     "requis": "",
-    "effet": "Le guerrier donne un coup puissant qui brise l'arme de son adversaire. La cible doit simuler la perte de son arme, qui doit être réparée après l'utilisation de ce pouvoir."
+    "effet": "Frapper l'arme de l'adversaire et annoncer 'Brise Arme'. La cible doit simuler la perte de son arme, qui doit être réparée après l'utilisation de ce pouvoir."
   },
   {
     "name": "Brise Bouclier",
@@ -456,7 +456,7 @@
     "duree": "Instantané / 1 fois par heure",
     "portee": "1 cible à portée d'arme",
     "requis": "",
-    "effet": "Le guerrier donne un coup puissant qui brise le bouclier de son adversaire. La cible doit simuler la perte de son bouclier, qui doit être réparé après l'utilisation de ce pouvoir."
+    "effet": "Frapper le bouclier de l'adversaire et annoncer 'Brise Bouclier'. La cible doit simuler la perte de son bouclier, qui doit être réparé après l'utilisation de ce pouvoir."
   },
   {
     "name": "Déflexion",
@@ -465,7 +465,7 @@
     "duree": "1 fois par combat",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Le maître du bouclier utilise son bouclier pour dévier un sort lancé contre lui. Le sort est annulé et n'a aucun effet sur le maître du bouclier."
+    "effet": "Lever son bouclier et annoncer 'Déflexion' lorsqu'un sort ou un catalyseur vous cible. Le sort est annulé et n'a aucun effet."
   },
   {
     "name": "Aura Protectrice",
@@ -474,7 +474,7 @@
     "duree": "Jusqu'à utilisation / 1 fois par heure",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Le moine émet une aura protectrice, la prochaine attaque physique portée contre lui engendrera un effet de désarmement mineur sur l'attaquant (voir Désarmement Mineur)."
+    "effet": "Dire 'Aura Protectrice' pour activer l'aura. La prochaine attaque physique portée contre le moine engendrera un effet de Désarmement mineur sur l'attaquant (voir Désarmement Mineur)."
   },
   {
     "name": "Résistance au charme / séduction / manipulation (Mineure / Majeure)",
@@ -483,7 +483,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Le moine développe une forte résistance mentale contre les tentatives de charme, de séduction ou de manipulation."
+    "effet": "Dire 'Résistance au charme' lorsqu'un effet de charme, séduction ou manipulation est utilisé contre vous pour y résister. Le moine développe une forte résistance mentale contre ces tentatives."
   },
   {
     "name": "Détection du Mal / Bien",
@@ -492,7 +492,7 @@
     "duree": "1 minute / 1 fois par heure",
     "portee": "1 cible",
     "requis": "",
-    "effet": "En se concentrant 1 minute, le moine peut détecter les intentions malveillantes ou bienveillantes d'une cible à proximité (jusqu'à 10 mètres). Il ressent une sensation de malaise ou de confort en présence de la cible."
+    "effet": "Dire 'Détection du Mal/Bien' à la cible après 1 minute de concentration. La cible (ou l'équipe d'animation) doit révéler ses intentions générales. Le moine ressent une sensation de malaise ou de confort en présence de la cible."
   },
   {
     "name": "Cruauté du Paladin",
@@ -519,7 +519,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Immunité totale aux effets de chute, de renversement, de projections et de déséquilibre."
+    "effet": "Dire 'Acrobate' lorsqu'un effet de chute, renversement ou projection vous cible pour y résister. Immunité totale aux effets de chute, de renversement, de projections et de déséquilibre."
   },
   {
     "name": "Stabilité",
@@ -528,7 +528,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet de résister aux projections, à la lenteur et à la chaîne arcanique."
+    "effet": "Dire 'Stabilité' lorsqu'une projection, une lenteur ou une chaîne arcanique vous cible pour y résister. Permet de résister aux projections, à la lenteur et à la chaîne arcanique."
   },
   {
     "name": "Égorgement",
@@ -537,7 +537,7 @@
     "duree": "1 fois par jour",
     "portee": "1 cible prise par surprise",
     "requis": "",
-    "effet": "L'Assassin peut tenter d'égorger une cible prise par surprise. Si l'attaque réussit, la cible doit simuler un coma instantané (le joueur doit coopérer)."
+    "effet": "Approcher la cible par surprise, la toucher et dire 'Égorgement'. La cible doit simuler un coma instantané (le joueur doit coopérer)."
   },
   {
     "name": "Furtivité majeure (géopolitique)",
@@ -555,7 +555,7 @@
     "duree": "Instantané",
     "portee": "Une cible",
     "requis": "",
-    "effet": "Permet de détecter si une cible ment ou dit la vérité lors d'une conversation."
+    "effet": "Dire 'Détection de mensonges' à la cible lorsqu'elle parle. La cible doit indiquer si elle ment ou dit la vérité."
   },
   {
     "name": "Spectacle",
@@ -573,7 +573,7 @@
     "duree": "1 fois par heure",
     "portee": "1 cible",
     "requis": "",
-    "effet": "Permet de persuader une cible de faire quelque chose qu'elle ne ferait pas normalement. La cible doit simuler un changement d'attitude envers le lanceur, devenant plus encline à coopérer ou à suivre ses suggestions pendant une seule conversation."
+    "effet": "Dire 'Éloquence' à la cible avant de commencer à la persuader. La cible doit simuler un changement d'attitude envers le lanceur, devenant plus encline à coopérer ou à suivre ses suggestions pendant une seule conversation."
   },
   {
     "name": "Diversion",
@@ -582,7 +582,7 @@
     "duree": "1 fois par minute",
     "portee": "1 cible",
     "requis": "",
-    "effet": "La personne crée une diversion pour détourner l'attention d'une cible. La cible doit simuler une distraction pendant 5 secondes."
+    "effet": "Dire 'Diversion' à la cible pour activer l'effet. La cible doit simuler une distraction pendant 5 secondes."
   },
   {
     "name": "Falsification de documents",
@@ -609,7 +609,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet de communiquer avec les êtres végétaux de manière basique (simuler des sons, des gestes, etc.)."
+    "effet": "Dire 'Communication avec les êtres végétaux' à l'équipe d'animation pour activer la communication. Permet de communiquer avec les êtres végétaux de manière basique."
   },
   {
     "name": "Rituels de l'obscur (Mineur / Majeur)",
@@ -627,7 +627,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet de communiquer avec les esprits de manière basique (simuler des sons, des gestes, etc.)."
+    "effet": "Dire 'Communication avec les esprits' à l'équipe d'animation pour activer la communication. Permet de communiquer avec les esprits de manière basique."
   },
   {
     "name": "Rage Mortelle",
@@ -636,7 +636,7 @@
     "duree": "Jusqu'à la mort / 1 fois par jour / 1 minute",
     "portee": "Soi-même",
     "requis": "Rage",
-    "effet": "Le barbare entre dans une rage si intense qu'il devient presque inarrêtable. Pendant 1 minute, il gagne +5 dégâts sur toutes ses attaques physiques et ignore toutes les blessures, même mortelles. Cependant, à la fin de cette minute, le barbare s'effondre, mort, achevé par sa propre fureur."
+    "effet": "Annoncer 'Rage Mortelle' à voix haute pour déclencher l'état. Pendant 1 minute, le barbare gagne +5 dégâts sur toutes ses attaques physiques et ignore toutes les blessures, même mortelles. À la fin de cette minute, le barbare s'effondre, mort, achevé par sa propre fureur."
   },
   {
     "name": "Rage Consciente",
@@ -654,7 +654,7 @@
     "duree": "Instantané / 1 fois par jour",
     "portee": "1 cible à portée d'arme",
     "requis": "",
-    "effet": "Le barbare donne un coup destructeur qui brise n'importe quel objet devant lui (Toujours valider avec l'équipe d'animation), mais brise également son arme dans le processus. L'arme doit être réparée après l'utilisation de ce pouvoir."
+    "effet": "Frapper l'objet cible et annoncer 'Coup destructeur' (toujours valider avec l'équipe d'animation). L'objet ciblé est brisé, mais l'arme utilisée l'est également et doit être réparée."
   },
   {
     "name": "Force surhumaine",
@@ -672,7 +672,7 @@
     "duree": "1 fois par jour",
     "portee": "1 cible à portée de voix",
     "requis": "",
-    "effet": "Le guerrier gagne une renommée légendaire, ce qui lui confère le respect et l'admiration de ses pairs. Une fois par jour, il peut invoquer cette renommée pour forcer une cible à obéir à ses ordres pendant 10 minutes. (Charme majeur)"
+    "effet": "Dire 'Renommée' à la cible pour activer l'effet (Charme majeur). La cible est forcée d'obéir aux ordres du guerrier pendant 10 minutes."
   },
   {
     "name": "Gardien",
@@ -681,7 +681,7 @@
     "duree": "1 fois par jour",
     "portee": "Un allié proche",
     "requis": "",
-    "effet": "Le maître du bouclier se place proche d'un allié (à moins de 2 mètres), jusqu'à la fin du combat le maître du bouclier intercepte tous les dégâts dirigés contre cet allié."
+    "effet": "Dire 'Gardien' et se placer à moins de 2 mètres de l'allié protégé pour activer l'effet. Jusqu'à la fin du combat, le maître du bouclier intercepte tous les dégâts dirigés contre cet allié."
   },
   {
     "name": "Frappe Suprême",
@@ -690,7 +690,7 @@
     "duree": "1 fois par jour",
     "portee": "1 cible à portée d'arme",
     "requis": "",
-    "effet": "Le moine canalise toute son énergie intérieure dans une attaque dévastatrice. La cible subit +5 dégâts supplémentaires lors de la prochaine attaque physique du moine."
+    "effet": "Frapper la cible et annoncer 'Frappe Suprême [dégâts totaux]'. La cible subit +5 dégâts supplémentaires lors de cette attaque."
   },
   {
     "name": "Sagesse du Moine",
@@ -708,7 +708,7 @@
     "duree": "1 fois par jour",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Le moine utilise son Ki pour créer une barrière protectrice autour de lui. Pendant 1 minute, il ignore tous les dégâts physiques et magiques tant qu'il maintient sa concentration (il ne peut pas attaquer ou bouger pendant ce temps)."
+    "effet": "Dire 'Protection du Ki' et rester immobile sans attaquer ni bouger pour maintenir l'effet. Pendant 1 minute, le moine ignore tous les dégâts physiques et magiques."
   },
   {
     "name": "Cible préférée : Démons",
@@ -726,7 +726,7 @@
     "duree": "1 fois par combat",
     "portee": "Une cible touchée à distance",
     "requis": "",
-    "effet": "Permet à l'Archer de tirer une flèche enchantée qui inflige +3 dégâts magiques en plus des dégâts physiques normaux."
+    "effet": "Tirer et annoncer 'Flèche magique [dégâts totaux]' (les +3 dégâts supplémentaires sont de type magique)."
   },
   {
     "name": "Rafale de flèches",
@@ -744,7 +744,7 @@
     "duree": "2 minutes de torture par phrase",
     "portee": "1 cible",
     "requis": "",
-    "effet": "Permet d'obtenir des informations précises d'une cible en la torturant physiquement ou mentalement. La cible doit coopérer et fournir l'information demandée après 2 minutes de torture par phrase."
+    "effet": "Dire 'Torture' à la cible pour signaler le début de la séance. La cible doit coopérer et fournir l'information demandée après 2 minutes de torture par phrase."
   },
   {
     "name": "Charme",
@@ -753,7 +753,7 @@
     "duree": "1 fois par heure / 15 minutes",
     "portee": "1 cible",
     "requis": "",
-    "effet": "Permet de charmer une cible pendant 15 minutes. La cible est affectée par l'effet de Charme majeur."
+    "effet": "Dire 'Charme' à la cible pour activer l'effet. La cible est affectée par l'effet de Charme majeur pendant 15 minutes."
   },
   {
     "name": "Réflexion de charme",
@@ -762,7 +762,7 @@
     "duree": "1 fois par heure",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet de renvoyer un sort de charme, de séduction ou de manipulation lancé contre soi-même à son lanceur."
+    "effet": "Dire 'Réflexion de charme' lorsqu'un effet de Charme, de séduction ou de manipulation est utilisé contre vous pour le renvoyer à son lanceur."
   },
   {
     "name": "Provocation",
@@ -771,7 +771,7 @@
     "duree": "1 fois par heure / 15 minutes",
     "portee": "1 cible",
     "requis": "",
-    "effet": "Le voleur insulte sa cible de manière si virulente qu'elle ne peut s'empêcher de réagir. La cible est affligée par l'effet Provocation pendant 15 minutes."
+    "effet": "Dire 'Provocation' à la cible pour activer l'effet. La cible est affligée par l'effet Provocation pendant 15 minutes."
   },
   {
     "name": "Duel",
@@ -780,7 +780,7 @@
     "duree": "1 fois par jour",
     "portee": "1 cible",
     "requis": "",
-    "effet": "Oblige la cible à accepter un duel. La cible doit simuler l'acceptation du duel et ne peut pas refuser."
+    "effet": "Dire 'Duel' à la cible pour activer l'effet. La cible doit simuler l'acceptation du duel et ne peut pas refuser."
   },
   {
     "name": "Ritualiste aguerri",
