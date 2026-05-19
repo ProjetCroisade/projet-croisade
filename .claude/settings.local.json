@@ -26,7 +26,8 @@
       "Bash(Select-Object Count)",
       "Bash(rm \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\\\\images\\\\slideshow\\\\20250628_143913.jpg\" \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\\\\images\\\\slideshow\\\\20250628_143540.jpg\" \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\\\\images\\\\slideshow\\\\20250628_150820.jpg\" \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\\\\images\\\\slideshow\\\\DSC_0102.JPG\" \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\\\\images\\\\slideshow\\\\DSC_0182.JPG\" \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\\\\images\\\\slideshow\\\\DSC_0188.JPG\" \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\\\\images\\\\slideshow\\\\DSC_0200.JPG\")",
       "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\Julien\\\\Documents\\\\GitHub\\\\projet-croisade\" -Recurse -Directory)",
-      "Bash(Select-Object -First 20)"
+      "Bash(Select-Object -First 20)",
+      "Bash(awk '{print $1}')"
     ],
     "additionalDirectories": [
       "c:\\Users\\Julien\\Documents\\GitHub\\projet-croisade\\images\\slideshow"
