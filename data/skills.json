@@ -384,7 +384,7 @@
     "duree": "Permanent / Passif",
     "portee": "Soi-même",
     "requis": "",
-    "effet": "Permet à l'enchanteur de créer des parchemins magiques contenant des effets magiques selon le sort infusé dans le parchemin. L'infusion prend 1 heure et coûte à l'enchanteur le prix en mana du sort infusé. Cette compétence permet également la création de Parchemins de Serment, utilisés pour la capture d'esclaves."
+    "effet": "Permet à l'enchanteur de créer des parchemins magiques contenant des effets magiques selon le sort infusé dans le parchemin (Nécessite un parchemin crée par l'Artiste Ébéniste (Bûcheron niv 3)). L'infusion prend 1 heure et coûte à l'enchanteur le prix en mana du sort infusé (Le sort doit être connu par l'enchanteur). Cette compétence permet également la création de Parchemins de Serment, utilisés pour la capture d'esclaves."
   },
   {
     "name": "Concentration Arcanique",
