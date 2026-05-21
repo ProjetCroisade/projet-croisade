@@ -75,7 +75,7 @@ const REGIONS = {
 };
 
 // ── Layer toggles ─────────────────────────────────────────────
-const layers     = { map: true, colors: true };
+const layers     = { map: true, colors: true, tooltips: true };
 const tooltip    = document.getElementById('map-tooltip');
 const tipDot     = document.getElementById('tip-dot');
 const tipName    = document.getElementById('tip-name');
@@ -127,7 +127,8 @@ function initInteractivity(svgEl) {
     el.style.cursor = data.url ? 'pointer' : 'default';
 
     el.addEventListener('mouseenter', e => {
-      setFill(el, hexToRgba(data.color, data.alpha ? data.alpha + 0.1 : 0.85));
+      if (layers.colors) setFill(el, hexToRgba(data.color, data.alpha ? data.alpha + 0.1 : 0.85));
+      if (!layers.tooltips) return;
       tipDot.style.background = data.color;
       tipName.textContent     = data.label;
       tipDesc.textContent     = data.desc;
@@ -155,8 +156,9 @@ document.querySelectorAll('.layer-btn').forEach(btn => {
     const layer = btn.dataset.layer;
     layers[layer] = !layers[layer];
     btn.classList.toggle('off', !layers[layer]);
-    if (layer === 'map')    mapImg.style.opacity = layers.map ? '1' : '0';
-    if (layer === 'colors') applyIdleFills();
+    if (layer === 'map')      mapImg.style.opacity = layers.map ? '1' : '0';
+    if (layer === 'colors')   applyIdleFills();
+    if (layer === 'tooltips' && !layers.tooltips) tooltip.style.display = 'none';
   });
 });
 

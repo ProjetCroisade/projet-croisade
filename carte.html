@@ -33,7 +33,6 @@ fetch('header.html')
 
 <main style="text-align:center; padding: 60px 20px;">
   <h2 style="font-family:'Uncial Antiqua', cursive; color:#e7ba79; font-size:2rem; margin-bottom:0.3rem;">Carte du monde</h2>
-  <p style="color:#aaa; font-style:italic; margin-bottom:0.4rem;">Carte incomplète - en construction</p>
   <p style="color:#aaa; font-style:italic; margin-bottom:1.2rem;">Survole une région pour la découvrir - clique pour en savoir plus.</p>
 
   <div id="layer-controls">
@@ -45,11 +44,15 @@ fetch('header.html')
       <span class="btn-dot" style="background: linear-gradient(135deg,#8B2222 50%,#2D8A4E 50%);"></span>
       Territoires
     </button>
+    <button class="layer-btn" id="btn-tooltips" data-layer="tooltips">
+      <span class="btn-dot" style="background:#e7ba79;"></span>
+      Infobulles
+    </button>
   </div>
 
   <div id="map-container">
     <div id="map-inner">
-      <img id="map-img" src="images/carte incomplète.png" alt="Carte du monde">
+      <img id="map-img" src="images/cartecomplete.webp" alt="Carte du monde">
       <div id="svg-overlay"></div>
     </div>
     <div id="zoom-controls">
