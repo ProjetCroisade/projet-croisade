@@ -8,6 +8,34 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <link rel="icon" href="favicon.png" type="image/x-icon">
+  <style>
+    .error-code {
+      font-family: 'Uncial Antiqua', cursive;
+      font-size: 8rem;
+      color: var(--gold);
+      text-shadow: 0 0 40px rgba(231, 186, 121, 0.4), 2px 4px 8px #000;
+      margin: 0 0 0.1em;
+      line-height: 1;
+      letter-spacing: 0.05em;
+    }
+    .error-content {
+      text-align: center;
+      padding: 20px 0 10px;
+    }
+    .error-content p {
+      color: var(--text-dim);
+      font-style: italic;
+      max-width: 480px;
+      margin: 0 auto 1em;
+    }
+    .error-actions {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+  </style>
 </head>
 <body>
 <div id="header"></div>
@@ -24,13 +52,14 @@ fetch('header.html')
 </script>
 
 <main>
-  <div class="content" style="text-align: center; padding: 60px 40px;">
-    <h2 style="font-size: 4rem; margin-bottom: 0; opacity: 0.35; font-family: 'Uncial Antiqua', cursive;">404</h2>
+  <div class="content error-content">
+    <p class="error-code">404</p>
     <h2>Page introuvable</h2>
+    <hr>
     <p>Les brumes de l'Extermination ont englouti ce chemin.<br>La page que vous cherchez n'existe pas ou a été déplacée.</p>
-    <p style="margin-top: 30px;">
+    <div class="error-actions">
       <a href="index.html" class="btn-metier">Retour à l'accueil</a>
-    </p>
+    </div>
   </div>
 </main>
 
